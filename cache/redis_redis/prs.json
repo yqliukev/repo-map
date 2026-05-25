@@ -1,0 +1,3881 @@
+[
+  {
+    "number": 15253,
+    "title": "RED-191626 - modules modernization ",
+    "author": "TalBarYakar",
+    "created_at": "2026-05-24T19:55:54Z",
+    "labels": []
+  },
+  {
+    "number": 15252,
+    "title": "Avoid double-walk on find-then-insert via raxFindLink + raxInsertAt",
+    "author": "moticless",
+    "created_at": "2026-05-24T12:41:37Z",
+    "labels": []
+  },
+  {
+    "number": 15251,
+    "title": "Fix CROSSSLOT error in rebalance when --user is used without -a",
+    "author": "2030XiaoGe",
+    "created_at": "2026-05-24T07:27:12Z",
+    "labels": []
+  },
+  {
+    "number": 15249,
+    "title": "ci: declare workflow-level `contents: read` on ci, codeql-analysis, reply-schemas-linter",
+    "author": "arpitjain099",
+    "created_at": "2026-05-24T02:33:15Z",
+    "labels": []
+  },
+  {
+    "number": 15247,
+    "title": "Add LoongArch64 backtrace support",
+    "author": "darkyzhou",
+    "created_at": "2026-05-23T05:06:02Z",
+    "labels": []
+  },
+  {
+    "number": 15245,
+    "title": "Optimize zslUpdateScore equal-score fast path",
+    "author": "vitahlin",
+    "created_at": "2026-05-22T15:41:02Z",
+    "labels": []
+  },
+  {
+    "number": 15244,
+    "title": "fix: cluster bus reconnect storm and pfail detection bypass on node failure",
+    "author": "senutpal",
+    "created_at": "2026-05-22T15:15:32Z",
+    "labels": []
+  },
+  {
+    "number": 15243,
+    "title": "modules: remove -Werror hack and improve Makefile logic",
+    "author": "Peter-Sh",
+    "created_at": "2026-05-22T06:36:14Z",
+    "labels": []
+  },
+  {
+    "number": 15242,
+    "title": "[RED-197766] - allow modules to register PostNotificationJobsPerKey",
+    "author": "JoanFM",
+    "created_at": "2026-05-21T12:44:32Z",
+    "labels": []
+  },
+  {
+    "number": 15241,
+    "title": "[RED-197766] - allow modules to register PostNotificationJobsPerKey",
+    "author": "JoanFM",
+    "created_at": "2026-05-21T12:33:06Z",
+    "labels": []
+  },
+  {
+    "number": 15238,
+    "title": "Update DataType Modules to v8.8.0",
+    "author": "gabsow",
+    "created_at": "2026-05-20T17:45:40Z",
+    "labels": []
+  },
+  {
+    "number": 15237,
+    "title": "Replace INCREX out-of-bounds policy to a single SATURATE option",
+    "author": "sundb",
+    "created_at": "2026-05-20T07:28:44Z",
+    "labels": []
+  },
+  {
+    "number": 15232,
+    "title": "Optimize sdssplitlen by preventing redundant memcmp on the if condition",
+    "author": "jimchen2",
+    "created_at": "2026-05-19T12:22:23Z",
+    "labels": []
+  },
+  {
+    "number": 15230,
+    "title": "Fix typos and replace 'codespell' with 'typos'",
+    "author": "sundb",
+    "created_at": "2026-05-19T05:46:52Z",
+    "labels": []
+  },
+  {
+    "number": 15229,
+    "title": "Fix typos in C source and Tcl test comments",
+    "author": "daguimu",
+    "created_at": "2026-05-19T04:43:10Z",
+    "labels": []
+  },
+  {
+    "number": 15228,
+    "title": "Update RediSearch module to v8.8.0",
+    "author": "oshadmi",
+    "created_at": "2026-05-18T21:51:29Z",
+    "labels": []
+  },
+  {
+    "number": 15227,
+    "title": "tls: replace deprecated X509_NAME_get_text_by_NID API",
+    "author": "arpitjaswal",
+    "created_at": "2026-05-18T21:26:57Z",
+    "labels": []
+  },
+  {
+    "number": 15226,
+    "title": "Update README build-from-source sections to match supported OS list",
+    "author": "kalinstaykov",
+    "created_at": "2026-05-18T15:50:30Z",
+    "labels": []
+  },
+  {
+    "number": 15225,
+    "title": "Fix compile on some linux distros",
+    "author": "tezc",
+    "created_at": "2026-05-18T12:24:39Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 15224,
+    "title": "ci:introduce concurrency in workflows",
+    "author": "gentcys",
+    "created_at": "2026-05-18T10:27:16Z",
+    "labels": []
+  },
+  {
+    "number": 15223,
+    "title": "MOD-15423 Add RedisModule_GetClusterNodeSlotRanges API",
+    "author": "galcohen-redislabs",
+    "created_at": "2026-05-18T10:21:18Z",
+    "labels": []
+  },
+  {
+    "number": 15220,
+    "title": "Configure RediSearch to avoid regenerating C headers for Rust modules",
+    "author": "LukeMathWalker",
+    "created_at": "2026-05-17T08:05:17Z",
+    "labels": []
+  },
+  {
+    "number": 15219,
+    "title": "Fix killIOThreads() hanging forever on shutdown",
+    "author": "chx9",
+    "created_at": "2026-05-17T03:44:22Z",
+    "labels": []
+  },
+  {
+    "number": 15218,
+    "title": "Restructure ASM bgsave success paths",
+    "author": "ShubhamTaple",
+    "created_at": "2026-05-16T12:52:52Z",
+    "labels": []
+  },
+  {
+    "number": 15217,
+    "title": "Bitpos vectorize scan",
+    "author": "slice4e",
+    "created_at": "2026-05-15T17:30:19Z",
+    "labels": []
+  },
+  {
+    "number": 15216,
+    "title": "Update GitHub Actions dependency install steps",
+    "author": "vitahlin",
+    "created_at": "2026-05-15T10:49:37Z",
+    "labels": []
+  },
+  {
+    "number": 15215,
+    "title": "ci: declare workflow-level `contents: read` on 7 CI/lint workflows",
+    "author": "arpitjain099",
+    "created_at": "2026-05-14T22:45:08Z",
+    "labels": []
+  },
+  {
+    "number": 15214,
+    "title": "Redis 8.8 RC1",
+    "author": "YaacovHazan",
+    "created_at": "2026-05-14T14:34:17Z",
+    "labels": []
+  },
+  {
+    "number": 15213,
+    "title": "docs: fix key spec firstkey typos",
+    "author": "pony-maggie",
+    "created_at": "2026-05-14T13:34:04Z",
+    "labels": []
+  },
+  {
+    "number": 15212,
+    "title": "Set default for INLINE_LSE_ATOMICS to 0 for compatibility across architectures",
+    "author": "YaacovHazan",
+    "created_at": "2026-05-14T12:53:27Z",
+    "labels": []
+  },
+  {
+    "number": 15210,
+    "title": "docs: fix vector set README typos",
+    "author": "pony-maggie",
+    "created_at": "2026-05-14T12:36:05Z",
+    "labels": []
+  },
+  {
+    "number": 15209,
+    "title": "docs: add vector set reply schemas",
+    "author": "pony-maggie",
+    "created_at": "2026-05-14T12:32:18Z",
+    "labels": []
+  },
+  {
+    "number": 15207,
+    "title": "Optimize ASM trim: O(1) bitmap for isSlotInTrimJob + jemalloc_purge after background trim",
+    "author": "chx9",
+    "created_at": "2026-05-14T12:17:59Z",
+    "labels": []
+  },
+  {
+    "number": 15206,
+    "title": "RED-196433 remove unused post release workflow",
+    "author": "stav-nachmias",
+    "created_at": "2026-05-14T08:51:32Z",
+    "labels": []
+  },
+  {
+    "number": 15204,
+    "title": "bitops: Add RISC-V Zbb popcount support",
+    "author": "huangzhengx",
+    "created_at": "2026-05-14T01:40:18Z",
+    "labels": []
+  },
+  {
+    "number": 15203,
+    "title": "Security issues and bugs into unstable",
+    "author": "YaacovHazan",
+    "created_at": "2026-05-13T20:43:10Z",
+    "labels": []
+  },
+  {
+    "number": 15202,
+    "title": "Commiting all the changes at once",
+    "author": "meet272002",
+    "created_at": "2026-05-13T18:02:54Z",
+    "labels": [
+      "state:to-be-closed"
+    ]
+  },
+  {
+    "number": 15201,
+    "title": "updating Data Types to RC1",
+    "author": "gabsow",
+    "created_at": "2026-05-13T17:23:55Z",
+    "labels": []
+  },
+  {
+    "number": 15200,
+    "title": "Update DataType Modules to v8.7.91",
+    "author": "gabsow",
+    "created_at": "2026-05-13T17:16:54Z",
+    "labels": []
+  },
+  {
+    "number": 15199,
+    "title": "Update RediSearch to v8.7.91",
+    "author": "oshadmi",
+    "created_at": "2026-05-13T14:21:04Z",
+    "labels": []
+  },
+  {
+    "number": 15198,
+    "title": "Harden stream RDB loader against corrupt payloads",
+    "author": "sggeorgiev",
+    "created_at": "2026-05-13T12:28:45Z",
+    "labels": []
+  },
+  {
+    "number": 15197,
+    "title": "Sharded channels are unsubscribed after slot migration",
+    "author": "ShooterIT",
+    "created_at": "2026-05-13T06:41:26Z",
+    "labels": []
+  },
+  {
+    "number": 15196,
+    "title": "Backport CI fix commits 7.2",
+    "author": "sundb",
+    "created_at": "2026-05-13T05:09:57Z",
+    "labels": []
+  },
+  {
+    "number": 15195,
+    "title": "Backport CI fix commits 7.4",
+    "author": "sundb",
+    "created_at": "2026-05-13T05:09:40Z",
+    "labels": []
+  },
+  {
+    "number": 15194,
+    "title": "Backport CI fix commits 8.2",
+    "author": "sundb",
+    "created_at": "2026-05-13T05:09:10Z",
+    "labels": []
+  },
+  {
+    "number": 15193,
+    "title": "Backport CI fix commits 8.4",
+    "author": "sundb",
+    "created_at": "2026-05-12T13:23:32Z",
+    "labels": []
+  },
+  {
+    "number": 15192,
+    "title": "Backport CI fix commits 8.6",
+    "author": "sundb",
+    "created_at": "2026-05-12T13:13:06Z",
+    "labels": []
+  },
+  {
+    "number": 15191,
+    "title": "Hold GCRA out of the release",
+    "author": "minchopaskal",
+    "created_at": "2026-05-12T13:11:47Z",
+    "labels": []
+  },
+  {
+    "number": 15190,
+    "title": "Fix vecClear() to invoke free method on elements",
+    "author": "moticless",
+    "created_at": "2026-05-12T06:44:40Z",
+    "labels": []
+  },
+  {
+    "number": 15188,
+    "title": "Fix cluster-announce-ip rejecting hostnames",
+    "author": "dannysheyn",
+    "created_at": "2026-05-11T09:30:38Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 15187,
+    "title": "Fix integer overflow in cluster bus PUBLISH and MODULE message length validation",
+    "author": "SebTardif",
+    "created_at": "2026-05-10T05:12:30Z",
+    "labels": []
+  },
+  {
+    "number": 15186,
+    "title": "Added Array, rename RQE to Search",
+    "author": "LiorKogan",
+    "created_at": "2026-05-09T15:24:18Z",
+    "labels": []
+  },
+  {
+    "number": 15182,
+    "title": "Add slowlog entry truncation limits configs",
+    "author": "minchopaskal",
+    "created_at": "2026-05-08T12:07:33Z",
+    "labels": [
+      "state:needs-doc-pr",
+      "release-notes"
+    ]
+  },
+  {
+    "number": 15180,
+    "title": "Fix integer overflow in cluster bus PUBLISH and MODULE message length validation",
+    "author": "SebTardif",
+    "created_at": "2026-05-08T03:04:39Z",
+    "labels": []
+  },
+  {
+    "number": 15178,
+    "title": "Fix invalid repl-diskless-load value in replication test",
+    "author": "selasley",
+    "created_at": "2026-05-07T12:18:40Z",
+    "labels": []
+  },
+  {
+    "number": 15176,
+    "title": "Revert \"Enable LTO for RediSearch module when Redis is build with modules\"",
+    "author": "AngelYanev",
+    "created_at": "2026-05-06T08:23:47Z",
+    "labels": []
+  },
+  {
+    "number": 15174,
+    "title": "Add inline cleanup to sentinel CONFIG SET/GET tests",
+    "author": "hristostaykov-del",
+    "created_at": "2026-05-05T19:32:51Z",
+    "labels": []
+  },
+  {
+    "number": 15173,
+    "title": "Redis 7.4.9",
+    "author": "YaacovHazan",
+    "created_at": "2026-05-05T12:41:44Z",
+    "labels": []
+  },
+  {
+    "number": 15172,
+    "title": "Redis 7.2.14",
+    "author": "YaacovHazan",
+    "created_at": "2026-05-05T12:39:07Z",
+    "labels": []
+  },
+  {
+    "number": 15171,
+    "title": "Redis 6.2.22",
+    "author": "YaacovHazan",
+    "created_at": "2026-05-05T12:36:48Z",
+    "labels": []
+  },
+  {
+    "number": 15170,
+    "title": "Redis 8.6.3",
+    "author": "YaacovHazan",
+    "created_at": "2026-05-05T12:28:34Z",
+    "labels": []
+  },
+  {
+    "number": 15169,
+    "title": "Redis 8.4.3",
+    "author": "YaacovHazan",
+    "created_at": "2026-05-05T12:23:45Z",
+    "labels": []
+  },
+  {
+    "number": 15168,
+    "title": "Redis 8.2.6",
+    "author": "YaacovHazan",
+    "created_at": "2026-05-05T12:19:40Z",
+    "labels": []
+  },
+  {
+    "number": 15167,
+    "title": "Restrict internal secret adoption to outbound verified links",
+    "author": "skaslev",
+    "created_at": "2026-05-05T12:12:59Z",
+    "labels": []
+  },
+  {
+    "number": 15166,
+    "title": "Enable LTO for RediSearch module when Redis is build with modules",
+    "author": "AngelYanev",
+    "created_at": "2026-05-05T10:12:53Z",
+    "labels": []
+  },
+  {
+    "number": 15165,
+    "title": "Prototype: JUnit XML output for the Tcl test suite (Track 1, draft for discussion)",
+    "author": "moticless",
+    "created_at": "2026-05-05T07:21:34Z",
+    "labels": []
+  },
+  {
+    "number": 15164,
+    "title": "ts v8.6.2 bloom v8.6.2",
+    "author": "gabsow",
+    "created_at": "2026-05-05T05:36:51Z",
+    "labels": []
+  },
+  {
+    "number": 15163,
+    "title": "Fix MULTI queue memory accounting in multiStateMemOverhead",
+    "author": "YangboLong",
+    "created_at": "2026-05-05T01:21:52Z",
+    "labels": []
+  },
+  {
+    "number": 15162,
+    "title": "Implement the new Redis Array type",
+    "author": "antirez",
+    "created_at": "2026-05-04T07:34:58Z",
+    "labels": [
+      "state:needs-doc-pr",
+      "release-notes"
+    ]
+  },
+  {
+    "number": 15161,
+    "title": "client struct optimization and lazy components allocation",
+    "author": "YangboLong",
+    "created_at": "2026-05-04T02:33:28Z",
+    "labels": []
+  },
+  {
+    "number": 15160,
+    "title": "Fix crash in clusterNodeAddFailureReport",
+    "author": "kairosci",
+    "created_at": "2026-05-03T20:51:14Z",
+    "labels": []
+  },
+  {
+    "number": 15159,
+    "title": "[wontfix] Add test module for RM_HashGet with various field types",
+    "author": "kairosci",
+    "created_at": "2026-05-03T17:46:24Z",
+    "labels": [
+      "state:to-be-closed"
+    ]
+  },
+  {
+    "number": 15157,
+    "title": "Improve setTypeAddAux() by adding lpFindInteger()",
+    "author": "ShubhamTaple",
+    "created_at": "2026-05-02T09:17:42Z",
+    "labels": []
+  },
+  {
+    "number": 15156,
+    "title": "docs: fix redis readme",
+    "author": "Rohan5commit",
+    "created_at": "2026-05-02T02:36:25Z",
+    "labels": []
+  },
+  {
+    "number": 15155,
+    "title": "Add key level expiry support to HSETEX command",
+    "author": "ShubhamTaple",
+    "created_at": "2026-05-01T08:32:17Z",
+    "labels": []
+  },
+  {
+    "number": 15154,
+    "title": "Initial commit - aof enhancement fullsync",
+    "author": "ShubhamTaple",
+    "created_at": "2026-05-01T05:33:46Z",
+    "labels": []
+  },
+  {
+    "number": 15152,
+    "title": "redis-benchmark: free skipped no-slots master to avoid leak",
+    "author": "daguimu",
+    "created_at": "2026-05-01T04:15:28Z",
+    "labels": []
+  },
+  {
+    "number": 15151,
+    "title": "Fix off-by-one in listpack backlen encoding",
+    "author": "ShubhamTaple",
+    "created_at": "2026-05-01T03:56:18Z",
+    "labels": []
+  },
+  {
+    "number": 15150,
+    "title": "Fix memory leak on malformed legacy help entry in redis-cli",
+    "author": "huynhanx03",
+    "created_at": "2026-05-01T00:40:45Z",
+    "labels": []
+  },
+  {
+    "number": 15147,
+    "title": "Fix CI Codecov v6 coverage upload configuration",
+    "author": "vitahlin",
+    "created_at": "2026-04-30T06:19:14Z",
+    "labels": []
+  },
+  {
+    "number": 15146,
+    "title": "Close inherited client sockets in fork children",
+    "author": "petrovich-ua",
+    "created_at": "2026-04-29T22:24:51Z",
+    "labels": []
+  },
+  {
+    "number": 15144,
+    "title": "Enable LTO for RediSearch module when Redis is build has BUILD_WITH_MODULES enabled",
+    "author": "AngelYanev",
+    "created_at": "2026-04-29T12:32:26Z",
+    "labels": []
+  },
+  {
+    "number": 15143,
+    "title": "RED-191923 Enable LTO for redisearch when Redis is builed with BUILD_WITH_MODULES",
+    "author": "AngelYanev",
+    "created_at": "2026-04-29T12:28:47Z",
+    "labels": []
+  },
+  {
+    "number": 15142,
+    "title": "fix: remove unsafe exec() in redis.conf",
+    "author": "orbisai0security",
+    "created_at": "2026-04-29T10:05:59Z",
+    "labels": []
+  },
+  {
+    "number": 15141,
+    "title": "docs: suggest documentation improvements for better user experience",
+    "author": "myhearwillgoon",
+    "created_at": "2026-04-29T04:22:21Z",
+    "labels": []
+  },
+  {
+    "number": 15140,
+    "title": "docs: suggest documentation improvements for better user experience",
+    "author": "myhearwillgoon",
+    "created_at": "2026-04-29T04:19:09Z",
+    "labels": []
+  },
+  {
+    "number": 15139,
+    "title": "docs: suggest documentation improvements for better user experience",
+    "author": "myhearwillgoon",
+    "created_at": "2026-04-29T04:14:31Z",
+    "labels": []
+  },
+  {
+    "number": 15138,
+    "title": "docs: suggest documentation improvements for better user experience",
+    "author": "myhearwillgoon",
+    "created_at": "2026-04-29T04:11:03Z",
+    "labels": []
+  },
+  {
+    "number": 15137,
+    "title": "redis-cli: do not flip current_resp3 when HELLO 3 fails",
+    "author": "daguimu",
+    "created_at": "2026-04-29T03:53:46Z",
+    "labels": []
+  },
+  {
+    "number": 15135,
+    "title": "Fix shard pubsub slot lookup using executing-command's cached slot",
+    "author": "daguimu",
+    "created_at": "2026-04-29T02:23:06Z",
+    "labels": []
+  },
+  {
+    "number": 15134,
+    "title": "Fix memory leak in redis-cli legacy help initialization",
+    "author": "IamShreshth",
+    "created_at": "2026-04-28T23:46:27Z",
+    "labels": []
+  },
+  {
+    "number": 15133,
+    "title": "Batched MGET/MSET dict prefetch with dictType-driven payload hints",
+    "author": "fcostaoliveira",
+    "created_at": "2026-04-28T20:53:18Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 15132,
+    "title": "Diskless replication: Add on-demand per replica buffer for slow replicas",
+    "author": "ShubhamTaple",
+    "created_at": "2026-04-28T16:58:44Z",
+    "labels": []
+  },
+  {
+    "number": 15131,
+    "title": "Fix diskless replicas drop during rdb pipe test",
+    "author": "vitahlin",
+    "created_at": "2026-04-28T16:19:43Z",
+    "labels": []
+  },
+  {
+    "number": 15130,
+    "title": "Fix memory leak of firstNode in fetchClusterConfiguration()",
+    "author": "daguimu",
+    "created_at": "2026-04-28T16:17:32Z",
+    "labels": []
+  },
+  {
+    "number": 15129,
+    "title": "test: stabilize HOTKEYS MULTI/EXEC test by increasing iteration count",
+    "author": "vitahlin",
+    "created_at": "2026-04-28T13:14:50Z",
+    "labels": []
+  },
+  {
+    "number": 15128,
+    "title": "Redis 8.8 M03",
+    "author": "YaacovHazan",
+    "created_at": "2026-04-28T11:58:15Z",
+    "labels": []
+  },
+  {
+    "number": 15127,
+    "title": "Update RedisJSON module version to v8.2.11",
+    "author": "AvivDavid23",
+    "created_at": "2026-04-28T11:12:33Z",
+    "labels": []
+  },
+  {
+    "number": 15126,
+    "title": "Update RedisJSON module version to v8.4.4",
+    "author": "AvivDavid23",
+    "created_at": "2026-04-28T11:11:06Z",
+    "labels": []
+  },
+  {
+    "number": 15125,
+    "title": "Update RedisJSON module version to v8.6.3",
+    "author": "AvivDavid23",
+    "created_at": "2026-04-28T11:10:19Z",
+    "labels": []
+  },
+  {
+    "number": 15124,
+    "title": "Reject corrupt stream payloads with mismatched entry counts",
+    "author": "sggeorgiev",
+    "created_at": "2026-04-28T10:57:19Z",
+    "labels": []
+  },
+  {
+    "number": 15123,
+    "title": "Fix DEBUG LOADAOF dropping the dataset on load failure",
+    "author": "moticless",
+    "created_at": "2026-04-28T07:20:20Z",
+    "labels": []
+  },
+  {
+    "number": 15122,
+    "title": "Add per-user ACL filtering and user-keyed grouping for BCAST client tracking",
+    "author": "hristostaykov-del",
+    "created_at": "2026-04-28T07:15:17Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 15121,
+    "title": "Add CLIENT LIST/KILL clientFilter with full filter set",
+    "author": "mdali9821",
+    "created_at": "2026-04-28T06:01:55Z",
+    "labels": [
+      "state:major-decision",
+      "release-notes"
+    ]
+  },
+  {
+    "number": 15120,
+    "title": "Fix SCAN OOM with huge COUNT after vec preallocation",
+    "author": "vitahlin",
+    "created_at": "2026-04-27T14:58:31Z",
+    "labels": []
+  },
+  {
+    "number": 15119,
+    "title": "Fix flaky redis-cli reverse search no-result test",
+    "author": "vitahlin",
+    "created_at": "2026-04-27T14:15:18Z",
+    "labels": [
+      "state:to-be-merged"
+    ]
+  },
+  {
+    "number": 15118,
+    "title": "perf+security: drop SCAN vector pre-allocation; rely on grow-by-doubling",
+    "author": "fcostaoliveira",
+    "created_at": "2026-04-27T13:51:32Z",
+    "labels": []
+  },
+  {
+    "number": 15117,
+    "title": "fix rdb: guard streamFreeNACK calls with NULL checks",
+    "author": "AmSach",
+    "created_at": "2026-04-27T10:47:08Z",
+    "labels": [
+      "state:to-be-closed"
+    ]
+  },
+  {
+    "number": 15116,
+    "title": "Discard stale active_clients count if wall clock moves backwards",
+    "author": "ShubhamTaple",
+    "created_at": "2026-04-26T14:56:05Z",
+    "labels": []
+  },
+  {
+    "number": 15115,
+    "title": "Fix incorrect memmove size in LDB breakpoint deletion",
+    "author": "LeenearKeenear",
+    "created_at": "2026-04-26T14:06:55Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 15114,
+    "title": "t_string: rewrite SET GET propagation in place",
+    "author": "moticless",
+    "created_at": "2026-04-26T13:01:23Z",
+    "labels": []
+  },
+  {
+    "number": 15113,
+    "title": "Fix GCRA oversize TOKENS reply consistency",
+    "author": "ShubhamTaple",
+    "created_at": "2026-04-26T08:59:22Z",
+    "labels": []
+  },
+  {
+    "number": 15111,
+    "title": "fast_float_strtod: fix ±1 ULP rounding mismatch in widened fast path",
+    "author": "fcostaoliveira",
+    "created_at": "2026-04-25T22:05:38Z",
+    "labels": []
+  },
+  {
+    "number": 15110,
+    "title": "Adjust fastfloat tests for libc-dependent nan payload parsing",
+    "author": "vitahlin",
+    "created_at": "2026-04-25T17:50:20Z",
+    "labels": [
+      "state:to-be-merged"
+    ]
+  },
+  {
+    "number": 15109,
+    "title": "[feat] Add support for command CLIENT LIST IDLE [<min-idle-seconds>]",
+    "author": "ShubhamTaple",
+    "created_at": "2026-04-25T17:23:46Z",
+    "labels": []
+  },
+  {
+    "number": 15108,
+    "title": "Fix GCC warnings by using const pointers for strchr/memchr results",
+    "author": "vitahlin",
+    "created_at": "2026-04-25T16:02:23Z",
+    "labels": []
+  },
+  {
+    "number": 15107,
+    "title": "Fix Sentinel 100% CPU busy-loop on async socket error (EPOLLERR)",
+    "author": "vitahlin",
+    "created_at": "2026-04-25T09:50:13Z",
+    "labels": []
+  },
+  {
+    "number": 15106,
+    "title": "Add CLIENT LIST IDLE <seconds> server-side idle-time filter (#15102)",
+    "author": "mdali9821",
+    "created_at": "2026-04-25T04:31:32Z",
+    "labels": []
+  },
+  {
+    "number": 15104,
+    "title": "Stricter zslParseRange: reject bare \"(\", empty string and embedded NULs (#15078)",
+    "author": "mdali9821",
+    "created_at": "2026-04-24T07:20:06Z",
+    "labels": []
+  },
+  {
+    "number": 15103,
+    "title": "Replace recursive rax tree freeing with iterative traversal",
+    "author": "sggeorgiev",
+    "created_at": "2026-04-24T06:58:45Z",
+    "labels": []
+  },
+  {
+    "number": 15101,
+    "title": "Fix a flaky ACL unit test when running with I/O threads enabled",
+    "author": "chzhoo",
+    "created_at": "2026-04-24T04:26:06Z",
+    "labels": []
+  },
+  {
+    "number": 15099,
+    "title": "Fix TLS stale WANT flags keeping AE events registered after handler clear",
+    "author": "daguimu",
+    "created_at": "2026-04-23T16:24:38Z",
+    "labels": []
+  },
+  {
+    "number": 15098,
+    "title": "Fix zslParseRange to reject bare \"(\" and empty string as score bounds",
+    "author": "vitahlin",
+    "created_at": "2026-04-23T15:37:33Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 15097,
+    "title": "Tail-append fast path for ZRANGESTORE skiplist destination",
+    "author": "fcostaoliveira",
+    "created_at": "2026-04-23T10:46:43Z",
+    "labels": []
+  },
+  {
+    "number": 15096,
+    "title": "Reduce memory allocation overhead",
+    "author": "tezc",
+    "created_at": "2026-04-23T07:59:39Z",
+    "labels": [
+      "release-notes",
+      "action:run-benchmark"
+    ]
+  },
+  {
+    "number": 15095,
+    "title": "Fix double free when loading streams with duplicate consumer PEL entries",
+    "author": "ShubhamTaple",
+    "created_at": "2026-04-22T17:17:58Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 15094,
+    "title": "Fix sharded pubsub unsubscribe lookup using cached command slot",
+    "author": "ShubhamTaple",
+    "created_at": "2026-04-22T16:56:06Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 15093,
+    "title": "gcraCommand, gcraSetValueCommand use ceil operation for division (conversion us to ms)",
+    "author": "ShubhamTaple",
+    "created_at": "2026-04-22T15:10:43Z",
+    "labels": []
+  },
+  {
+    "number": 15092,
+    "title": "Fix HFE active expire slow drain on sparse slot distribution",
+    "author": "melatron",
+    "created_at": "2026-04-22T10:38:09Z",
+    "labels": []
+  },
+  {
+    "number": 15091,
+    "title": "Fix double ERR prefix in XNACK error replies",
+    "author": "sggeorgiev",
+    "created_at": "2026-04-22T05:50:09Z",
+    "labels": []
+  },
+  {
+    "number": 15089,
+    "title": "Update SECURITY.md vulnerability reporting instructions",
+    "author": "CMeans-Redis",
+    "created_at": "2026-04-21T13:50:06Z",
+    "labels": []
+  },
+  {
+    "number": 15088,
+    "title": "RED-183392 post release tarball testing",
+    "author": "stav-nachmias",
+    "created_at": "2026-04-21T09:07:59Z",
+    "labels": []
+  },
+  {
+    "number": 15084,
+    "title": "Add LATENCY event for dict rehash during command execution",
+    "author": "henry-filgueiras",
+    "created_at": "2026-04-20T21:50:48Z",
+    "labels": []
+  },
+  {
+    "number": 15083,
+    "title": "Fix missing and incorrect test tag references",
+    "author": "Bojun-Vvibe",
+    "created_at": "2026-04-20T19:49:28Z",
+    "labels": []
+  },
+  {
+    "number": 15081,
+    "title": "Reject corrupt stream RDB with shared NACK across consumers",
+    "author": "sggeorgiev",
+    "created_at": "2026-04-20T10:33:38Z",
+    "labels": []
+  },
+  {
+    "number": 15079,
+    "title": "bg_unlink: defer fallback unlink to BIO",
+    "author": "rajkripal",
+    "created_at": "2026-04-20T06:31:38Z",
+    "labels": []
+  },
+  {
+    "number": 15077,
+    "title": "threads_mngr: use CLOCK_MONOTONIC instead of CLOCK_REALTIME in wait_threads()",
+    "author": "rajkripal",
+    "created_at": "2026-04-20T00:50:44Z",
+    "labels": []
+  },
+  {
+    "number": 15076,
+    "title": "hash: pause auto-resize during HGETDEL",
+    "author": "charsyam",
+    "created_at": "2026-04-19T14:48:05Z",
+    "labels": [
+      "action:run-benchmark"
+    ]
+  },
+  {
+    "number": 15075,
+    "title": "Update RediSearch to version 99.88.96",
+    "author": "redis-release-automation-app[bot]",
+    "created_at": "2026-04-19T12:59:46Z",
+    "labels": []
+  },
+  {
+    "number": 15073,
+    "title": "tracking: fix self-overlap returning non-zero loop index",
+    "author": "rajkripal",
+    "created_at": "2026-04-19T02:23:58Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 15072,
+    "title": "Update RediSearch to 8.8 RC1 (v8.7.90)",
+    "author": "oshadmi",
+    "created_at": "2026-04-18T20:55:15Z",
+    "labels": []
+  },
+  {
+    "number": 15071,
+    "title": "Pass size hint to jemalloc for faster deallocation",
+    "author": "tezc",
+    "created_at": "2026-04-18T17:01:47Z",
+    "labels": []
+  },
+  {
+    "number": 15070,
+    "title": "Implement listpack garbage collection for streams to reclaim tombstone memory",
+    "author": "0x48core",
+    "created_at": "2026-04-18T15:41:17Z",
+    "labels": []
+  },
+  {
+    "number": 15069,
+    "title": "string: avoid storing already-expired MSETEX values",
+    "author": "charsyam",
+    "created_at": "2026-04-18T15:11:19Z",
+    "labels": []
+  },
+  {
+    "number": 15068,
+    "title": "ebuckets: compact ebuckets segments after remove",
+    "author": "huynhanx03",
+    "created_at": "2026-04-18T11:04:05Z",
+    "labels": []
+  },
+  {
+    "number": 15067,
+    "title": "redis-cli: free COMMAND reply on malformed legacy help entry",
+    "author": "huynhanx03",
+    "created_at": "2026-04-17T15:46:43Z",
+    "labels": []
+  },
+  {
+    "number": 15065,
+    "title": "perf: replace list with vec in scanGenericCommand key collection",
+    "author": "fcostaoliveira",
+    "created_at": "2026-04-17T09:22:30Z",
+    "labels": []
+  },
+  {
+    "number": 15064,
+    "title": "ci: use ubuntu:16.04 for build-old-chain-jemalloc job",
+    "author": "pierluigilenoci",
+    "created_at": "2026-04-17T08:42:33Z",
+    "labels": []
+  },
+  {
+    "number": 15062,
+    "title": "replace bit shitf loop with a single __builtin_clzl",
+    "author": "slice4e",
+    "created_at": "2026-04-17T03:49:04Z",
+    "labels": [
+      "action:run-benchmark"
+    ]
+  },
+  {
+    "number": 15061,
+    "title": "perf: widen fast_float_strtod fast path to 17-19 digit mantissas",
+    "author": "fcostaoliveira",
+    "created_at": "2026-04-16T21:02:11Z",
+    "labels": []
+  },
+  {
+    "number": 15060,
+    "title": "Fix CI failures in old-chain jobs caused by EOL Ubuntu/package sources",
+    "author": "vitahlin",
+    "created_at": "2026-04-16T17:31:33Z",
+    "labels": []
+  },
+  {
+    "number": 15059,
+    "title": "Fix use-after-free in RM_RegisterClusterMessageReceiver()",
+    "author": "darsheel-rathore",
+    "created_at": "2026-04-16T16:07:23Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 15056,
+    "title": "Log node address when ASM starts",
+    "author": "tezc",
+    "created_at": "2026-04-16T07:02:30Z",
+    "labels": []
+  },
+  {
+    "number": 15055,
+    "title": "Fix command-docs and corrupt-dump-fuzzer of OBJ_GCRA type",
+    "author": "vitahlin",
+    "created_at": "2026-04-16T03:38:35Z",
+    "labels": []
+  },
+  {
+    "number": 15054,
+    "title": "Fix use-after-free in hash field expiration commands",
+    "author": "fru1tworld",
+    "created_at": "2026-04-16T02:15:53Z",
+    "labels": []
+  },
+  {
+    "number": 15053,
+    "title": "perf: stack-buffer stream ID formatting in reply path",
+    "author": "fcostaoliveira",
+    "created_at": "2026-04-15T22:40:32Z",
+    "labels": []
+  },
+  {
+    "number": 15052,
+    "title": "Update to SECURITY.md",
+    "author": "CMeans-Redis",
+    "created_at": "2026-04-15T16:07:02Z",
+    "labels": []
+  },
+  {
+    "number": 15051,
+    "title": "Make CONFIG REWRITE respect source files",
+    "author": "Peter-Sh",
+    "created_at": "2026-04-15T15:00:01Z",
+    "labels": []
+  },
+  {
+    "number": 15049,
+    "title": "hyperloglog: 4-way histogram accumulators for hllRawRegHisto",
+    "author": "fcostaoliveira",
+    "created_at": "2026-04-15T13:26:38Z",
+    "labels": []
+  },
+  {
+    "number": 15048,
+    "title": "Avoid redundant KEYSIZES histogram update after HGETEX deletes the last hash fields",
+    "author": "erhan1209",
+    "created_at": "2026-04-15T12:44:30Z",
+    "labels": []
+  },
+  {
+    "number": 15047,
+    "title": "Increase threshold for HPEXPIRETIME persists after RDB reload test",
+    "author": "vitahlin",
+    "created_at": "2026-04-15T11:57:47Z",
+    "labels": []
+  },
+  {
+    "number": 15046,
+    "title": "fix: vector sets docs typo",
+    "author": "rhighs",
+    "created_at": "2026-04-15T08:13:17Z",
+    "labels": []
+  },
+  {
+    "number": 15045,
+    "title": "Add INCREX command for atomic increment with ttl and bounds",
+    "author": "raffertyyu",
+    "created_at": "2026-04-14T18:59:13Z",
+    "labels": [
+      "state:needs-doc-pr",
+      "release-notes"
+    ]
+  },
+  {
+    "number": 15044,
+    "title": "zmscore optimization for Listpack ",
+    "author": "slice4e",
+    "created_at": "2026-04-14T18:50:52Z",
+    "labels": []
+  },
+  {
+    "number": 15043,
+    "title": "Add batched dict bucket prefetch for MSET/MSETNX",
+    "author": "fcostaoliveira",
+    "created_at": "2026-04-14T16:56:17Z",
+    "labels": []
+  },
+  {
+    "number": 15042,
+    "title": "Pass context to RM_GetUserUsername() to support auto memory management",
+    "author": "ShubhamTaple",
+    "created_at": "2026-04-14T15:26:41Z",
+    "labels": []
+  },
+  {
+    "number": 15041,
+    "title": "hnsw: replace global rand with thread-local PRNG",
+    "author": "ashutosh017",
+    "created_at": "2026-04-14T05:15:39Z",
+    "labels": []
+  },
+  {
+    "number": 15039,
+    "title": "vector: introduce internal pointer vector DS",
+    "author": "moticless",
+    "created_at": "2026-04-13T15:08:23Z",
+    "labels": []
+  },
+  {
+    "number": 15038,
+    "title": "aof: write directly to server.aof_buf in feedAppendOnlyFile",
+    "author": "charsyam",
+    "created_at": "2026-04-13T12:29:56Z",
+    "labels": []
+  },
+  {
+    "number": 15037,
+    "title": "Fix wrong argv index in xinfoReplyWithStreamInfo for slot alloc size tracking",
+    "author": "sundb",
+    "created_at": "2026-04-13T12:23:49Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 15036,
+    "title": "DataTypes update 8.8 RC1",
+    "author": "AvivDavid23",
+    "created_at": "2026-04-13T11:46:25Z",
+    "labels": []
+  },
+  {
+    "number": 15035,
+    "title": "RED-183357 tarball upload automation",
+    "author": "stav-nachmias",
+    "created_at": "2026-04-13T06:52:35Z",
+    "labels": []
+  },
+  {
+    "number": 15034,
+    "title": "Fix decrRefCount on NULL robj on corrupt KEY_META payload",
+    "author": "sundb",
+    "created_at": "2026-04-13T06:35:06Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 15029,
+    "title": "zset: add in-place fast path for score updates in listpack encoding",
+    "author": "charsyam",
+    "created_at": "2026-04-12T12:47:30Z",
+    "labels": []
+  },
+  {
+    "number": 15028,
+    "title": "Add LCS LEN fast path using rolling two-row DP",
+    "author": "charsyam",
+    "created_at": "2026-04-12T09:56:58Z",
+    "labels": []
+  },
+  {
+    "number": 15026,
+    "title": "[Fix] free targ on pthread_create error path in helloblock.c and blockonbackground.c",
+    "author": "ShubhamTaple",
+    "created_at": "2026-04-11T03:23:03Z",
+    "labels": []
+  },
+  {
+    "number": 15025,
+    "title": "Fix memory leak in helloblock.c on thread creation failure",
+    "author": "Adityaj0",
+    "created_at": "2026-04-10T19:57:53Z",
+    "labels": []
+  },
+  {
+    "number": 15024,
+    "title": "Add native COSINE_SIMILARITY",
+    "author": "rbs333",
+    "created_at": "2026-04-10T16:36:04Z",
+    "labels": []
+  },
+  {
+    "number": 15022,
+    "title": "rax: use memchr() for child-edge lookup in non-compressed nodes",
+    "author": "charsyam",
+    "created_at": "2026-04-09T13:06:27Z",
+    "labels": [
+      "action:run-benchmark"
+    ]
+  },
+  {
+    "number": 15021,
+    "title": "Fix HEXPIRE numfields overflow",
+    "author": "moticless",
+    "created_at": "2026-04-09T11:16:10Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 15019,
+    "title": "Eliminate buffer copy in zzlStrtod for sorted set score parsing",
+    "author": "fcostaoliveira",
+    "created_at": "2026-04-08T18:36:48Z",
+    "labels": []
+  },
+  {
+    "number": 15018,
+    "title": "Enable x86 TSC monotonic clock by default with runtime calibration",
+    "author": "fcostaoliveira",
+    "created_at": "2026-04-08T18:36:30Z",
+    "labels": []
+  },
+  {
+    "number": 15016,
+    "title": "Fix gen_write_load error on MOVED/ASK during atomic-slot-migration tests",
+    "author": "vitahlin",
+    "created_at": "2026-04-08T15:24:52Z",
+    "labels": []
+  },
+  {
+    "number": 15015,
+    "title": "Change log level for unknown extension types from LL_WARNING to LL_VERBOSE",
+    "author": "shun-lee",
+    "created_at": "2026-04-08T14:04:38Z",
+    "labels": []
+  },
+  {
+    "number": 15013,
+    "title": "fix(tests): harden MemBlockWrite against NULL/zero-length memcpy",
+    "author": "orbisai0security",
+    "created_at": "2026-04-08T10:12:08Z",
+    "labels": []
+  },
+  {
+    "number": 15011,
+    "title": "fix trivial double-free issue in rdbLoadObject",
+    "author": "charsyam",
+    "created_at": "2026-04-07T14:07:19Z",
+    "labels": []
+  },
+  {
+    "number": 15006,
+    "title": "Reduce sharing in struct client between main and IO threads",
+    "author": "abokhalill",
+    "created_at": "2026-04-06T11:09:23Z",
+    "labels": []
+  },
+  {
+    "number": 15005,
+    "title": "Add error on enabling memory tracking in non-clustered mode",
+    "author": "minchopaskal",
+    "created_at": "2026-04-06T09:57:56Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 15004,
+    "title": "Partial support set keymeta on ksn",
+    "author": "moticless",
+    "created_at": "2026-04-06T08:05:01Z",
+    "labels": []
+  },
+  {
+    "number": 15003,
+    "title": "Reduce overhead in command propagation",
+    "author": "tezc",
+    "created_at": "2026-04-06T06:59:51Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 15000,
+    "title": "Improve time complexity of streamMoveIdmpKeys() in asmTriggerBackgroundTrim()",
+    "author": "ShubhamTaple",
+    "created_at": "2026-04-05T16:21:38Z",
+    "labels": []
+  },
+  {
+    "number": 14995,
+    "title": "Remove unnecessary `-ERR` and `\\r\\n` for addReplyErrorFormat in extractLongLatOrReply()",
+    "author": "charsyam",
+    "created_at": "2026-04-05T08:26:48Z",
+    "labels": [
+      "class:cleanup"
+    ]
+  },
+  {
+    "number": 14994,
+    "title": "prevent string reference memory leak on existing keys in hellodict.c",
+    "author": "dimpal14",
+    "created_at": "2026-04-05T06:54:49Z",
+    "labels": []
+  },
+  {
+    "number": 14992,
+    "title": "Fix thread leaks in helloblock module by detaching unjoined threads example module",
+    "author": "gagandhakrey",
+    "created_at": "2026-04-05T01:18:03Z",
+    "labels": []
+  },
+  {
+    "number": 14989,
+    "title": "Use SHUTDOWN instead of CLUSTER RESET SOFT in del-node",
+    "author": "fru1tworld",
+    "created_at": "2026-04-04T12:21:07Z",
+    "labels": []
+  },
+  {
+    "number": 14988,
+    "title": "Add batched prefetch for HGETALL on hashtable encoding",
+    "author": "fcostaoliveira",
+    "created_at": "2026-04-04T12:20:10Z",
+    "labels": []
+  },
+  {
+    "number": 14987,
+    "title": "Use no_value dict type for stream_idmp_keys to explicitly mark it as a key-only set",
+    "author": "ShubhamTaple",
+    "created_at": "2026-04-04T09:31:51Z",
+    "labels": []
+  },
+  {
+    "number": 14984,
+    "title": "[fix] replica-to-primary connection issues when the IPs change",
+    "author": "ShubhamTaple",
+    "created_at": "2026-04-03T13:44:35Z",
+    "labels": []
+  },
+  {
+    "number": 14982,
+    "title": "Fix signed integer overflow in scan count parameter",
+    "author": "vitahlin",
+    "created_at": "2026-04-03T11:19:35Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14980,
+    "title": "Fix memory leak in clusterManagerFixSlotsCoverage",
+    "author": "vitahlin",
+    "created_at": "2026-04-03T09:57:48Z",
+    "labels": []
+  },
+  {
+    "number": 14979,
+    "title": "Dismiss dict bucket arrays in fork child to reduce CoW",
+    "author": "ShooterIT",
+    "created_at": "2026-04-03T09:01:39Z",
+    "labels": []
+  },
+  {
+    "number": 14978,
+    "title": "[BUG] potential file descriptor leak in clusterLoadConfig() on fstat failure in src/cluster_legacy.c",
+    "author": "ShubhamTaple",
+    "created_at": "2026-04-03T06:06:33Z",
+    "labels": []
+  },
+  {
+    "number": 14976,
+    "title": "[BUG] potential file descriptor leak in clusterLoadConfig() on fstat failure in src/cluster_legacy.c",
+    "author": "ShubhamTaple",
+    "created_at": "2026-04-03T05:24:56Z",
+    "labels": []
+  },
+  {
+    "number": 14974,
+    "title": "Fix memory leak in helloacl module ",
+    "author": "gagandhakrey",
+    "created_at": "2026-04-02T18:22:52Z",
+    "labels": []
+  },
+  {
+    "number": 14972,
+    "title": "Rename active clients stats fields",
+    "author": "udi-speedb",
+    "created_at": "2026-04-02T08:34:48Z",
+    "labels": [
+      "state:needs-doc-pr",
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14971,
+    "title": "Windows native builds & tests (Microsoft Visual Studio 2026)",
+    "author": "SamuelMarks",
+    "created_at": "2026-04-01T16:59:49Z",
+    "labels": []
+  },
+  {
+    "number": 14970,
+    "title": "Fix Sentinel config injection via SENTINEL SET (CVE-like)",
+    "author": "hristostaykov-del",
+    "created_at": "2026-04-01T15:48:43Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14969,
+    "title": "Update descriptions in gcra.json",
+    "author": "LiorKogan",
+    "created_at": "2026-03-31T19:06:27Z",
+    "labels": []
+  },
+  {
+    "number": 14968,
+    "title": "keymeta: add DEBUG flag for runtime keymeta class registration",
+    "author": "moticless",
+    "created_at": "2026-03-31T12:45:41Z",
+    "labels": []
+  },
+  {
+    "number": 14967,
+    "title": "keymeta: add dedicated debug flag for runtime class registration",
+    "author": "moticless",
+    "created_at": "2026-03-31T12:34:37Z",
+    "labels": []
+  },
+  {
+    "number": 14966,
+    "title": "Fix 32-bit build warnings with newer GCC on Ubuntu 25",
+    "author": "vitahlin",
+    "created_at": "2026-03-31T12:16:10Z",
+    "labels": []
+  },
+  {
+    "number": 14964,
+    "title": "keymeta: rename void *value to void *reserved in rdb_save/aof_rewrite callbacks",
+    "author": "moticless",
+    "created_at": "2026-03-31T11:50:15Z",
+    "labels": []
+  },
+  {
+    "number": 14963,
+    "title": "Fix missing consumer propagation on empty XREADGROUP",
+    "author": "sggeorgiev",
+    "created_at": "2026-03-31T09:55:15Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14962,
+    "title": "Fix flaky cluster pubsubshard test in 26-pubsubshard",
+    "author": "sundb",
+    "created_at": "2026-03-31T02:54:47Z",
+    "labels": []
+  },
+  {
+    "number": 14961,
+    "title": "Update RedisTimeSeries to version 8.0.2",
+    "author": "redis-release-automation-app[bot]",
+    "created_at": "2026-03-30T15:27:56Z",
+    "labels": []
+  },
+  {
+    "number": 14960,
+    "title": "Update RedisTimeSeries to version 8.0.2",
+    "author": "redis-release-automation-app[bot]",
+    "created_at": "2026-03-30T15:24:34Z",
+    "labels": []
+  },
+  {
+    "number": 14959,
+    "title": "Unified Redis + Modules build workflow",
+    "author": "gabsow",
+    "created_at": "2026-03-30T15:20:25Z",
+    "labels": []
+  },
+  {
+    "number": 14958,
+    "title": "Subkey notification for hash fields",
+    "author": "ShooterIT",
+    "created_at": "2026-03-30T14:02:30Z",
+    "labels": [
+      "state:needs-doc-pr",
+      "release-notes",
+      "action:run-benchmark"
+    ]
+  },
+  {
+    "number": 14957,
+    "title": "Optimize PEL with two-level rax/flax structure",
+    "author": "sggeorgiev",
+    "created_at": "2026-03-30T12:25:51Z",
+    "labels": []
+  },
+  {
+    "number": 14956,
+    "title": "Fix SIGABRT in HSETEX when a field appears twice in the FIELDS list",
+    "author": "moticless",
+    "created_at": "2026-03-30T11:56:53Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14955,
+    "title": "Fix IDMP tracking not cleared when resetting stream IDMP config",
+    "author": "sggeorgiev",
+    "created_at": "2026-03-30T11:19:54Z",
+    "labels": []
+  },
+  {
+    "number": 14954,
+    "title": "fix(cluster): add null check for server.cluster in clusterLookupNode()",
+    "author": "jjz921024",
+    "created_at": "2026-03-30T10:42:18Z",
+    "labels": []
+  },
+  {
+    "number": 14953,
+    "title": "Add RM_GetClusterNodeSlotRanges module API",
+    "author": "jjz921024",
+    "created_at": "2026-03-30T10:05:42Z",
+    "labels": []
+  },
+  {
+    "number": 14952,
+    "title": "feat(module): add ClusterGetSlotRangesByNodeId API",
+    "author": "jjz921024",
+    "created_at": "2026-03-30T09:56:10Z",
+    "labels": []
+  },
+  {
+    "number": 14950,
+    "title": "GCRA param renaming",
+    "author": "minchopaskal",
+    "created_at": "2026-03-30T08:57:39Z",
+    "labels": [
+      "state:needs-doc-pr",
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14949,
+    "title": "feat(module): support command rejection in command filters",
+    "author": "jjz921024",
+    "created_at": "2026-03-30T06:24:20Z",
+    "labels": []
+  },
+  {
+    "number": 14948,
+    "title": "Fix brittle assert_match patterns for unexpected slowlog fields",
+    "author": "YangboLong",
+    "created_at": "2026-03-29T15:33:40Z",
+    "labels": []
+  },
+  {
+    "number": 14947,
+    "title": "Add test: reject REPLICAOF when cluster mode is enabled",
+    "author": "gentcys",
+    "created_at": "2026-03-29T04:58:17Z",
+    "labels": []
+  },
+  {
+    "number": 14946,
+    "title": "Test tcp deadlock fixes",
+    "author": "sundb",
+    "created_at": "2026-03-29T03:00:31Z",
+    "labels": []
+  },
+  {
+    "number": 14944,
+    "title": "Optimize infoCommand with SDS pre-allocation and getrusage caching",
+    "author": "charsyam",
+    "created_at": "2026-03-28T00:54:33Z",
+    "labels": []
+  },
+  {
+    "number": 14943,
+    "title": "feat: add RedisModule_FreeStringSafe() NULL-safe macro",
+    "author": "pierluigilenoci",
+    "created_at": "2026-03-27T20:01:39Z",
+    "labels": []
+  },
+  {
+    "number": 14942,
+    "title": "Fix COMMAND GETKEYS for PFMERGE with no source keys",
+    "author": "melatron",
+    "created_at": "2026-03-27T15:00:44Z",
+    "labels": []
+  },
+  {
+    "number": 14941,
+    "title": "Expose READONLY and REPLICATED flags in module client info",
+    "author": "jjz921024",
+    "created_at": "2026-03-27T11:44:03Z",
+    "labels": []
+  },
+  {
+    "number": 14940,
+    "title": "Allow RM_FreeString() to accept NULL pointer",
+    "author": "pierluigilenoci",
+    "created_at": "2026-03-27T10:06:19Z",
+    "labels": []
+  },
+  {
+    "number": 14939,
+    "title": "add tests for more events",
+    "author": "JoanFM",
+    "created_at": "2026-03-27T09:04:46Z",
+    "labels": []
+  },
+  {
+    "number": 14938,
+    "title": "Upgrade GH actions to latest stable versions (Node.js 20 deprecation)",
+    "author": "vitahlin",
+    "created_at": "2026-03-27T08:50:57Z",
+    "labels": []
+  },
+  {
+    "number": 14937,
+    "title": "Pin third-party action to commit SHA and move secrets to step env",
+    "author": "dagecko",
+    "created_at": "2026-03-26T22:25:38Z",
+    "labels": []
+  },
+  {
+    "number": 14936,
+    "title": "fix: pin 4 unpinned action(s),extract 303 unsafe expression(s) to env vars",
+    "author": "dagecko",
+    "created_at": "2026-03-26T19:26:16Z",
+    "labels": []
+  },
+  {
+    "number": 14935,
+    "title": "Fix missing ksn_notify_side_effect module test in runtest-moduleapi",
+    "author": "vitahlin",
+    "created_at": "2026-03-26T16:13:21Z",
+    "labels": []
+  },
+  {
+    "number": 14934,
+    "title": "Fix client output buffer memory tracking not accounting for copy-avoided bulk string references",
+    "author": "sundb",
+    "created_at": "2026-03-26T14:05:29Z",
+    "labels": [
+      "state:needs-doc-pr",
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14933,
+    "title": "fix handleExpiredIdmpEntries to mark keys as modified",
+    "author": "oranagra",
+    "created_at": "2026-03-26T11:37:57Z",
+    "labels": []
+  },
+  {
+    "number": 14932,
+    "title": "Fix memory leak in ZDIFF algorithm 2 on early exit",
+    "author": "daguimu",
+    "created_at": "2026-03-26T08:36:14Z",
+    "labels": []
+  },
+  {
+    "number": 14931,
+    "title": "fix use after free in RESTORE command handling",
+    "author": "JoanFM",
+    "created_at": "2026-03-26T08:29:19Z",
+    "labels": []
+  },
+  {
+    "number": 14930,
+    "title": "fix use after free in RESTORE command handling",
+    "author": "JoanFM",
+    "created_at": "2026-03-26T08:24:56Z",
+    "labels": []
+  },
+  {
+    "number": 14929,
+    "title": "Fix heap-use-after-free in restoreCommand when module sets key metadata during notification",
+    "author": "vitahlin",
+    "created_at": "2026-03-26T03:58:24Z",
+    "labels": []
+  },
+  {
+    "number": 14928,
+    "title": "Disable memory tracking in child processes",
+    "author": "ShooterIT",
+    "created_at": "2026-03-25T11:52:11Z",
+    "labels": []
+  },
+  {
+    "number": 14927,
+    "title": "Fix sds unit test and improve unittest output formatting",
+    "author": "sundb",
+    "created_at": "2026-03-25T04:41:17Z",
+    "labels": []
+  },
+  {
+    "number": 14926,
+    "title": "fix: memory leak in ZDIFF algorithm 2 on early exit",
+    "author": "daguimu",
+    "created_at": "2026-03-25T04:25:09Z",
+    "labels": []
+  },
+  {
+    "number": 14925,
+    "title": "fixes around recent keyModified changes",
+    "author": "oranagra",
+    "created_at": "2026-03-24T21:37:29Z",
+    "labels": []
+  },
+  {
+    "number": 14924,
+    "title": "allow RO CLUSTER commands while loading",
+    "author": "oranagra",
+    "created_at": "2026-03-24T21:29:34Z",
+    "labels": []
+  },
+  {
+    "number": 14923,
+    "title": "[wontfix] Refactor internal slave terminology to replica",
+    "author": "kairosci",
+    "created_at": "2026-03-24T19:27:57Z",
+    "labels": []
+  },
+  {
+    "number": 14922,
+    "title": "[wontfix] Fix crash during HSET with search index by disabling SVE2 for RediSearch module build",
+    "author": "kairosci",
+    "created_at": "2026-03-24T18:29:41Z",
+    "labels": []
+  },
+  {
+    "number": 14921,
+    "title": "[replaced] Fix ZSET keysizes histogram update on partial ZADD failure ",
+    "author": "kairosci",
+    "created_at": "2026-03-24T18:15:55Z",
+    "labels": []
+  },
+  {
+    "number": 14920,
+    "title": "Client compression for replication",
+    "author": "minchopaskal",
+    "created_at": "2026-03-24T14:28:09Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14919,
+    "title": "chore: Upgrade Rust toolchain from 1.93.1 to 1.94.0",
+    "author": "LukeMathWalker",
+    "created_at": "2026-03-24T12:47:16Z",
+    "labels": []
+  },
+  {
+    "number": 14918,
+    "title": "HSETNX notify after accessing KV",
+    "author": "JoanFM",
+    "created_at": "2026-03-24T10:36:38Z",
+    "labels": []
+  },
+  {
+    "number": 14917,
+    "title": "add test",
+    "author": "JoanFM",
+    "created_at": "2026-03-24T10:26:53Z",
+    "labels": []
+  },
+  {
+    "number": 14916,
+    "title": "HSETNX notify after accessing KV",
+    "author": "JoanFM",
+    "created_at": "2026-03-24T10:02:05Z",
+    "labels": []
+  },
+  {
+    "number": 14915,
+    "title": "Redis 8.6.2",
+    "author": "YaacovHazan",
+    "created_at": "2026-03-24T09:01:41Z",
+    "labels": []
+  },
+  {
+    "number": 14914,
+    "title": "Fix test failures under Valgrind caused by unexpected slowlog fields in cmdstat output",
+    "author": "vitahlin",
+    "created_at": "2026-03-24T08:58:39Z",
+    "labels": []
+  },
+  {
+    "number": 14913,
+    "title": "Test fix ASM test failures under DEBUG_ASSERT_KEYSPACE builds",
+    "author": "vitahlin",
+    "created_at": "2026-03-24T07:04:34Z",
+    "labels": []
+  },
+  {
+    "number": 14912,
+    "title": "ACL: add user expireat support",
+    "author": "bugwz",
+    "created_at": "2026-03-24T03:39:37Z",
+    "labels": []
+  },
+  {
+    "number": 14911,
+    "title": "RED-183356: Automate tarball creation",
+    "author": "m-marinov",
+    "created_at": "2026-03-23T14:32:07Z",
+    "labels": []
+  },
+  {
+    "number": 14907,
+    "title": "Fix cache line false sharing on per-IO-thread stat counters",
+    "author": "YangboLong",
+    "created_at": "2026-03-22T03:25:50Z",
+    "labels": [
+      "action:run-benchmark"
+    ]
+  },
+  {
+    "number": 14906,
+    "title": "Increase HPEXPIRE TTL prevents flaky test",
+    "author": "gentcys",
+    "created_at": "2026-03-21T01:39:48Z",
+    "labels": []
+  },
+  {
+    "number": 14905,
+    "title": "Add new OBJ_GCRA type",
+    "author": "minchopaskal",
+    "created_at": "2026-03-20T14:50:18Z",
+    "labels": [
+      "state:needs-doc-pr",
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14904,
+    "title": "DataTypes update  8.8 milestone 1",
+    "author": "gabsow",
+    "created_at": "2026-03-19T19:11:40Z",
+    "labels": []
+  },
+  {
+    "number": 14903,
+    "title": "hmget optimization for listpack",
+    "author": "slice4e",
+    "created_at": "2026-03-19T18:54:37Z",
+    "labels": []
+  },
+  {
+    "number": 14902,
+    "title": "Backport commits 8.6",
+    "author": "YaacovHazan",
+    "created_at": "2026-03-19T11:31:25Z",
+    "labels": []
+  },
+  {
+    "number": 14901,
+    "title": "Fix ASM debug failpoints not aborting migration in error-handling tests",
+    "author": "skaslev",
+    "created_at": "2026-03-19T08:48:13Z",
+    "labels": []
+  },
+  {
+    "number": 14900,
+    "title": "Increment the expiredkeys counter if RESTORE with a past expiration time",
+    "author": "ShooterIT",
+    "created_at": "2026-03-19T06:57:22Z",
+    "labels": []
+  },
+  {
+    "number": 14899,
+    "title": "Extend memory_prefetch framework with intra-command dictPrefetchKeys() API and optimize MGET",
+    "author": "mpozniak95",
+    "created_at": "2026-03-17T17:16:27Z",
+    "labels": []
+  },
+  {
+    "number": 14898,
+    "title": "Fix VSIM FILTER memory leaks on duplicate option and error paths",
+    "author": "zzjas",
+    "created_at": "2026-03-17T16:43:22Z",
+    "labels": []
+  },
+  {
+    "number": 14897,
+    "title": "Fix stream_idmp_keys missing from database lifecycle ops",
+    "author": "sggeorgiev",
+    "created_at": "2026-03-17T09:21:08Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14896,
+    "title": "Add global and per-command stats for slowlog metrics",
+    "author": "minchopaskal",
+    "created_at": "2026-03-17T08:46:15Z",
+    "labels": [
+      "state:needs-doc-pr",
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14893,
+    "title": "Implement sunioncard",
+    "author": "hristostaykov-del",
+    "created_at": "2026-03-16T09:46:16Z",
+    "labels": [
+      "state:needs-doc-pr",
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14892,
+    "title": "Add AGGREGATE COUNT option to ZUNION, ZINTER, ZUNIONSTORE, and ZINTERSTORE",
+    "author": "sggeorgiev",
+    "created_at": "2026-03-16T07:39:02Z",
+    "labels": [
+      "state:needs-doc-pr",
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14891,
+    "title": "Add ARM64 jobs to daily workflow",
+    "author": "gentcys",
+    "created_at": "2026-03-15T12:51:02Z",
+    "labels": []
+  },
+  {
+    "number": 14890,
+    "title": "MOD-14124 - Add RM_GetContextUser and RM_GetUserUserName module APIs",
+    "author": "TalBarYakar",
+    "created_at": "2026-03-15T08:32:11Z",
+    "labels": [
+      "state:needs-doc-pr",
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14888,
+    "title": "Fix safety check in lpSafeToAdd size_t Addition Overflow Bypass",
+    "author": "gkorland",
+    "created_at": "2026-03-14T21:37:25Z",
+    "labels": []
+  },
+  {
+    "number": 14887,
+    "title": "Use flush db if sflush all owned slots",
+    "author": "ShooterIT",
+    "created_at": "2026-03-13T13:12:48Z",
+    "labels": []
+  },
+  {
+    "number": 14886,
+    "title": "Test fix potential TCP deadlock in Active defrag IDMP streams test",
+    "author": "vitahlin",
+    "created_at": "2026-03-12T15:27:58Z",
+    "labels": []
+  },
+  {
+    "number": 14885,
+    "title": "Optimize rax insert and lookup for sequential key patterns",
+    "author": "sggeorgiev",
+    "created_at": "2026-03-12T13:35:35Z",
+    "labels": []
+  },
+  {
+    "number": 14884,
+    "title": "Fix RM_GetCurrentUserName to fall back to the context user",
+    "author": "TalBarYakar",
+    "created_at": "2026-03-12T11:40:43Z",
+    "labels": []
+  },
+  {
+    "number": 14883,
+    "title": "Fix FIELDS argument validation in HSETEX/HGETEX",
+    "author": "gentcys",
+    "created_at": "2026-03-12T09:59:01Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14882,
+    "title": "Changed ascii art and added text",
+    "author": "ItamarHoefler",
+    "created_at": "2026-03-12T09:54:31Z",
+    "labels": []
+  },
+  {
+    "number": 14881,
+    "title": "Protect some keys",
+    "author": "apelfeld",
+    "created_at": "2026-03-12T09:05:10Z",
+    "labels": []
+  },
+  {
+    "number": 14880,
+    "title": "Refine error message for HSETEX command with PERSIST",
+    "author": "gentcys",
+    "created_at": "2026-03-12T08:24:45Z",
+    "labels": []
+  },
+  {
+    "number": 14878,
+    "title": "Fix listpack memory leak in zipmap-to-hash conversion on error path",
+    "author": "zzjas",
+    "created_at": "2026-03-11T22:15:56Z",
+    "labels": []
+  },
+  {
+    "number": 14877,
+    "title": "KEYSIZES/ASM: simplify histograms, fix background trim, and refactor debug assertions",
+    "author": "moticless",
+    "created_at": "2026-03-11T13:52:54Z",
+    "labels": []
+  },
+  {
+    "number": 14875,
+    "title": "Add metric: time spent by main thread on prcoessing clients dispatched from IO threads",
+    "author": "chzhoo",
+    "created_at": "2026-03-11T11:47:20Z",
+    "labels": []
+  },
+  {
+    "number": 14874,
+    "title": "feat: update replication tests to use inclusive terminology",
+    "author": "gentcys",
+    "created_at": "2026-03-11T04:32:59Z",
+    "labels": []
+  },
+  {
+    "number": 14873,
+    "title": "Text modify",
+    "author": "Itamar-Dalal",
+    "created_at": "2026-03-10T16:15:14Z",
+    "labels": []
+  },
+  {
+    "number": 14872,
+    "title": "Fix/logo",
+    "author": "dolevcarney",
+    "created_at": "2026-03-10T16:03:29Z",
+    "labels": []
+  },
+  {
+    "number": 14871,
+    "title": "re-redden the logo",
+    "author": "xor34",
+    "created_at": "2026-03-10T14:53:27Z",
+    "labels": []
+  },
+  {
+    "number": 14870,
+    "title": "Feature/pasten",
+    "author": "apelfeld",
+    "created_at": "2026-03-10T14:51:57Z",
+    "labels": []
+  },
+  {
+    "number": 14869,
+    "title": "Fix IDMP cron expiration not working after RDB load",
+    "author": "sggeorgiev",
+    "created_at": "2026-03-10T13:35:38Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14868,
+    "title": "modified the redis banner and ascii art",
+    "author": "EyalPorat",
+    "created_at": "2026-03-10T13:10:23Z",
+    "labels": []
+  },
+  {
+    "number": 14867,
+    "title": "Strengthen the red team morale",
+    "author": "apelfeld",
+    "created_at": "2026-03-10T12:32:36Z",
+    "labels": []
+  },
+  {
+    "number": 14866,
+    "title": "Fix memory leak in lpBatchInsert()",
+    "author": "Vallabh-1504",
+    "created_at": "2026-03-09T22:00:58Z",
+    "labels": []
+  },
+  {
+    "number": 14865,
+    "title": "[fix] Memory leak in fetchClusterConfiguration() in src/redis-benchmark",
+    "author": "Vallabh-1504",
+    "created_at": "2026-03-09T21:12:19Z",
+    "labels": []
+  },
+  {
+    "number": 14863,
+    "title": "Fix memory leak in `clusterManagerFixSlotsCoverage()` in `src/redis-cli.c`",
+    "author": "huanghuihui0904",
+    "created_at": "2026-03-09T13:08:27Z",
+    "labels": []
+  },
+  {
+    "number": 14862,
+    "title": "Filter expired IDMP entries during RDB save and load",
+    "author": "sggeorgiev",
+    "created_at": "2026-03-09T12:59:11Z",
+    "labels": []
+  },
+  {
+    "number": 14860,
+    "title": "Fix missing keymeta module test in runtest-moduleapi",
+    "author": "vitahlin",
+    "created_at": "2026-03-09T11:26:02Z",
+    "labels": []
+  },
+  {
+    "number": 14858,
+    "title": "XADD, update keyModified and dirty counter when increasing iids_duplicates",
+    "author": "oranagra",
+    "created_at": "2026-03-08T13:47:33Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14857,
+    "title": "Replace fast_float (C++) with ffc (C)",
+    "author": "kolemannix",
+    "created_at": "2026-03-07T19:56:06Z",
+    "labels": [
+      "action:run-benchmark"
+    ]
+  },
+  {
+    "number": 14856,
+    "title": "replacing fast_float (C++) with ffc (C)",
+    "author": "lemire",
+    "created_at": "2026-03-07T19:34:22Z",
+    "labels": []
+  },
+  {
+    "number": 14855,
+    "title": "Fix X509 memory leak in connTLSGetPeerCert",
+    "author": "YangboLong",
+    "created_at": "2026-03-07T13:56:40Z",
+    "labels": []
+  },
+  {
+    "number": 14854,
+    "title": "Avoid 'sed -i' when building modules",
+    "author": "collinfunk",
+    "created_at": "2026-03-06T23:26:04Z",
+    "labels": []
+  },
+  {
+    "number": 14853,
+    "title": "Test fix \"too many open files\" on macOS",
+    "author": "vitahlin",
+    "created_at": "2026-03-06T08:06:31Z",
+    "labels": []
+  },
+  {
+    "number": 14852,
+    "title": "Fix test assertion except from TSAN case",
+    "author": "gentcys",
+    "created_at": "2026-03-05T13:05:39Z",
+    "labels": []
+  },
+  {
+    "number": 14851,
+    "title": "No checksum performed on diskless replication",
+    "author": "ShooterIT",
+    "created_at": "2026-03-05T09:41:07Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14848,
+    "title": "Skip memory prefetch during loading to avoid crash in dictEmpty callback",
+    "author": "kairosci",
+    "created_at": "2026-03-04T22:40:53Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14847,
+    "title": "Fix ACL OOB for wrong-arity KEYNUM commands",
+    "author": "zzjas",
+    "created_at": "2026-03-04T17:54:51Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14846,
+    "title": "Fix null pointer dereference and printf format mismatches",
+    "author": "vladapostol1",
+    "created_at": "2026-03-04T13:01:57Z",
+    "labels": []
+  },
+  {
+    "number": 14845,
+    "title": "Chore complete Tcl 9 support and fix regressions in test suite",
+    "author": "vitahlin",
+    "created_at": "2026-03-04T10:43:31Z",
+    "labels": []
+  },
+  {
+    "number": 14844,
+    "title": "Offload length formatting in tryAvoidBulkStrCopyToReply() to IO thread",
+    "author": "sundb",
+    "created_at": "2026-03-04T06:18:50Z",
+    "labels": [
+      "action:run-benchmark"
+    ]
+  },
+  {
+    "number": 14841,
+    "title": "RED-188967: Port active clients stats to OSS",
+    "author": "udi-speedb",
+    "created_at": "2026-03-03T16:01:59Z",
+    "labels": [
+      "state:needs-doc-pr",
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14836,
+    "title": "Capture and report server crash after RESTORE in corrupt-dump-fuzzer test",
+    "author": "vitahlin",
+    "created_at": "2026-03-02T07:58:28Z",
+    "labels": []
+  },
+  {
+    "number": 14834,
+    "title": "Rename test module from test_metakey to test_keymeta",
+    "author": "moticless",
+    "created_at": "2026-03-01T10:36:46Z",
+    "labels": []
+  },
+  {
+    "number": 14833,
+    "title": "Fix: update buffered counter only when fwrite succeeds in rioFileWrite",
+    "author": "RustyCoderX",
+    "created_at": "2026-03-01T04:29:51Z",
+    "labels": []
+  },
+  {
+    "number": 14832,
+    "title": "tests/moduleapi: pipeline key generation in testrdb short-read test",
+    "author": "smf-h",
+    "created_at": "2026-02-28T16:11:02Z",
+    "labels": []
+  },
+  {
+    "number": 14831,
+    "title": "Fix potential sds buffer leak in RM_SaveDataTypeToString",
+    "author": "YangboLong",
+    "created_at": "2026-02-28T15:42:42Z",
+    "labels": []
+  },
+  {
+    "number": 14830,
+    "title": "scan: return error for unknown TYPE names",
+    "author": "smf-h",
+    "created_at": "2026-02-28T11:00:10Z",
+    "labels": []
+  },
+  {
+    "number": 14829,
+    "title": "docs: fix duplicated words in HNSW inline comments",
+    "author": "Rohan5commit",
+    "created_at": "2026-02-28T05:31:19Z",
+    "labels": []
+  },
+  {
+    "number": 14827,
+    "title": "Fix use-after-free in HFE active expiration when module post-notification job mutates the expiring hash",
+    "author": "vitahlin",
+    "created_at": "2026-02-27T16:11:59Z",
+    "labels": []
+  },
+  {
+    "number": 14826,
+    "title": "GCRA Rate Limiter",
+    "author": "minchopaskal",
+    "created_at": "2026-02-27T13:42:33Z",
+    "labels": [
+      "state:needs-doc-pr",
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14825,
+    "title": "docs: remove duplicate word in string dictionary comments",
+    "author": "Rohan5commit",
+    "created_at": "2026-02-27T09:31:27Z",
+    "labels": []
+  },
+  {
+    "number": 14824,
+    "title": "Don't use reply copy avoidance for module to prevent potential UAF",
+    "author": "sundb",
+    "created_at": "2026-02-26T09:47:26Z",
+    "labels": []
+  },
+  {
+    "number": 14822,
+    "title": "docs: normalize behavior spelling in comments",
+    "author": "Rohan5commit",
+    "created_at": "2026-02-26T08:29:15Z",
+    "labels": []
+  },
+  {
+    "number": 14821,
+    "title": "fix: replace 2 bare except clauses with except Exception",
+    "author": "haosenwang1018",
+    "created_at": "2026-02-26T00:40:26Z",
+    "labels": []
+  },
+  {
+    "number": 14817,
+    "title": "Fix memory leak in trackingRememberKeys() for PUBSUB commands",
+    "author": "vitahlin",
+    "created_at": "2026-02-25T13:11:30Z",
+    "labels": []
+  },
+  {
+    "number": 14816,
+    "title": "Fix setModuleEnumConfig() to pass unprefixed name to callbacks",
+    "author": "moticless",
+    "created_at": "2026-02-25T11:44:56Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14815,
+    "title": "Fix compilation warning: Use macro for seq_buffer_max_length",
+    "author": "vitahlin",
+    "created_at": "2026-02-25T09:21:46Z",
+    "labels": []
+  },
+  {
+    "number": 14814,
+    "title": "Add HOTKEYS HELP command coverage",
+    "author": "minchopaskal",
+    "created_at": "2026-02-25T08:29:48Z",
+    "labels": []
+  },
+  {
+    "number": 14813,
+    "title": "tests: fix transaction typos in MULTI comments",
+    "author": "Rohan5commit",
+    "created_at": "2026-02-25T03:37:26Z",
+    "labels": []
+  },
+  {
+    "number": 14812,
+    "title": "remove C++ std dependency",
+    "author": "lemire",
+    "created_at": "2026-02-24T16:22:00Z",
+    "labels": []
+  },
+  {
+    "number": 14811,
+    "title": "Fix implicit conversion warning in timeout.c for newer Clang versions",
+    "author": "vitahlin",
+    "created_at": "2026-02-24T14:27:48Z",
+    "labels": []
+  },
+  {
+    "number": 14810,
+    "title": "tests: fix typos in cluster links and keymeta tests",
+    "author": "Rohan5commit",
+    "created_at": "2026-02-24T08:40:09Z",
+    "labels": []
+  },
+  {
+    "number": 14809,
+    "title": "Allow comments in ACL files (issue #14403)",
+    "author": "ArtsyCode",
+    "created_at": "2026-02-23T18:25:21Z",
+    "labels": []
+  },
+  {
+    "number": 14806,
+    "title": "Allow comments in ACL files",
+    "author": "ArtsyCode",
+    "created_at": "2026-02-23T07:47:23Z",
+    "labels": []
+  },
+  {
+    "number": 14805,
+    "title": "fix typo Reids -> Redis in readwrite subcommand summary",
+    "author": "brycenichols",
+    "created_at": "2026-02-23T04:51:41Z",
+    "labels": []
+  },
+  {
+    "number": 14804,
+    "title": "tests: fix \"transcation\" typo in MULTI timeout comments",
+    "author": "Rohan5commit",
+    "created_at": "2026-02-23T02:39:32Z",
+    "labels": []
+  },
+  {
+    "number": 14803,
+    "title": "ci: declare explicit token permissions in maintenance workflows",
+    "author": "Rohan5commit",
+    "created_at": "2026-02-22T03:53:38Z",
+    "labels": []
+  },
+  {
+    "number": 14802,
+    "title": "fix Rust binary checksums",
+    "author": "kalinstaykov",
+    "created_at": "2026-02-20T10:08:12Z",
+    "labels": []
+  },
+  {
+    "number": 14801,
+    "title": "Skeleton of gh workflow for published release",
+    "author": "stav-nachmias",
+    "created_at": "2026-02-19T11:32:09Z",
+    "labels": []
+  },
+  {
+    "number": 14799,
+    "title": "Rename getPositiveLongFromObjectOrReply to getNonNegativeLongFromObjectOrReply",
+    "author": "minchopaskal",
+    "created_at": "2026-02-18T15:15:30Z",
+    "labels": []
+  },
+  {
+    "number": 14798,
+    "title": "Refine CI timeout from 14400 to 360 minutes",
+    "author": "moticless",
+    "created_at": "2026-02-18T11:25:08Z",
+    "labels": []
+  },
+  {
+    "number": 14797,
+    "title": "Add XNACK command for releasing stream messages back to the group",
+    "author": "sggeorgiev",
+    "created_at": "2026-02-17T13:05:40Z",
+    "labels": [
+      "state:needs-doc-pr",
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14796,
+    "title": "Update to latest Rust stable toolchain",
+    "author": "LukeMathWalker",
+    "created_at": "2026-02-16T14:46:58Z",
+    "labels": []
+  },
+  {
+    "number": 14795,
+    "title": "Add DEBUG_ASSERT_KEYSPACE build flag and daily CI test",
+    "author": "moticless",
+    "created_at": "2026-02-16T14:09:06Z",
+    "labels": []
+  },
+  {
+    "number": 14794,
+    "title": "Add XIDMPRECORD command and AOFRW emission to restore stream IDMP state",
+    "author": "sggeorgiev",
+    "created_at": "2026-02-16T09:22:08Z",
+    "labels": [
+      "state:needs-doc-pr",
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14793,
+    "title": "Fix rss_extra_bytes type from size_t to ssize_t in redisMemOverhead",
+    "author": "veeceey",
+    "created_at": "2026-02-15T10:26:07Z",
+    "labels": []
+  },
+  {
+    "number": 14792,
+    "title": "Allow comment lines in ACL files",
+    "author": "doganarif",
+    "created_at": "2026-02-14T17:16:06Z",
+    "labels": []
+  },
+  {
+    "number": 14791,
+    "title": "Improve error log for ASM slot handoff failure",
+    "author": "tezc",
+    "created_at": "2026-02-14T11:54:33Z",
+    "labels": []
+  },
+  {
+    "number": 14790,
+    "title": "Initialize strOldSize in bitfieldGeneric to avoid undefined behavior",
+    "author": "veeceey",
+    "created_at": "2026-02-14T10:51:27Z",
+    "labels": []
+  },
+  {
+    "number": 14789,
+    "title": "Fix DB hash tables not expanding during RDB load",
+    "author": "ShooterIT",
+    "created_at": "2026-02-13T08:49:56Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14788,
+    "title": "Fix XADD/XCFGSET IDMP argument types",
+    "author": "alisaifee",
+    "created_at": "2026-02-12T16:42:26Z",
+    "labels": []
+  },
+  {
+    "number": 14787,
+    "title": "Support Tcl 9.0 in Redis test suite",
+    "author": "kairosci",
+    "created_at": "2026-02-12T09:46:42Z",
+    "labels": []
+  },
+  {
+    "number": 14786,
+    "title": "Don't call kvobjAllocSize() in t_stream.c if memory tracking is not enabled",
+    "author": "skaslev",
+    "created_at": "2026-02-11T13:50:38Z",
+    "labels": []
+  },
+  {
+    "number": 14785,
+    "title": "Add HOTKEYS HELP subcommand and fix hotkeys INFO section",
+    "author": "minchopaskal",
+    "created_at": "2026-02-11T12:07:18Z",
+    "labels": [
+      "state:needs-doc-pr",
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14784,
+    "title": "Do not add a key into db if it has a past expiration time",
+    "author": "ShooterIT",
+    "created_at": "2026-02-11T05:15:05Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14783,
+    "title": "Pause dict auto-resize during multi-field deletion",
+    "author": "slice4e",
+    "created_at": "2026-02-10T21:15:02Z",
+    "labels": []
+  },
+  {
+    "number": 14781,
+    "title": "rax: replace const char* with enum in raxSeek",
+    "author": "ssiweifnag",
+    "created_at": "2026-02-10T15:38:44Z",
+    "labels": []
+  },
+  {
+    "number": 14780,
+    "title": "Fix hotkeys result key name",
+    "author": "minchopaskal",
+    "created_at": "2026-02-10T09:28:04Z",
+    "labels": [
+      "state:needs-doc-pr"
+    ]
+  },
+  {
+    "number": 14779,
+    "title": "Use rax memory accounting for RedisModuleDict",
+    "author": "skaslev",
+    "created_at": "2026-02-10T08:52:13Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14778,
+    "title": "[vector-sets] reject zero dimension in rdb loading and index creation",
+    "author": "YangboLong",
+    "created_at": "2026-02-10T04:00:21Z",
+    "labels": []
+  },
+  {
+    "number": 14777,
+    "title": "Upgrade RediSearch module to v8.6.0",
+    "author": "oshadmi",
+    "created_at": "2026-02-09T15:51:08Z",
+    "labels": []
+  },
+  {
+    "number": 14776,
+    "title": "update datatypes modules to v8.6.0",
+    "author": "gabsow",
+    "created_at": "2026-02-08T20:10:57Z",
+    "labels": []
+  },
+  {
+    "number": 14775,
+    "title": "[wontfix] Fix ZSET keysizes histogram update on partial ZADD failure",
+    "author": "kairosci",
+    "created_at": "2026-02-08T14:19:12Z",
+    "labels": []
+  },
+  {
+    "number": 14774,
+    "title": "Fix missing getKeysFreeResult() in cross-slot error path",
+    "author": "YangboLong",
+    "created_at": "2026-02-07T14:44:32Z",
+    "labels": []
+  },
+  {
+    "number": 14772,
+    "title": "Modules as sub modules",
+    "author": "gabsow",
+    "created_at": "2026-02-06T19:41:49Z",
+    "labels": []
+  },
+  {
+    "number": 14771,
+    "title": "Fix integer underflow in `used_memory_dataset` calculation",
+    "author": "paulorsousa",
+    "created_at": "2026-02-06T16:23:09Z",
+    "labels": []
+  },
+  {
+    "number": 14770,
+    "title": "Optimize BITOP operations with AVX512",
+    "author": "slice4e",
+    "created_at": "2026-02-05T20:50:33Z",
+    "labels": []
+  },
+  {
+    "number": 14768,
+    "title": "Add instruction make in readme when building from source for the firs…",
+    "author": "greatest-voyage",
+    "created_at": "2026-02-05T16:12:00Z",
+    "labels": []
+  },
+  {
+    "number": 14766,
+    "title": "Refactor asmTask: remove source_node, use clusterLookupNode",
+    "author": "judeng",
+    "created_at": "2026-02-03T14:07:52Z",
+    "labels": [
+      "state:to-be-merged"
+    ]
+  },
+  {
+    "number": 14765,
+    "title": "redis-benchmark: generate zipf distributed keys",
+    "author": "x4204",
+    "created_at": "2026-02-03T11:42:45Z",
+    "labels": []
+  },
+  {
+    "number": 14764,
+    "title": "Fix overflow in relative expire time",
+    "author": "joon1337",
+    "created_at": "2026-02-03T11:30:50Z",
+    "labels": []
+  },
+  {
+    "number": 14761,
+    "title": "Add cmd tips for HOTKEYS. Return err when hotkeys START specifies invalid slots",
+    "author": "minchopaskal",
+    "created_at": "2026-02-02T13:11:54Z",
+    "labels": []
+  },
+  {
+    "number": 14756,
+    "title": "Fix HOTKEYS to track each command in a MULTI/EXEC block",
+    "author": "skaslev",
+    "created_at": "2026-01-30T08:58:13Z",
+    "labels": []
+  },
+  {
+    "number": 14755,
+    "title": "Clean up sampling accounting in performEvictions",
+    "author": "wudilun123",
+    "created_at": "2026-01-30T07:25:43Z",
+    "labels": []
+  },
+  {
+    "number": 14754,
+    "title": "Optimize prefetching commands",
+    "author": "ShooterIT",
+    "created_at": "2026-01-29T14:39:15Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14753,
+    "title": "RED-184929: Auto-backups and restore test configuration",
+    "author": "udi-speedb",
+    "created_at": "2026-01-29T14:20:44Z",
+    "labels": []
+  },
+  {
+    "number": 14752,
+    "title": "Fix touchWatchedKey() break skipping remaining expired watchers",
+    "author": "Yangqing",
+    "created_at": "2026-01-29T09:33:23Z",
+    "labels": []
+  },
+  {
+    "number": 14751,
+    "title": "Add LTRIM/LREM and RM_StringTruncate() memory tracking tests",
+    "author": "skaslev",
+    "created_at": "2026-01-29T07:56:52Z",
+    "labels": []
+  },
+  {
+    "number": 14750,
+    "title": "Support SFLUSH to flush slots partially",
+    "author": "ShooterIT",
+    "created_at": "2026-01-29T07:56:02Z",
+    "labels": []
+  },
+  {
+    "number": 14749,
+    "title": "Change reply schema for hotkeys get to use map instead of flat array",
+    "author": "minchopaskal",
+    "created_at": "2026-01-28T16:34:00Z",
+    "labels": []
+  },
+  {
+    "number": 14748,
+    "title": "Redact user input in selected logs.",
+    "author": "RoyBenMoshe",
+    "created_at": "2026-01-28T11:14:02Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14747,
+    "title": "SECURITY.md: update Redis versions; clarifies OSes/CPUs/compilers in-scope for vulnerability reports",
+    "author": "LiorKogan",
+    "created_at": "2026-01-27T18:43:19Z",
+    "labels": []
+  },
+  {
+    "number": 14746,
+    "title": "Fix memory tracking bugfixes",
+    "author": "skaslev",
+    "created_at": "2026-01-27T12:50:07Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14745,
+    "title": "Fix test failure when using bind \"*\" in introspection.tcl",
+    "author": "sundb",
+    "created_at": "2026-01-27T08:48:16Z",
+    "labels": []
+  },
+  {
+    "number": 14744,
+    "title": "Update RediSearch 8.2.9",
+    "author": "alonre24",
+    "created_at": "2026-01-26T17:00:36Z",
+    "labels": []
+  },
+  {
+    "number": 14743,
+    "title": "Update Redisearch module version to v8.4.5",
+    "author": "alonre24",
+    "created_at": "2026-01-26T13:43:36Z",
+    "labels": []
+  },
+  {
+    "number": 14742,
+    "title": "Fix hotkey info metric names. Disable HOTKEY SLOTS param for non-cluster",
+    "author": "minchopaskal",
+    "created_at": "2026-01-26T09:53:54Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14741,
+    "title": "Fix typo in comment: 'to given' -> 'to give'",
+    "author": "bodhisilberling",
+    "created_at": "2026-01-25T18:52:02Z",
+    "labels": []
+  },
+  {
+    "number": 14740,
+    "title": "Fix typos in vector-sets README: dobule->double, accessig->accessing",
+    "author": "bodhisilberling",
+    "created_at": "2026-01-24T01:29:53Z",
+    "labels": []
+  },
+  {
+    "number": 14739,
+    "title": "Avoid allocating and releasing list node in reply copy avoidance",
+    "author": "ShooterIT",
+    "created_at": "2026-01-23T13:46:05Z",
+    "labels": []
+  },
+  {
+    "number": 14738,
+    "title": "Fix deferring free object that refcount is more than 1",
+    "author": "ShooterIT",
+    "created_at": "2026-01-23T13:21:01Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14737,
+    "title": "SCAN performance improvements",
+    "author": "skaslev",
+    "created_at": "2026-01-23T08:52:34Z",
+    "labels": []
+  },
+  {
+    "number": 14736,
+    "title": "xread.json: updated summary; added missing complexity. security.md: updated versions; added note on supported environments",
+    "author": "LiorKogan",
+    "created_at": "2026-01-22T19:45:56Z",
+    "labels": []
+  },
+  {
+    "number": 14735,
+    "title": "Fix typos in test files",
+    "author": "bodhisilberling",
+    "created_at": "2026-01-22T17:42:16Z",
+    "labels": [
+      "state:to-be-merged"
+    ]
+  },
+  {
+    "number": 14734,
+    "title": "update data type modules with bloom 8.2.9, json 8.2.9, timeseries 8.2.5",
+    "author": "gabsow",
+    "created_at": "2026-01-22T16:59:39Z",
+    "labels": []
+  },
+  {
+    "number": 14733,
+    "title": "Update modules 8.4",
+    "author": "gabsow",
+    "created_at": "2026-01-22T16:49:16Z",
+    "labels": []
+  },
+  {
+    "number": 14732,
+    "title": "Redis 8.6 RC1",
+    "author": "YaacovHazan",
+    "created_at": "2026-01-22T14:50:13Z",
+    "labels": []
+  },
+  {
+    "number": 14731,
+    "title": "Fix minor inconsistency in connFormatAddr size argument",
+    "author": "vitahlin",
+    "created_at": "2026-01-22T13:22:13Z",
+    "labels": [
+      "state:to-be-merged"
+    ]
+  },
+  {
+    "number": 14730,
+    "title": "Refactor idmp defrag",
+    "author": "sggeorgiev",
+    "created_at": "2026-01-22T11:05:39Z",
+    "labels": [
+      "state:to-be-merged"
+    ]
+  },
+  {
+    "number": 14729,
+    "title": "RDB Channel connections mistakenly discovered by Sentinel (#14728)",
+    "author": "imp3142",
+    "created_at": "2026-01-22T09:29:09Z",
+    "labels": [
+      "state:to-be-merged",
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14727,
+    "title": "Add separate statistics for active expiration of keys and hash fields",
+    "author": "sundb",
+    "created_at": "2026-01-22T09:06:05Z",
+    "labels": [
+      "state:needs-doc-pr",
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14726,
+    "title": "Optimize Redis XREADGROUP CLAIM",
+    "author": "sggeorgiev",
+    "created_at": "2026-01-22T07:05:47Z",
+    "labels": []
+  },
+  {
+    "number": 14725,
+    "title": "added: stream-idmp-duration and stream-idmp-maxsize to redis.conf",
+    "author": "sggeorgiev",
+    "created_at": "2026-01-21T15:16:56Z",
+    "labels": []
+  },
+  {
+    "number": 14723,
+    "title": "Fix inaccurate IO thread client count due to delayed freeing",
+    "author": "ShooterIT",
+    "created_at": "2026-01-21T09:30:20Z",
+    "labels": []
+  },
+  {
+    "number": 14721,
+    "title": "add graceful shutdown for TLS in redis-cli",
+    "author": "konoongg",
+    "created_at": "2026-01-21T04:53:32Z",
+    "labels": [
+      "state:to-be-merged"
+    ]
+  },
+  {
+    "number": 14720,
+    "title": "Avoid memory allocation on quicklist iteration",
+    "author": "skaslev",
+    "created_at": "2026-01-20T15:25:37Z",
+    "labels": []
+  },
+  {
+    "number": 14719,
+    "title": "Make cluster-slot-stats-enabled config multivalued",
+    "author": "skaslev",
+    "created_at": "2026-01-20T13:53:45Z",
+    "labels": []
+  },
+  {
+    "number": 14718,
+    "title": "Fix some test timing issues in replication.tcl and maxmemory.tcl",
+    "author": "sundb",
+    "created_at": "2026-01-20T09:31:38Z",
+    "labels": []
+  },
+  {
+    "number": 14717,
+    "title": "MOD-13504: Update Search to RC1 8.5.90",
+    "author": "oshadmi",
+    "created_at": "2026-01-20T09:00:52Z",
+    "labels": []
+  },
+  {
+    "number": 14716,
+    "title": "Fix timeout waiting for blocked clients in pause test",
+    "author": "sundb",
+    "created_at": "2026-01-20T08:00:16Z",
+    "labels": []
+  },
+  {
+    "number": 14715,
+    "title": "Fix prefetch size",
+    "author": "ShooterIT",
+    "created_at": "2026-01-20T04:29:26Z",
+    "labels": [
+      "action:run-benchmark"
+    ]
+  },
+  {
+    "number": 14714,
+    "title": "Quick user ACL permission verification",
+    "author": "ShooterIT",
+    "created_at": "2026-01-20T03:13:51Z",
+    "labels": [
+      "action:run-benchmark"
+    ]
+  },
+  {
+    "number": 14713,
+    "title": "Reduce per command syscalls by reusing cached time when HW monotonic clock is available",
+    "author": "fcostaoliveira",
+    "created_at": "2026-01-19T17:52:45Z",
+    "labels": []
+  },
+  {
+    "number": 14711,
+    "title": "Add hotkeys memory to memory-overhead and fix hotkeys info keys",
+    "author": "minchopaskal",
+    "created_at": "2026-01-19T14:35:36Z",
+    "labels": []
+  },
+  {
+    "number": 14710,
+    "title": "Fix SDS header size calculation in kvobjSet",
+    "author": "flyhorses",
+    "created_at": "2026-01-19T13:23:22Z",
+    "labels": []
+  },
+  {
+    "number": 14709,
+    "title": "Modify the condition for adding CLIENT_IO_CLOSE_ASAP flag",
+    "author": "EmilyZHANG00",
+    "created_at": "2026-01-19T13:12:52Z",
+    "labels": []
+  },
+  {
+    "number": 14708,
+    "title": "Add security configuration warnings at startup",
+    "author": "StavRLevi",
+    "created_at": "2026-01-19T09:14:33Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14707,
+    "title": "Minor fixes for ASM",
+    "author": "ShooterIT",
+    "created_at": "2026-01-19T02:20:35Z",
+    "labels": []
+  },
+  {
+    "number": 14705,
+    "title": "MOD-13505 Update DataType Modules to 8.5.90",
+    "author": "gabsow",
+    "created_at": "2026-01-18T14:55:15Z",
+    "labels": []
+  },
+  {
+    "number": 14704,
+    "title": "Avoid zmalloc_size() in kvobjAllocSize() and approximate instead",
+    "author": "skaslev",
+    "created_at": "2026-01-16T11:58:46Z",
+    "labels": [
+      "action:run-benchmark"
+    ]
+  },
+  {
+    "number": 14703,
+    "title": "redis-cli --keystats percentile update and all key names between double quotes",
+    "author": "yveslb",
+    "created_at": "2026-01-16T00:33:05Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14701,
+    "title": "Optimize zset to use dict with no_value=1",
+    "author": "moticless",
+    "created_at": "2026-01-15T11:15:33Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14700,
+    "title": "Prefetch client fields before prefetching command-related data",
+    "author": "fcostaoliveira",
+    "created_at": "2026-01-15T09:46:57Z",
+    "labels": []
+  },
+  {
+    "number": 14699,
+    "title": "Avoid unnecessary command rewriting for SET command with expiration",
+    "author": "fcostaoliveira",
+    "created_at": "2026-01-14T15:46:22Z",
+    "labels": []
+  },
+  {
+    "number": 14698,
+    "title": "fix Rust installation checksums",
+    "author": "kalinstaykov",
+    "created_at": "2026-01-14T11:31:48Z",
+    "labels": []
+  },
+  {
+    "number": 14697,
+    "title": "Fix flaky test failures in  caused by clock precision issues with monotonic clock.",
+    "author": "fcostaoliveira",
+    "created_at": "2026-01-14T09:52:36Z",
+    "labels": []
+  },
+  {
+    "number": 14696,
+    "title": "chore: Bump Rust stable version from 1.88.0 to 1.92.0",
+    "author": "LukeMathWalker",
+    "created_at": "2026-01-14T09:24:29Z",
+    "labels": []
+  },
+  {
+    "number": 14695,
+    "title": "Add key allocation sizes histogram",
+    "author": "skaslev",
+    "created_at": "2026-01-14T08:31:04Z",
+    "labels": [
+      "state:needs-doc-pr",
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14694,
+    "title": "Remove unused comment in ebuckets.c",
+    "author": "cuiweixie",
+    "created_at": "2026-01-14T04:29:34Z",
+    "labels": []
+  },
+  {
+    "number": 14693,
+    "title": "Clarify RM_BlockClientOnKeys thread safety in documentation",
+    "author": "YangboLong",
+    "created_at": "2026-01-14T04:24:35Z",
+    "labels": [
+      "documentation"
+    ]
+  },
+  {
+    "number": 14692,
+    "title": "Optimize peak memory stats by switching from per-command checks to threshold-based",
+    "author": "paulorsousa",
+    "created_at": "2026-01-13T21:52:30Z",
+    "labels": []
+  },
+  {
+    "number": 14691,
+    "title": "fix: Add check for stack overflow to prevent server crashes in luaReplyToRedisReply",
+    "author": "RushabhMehta2005",
+    "created_at": "2026-01-13T14:01:08Z",
+    "labels": []
+  },
+  {
+    "number": 14690,
+    "title": "Fix crash when calling internal container command without arguments",
+    "author": "StavRLevi",
+    "created_at": "2026-01-13T11:59:47Z",
+    "labels": []
+  },
+  {
+    "number": 14689,
+    "title": "Streams: garbage collection and node merging.",
+    "author": "antirez",
+    "created_at": "2026-01-13T08:02:33Z",
+    "labels": [
+      "action:run-benchmark"
+    ]
+  },
+  {
+    "number": 14686,
+    "title": "Propagate migrate task info to replicas",
+    "author": "YaacovHazan",
+    "created_at": "2026-01-12T11:52:52Z",
+    "labels": []
+  },
+  {
+    "number": 14685,
+    "title": "fix: guard empty keystats histogram",
+    "author": "seekskyworld",
+    "created_at": "2026-01-11T14:49:33Z",
+    "labels": []
+  },
+  {
+    "number": 14684,
+    "title": "Eliminate zslGetRank calls from ZCOUNT/ZLEXCOUNT + simplify zslGetRankByNode()",
+    "author": "moticless",
+    "created_at": "2026-01-11T13:51:39Z",
+    "labels": []
+  },
+  {
+    "number": 14683,
+    "title": "add my readme",
+    "author": "truc3651",
+    "created_at": "2026-01-11T10:30:33Z",
+    "labels": []
+  },
+  {
+    "number": 14682,
+    "title": "Refactor dict key encoding and fix defrag tag bit bug",
+    "author": "moticless",
+    "created_at": "2026-01-11T10:26:40Z",
+    "labels": []
+  },
+  {
+    "number": 14680,
+    "title": "Add hotkeys detection",
+    "author": "minchopaskal",
+    "created_at": "2026-01-09T09:21:11Z",
+    "labels": [
+      "state:needs-doc-pr",
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14679,
+    "title": "feat: Add module api to retrieve cmd flags",
+    "author": "jjz921024",
+    "created_at": "2026-01-09T03:10:04Z",
+    "labels": []
+  },
+  {
+    "number": 14676,
+    "title": "Enable hardware clock by default on ARM AArch64.",
+    "author": "fcostaoliveira",
+    "created_at": "2026-01-08T23:51:07Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14674,
+    "title": "Fix flaky stream LRM test due to timing precision",
+    "author": "vitahlin",
+    "created_at": "2026-01-08T11:29:29Z",
+    "labels": []
+  },
+  {
+    "number": 14672,
+    "title": "Propagate migrate task info to replicas",
+    "author": "ShooterIT",
+    "created_at": "2026-01-07T08:57:49Z",
+    "labels": []
+  },
+  {
+    "number": 14671,
+    "title": "Fix CLUSTER SLOT-STATS test Lua scripts",
+    "author": "skaslev",
+    "created_at": "2026-01-07T08:48:10Z",
+    "labels": []
+  },
+  {
+    "number": 14669,
+    "title": "Fix UBSan error in stream trim when processing last entry",
+    "author": "sundb",
+    "created_at": "2026-01-07T04:17:13Z",
+    "labels": []
+  },
+  {
+    "number": 14668,
+    "title": "pubsub: optimize subscriber heavy scenarios by using prebuild RESP replies",
+    "author": "fcostaoliveira",
+    "created_at": "2026-01-07T00:15:10Z",
+    "labels": []
+  },
+  {
+    "number": 14667,
+    "title": "Test tcp deadlock fixes",
+    "author": "antirez",
+    "created_at": "2026-01-06T16:45:03Z",
+    "labels": []
+  },
+  {
+    "number": 14666,
+    "title": "Fix maxmemory test hanging on slow machines due to TCP deadlock",
+    "author": "antirez",
+    "created_at": "2026-01-06T16:30:19Z",
+    "labels": []
+  },
+  {
+    "number": 14665,
+    "title": "Fix ASM failpoint tests for fast state transitions",
+    "author": "antirez",
+    "created_at": "2026-01-06T10:54:52Z",
+    "labels": []
+  },
+  {
+    "number": 14664,
+    "title": "feat(github): Add cronjob to pull in latest commits from upstream",
+    "author": "hubertdeng123",
+    "created_at": "2026-01-06T00:33:29Z",
+    "labels": []
+  },
+  {
+    "number": 14663,
+    "title": "Stable sync",
+    "author": "hubertdeng123",
+    "created_at": "2026-01-06T00:22:59Z",
+    "labels": []
+  },
+  {
+    "number": 14662,
+    "title": "Optimize `lpDecodeBacklen()` fast paths by removing loop-based decoding",
+    "author": "fcostaoliveira",
+    "created_at": "2026-01-05T15:33:52Z",
+    "labels": []
+  },
+  {
+    "number": 14661,
+    "title": "Replace fast_float C++ library with pure C implementation",
+    "author": "antirez",
+    "created_at": "2026-01-05T11:21:18Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14660,
+    "title": "CI: add riscv64 QEMU build+smoke test job",
+    "author": "anuphalarnkar",
+    "created_at": "2026-01-05T11:17:45Z",
+    "labels": []
+  },
+  {
+    "number": 14659,
+    "title": "Fix ACL key-pattern bypass in MSETEX command",
+    "author": "StavRLevi",
+    "created_at": "2026-01-05T09:14:44Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14655,
+    "title": "fix: two typos",
+    "author": "cuiweixie",
+    "created_at": "2025-12-31T15:04:23Z",
+    "labels": []
+  },
+  {
+    "number": 14654,
+    "title": "Fix: Use dictSetKeyAtLink in activeDefragHfieldDictCallback",
+    "author": "moticless",
+    "created_at": "2025-12-31T13:55:45Z",
+    "labels": []
+  },
+  {
+    "number": 14652,
+    "title": "deps/lua: fix integer overflow in table length computation",
+    "author": "RushabhMehta2005",
+    "created_at": "2025-12-29T15:32:00Z",
+    "labels": []
+  },
+  {
+    "number": 14651,
+    "title": "Updated readme: added a Redis Cloud paragraph",
+    "author": "igalperelman",
+    "created_at": "2025-12-29T08:04:50Z",
+    "labels": []
+  },
+  {
+    "number": 14648,
+    "title": "Fix some comment spelling typos",
+    "author": "zzjzzy",
+    "created_at": "2025-12-29T00:55:23Z",
+    "labels": []
+  },
+  {
+    "number": 14647,
+    "title": "incrRefCount off-by-one error",
+    "author": "itayTziv",
+    "created_at": "2025-12-25T08:01:46Z",
+    "labels": []
+  },
+  {
+    "number": 14646,
+    "title": "Replace fragile dict stored-key API with getKeyId callback",
+    "author": "moticless",
+    "created_at": "2025-12-24T15:38:50Z",
+    "labels": []
+  },
+  {
+    "number": 14645,
+    "title": "Hide PII from ACL log",
+    "author": "RoyBenMoshe",
+    "created_at": "2025-12-24T13:45:47Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14644,
+    "title": "Add io_uring support for Linux event loop and async I/O",
+    "author": "makecoderai",
+    "created_at": "2025-12-24T12:53:01Z",
+    "labels": []
+  },
+  {
+    "number": 14643,
+    "title": "Backport ASM commits into 8.4",
+    "author": "tezc",
+    "created_at": "2025-12-24T09:00:44Z",
+    "labels": []
+  },
+  {
+    "number": 14642,
+    "title": "feat(zset): add WITHSTATUS option to ZRANGE commands for null/empty distinction",
+    "author": "youngmore1024",
+    "created_at": "2025-12-24T08:15:01Z",
+    "labels": []
+  },
+  {
+    "number": 14640,
+    "title": "Remove dead code leftover",
+    "author": "moticless",
+    "created_at": "2025-12-24T07:46:52Z",
+    "labels": []
+  },
+  {
+    "number": 14637,
+    "title": "Fix adjacent slot range behavior in ASM operations",
+    "author": "tezc",
+    "created_at": "2025-12-21T21:17:11Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14636,
+    "title": "Optimize ZRANK by avoiding string comparisons during skiplist traversal",
+    "author": "moticless",
+    "created_at": "2025-12-21T18:13:04Z",
+    "labels": []
+  },
+  {
+    "number": 14635,
+    "title": "Expand hash dicts using original length when rdb loading",
+    "author": "TerryTaoYY",
+    "created_at": "2025-12-20T21:21:21Z",
+    "labels": []
+  },
+  {
+    "number": 14634,
+    "title": "udpate",
+    "author": "JiaqiCChen123",
+    "created_at": "2025-12-19T19:32:14Z",
+    "labels": []
+  },
+  {
+    "number": 14628,
+    "title": "Unify slot migration logs across cluster implementations",
+    "author": "ShooterIT",
+    "created_at": "2025-12-18T02:30:03Z",
+    "labels": []
+  },
+  {
+    "number": 14627,
+    "title": "Fix use-after-free in hnsw_cursor_free",
+    "author": "YangboLong",
+    "created_at": "2025-12-18T01:46:54Z",
+    "labels": []
+  },
+  {
+    "number": 14625,
+    "title": "Fix kvstoreGetFirstNonEmptyDictIndex() and kvstoreIteratorReset() for empty kvstore",
+    "author": "sundb",
+    "created_at": "2025-12-17T09:50:01Z",
+    "labels": []
+  },
+  {
+    "number": 14624,
+    "title": "New eviction policies - least recently modified",
+    "author": "sundb",
+    "created_at": "2025-12-17T08:52:56Z",
+    "labels": [
+      "state:needs-doc-pr",
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14623,
+    "title": "Fix XTRIM/XADD with approx not deletes entries for DELREF/ACKED strategies",
+    "author": "sundb",
+    "created_at": "2025-12-17T02:10:36Z",
+    "labels": [
+      "state:needs-doc-pr",
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14620,
+    "title": "Fix incorrect comment about STATS_METRIC_* Macro in server.h",
+    "author": "johnwonder",
+    "created_at": "2025-12-15T08:29:46Z",
+    "labels": []
+  },
+  {
+    "number": 14619,
+    "title": "Fix incorrect stream ID comparison in streamReplyWithRangeFromConsumerPEL()",
+    "author": "fanpei91",
+    "created_at": "2025-12-13T08:55:32Z",
+    "labels": []
+  },
+  {
+    "number": 14618,
+    "title": "Prevent building with modules on 32-bit systems",
+    "author": "YaacovHazan",
+    "created_at": "2025-12-10T19:43:21Z",
+    "labels": []
+  },
+  {
+    "number": 14616,
+    "title": "Improve dict pointer tagging doc",
+    "author": "moticless",
+    "created_at": "2025-12-10T10:52:28Z",
+    "labels": []
+  },
+  {
+    "number": 14615,
+    "title": "Add idempotency support to XADD via IDMPAUTO and IDMP parameters",
+    "author": "sggeorgiev",
+    "created_at": "2025-12-09T09:05:56Z",
+    "labels": [
+      "state:needs-doc-pr",
+      "release-notes",
+      "rdb-format-change"
+    ]
+  },
+  {
+    "number": 14614,
+    "title": "Fix daily CI after macOS-13 runners have been retired",
+    "author": "skaslev",
+    "created_at": "2025-12-09T07:28:00Z",
+    "labels": []
+  },
+  {
+    "number": 14613,
+    "title": "Upgrade GitHub Actions macOS runner",
+    "author": "vitahlin",
+    "created_at": "2025-12-09T02:50:16Z",
+    "labels": []
+  },
+  {
+    "number": 14612,
+    "title": "VSIM filter: allow for string's greater-than and less-than comparison",
+    "author": "Jacopo47",
+    "created_at": "2025-12-08T19:27:42Z",
+    "labels": []
+  },
+  {
+    "number": 14610,
+    "title": "Add TLS certificate-based automatic client authentication",
+    "author": "StavRLevi",
+    "created_at": "2025-12-08T08:46:06Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14609,
+    "title": "Build 7.0",
+    "author": "tkdwl05",
+    "created_at": "2025-12-08T03:15:26Z",
+    "labels": []
+  },
+  {
+    "number": 14608,
+    "title": "Reply Copy Avoidance",
+    "author": "sundb",
+    "created_at": "2025-12-08T02:07:45Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14606,
+    "title": "Clarify that `BUILD_WITH_MODULES=yes` is not supported on 32 bit systems.",
+    "author": "LiorKogan",
+    "created_at": "2025-12-04T11:31:36Z",
+    "labels": []
+  },
+  {
+    "number": 14604,
+    "title": "Fix flaky ASM tests",
+    "author": "tezc",
+    "created_at": "2025-12-03T06:45:30Z",
+    "labels": []
+  },
+  {
+    "number": 14602,
+    "title": "Update RedisBloom module version to v8.4.1",
+    "author": "gabsow",
+    "created_at": "2025-12-02T14:57:23Z",
+    "labels": []
+  },
+  {
+    "number": 14601,
+    "title": "Improve Test Exception Reporting",
+    "author": "vitahlin",
+    "created_at": "2025-12-02T13:11:31Z",
+    "labels": []
+  },
+  {
+    "number": 14599,
+    "title": "Retry an ASM import step when the source node is temporarily not ready",
+    "author": "tezc",
+    "created_at": "2025-12-02T07:20:05Z",
+    "labels": []
+  },
+  {
+    "number": 14598,
+    "title": "Refactor: Simplify empty string handling in SDS",
+    "author": "homerlsy",
+    "created_at": "2025-12-02T02:54:14Z",
+    "labels": []
+  },
+  {
+    "number": 14597,
+    "title": "Fix panic when cluster node is uninitialized",
+    "author": "StavRLevi",
+    "created_at": "2025-12-01T12:13:28Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14596,
+    "title": "Introduce flushdb option for repl-diskless-load",
+    "author": "ShooterIT",
+    "created_at": "2025-12-01T09:24:48Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14595,
+    "title": "Hash - Unify Field-Value into a single struct along with dict no_value=1",
+    "author": "moticless",
+    "created_at": "2025-11-30T17:40:32Z",
+    "labels": [
+      "action:run-benchmark"
+    ]
+  },
+  {
+    "number": 14594,
+    "title": "Update Json and Bloom moduls in 8.2",
+    "author": "gabsow",
+    "created_at": "2025-11-30T13:18:05Z",
+    "labels": []
+  },
+  {
+    "number": 14593,
+    "title": "update bloom v8.4.1",
+    "author": "gabsow",
+    "created_at": "2025-11-30T13:06:03Z",
+    "labels": []
+  },
+  {
+    "number": 14588,
+    "title": "Add `--name` flag to redis-cli for setting client name",
+    "author": "RushabhMehta2005",
+    "created_at": "2025-11-28T11:41:40Z",
+    "labels": []
+  },
+  {
+    "number": 14587,
+    "title": "Refactor some of ASM and slot-stats functions",
+    "author": "tezc",
+    "created_at": "2025-11-28T09:20:35Z",
+    "labels": []
+  },
+  {
+    "number": 14584,
+    "title": "Fix the calculation for the reshard table is incorrect.",
+    "author": "bigbro-pg",
+    "created_at": "2025-11-27T11:03:12Z",
+    "labels": []
+  },
+  {
+    "number": 14583,
+    "title": "Add support for asynchronous release to slaveKeysWithExpire on writable replica",
+    "author": "Scut-Corgis",
+    "created_at": "2025-11-27T07:07:22Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14582,
+    "title": "Fix incorrect comment about LRU clock resolution in initObjectLRUOrLFU",
+    "author": "johnwonder",
+    "created_at": "2025-11-27T03:35:39Z",
+    "labels": []
+  },
+  {
+    "number": 14581,
+    "title": "Fix rare server hang at shutdown",
+    "author": "oranagra",
+    "created_at": "2025-11-26T14:56:50Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14580,
+    "title": "[Refactor] Simplify control flow in `__quicklistInsertNode` to remove logic duplication",
+    "author": "RushabhMehta2005",
+    "created_at": "2025-11-26T14:54:26Z",
+    "labels": []
+  },
+  {
+    "number": 14579,
+    "title": "ignore module sources and Rust toolchain",
+    "author": "github-roushan",
+    "created_at": "2025-11-26T12:07:14Z",
+    "labels": []
+  },
+  {
+    "number": 14578,
+    "title": "gitignore update",
+    "author": "github-roushan",
+    "created_at": "2025-11-26T11:43:31Z",
+    "labels": []
+  },
+  {
+    "number": 14576,
+    "title": "Cleanup redundant declaration of getSlotOrReply()",
+    "author": "vitahlin",
+    "created_at": "2025-11-26T10:18:13Z",
+    "labels": []
+  },
+  {
+    "number": 14575,
+    "title": "Disable RDB compression when diskless replication is used",
+    "author": "ShooterIT",
+    "created_at": "2025-11-26T08:18:00Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14573,
+    "title": "Fix delayed config broadcast after ASM operations",
+    "author": "tezc",
+    "created_at": "2025-11-25T21:02:27Z",
+    "labels": []
+  },
+  {
+    "number": 14572,
+    "title": "fix test tag leakage that can result in skipping tests",
+    "author": "oranagra",
+    "created_at": "2025-11-25T16:33:09Z",
+    "labels": []
+  },
+  {
+    "number": 14567,
+    "title": "Support delay trimming slots after finishing migrating slots",
+    "author": "ShooterIT",
+    "created_at": "2025-11-25T09:04:25Z",
+    "labels": [
+      "release-notes"
+    ]
+  },
+  {
+    "number": 14566,
+    "title": "Fix/password handling clean",
+    "author": "RustyCoderX",
+    "created_at": "2025-11-25T08:52:52Z",
+    "labels": []
+  }
+]

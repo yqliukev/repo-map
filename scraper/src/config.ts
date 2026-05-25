@@ -1,0 +1,92 @@
+export const REPOS = [
+  "facebook/react",
+  "microsoft/vscode",
+  "redis/redis",
+  "kubernetes/kubernetes",
+  "rust-lang/rust",
+];
+
+export const WINDOW_MONTHS = 6;
+
+// Minimum combined PR + review actions to be included in the graph
+export const MIN_ACTIVITY = 3;
+
+// Recency decay constant (per day). Gentler than Slack version — PRs are slower.
+export const LAMBDA = 0.005;
+
+// Edge weight multipliers
+export const REVIEW_WEIGHT = 1.0;
+export const CO_COMMENT_WEIGHT = 0.3; // reserved for future issue-comment edges
+
+export const KNOWN_BOTS = new Set([
+  "dependabot",
+  "dependabot[bot]",
+  "renovate[bot]",
+  "github-actions[bot]",
+  "codecov[bot]",
+  "vercel[bot]",
+  "netlify[bot]",
+  "stale[bot]",
+  "allcontributors[bot]",
+  "github-advanced-security[bot]",
+  "copilot[bot]",
+  "Copilot",
+  "snyk-bot",
+  "greenkeeper[bot]",
+  "semantic-release-bot",
+  "imgbot[bot]",
+  "lgtm-com[bot]",
+  "sonarcloud[bot]",
+  "github-merge-queue[bot]",
+  "k8s-ci-robot",
+  "k8s-triage-robot",
+  "rust-highfive",
+  "bors",
+  "rustbot",
+]);
+
+// Labels whose text we skip when detecting subsystems (too generic to be useful)
+export const GENERIC_LABELS = new Set([
+  "bug",
+  "feature",
+  "enhancement",
+  "documentation",
+  "good first issue",
+  "help wanted",
+  "invalid",
+  "question",
+  "wontfix",
+  "duplicate",
+  "priority: high",
+  "priority: medium",
+  "priority: low",
+  "needs review",
+  "needs triage",
+  "in progress",
+  "breaking change",
+  "dependencies",
+  // Administrative / CLA / status labels
+  "cla signed",
+  "cla not signed",
+  "cla required",
+  "react core team",
+  "fb-exported",
+  "meta-exported",
+  "resolution: stale",
+  "stale",
+  "automerge",
+  "do not merge",
+  "blocked",
+  "waiting for author",
+  "lgtm",
+  "approved",
+  "triage needed",
+  "needs triage",
+  "release notes",
+  "backport",
+  "cherry-pick",
+  // Kubernetes-specific
+  "size/xs", "size/s", "size/m", "size/l", "size/xl", "size/xxl",
+  "needs-rebase",
+  "tide/merge-method-squash",
+]);
