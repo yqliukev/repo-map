@@ -2,10 +2,6 @@
   "name": "yhack-scraper",
   "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "scrape": "tsx src/index.ts",
-    "build": "tsc"
-  },
   "dependencies": {
     "@octokit/rest": "^21.0.2",
     "dotenv": "^16.4.5",

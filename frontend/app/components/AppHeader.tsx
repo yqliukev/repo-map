@@ -1,26 +1,8 @@
 "use client";
 
 import { useTheme } from "./ThemeContext";
-import ViewSwitcher, { ViewMode } from "./graph/ViewSwitcher";
-import SearchBar from "./graph/SearchBar";
 
-interface AppHeaderProps {
-  view: ViewMode;
-  onViewChange: (v: ViewMode) => void;
-  onLogoClick: () => void;
-  search: string;
-  onSearchChange: (v: string) => void;
-  matchCount: number | null;
-}
-
-export default function AppHeader({
-  view,
-  onViewChange,
-  onLogoClick,
-  search,
-  onSearchChange,
-  matchCount,
-}: AppHeaderProps) {
+export default function AppHeader() {
   const { theme, toggleTheme } = useTheme();
   const isDark = theme === "dark";
 
@@ -32,29 +14,13 @@ export default function AppHeader({
           : "bg-white border-slate-200 shadow-sm"
       }`}
     >
-      {/* ViewSwitcher — original top-left position */}
-      <div className="absolute top-4 left-4 z-10">
-        <ViewSwitcher active={view} onChange={onViewChange} />
-      </div>
-
-      {/* Logo — original top-center position, large */}
       <img
         src="/hoponboard.png"
         alt="HopOnBoard"
-        onClick={onLogoClick}
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-20 object-contain cursor-pointer select-none opacity-90 hover:opacity-100 transition-opacity"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-20 object-contain select-none opacity-90"
       />
 
-      {/* Right side — SearchBar + theme toggle */}
       <div className="absolute top-1/2 right-4 -translate-y-1/2 flex items-center gap-2">
-        {view === "people" && (
-          <SearchBar
-            search={search}
-            setSearch={onSearchChange}
-            matchCount={matchCount}
-          />
-        )}
-
         <button
           onClick={toggleTheme}
           className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 transition-colors cursor-pointer ${

@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Hop Onboard",
-  description: "AI-powered org chart from communication patterns",
+  description: "Repository expertise and project mapping",
   icons: {
     icon: "/hoponboard.png",
   },
