@@ -10,6 +10,8 @@
 |----|--------|---------|
 | **D1** | **A+** | PRs + reviews + **changed files per PR** (via PR API). No issues, global commit crawl, or standalone commit files in v1. |
 | **D2** | **Directory-based** | Subprojects = path-derived areas from PR changed files (not PR labels). |
+| **D4** | **Two graph files** | `graph.json` (contributors) + `project_graph.json` (directory subprojects). **No** separate technology graph — languages/frameworks/tools live on each contributor node. |
+| **D7** | **`scraper/` + `compute/`** | Collect in `scraper/`; graph build in `compute/` (separate package). |
 
 ---
 
@@ -17,22 +19,22 @@
 
 | Area | Status |
 |------|--------|
-| **GitHub scraper** (`scraper/`) | Skeleton: config, types, bot/activity filters. No scrape or compute entrypoints, no npm scripts. |
-| **Analysis / graph compute** | Not implemented (no `backend/`, no compute scripts). |
+| **Collect** (`scraper/`) | Skeleton: config, types, bot/activity filters. No fetch entrypoints or npm scripts. |
+| **Compute** (`compute/`) | Not created yet. Will read `cache/`, write graph JSON to `frontend/public/graphs/`. |
 | **Cache / raw data** | Not in git; intended layout described below. |
 | **Frontend** (`frontend/`) | Shell UI: layout, theme toggle, header logo. Graph components, chat API, and D3 removed. |
-| **Graph assets** | No committed `frontend/public/graphs/*.json` on this branch. |
+| **Graph assets** | No committed `frontend/public/graphs/<repo>/graph.json` + `project_graph.json` on this branch. |
 | **Env** | Root `.env.example`: `GITHUB_TOKEN`, `K2_API_KEY` (K2 unused by current code). |
 
 ---
 
 ## Target workflow (as designed)
 
-End-to-end flow aligned with [research.md](research.md), constrained by resolved **D1** / **D2** choices below.
+End-to-end flow aligned with [research.md](research.md), constrained by resolved architecture choices above.
 
 ```mermaid
 flowchart LR
-  subgraph collect [1. Collect]
+  subgraph collect [1. Collect — scraper/]
     GH[GitHub API via Octokit]
     Cache[(cache/owner_repo/)]
     GH --> Cache
@@ -43,14 +45,14 @@ flowchart LR
     Cache --> Parse
   end
 
-  subgraph compute [3. Compute — planned]
-    KG[Knowledge graph build]
+  subgraph computeStage [3. Compute — compute/]
+    KG[graph.json + project_graph.json]
     Parse --> KG
     Cache --> KG
   end
 
-  subgraph viz [4. Visualize — planned]
-    JSON[frontend/public/graphs/*.json]
+  subgraph viz [4. Visualize — frontend/]
+    JSON[public/graphs/]
     UI[Next.js + force graph]
     KG --> JSON
     JSON --> UI
@@ -111,34 +113,48 @@ Local-only; not committed (see `.gitignore` patterns).
 
 ### Stage 2 — Repository parsing (planned)
 
-**Goal:** Technology graph — modules, languages, frameworks, contributor touchpoints.
+**Goal:** Enrich per-contributor `technologies` and project tech summaries (not a separate graph file).
 
-**Research scope:** File paths from PRs/commits, dependency manifests, imports, directory structure.
+**Research scope:** File paths from PRs, dependency manifests, imports, directory structure.
 
-**Status:** Not implemented. No clone-or-parse step exists.
+**Status:** Not implemented. May start as path/extension heuristics inside `compute/` before a dedicated parse step.
 
 ---
 
 ### Stage 3 — Knowledge graph computation (planned)
 
-**Goal:** Contributor graph JSON for the frontend, with directory-based subprojects (**D2**), expertise, and collaboration edges.
+**Owner:** `compute/` package (**D7**). Reads `cache/<owner>_<repo>/`, writes two JSON files per repo (**D4**).
+
+**Goal:** Contributor + project graphs with directory-based subprojects, per-person technology properties, expertise, and collaboration edges.
 
 **Algorithm (v1; not coded)**
 
-1. **Subsystems (“projects”) — directory-based (D2)**  
+1. **Subsystems (“projects”) — directory-based**  
    - For each PR, map every changed file path → a **subproject ID** (canonical directory key).  
-   - Default rule (until repo-specific tuning): use the **first meaningful path segment** after the repo root (e.g. `packages/react-reconciler/...` → `packages/react-reconciler`; `src/...` → `src`). Monorepos may need a allowlist of roots (`packages/*`, `cmd/`, etc.) — document per target repo in compute config when needed.  
+   - Default rule (until repo-specific tuning): use the **first meaningful path segment** after the repo root (e.g. `packages/react-reconciler/...` → `packages/react-reconciler`; `src/...` → `src`). Monorepos may need an allowlist of roots (`packages/*`, `cmd/`, etc.) — document per target repo in `compute/` config when needed.  
    - Contributor touch weight on subproject *S*: sum over their PRs of (lines changed or file-count) in paths mapped to *S*.  
    - `GraphNode.team` = highest-weight subproject; `projects` = ordered subproject IDs; `project_roles` = normalized weights + role string (e.g. `lead` / `core` / `contributor` by weight quantiles — TBD in compute).  
-   - `GENERIC_LABELS` in config is **not** used for subproject boundaries; labels remain on `RawPR` for optional UI only.
+   - `GENERIC_LABELS` in scraper config is **not** used for subproject boundaries; labels remain on `RawPR` for optional UI only.
 
-2. **Contributor nodes** — One node per active GitHub login; `expertise` = TF-IDF keywords from PR titles (v1 heuristic; **D3** open).
+2. **Contributor nodes** — One node per active GitHub login.  
+   - `expertise` = TF-IDF keywords from PR titles (v1 heuristic; **D3** open).  
+   - **`technologies`** = structured list on the person (e.g. languages, frameworks, tools inferred from changed-file extensions, paths, and Stage 2 when available). Powers the “technology” exploration UI without a third graph file.
 
 3. **Collaboration edges** — Weighted by PR reviews. Recency: `weight *= exp(-LAMBDA * days)` with `LAMBDA = 0.005`. Review multiplier: `REVIEW_WEIGHT = 1.0`. Optional future: shared subproject ownership as edge boost (**D6**).
 
-4. **Communities** — Louvain on the contributor graph (**D5** open; default dep already in `scraper/package.json`).
+4. **Communities** — Louvain on the contributor graph (**D5** open; move `graphology` deps to `compute/`).
 
-**Output schema (defined in `scraper/src/types.ts`)**
+5. **Project graph** — Nodes = directory subproject IDs; edges = shared contributors (and/or dependency hints later). Same keys as `GraphNode.projects`.
+
+**Output artifacts (per repo in `REPOS`)**
+
+```
+frontend/public/graphs/<owner>_<repo>/
+  graph.json           # contributor GraphData
+  project_graph.json   # project GraphData (subproject nodes + links)
+```
+
+**Contributor graph (`graph.json`)** — extend `scraper/src/types.ts` (or shared types used by `compute/`):
 
 ```ts
 GraphData {
@@ -147,23 +163,24 @@ GraphData {
   nodes: GraphNode[]   // contributors
   links: GraphLink[]   // collaboration
 }
+
+GraphNode {
+  // ...existing fields...
+  technologies: TechnologyRef[]  // e.g. { id, kind: 'language' | 'framework' | 'tool', weight? }
+}
 ```
 
-**Intended publish path**
+**Project graph (`project_graph.json`)** — define in `compute/` (TBD): subproject nodes (id, label, tech stack summary), links weighted by shared membership.
 
-```
-frontend/public/graphs/<owner>_<repo>.json
-```
+Frontend loads both files for people vs project views; technology discovery filters/aggregates `nodes[].technologies`.
 
-One file per repo in `REPOS`; frontend loads selected graph at runtime (mechanism TBD).
-
-**Status:** Types and constants only; no `compute` script.
+**Status:** Contributor types in `scraper/`; `compute/` package and project graph types not created.
 
 ---
 
 ### Stage 4 — Frontend visualization (partial)
 
-**Goal:** Interactive exploration per [research.md](research.md): contributor, project, and technology views.
+**Goal:** Interactive exploration per [research.md](research.md): contributor view (`graph.json`), project view (`project_graph.json`), technology discovery via per-person `technologies` (not a separate graph).
 
 **Current UI**
 
@@ -181,10 +198,10 @@ One file per repo in `REPOS`; frontend loads selected graph at runtime (mechanis
 
 | Stage | Input | Output | Owner |
 |-------|--------|--------|--------|
-| Collect | GitHub API | `cache/*/` raw JSON | `scraper/` (planned) |
-| Parse | Cache + repo tree | Tech / module graph (format TBD) | TBD |
-| Compute | Cache (+ parse) | `GraphData` (+ project/tech graphs TBD) | `scraper/` or separate package |
-| Visualize | Static JSON | Browser UI | `frontend/` |
+| Collect | GitHub API | `cache/*/` raw JSON | `scraper/` |
+| Parse | Cache + repo tree | Tech signals for `technologies` on nodes | TBD (may live in `compute/` initially) |
+| Compute | Cache (+ parse) | `graph.json` + `project_graph.json` | `compute/` |
+| Visualize | Static JSON in `public/graphs/` | Browser UI | `frontend/` |
 
 ---
 
@@ -197,8 +214,8 @@ One file per repo in `REPOS`; frontend loads selected graph at runtime (mechanis
 | `MIN_ACTIVITY` | 3 | Min PR+review actions for a node |
 | `LAMBDA` | 0.005 | Per-day recency decay on edges |
 | `REVIEW_WEIGHT` | 1.0 | Review edge multiplier |
-| `CO_COMMENT_WEIGHT` | 0.3 | Reserved; out of scope while **D1** excludes issues |
-| `GENERIC_LABELS` | (set in config) | Not used for subprojects (**D2**); may be removed or repurposed later |
+| `CO_COMMENT_WEIGHT` | 0.3 | Reserved; issues out of v1 ingestion scope |
+| `GENERIC_LABELS` | (set in config) | Not used for directory subprojects; may be removed or repurposed later |
 
 ---
 
@@ -208,45 +225,18 @@ One file per repo in `REPOS`; frontend loads selected graph at runtime (mechanis
 # Frontend shell
 cd frontend && npm install && npm run dev
 
-# Scraper — no scripts defined yet
+# Collect — no scripts defined yet
 cd scraper && npm install
+
+# Compute — package not created yet
+# cd compute && npm install && npm run build
 ```
 
 ---
 
 # Architectural decisions to make
 
-Record choices here as they are resolved. Each item lists options and what it blocks.
-
----
-
-## D1 — MVP ingestion scope — **RESOLVED: A+**
-
-**Choice:** PRs + reviews + **changed files on each PR** (GitHub PR files API). No issues, no repo-wide commit crawl in v1.
-
-**Rationale:** Enough for review-based collaboration and directory-based ownership (**D2**) without full research.md Stage 1 volume. Issue comments and off-PR commits deferred.
-
-**Implements:** Scraper fetch list, `RawPR.files`, cache `prs.json` shape.
-
-**Deferred (not compromising v1 scope):** issue-thread edges, issue-only actors, co-author / direct-commit signal, full research.md activity linking table.
-
----
-
-## D2 — Subproject / subsystem detection — **RESOLVED: Directory-based**
-
-**Choice:** Subproject IDs derived from **paths in PR changed files** (from **D1**), not from PR/issue labels.
-
-**Rules (v1):**
-
-- Path → subproject key via configurable directory segmentation (default: first path segment under repo root; tune for monorepos).
-- Contributor ↔ subproject weights from aggregated PR file activity in that key.
-- Project graph nodes (if **D4** adds a second file) use the same directory keys as IDs.
-
-**Does not use:** `GENERIC_LABELS` for boundaries (config may stay for other uses or be removed later).
-
-**Still needs (implementation detail):** per-repo path roots table for large monorepos; edge case handling for root-level files (`.github/`, `README`).
-
-**Blocks:** Compute module, `GraphNode.team` / `projects` / `project_roles`, project view data.
+Open items only. Resolved choices (D1, D2, D4, D7) are documented in **Resolved (architecture)** and in the workflow sections above.
 
 ---
 
@@ -265,27 +255,13 @@ Record choices here as they are resolved. Each item lists options and what it bl
 
 ---
 
-## D4 — Graph artifacts and schemas
-
-**Question:** How many graph files and what do they contain?
-
-| Option | Notes |
-|--------|--------|
-| **Single `GraphData`** | Contributors + subsystem metadata on nodes only |
-| **Two files** | `graph.json` (people) + `project_graph.json` (subsystems as nodes) — old Hop Onboard |
-| **Three views / graphs** | Separate contributor, project, technology graphs (research.md) |
-
-**Blocks:** Frontend view switcher, compute pipeline outputs, TypeScript types in frontend.
-
----
-
 ## D5 — Community detection library
 
 **Question:** Which algorithm packages communities on contributor nodes?
 
 | Option | Notes |
 |--------|--------|
-| **Louvain** | Already in `scraper/package.json` (`graphology-communities-louvain`) |
+| **Louvain** | Planned for `compute/` (`graphology-communities-louvain`; currently listed under `scraper/package.json`) |
 | **Leiden** | Used in legacy Python (`leidenalg`); not in current deps |
 
 **Blocks:** Dependency choice; parity with any published comparison docs.
@@ -305,20 +281,6 @@ Record choices here as they are resolved. Each item lists options and what it bl
 | Shared changed paths | Folded into **D2** weights, not separate edge type in v1 |
 
 **Blocks:** Edge construction in compute stage.
-
----
-
-## D7 — Pipeline packaging and language
-
-**Question:** Where does fetch + parse + compute live?
-
-| Option | Notes |
-|--------|--------|
-| **All TypeScript in `scraper/`** | Octokit + graphology already there |
-| **Split `scraper/` + `analysis/`** | Clear collect vs compute boundaries |
-| **Python analysis** | Legacy pattern; no code on branch |
-
-**Blocks:** Repo layout, CI jobs, developer workflow.
 
 ---
 
@@ -342,7 +304,7 @@ Examples: unified “activity event” stream, per-PR file lists, **path segment
 | **GitHub API tree** | Languages endpoint + paths from PR files + light manifest read |
 | **Full clone** | Manifests, imports, framework detection per research.md |
 
-**Blocks:** Technology view (D4), structured skills (D3), timeline.
+**Blocks:** Rich `technologies` on contributor nodes (D3), timeline.
 
 ---
 
@@ -435,7 +397,7 @@ Examples: unified “activity event” stream, per-PR file lists, **path segment
 
 **Question:** When to rewrite `CLAUDE.md` / `README.md`?
 
-Should happen after D4, D7, and D10 are decided (D1–D2 done) so agent and human docs match the GitHub pipeline.
+Should happen after D10 (and other material choices) so agent and human docs match the GitHub pipeline.
 
 **Blocks:** Contributor onboarding only (not runtime).
 
@@ -443,18 +405,9 @@ Should happen after D4, D7, and D10 are decided (D1–D2 done) so agent and huma
 
 ## Suggested decision order
 
-1. ~~**D1** (MVP ingestion)~~ → ~~**D2** (subprojects)~~ → **D4** (graph files)  
-2. **D7** + **D8** (pipeline layout + schemas) → implement collect + compute  
-3. **D3**, **D5**, **D6** (expertise, communities, edges) — can tighten during first graph  
-4. **D9**, **D10** (parse depth, LLM) — scope v2 vs v1  
-5. **D11**–**D13** (frontend) once sample `GraphData` exists  
-6. **D14**–**D15** (auth, incremental) before production / private repos  
-
----
-
-## Resolved decisions
-
-| ID | Decision | Date | Notes |
-|----|----------|------|--------|
-| **D1** | **A+** — PRs, reviews, PR changed files | 2026-06-03 | No issues or global commits in v1 |
-| **D2** | **Directory-based** subprojects | 2026-06-03 | Path keys from PR files; labels not used for boundaries |
+1. **D8** (cache → compute contracts) → implement `scraper/` collect + `compute/` build  
+2. **D3**, **D5**, **D6** (expertise, communities, edges) — tighten during first graph  
+3. **D9**, **D10** (parse depth, LLM) — scope v2 vs v1  
+4. **D11**–**D13** (frontend) once sample `graph.json` + `project_graph.json` exist  
+5. **D14**–**D15** (auth, incremental) before production / private repos  
+6. **D16** — refresh `CLAUDE.md` / `README.md` when the pipeline stabilizes
