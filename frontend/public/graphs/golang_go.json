@@ -1,0 +1,994 @@
+{
+  "repo": "golang/go",
+  "generated_at": "2026-05-24T23:32:45.539Z",
+  "nodes": [
+    {
+      "id": "cuiweixie",
+      "name": "cuiweixie",
+      "role": "Contributor",
+      "team": "cmd",
+      "expertise": [
+        "cmd",
+        "internal",
+        "typo",
+        "should",
+        "instead",
+        "return"
+      ],
+      "projects": [
+        "cmd",
+        "net",
+        "internal",
+        "reflect",
+        "debug",
+        "runtime",
+        "go",
+        "encoding"
+      ],
+      "project_roles": {
+        "cmd": {
+          "weight": 1,
+          "role": "lead"
+        },
+        "net": {
+          "weight": 0.259,
+          "role": "core"
+        },
+        "internal": {
+          "weight": 0.192,
+          "role": "lead"
+        },
+        "reflect": {
+          "weight": 0.131,
+          "role": "lead"
+        },
+        "debug": {
+          "weight": 0.103,
+          "role": "lead"
+        },
+        "runtime": {
+          "weight": 0.096,
+          "role": "core"
+        },
+        "go": {
+          "weight": 0.095,
+          "role": "lead"
+        },
+        "encoding": {
+          "weight": 0.069,
+          "role": "lead"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/1579517?v=4",
+      "pr_count": 70,
+      "review_count": 0
+    },
+    {
+      "id": "newborn22",
+      "name": "newborn22",
+      "role": "Contributor",
+      "team": "cmd",
+      "expertise": [
+        "internal",
+        "cmd",
+        "riscv64",
+        "compile",
+        "obj",
+        "riscv"
+      ],
+      "projects": [
+        "cmd",
+        "general"
+      ],
+      "project_roles": {
+        "cmd": {
+          "weight": 1,
+          "role": "lead"
+        },
+        "general": {
+          "weight": 0.301,
+          "role": "contributor"
+        }
+      },
+      "community": 1,
+      "pr_count": 8,
+      "review_count": 0
+    },
+    {
+      "id": "amirHdev",
+      "name": "amirHdev",
+      "role": "Contributor",
+      "team": "cmd",
+      "expertise": [
+        "cmd",
+        "mod",
+        "maintain",
+        "toolchain",
+        "godebug",
+        "default"
+      ],
+      "projects": [
+        "cmd"
+      ],
+      "project_roles": {
+        "cmd": {
+          "weight": 1,
+          "role": "core"
+        }
+      },
+      "community": 2,
+      "pr_count": 3,
+      "review_count": 0
+    },
+    {
+      "id": "SebTardif",
+      "name": "SebTardif",
+      "role": "Contributor",
+      "team": "crypto",
+      "expertise": [
+        "error",
+        "wrapping",
+        "crypto",
+        "profile",
+        "x509",
+        "internal"
+      ],
+      "projects": [
+        "crypto",
+        "internal",
+        "cmd",
+        "go",
+        "os",
+        "image"
+      ],
+      "project_roles": {
+        "crypto": {
+          "weight": 1,
+          "role": "lead"
+        },
+        "internal": {
+          "weight": 0.342,
+          "role": "contributor"
+        },
+        "cmd": {
+          "weight": 0.335,
+          "role": "contributor"
+        },
+        "go": {
+          "weight": 0.333,
+          "role": "contributor"
+        },
+        "os": {
+          "weight": 0.333,
+          "role": "contributor"
+        },
+        "image": {
+          "weight": 0.333,
+          "role": "lead"
+        }
+      },
+      "community": 3,
+      "pr_count": 8,
+      "review_count": 0
+    },
+    {
+      "id": "wwqgtxx",
+      "name": "wwqgtxx",
+      "role": "Contributor",
+      "team": "net",
+      "expertise": [
+        "net",
+        "http",
+        "tls",
+        "unencryptedhttp2",
+        "does",
+        "work"
+      ],
+      "projects": [
+        "net"
+      ],
+      "project_roles": {
+        "net": {
+          "weight": 1,
+          "role": "core"
+        }
+      },
+      "community": 4,
+      "pr_count": 4,
+      "review_count": 0
+    },
+    {
+      "id": "metsw24-max",
+      "name": "metsw24-max",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "integer",
+        "overflow",
+        "uid",
+        "gid",
+        "vulnerability",
+        "decoding"
+      ],
+      "projects": [
+        "general",
+        "cmd"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "core"
+        },
+        "cmd": {
+          "weight": 0.331,
+          "role": "contributor"
+        }
+      },
+      "community": 5,
+      "pr_count": 4,
+      "review_count": 0
+    },
+    {
+      "id": "ariel-anieli",
+      "name": "ariel-anieli",
+      "role": "Contributor",
+      "team": "runtime",
+      "expertise": [
+        "runtime",
+        "abiinternal",
+        "convention",
+        "cgocallbackg",
+        "cgo",
+        "s390x"
+      ],
+      "projects": [
+        "runtime",
+        "all",
+        "cmd"
+      ],
+      "project_roles": {
+        "runtime": {
+          "weight": 1,
+          "role": "lead"
+        },
+        "all": {
+          "weight": 0.245,
+          "role": "lead"
+        },
+        "cmd": {
+          "weight": 0.169,
+          "role": "peripheral"
+        }
+      },
+      "community": 6,
+      "pr_count": 5,
+      "review_count": 0
+    },
+    {
+      "id": "mrbishalbaniya",
+      "name": "mrbishalbaniya",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "examples",
+        "comprehensive",
+        "example",
+        "functions",
+        "uuid",
+        "hasher"
+      ],
+      "projects": [
+        "general",
+        "uuid",
+        "go",
+        "hash",
+        "net",
+        "fmt",
+        "unique",
+        "iter"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "lead"
+        },
+        "uuid": {
+          "weight": 0.499,
+          "role": "lead"
+        },
+        "go": {
+          "weight": 0.25,
+          "role": "contributor"
+        },
+        "hash": {
+          "weight": 0.25,
+          "role": "lead"
+        },
+        "net": {
+          "weight": 0.25,
+          "role": "contributor"
+        },
+        "fmt": {
+          "weight": 0.25,
+          "role": "contributor"
+        },
+        "unique": {
+          "weight": 0.25,
+          "role": "lead"
+        },
+        "iter": {
+          "weight": 0.25,
+          "role": "lead"
+        }
+      },
+      "community": 7,
+      "pr_count": 12,
+      "review_count": 0
+    },
+    {
+      "id": "myhearwillgoon",
+      "name": "myhearwillgoon",
+      "role": "Contributor",
+      "team": "docs",
+      "expertise": [
+        "docs",
+        "suggest",
+        "documentation",
+        "improvements",
+        "better",
+        "user"
+      ],
+      "projects": [
+        "docs"
+      ],
+      "project_roles": {
+        "docs": {
+          "weight": 1,
+          "role": "lead"
+        }
+      },
+      "community": 8,
+      "pr_count": 6,
+      "review_count": 0
+    },
+    {
+      "id": "orbisai0security",
+      "name": "orbisai0security",
+      "role": "Contributor",
+      "team": "fix",
+      "expertise": [
+        "unsafe",
+        "exec",
+        "main",
+        "testregex",
+        "security",
+        "critical"
+      ],
+      "projects": [
+        "fix",
+        "general"
+      ],
+      "project_roles": {
+        "fix": {
+          "weight": 1,
+          "role": "lead"
+        },
+        "general": {
+          "weight": 0.262,
+          "role": "peripheral"
+        }
+      },
+      "community": 9,
+      "pr_count": 3,
+      "review_count": 0
+    },
+    {
+      "id": "Jah-yee",
+      "name": "Jah-yee",
+      "role": "Contributor",
+      "team": "net",
+      "expertise": [
+        "net",
+        "clarify",
+        "fmt",
+        "integers",
+        "reject",
+        "non-ipv6"
+      ],
+      "projects": [
+        "net",
+        "fmt",
+        "cmd"
+      ],
+      "project_roles": {
+        "net": {
+          "weight": 1,
+          "role": "lead"
+        },
+        "fmt": {
+          "weight": 0.61,
+          "role": "lead"
+        },
+        "cmd": {
+          "weight": 0.371,
+          "role": "core"
+        }
+      },
+      "community": 10,
+      "pr_count": 16,
+      "review_count": 0
+    },
+    {
+      "id": "lxq015",
+      "name": "lxq015",
+      "role": "Contributor",
+      "team": "cmd",
+      "expertise": [
+        "internal",
+        "crc32",
+        "assembly",
+        "riscv64",
+        "extension",
+        "cmd"
+      ],
+      "projects": [
+        "cmd",
+        "hash",
+        "internal"
+      ],
+      "project_roles": {
+        "cmd": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "hash": {
+          "weight": 0.836,
+          "role": "contributor"
+        },
+        "internal": {
+          "weight": 0.825,
+          "role": "peripheral"
+        }
+      },
+      "community": 11,
+      "pr_count": 4,
+      "review_count": 0
+    },
+    {
+      "id": "mohammadmseet-hue",
+      "name": "mohammadmseet-hue",
+      "role": "Contributor",
+      "team": "net",
+      "expertise": [
+        "net",
+        "reject",
+        "attribute",
+        "names",
+        "url",
+        "joinpath"
+      ],
+      "projects": [
+        "net",
+        "encoding",
+        "html"
+      ],
+      "project_roles": {
+        "net": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "encoding": {
+          "weight": 0.34,
+          "role": "contributor"
+        },
+        "html": {
+          "weight": 0.333,
+          "role": "lead"
+        }
+      },
+      "community": 12,
+      "pr_count": 5,
+      "review_count": 0
+    },
+    {
+      "id": "kovan",
+      "name": "kovan",
+      "role": "Contributor",
+      "team": "os",
+      "expertise": [
+        "examples",
+        "errors",
+        "instead",
+        "deprecated",
+        "helpers",
+        "document"
+      ],
+      "projects": [
+        "os",
+        "slices",
+        "archive",
+        "context"
+      ],
+      "project_roles": {
+        "os": {
+          "weight": 1,
+          "role": "lead"
+        },
+        "slices": {
+          "weight": 0.332,
+          "role": "lead"
+        },
+        "archive": {
+          "weight": 0.332,
+          "role": "contributor"
+        },
+        "context": {
+          "weight": 0.296,
+          "role": "lead"
+        }
+      },
+      "community": 13,
+      "pr_count": 6,
+      "review_count": 0
+    },
+    {
+      "id": "jub0bs",
+      "name": "jub0bs",
+      "role": "Contributor",
+      "team": "net",
+      "expertise": [
+        "encoding",
+        "speed",
+        "net",
+        "internal",
+        "errors",
+        "hex"
+      ],
+      "projects": [
+        "net",
+        "internal",
+        "encoding",
+        "general",
+        "all"
+      ],
+      "project_roles": {
+        "net": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "internal": {
+          "weight": 0.86,
+          "role": "contributor"
+        },
+        "encoding": {
+          "weight": 0.507,
+          "role": "contributor"
+        },
+        "general": {
+          "weight": 0.499,
+          "role": "contributor"
+        },
+        "all": {
+          "weight": 0.328,
+          "role": "contributor"
+        }
+      },
+      "community": 14,
+      "pr_count": 7,
+      "review_count": 0
+    },
+    {
+      "id": "zheliu2",
+      "name": "zheliu2",
+      "role": "Contributor",
+      "team": "os",
+      "expertise": [
+        "return",
+        "debug",
+        "macho",
+        "formaterror",
+        "truncated",
+        "empty"
+      ],
+      "projects": [
+        "os",
+        "debug",
+        "runtime"
+      ],
+      "project_roles": {
+        "os": {
+          "weight": 1,
+          "role": "core"
+        },
+        "debug": {
+          "weight": 0.501,
+          "role": "contributor"
+        },
+        "runtime": {
+          "weight": 0.499,
+          "role": "contributor"
+        }
+      },
+      "community": 15,
+      "pr_count": 4,
+      "review_count": 0
+    },
+    {
+      "id": "apocelipes",
+      "name": "apocelipes",
+      "role": "Contributor",
+      "team": "bytes",
+      "expertise": [
+        "errors",
+        "bytes",
+        "unused",
+        "indexbyteportable",
+        "log",
+        "slog"
+      ],
+      "projects": [
+        "bytes",
+        "log",
+        "all"
+      ],
+      "project_roles": {
+        "bytes": {
+          "weight": 1,
+          "role": "lead"
+        },
+        "log": {
+          "weight": 0.887,
+          "role": "contributor"
+        },
+        "all": {
+          "weight": 0.877,
+          "role": "contributor"
+        }
+      },
+      "community": 16,
+      "avatar": "https://avatars.githubusercontent.com/u/21255940?v=4",
+      "pr_count": 3,
+      "review_count": 0
+    },
+    {
+      "id": "feizaizheli",
+      "name": "feizaizheli",
+      "role": "Contributor",
+      "team": "syscall",
+      "expertise": [
+        "syscall",
+        "error",
+        "incorrect",
+        "defer",
+        "usage",
+        "acquireforklock"
+      ],
+      "projects": [
+        "syscall",
+        "net",
+        "multiple"
+      ],
+      "project_roles": {
+        "syscall": {
+          "weight": 1,
+          "role": "lead"
+        },
+        "net": {
+          "weight": 0.25,
+          "role": "contributor"
+        },
+        "multiple": {
+          "weight": 0.25,
+          "role": "lead"
+        }
+      },
+      "community": 17,
+      "pr_count": 6,
+      "review_count": 0
+    },
+    {
+      "id": "jianfengtony",
+      "name": "jianfengtony",
+      "role": "Contributor",
+      "team": "runtime",
+      "expertise": [
+        "runtime",
+        "delete",
+        "max",
+        "unified",
+        "calculate",
+        "objects"
+      ],
+      "projects": [
+        "runtime",
+        "cmd"
+      ],
+      "project_roles": {
+        "runtime": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "cmd": {
+          "weight": 0.287,
+          "role": "peripheral"
+        }
+      },
+      "community": 18,
+      "pr_count": 5,
+      "review_count": 0
+    },
+    {
+      "id": "BasavarajBankolli",
+      "name": "BasavarajBankolli",
+      "role": "Contributor",
+      "team": "cmd",
+      "expertise": [
+        "cmd",
+        "document",
+        "flag",
+        "help",
+        "testflag",
+        "doc"
+      ],
+      "projects": [
+        "cmd",
+        "general"
+      ],
+      "project_roles": {
+        "cmd": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "general": {
+          "weight": 0.505,
+          "role": "peripheral"
+        }
+      },
+      "community": 19,
+      "pr_count": 3,
+      "review_count": 0
+    },
+    {
+      "id": "realMelTuc",
+      "name": "realMelTuc",
+      "role": "Contributor",
+      "team": "cmd",
+      "expertise": [
+        "cmd",
+        "compile",
+        "typo",
+        "comment",
+        "nor",
+        "path"
+      ],
+      "projects": [
+        "cmd",
+        "path",
+        "os"
+      ],
+      "project_roles": {
+        "cmd": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "path": {
+          "weight": 1,
+          "role": "lead"
+        },
+        "os": {
+          "weight": 1,
+          "role": "peripheral"
+        }
+      },
+      "community": 20,
+      "pr_count": 3,
+      "review_count": 0
+    },
+    {
+      "id": "mehrdadbn9",
+      "name": "mehrdadbn9",
+      "role": "Contributor",
+      "team": "builtin",
+      "expertise": [
+        "builtin",
+        "documentation",
+        "expression",
+        "syntax"
+      ],
+      "projects": [
+        "builtin"
+      ],
+      "project_roles": {
+        "builtin": {
+          "weight": 1,
+          "role": "lead"
+        }
+      },
+      "community": 21,
+      "pr_count": 3,
+      "review_count": 0
+    },
+    {
+      "id": "rbqvq",
+      "name": "rbqvq",
+      "role": "Contributor",
+      "team": "crypto",
+      "expertise": [
+        "crypto",
+        "tls",
+        "resumption",
+        "identity",
+        "freshness",
+        "server"
+      ],
+      "projects": [
+        "crypto"
+      ],
+      "project_roles": {
+        "crypto": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 22,
+      "pr_count": 3,
+      "review_count": 0
+    },
+    {
+      "id": "kevin-valerio",
+      "name": "kevin-valerio",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "libafl",
+        "git",
+        "aware",
+        "feature",
+        "panic",
+        "call"
+      ],
+      "projects": [
+        "general"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "core"
+        }
+      },
+      "community": 23,
+      "pr_count": 3,
+      "review_count": 0
+    },
+    {
+      "id": "jjpinto",
+      "name": "jjpinto",
+      "role": "Contributor",
+      "team": "test",
+      "expertise": [
+        "test",
+        "message",
+        "internal",
+        "error",
+        "cmd",
+        "comment"
+      ],
+      "projects": [
+        "test",
+        "internal",
+        "cmd",
+        "runtime",
+        "net",
+        "simd",
+        "regexp",
+        "tests"
+      ],
+      "project_roles": {
+        "test": {
+          "weight": 1,
+          "role": "lead"
+        },
+        "internal": {
+          "weight": 0.676,
+          "role": "core"
+        },
+        "cmd": {
+          "weight": 0.533,
+          "role": "core"
+        },
+        "runtime": {
+          "weight": 0.175,
+          "role": "peripheral"
+        },
+        "net": {
+          "weight": 0.167,
+          "role": "peripheral"
+        },
+        "simd": {
+          "weight": 0.167,
+          "role": "lead"
+        },
+        "regexp": {
+          "weight": 0.167,
+          "role": "lead"
+        },
+        "tests": {
+          "weight": 0.167,
+          "role": "lead"
+        }
+      },
+      "community": 24,
+      "pr_count": 19,
+      "review_count": 0
+    },
+    {
+      "id": "heathdutton",
+      "name": "heathdutton",
+      "role": "Contributor",
+      "team": "archive",
+      "expertise": [
+        "archive",
+        "tar",
+        "reset",
+        "size",
+        "header-only",
+        "types"
+      ],
+      "projects": [
+        "archive",
+        "cmd"
+      ],
+      "project_roles": {
+        "archive": {
+          "weight": 1,
+          "role": "lead"
+        },
+        "cmd": {
+          "weight": 0.471,
+          "role": "peripheral"
+        }
+      },
+      "community": 25,
+      "pr_count": 3,
+      "review_count": 0
+    },
+    {
+      "id": "linsite",
+      "name": "linsite",
+      "role": "Contributor",
+      "team": "net",
+      "expertise": [
+        "net",
+        "ineffectual",
+        "assignments",
+        "reported",
+        "ineffassign",
+        "syscall"
+      ],
+      "projects": [
+        "net",
+        "syscall",
+        "cmd"
+      ],
+      "project_roles": {
+        "net": {
+          "weight": 1,
+          "role": "peripheral"
+        },
+        "syscall": {
+          "weight": 0.989,
+          "role": "contributor"
+        },
+        "cmd": {
+          "weight": 0.982,
+          "role": "peripheral"
+        }
+      },
+      "community": 26,
+      "pr_count": 3,
+      "review_count": 0
+    }
+  ],
+  "links": []
+}

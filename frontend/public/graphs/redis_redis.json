@@ -1,0 +1,3074 @@
+{
+  "repo": "redis/redis",
+  "generated_at": "2026-05-24T23:32:45.639Z",
+  "nodes": [
+    {
+      "id": "TalBarYakar",
+      "name": "TalBarYakar",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "red-191626",
+        "modules",
+        "modernization",
+        "mod-14124",
+        "module",
+        "apis"
+      ],
+      "projects": [
+        "general",
+        "state:needs doc pr"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "state:needs doc pr": {
+          "weight": 0.415,
+          "role": "peripheral"
+        }
+      },
+      "community": 0,
+      "pr_count": 3,
+      "review_count": 1
+    },
+    {
+      "id": "moticless",
+      "name": "moticless",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "keymeta",
+        "dict",
+        "debug",
+        "test",
+        "flag",
+        "vector"
+      ],
+      "projects": [
+        "general",
+        "release notes",
+        "keymeta",
+        "prototype",
+        "t_string",
+        "vector",
+        "keysizes",
+        "fix"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "core"
+        },
+        "release notes": {
+          "weight": 0.326,
+          "role": "lead"
+        },
+        "keymeta": {
+          "weight": 0.274,
+          "role": "lead"
+        },
+        "prototype": {
+          "weight": 0.109,
+          "role": "lead"
+        },
+        "t_string": {
+          "weight": 0.104,
+          "role": "lead"
+        },
+        "vector": {
+          "weight": 0.097,
+          "role": "lead"
+        },
+        "keysizes": {
+          "weight": 0.083,
+          "role": "lead"
+        },
+        "fix": {
+          "weight": 0.058,
+          "role": "peripheral"
+        }
+      },
+      "community": 1,
+      "avatar": "https://avatars.githubusercontent.com/u/24944278?v=4",
+      "pr_count": 26,
+      "review_count": 56
+    },
+    {
+      "id": "vitahlin",
+      "name": "vitahlin",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "test",
+        "module",
+        "actions",
+        "during",
+        "count",
+        "after"
+      ],
+      "projects": [
+        "general",
+        "state:to be merged",
+        "release notes",
+        "test"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "lead"
+        },
+        "state:to be merged": {
+          "weight": 0.101,
+          "role": "lead"
+        },
+        "release notes": {
+          "weight": 0.072,
+          "role": "contributor"
+        },
+        "test": {
+          "weight": 0.039,
+          "role": "lead"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/6998610?v=4",
+      "pr_count": 37,
+      "review_count": 0
+    },
+    {
+      "id": "Peter-Sh",
+      "name": "Peter-Sh",
+      "role": "Contributor",
+      "team": "modules",
+      "expertise": [
+        "modules",
+        "werror",
+        "hack",
+        "makefile",
+        "logic",
+        "config"
+      ],
+      "projects": [
+        "modules",
+        "general"
+      ],
+      "project_roles": {
+        "modules": {
+          "weight": 1,
+          "role": "lead"
+        },
+        "general": {
+          "weight": 0.833,
+          "role": "peripheral"
+        }
+      },
+      "community": 2,
+      "pr_count": 2,
+      "review_count": 2
+    },
+    {
+      "id": "JoanFM",
+      "name": "JoanFM",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "after",
+        "red-197766",
+        "modules",
+        "register",
+        "postnotificationjobsperkey",
+        "free"
+      ],
+      "projects": [
+        "general"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "core"
+        }
+      },
+      "community": 1,
+      "pr_count": 8,
+      "review_count": 5
+    },
+    {
+      "id": "gabsow",
+      "name": "gabsow",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "modules",
+        "bloom",
+        "datatype",
+        "data",
+        "datatypes",
+        "json"
+      ],
+      "projects": [
+        "general"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "lead"
+        }
+      },
+      "community": 2,
+      "avatar": "https://avatars.githubusercontent.com/u/4652717?v=4",
+      "pr_count": 14,
+      "review_count": 2
+    },
+    {
+      "id": "sundb",
+      "name": "sundb",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "test",
+        "backport",
+        "commits",
+        "tcl",
+        "replace",
+        "typos"
+      ],
+      "projects": [
+        "general",
+        "state:needs doc pr",
+        "release notes",
+        "action:run benchmark"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "lead"
+        },
+        "state:needs doc pr": {
+          "weight": 0.18,
+          "role": "core"
+        },
+        "release notes": {
+          "weight": 0.169,
+          "role": "core"
+        },
+        "action:run benchmark": {
+          "weight": 0.055,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/965798?v=4",
+      "pr_count": 24,
+      "review_count": 630
+    },
+    {
+      "id": "daguimu",
+      "name": "daguimu",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "leak",
+        "memory",
+        "slot",
+        "zdiff",
+        "algorithm",
+        "early"
+      ],
+      "projects": [
+        "general",
+        "redis-benchmark",
+        "redis-cli",
+        "fix"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "core"
+        },
+        "redis-benchmark": {
+          "weight": 0.205,
+          "role": "lead"
+        },
+        "redis-cli": {
+          "weight": 0.203,
+          "role": "lead"
+        },
+        "fix": {
+          "weight": 0.171,
+          "role": "core"
+        }
+      },
+      "community": 0,
+      "pr_count": 8,
+      "review_count": 0
+    },
+    {
+      "id": "oshadmi",
+      "name": "oshadmi",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "redisearch",
+        "module",
+        "rc1",
+        "upgrade",
+        "mod-13504",
+        "search"
+      ],
+      "projects": [
+        "general",
+        "mod-13504"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "mod-13504": {
+          "weight": 0.16,
+          "role": "lead"
+        }
+      },
+      "community": 2,
+      "avatar": "https://avatars.githubusercontent.com/u/76992134?v=4",
+      "pr_count": 5,
+      "review_count": 4
+    },
+    {
+      "id": "kalinstaykov",
+      "name": "kalinstaykov",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "rust",
+        "checksums",
+        "readme",
+        "build-from-source",
+        "sections",
+        "match"
+      ],
+      "projects": [
+        "general"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 2,
+      "pr_count": 3,
+      "review_count": 6
+    },
+    {
+      "id": "tezc",
+      "name": "tezc",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "asm",
+        "reduce",
+        "overhead",
+        "log",
+        "node",
+        "slot"
+      ],
+      "projects": [
+        "general",
+        "release notes"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "core"
+        },
+        "release notes": {
+          "weight": 0.698,
+          "role": "lead"
+        }
+      },
+      "community": 1,
+      "avatar": "https://avatars.githubusercontent.com/u/17865367?v=4",
+      "pr_count": 12,
+      "review_count": 130
+    },
+    {
+      "id": "gentcys",
+      "name": "gentcys",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "test",
+        "hsetex",
+        "introduce",
+        "concurrency",
+        "workflows",
+        "reject"
+      ],
+      "projects": [
+        "general",
+        "release notes",
+        "feat"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "core"
+        },
+        "release notes": {
+          "weight": 0.154,
+          "role": "peripheral"
+        },
+        "feat": {
+          "weight": 0.153,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "pr_count": 8,
+      "review_count": 1
+    },
+    {
+      "id": "galcohen-redislabs",
+      "name": "galcohen-redislabs",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "mod-15423",
+        "api"
+      ],
+      "projects": [
+        "general"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "peripheral"
+        }
+      },
+      "community": 2,
+      "pr_count": 1,
+      "review_count": 2
+    },
+    {
+      "id": "LukeMathWalker",
+      "name": "LukeMathWalker",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "rust",
+        "chore",
+        "toolchain",
+        "stable",
+        "configure",
+        "redisearch"
+      ],
+      "projects": [
+        "general",
+        "chore"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "chore": {
+          "weight": 0.796,
+          "role": "lead"
+        }
+      },
+      "community": 2,
+      "pr_count": 4,
+      "review_count": 0
+    },
+    {
+      "id": "ShubhamTaple",
+      "name": "ShubhamTaple",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "command",
+        "free",
+        "bug",
+        "potential",
+        "file",
+        "descriptor"
+      ],
+      "projects": [
+        "general",
+        "release notes"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "lead"
+        },
+        "release notes": {
+          "weight": 0.119,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/155555100?v=4",
+      "pr_count": 19,
+      "review_count": 6
+    },
+    {
+      "id": "slice4e",
+      "name": "slice4e",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "optimization",
+        "listpack",
+        "bitpos",
+        "vectorize",
+        "scan",
+        "replace"
+      ],
+      "projects": [
+        "general",
+        "action:run benchmark"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "action:run benchmark": {
+          "weight": 0.225,
+          "role": "core"
+        }
+      },
+      "community": 0,
+      "pr_count": 6,
+      "review_count": 0
+    },
+    {
+      "id": "YaacovHazan",
+      "name": "YaacovHazan",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "redis",
+        "rc1",
+        "default",
+        "compatibility",
+        "across",
+        "architectures"
+      ],
+      "projects": [
+        "general"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "lead"
+        }
+      },
+      "community": 2,
+      "avatar": "https://avatars.githubusercontent.com/u/31382944?v=4",
+      "pr_count": 15,
+      "review_count": 41
+    },
+    {
+      "id": "pony-maggie",
+      "name": "pony-maggie",
+      "role": "Contributor",
+      "team": "docs",
+      "expertise": [
+        "docs",
+        "typos",
+        "vector",
+        "key",
+        "spec",
+        "firstkey"
+      ],
+      "projects": [
+        "docs"
+      ],
+      "project_roles": {
+        "docs": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "pr_count": 3,
+      "review_count": 0
+    },
+    {
+      "id": "stav-nachmias",
+      "name": "stav-nachmias",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "release",
+        "post",
+        "workflow",
+        "tarball",
+        "red-196433",
+        "unused"
+      ],
+      "projects": [
+        "general"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 2,
+      "pr_count": 4,
+      "review_count": 2
+    },
+    {
+      "id": "sggeorgiev",
+      "name": "sggeorgiev",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "idmp",
+        "stream",
+        "rdb",
+        "corrupt",
+        "rax",
+        "optimize"
+      ],
+      "projects": [
+        "general",
+        "state:needs doc pr",
+        "release notes",
+        "state:to be merged",
+        "added"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "core"
+        },
+        "state:needs doc pr": {
+          "weight": 0.304,
+          "role": "core"
+        },
+        "release notes": {
+          "weight": 0.276,
+          "role": "core"
+        },
+        "state:to be merged": {
+          "weight": 0.069,
+          "role": "contributor"
+        },
+        "added": {
+          "weight": 0.069,
+          "role": "lead"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/4948654?v=4",
+      "pr_count": 19,
+      "review_count": 24
+    },
+    {
+      "id": "ShooterIT",
+      "name": "ShooterIT",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "slots",
+        "after",
+        "slot",
+        "migration",
+        "child",
+        "hash"
+      ],
+      "projects": [
+        "general",
+        "release notes",
+        "action:run benchmark",
+        "state:needs doc pr"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "core"
+        },
+        "release notes": {
+          "weight": 0.601,
+          "role": "lead"
+        },
+        "action:run benchmark": {
+          "weight": 0.153,
+          "role": "core"
+        },
+        "state:needs doc pr": {
+          "weight": 0.108,
+          "role": "contributor"
+        }
+      },
+      "community": 1,
+      "avatar": "https://avatars.githubusercontent.com/u/18362176?v=4",
+      "pr_count": 22,
+      "review_count": 177
+    },
+    {
+      "id": "minchopaskal",
+      "name": "minchopaskal",
+      "role": "Contributor",
+      "team": "state:needs doc pr",
+      "expertise": [
+        "hotkeys",
+        "gcra",
+        "info",
+        "slowlog",
+        "memory",
+        "param"
+      ],
+      "projects": [
+        "state:needs doc pr",
+        "general",
+        "release notes"
+      ],
+      "project_roles": {
+        "state:needs doc pr": {
+          "weight": 1,
+          "role": "lead"
+        },
+        "general": {
+          "weight": 0.708,
+          "role": "contributor"
+        },
+        "release notes": {
+          "weight": 0.38,
+          "role": "core"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/7338971?v=4",
+      "pr_count": 17,
+      "review_count": 47
+    },
+    {
+      "id": "dannysheyn",
+      "name": "dannysheyn",
+      "role": "Contributor",
+      "team": "release notes",
+      "expertise": [
+        "cluster-announce-ip",
+        "rejecting",
+        "hostnames"
+      ],
+      "projects": [
+        "release notes"
+      ],
+      "project_roles": {
+        "release notes": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 1,
+      "pr_count": 1,
+      "review_count": 0
+    },
+    {
+      "id": "LiorKogan",
+      "name": "LiorKogan",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "added",
+        "json",
+        "security",
+        "versions",
+        "updated",
+        "supported"
+      ],
+      "projects": [
+        "general"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/7252991?v=4",
+      "pr_count": 5,
+      "review_count": 42
+    },
+    {
+      "id": "AngelYanev",
+      "name": "AngelYanev",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "enable",
+        "lto",
+        "redisearch",
+        "redis",
+        "module",
+        "build"
+      ],
+      "projects": [
+        "general"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 2,
+      "pr_count": 4,
+      "review_count": 0
+    },
+    {
+      "id": "hristostaykov-del",
+      "name": "hristostaykov-del",
+      "role": "Contributor",
+      "team": "release notes",
+      "expertise": [
+        "sentinel",
+        "config",
+        "inline",
+        "cleanup",
+        "tests",
+        "per-user"
+      ],
+      "projects": [
+        "release notes",
+        "general",
+        "state:needs doc pr"
+      ],
+      "project_roles": {
+        "release notes": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "general": {
+          "weight": 0.554,
+          "role": "peripheral"
+        },
+        "state:needs doc pr": {
+          "weight": 0.43,
+          "role": "peripheral"
+        }
+      },
+      "community": 1,
+      "pr_count": 4,
+      "review_count": 0
+    },
+    {
+      "id": "skaslev",
+      "name": "skaslev",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "memory",
+        "tracking",
+        "tests",
+        "kvobjallocsize",
+        "avoid",
+        "allocation"
+      ],
+      "projects": [
+        "general",
+        "release notes",
+        "action:run benchmark",
+        "state:needs doc pr"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "core"
+        },
+        "release notes": {
+          "weight": 0.195,
+          "role": "contributor"
+        },
+        "action:run benchmark": {
+          "weight": 0.089,
+          "role": "contributor"
+        },
+        "state:needs doc pr": {
+          "weight": 0.088,
+          "role": "peripheral"
+        }
+      },
+      "community": 1,
+      "avatar": "https://avatars.githubusercontent.com/u/94503?v=4",
+      "pr_count": 14,
+      "review_count": 41
+    },
+    {
+      "id": "YangboLong",
+      "name": "YangboLong",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "memory",
+        "leak",
+        "multi",
+        "queue",
+        "accounting",
+        "multistatememoverhead"
+      ],
+      "projects": [
+        "general",
+        "action:run benchmark"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "core"
+        },
+        "action:run benchmark": {
+          "weight": 0.12,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/10876678?v=4",
+      "pr_count": 10,
+      "review_count": 0
+    },
+    {
+      "id": "antirez",
+      "name": "antirez",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "test",
+        "tcp",
+        "deadlock",
+        "implement",
+        "redis",
+        "array"
+      ],
+      "projects": [
+        "general",
+        "state:needs doc pr",
+        "action:run benchmark",
+        "release notes"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "state:needs doc pr": {
+          "weight": 0.6,
+          "role": "contributor"
+        },
+        "action:run benchmark": {
+          "weight": 0.345,
+          "role": "peripheral"
+        },
+        "release notes": {
+          "weight": 0.331,
+          "role": "peripheral"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/65632?v=4",
+      "pr_count": 6,
+      "review_count": 0
+    },
+    {
+      "id": "kairosci",
+      "name": "kairosci",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "wontfix",
+        "crash",
+        "test",
+        "module",
+        "during",
+        "zset"
+      ],
+      "projects": [
+        "general",
+        "state:to be closed",
+        "release notes"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "state:to be closed": {
+          "weight": 0.209,
+          "role": "lead"
+        },
+        "release notes": {
+          "weight": 0.155,
+          "role": "peripheral"
+        }
+      },
+      "community": 0,
+      "pr_count": 8,
+      "review_count": 0
+    },
+    {
+      "id": "Rohan5commit",
+      "name": "Rohan5commit",
+      "role": "Contributor",
+      "team": "docs",
+      "expertise": [
+        "comments",
+        "docs",
+        "tests",
+        "typos",
+        "multi",
+        "redis"
+      ],
+      "projects": [
+        "docs",
+        "tests",
+        "ci"
+      ],
+      "project_roles": {
+        "docs": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "tests": {
+          "weight": 0.675,
+          "role": "lead"
+        },
+        "ci": {
+          "weight": 0.223,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "pr_count": 8,
+      "review_count": 0
+    },
+    {
+      "id": "huynhanx03",
+      "name": "huynhanx03",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "malformed",
+        "legacy",
+        "help",
+        "entry",
+        "redis-cli",
+        "ebuckets"
+      ],
+      "projects": [
+        "general",
+        "ebuckets",
+        "redis-cli"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "peripheral"
+        },
+        "ebuckets": {
+          "weight": 0.939,
+          "role": "lead"
+        },
+        "redis-cli": {
+          "weight": 0.935,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "pr_count": 3,
+      "review_count": 0
+    },
+    {
+      "id": "orbisai0security",
+      "name": "orbisai0security",
+      "role": "Contributor",
+      "team": "fix",
+      "expertise": [
+        "unsafe",
+        "exec",
+        "redis",
+        "conf",
+        "tests",
+        "harden"
+      ],
+      "projects": [
+        "fix",
+        "general"
+      ],
+      "project_roles": {
+        "fix": {
+          "weight": 1,
+          "role": "lead"
+        },
+        "general": {
+          "weight": 0.9,
+          "role": "peripheral"
+        }
+      },
+      "community": 0,
+      "pr_count": 2,
+      "review_count": 0
+    },
+    {
+      "id": "myhearwillgoon",
+      "name": "myhearwillgoon",
+      "role": "Contributor",
+      "team": "docs",
+      "expertise": [
+        "docs",
+        "suggest",
+        "documentation",
+        "improvements",
+        "better",
+        "user"
+      ],
+      "projects": [
+        "docs"
+      ],
+      "project_roles": {
+        "docs": {
+          "weight": 1,
+          "role": "lead"
+        }
+      },
+      "community": 3,
+      "pr_count": 4,
+      "review_count": 0
+    },
+    {
+      "id": "fcostaoliveira",
+      "name": "fcostaoliveira",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "clock",
+        "prefetch",
+        "perf",
+        "fast",
+        "path",
+        "batched"
+      ],
+      "projects": [
+        "general",
+        "perf",
+        "release notes",
+        "fast_float_strtod",
+        "hyperloglog",
+        "pubsub"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "core"
+        },
+        "perf": {
+          "weight": 0.33,
+          "role": "lead"
+        },
+        "release notes": {
+          "weight": 0.184,
+          "role": "contributor"
+        },
+        "fast_float_strtod": {
+          "weight": 0.115,
+          "role": "lead"
+        },
+        "hyperloglog": {
+          "weight": 0.109,
+          "role": "lead"
+        },
+        "pubsub": {
+          "weight": 0.067,
+          "role": "lead"
+        }
+      },
+      "community": 1,
+      "avatar": "https://avatars.githubusercontent.com/u/52153106?v=4",
+      "pr_count": 19,
+      "review_count": 2
+    },
+    {
+      "id": "AvivDavid23",
+      "name": "AvivDavid23",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "redisjson",
+        "module",
+        "version",
+        "datatypes",
+        "rc1"
+      ],
+      "projects": [
+        "general"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 2,
+      "pr_count": 4,
+      "review_count": 3
+    },
+    {
+      "id": "mdali9821",
+      "name": "mdali9821",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "client",
+        "list",
+        "filter",
+        "kill",
+        "clientfilter",
+        "full"
+      ],
+      "projects": [
+        "general",
+        "state:major decision"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "state:major decision": {
+          "weight": 0.509,
+          "role": "lead"
+        }
+      },
+      "community": 4,
+      "pr_count": 3,
+      "review_count": 0
+    },
+    {
+      "id": "chzhoo",
+      "name": "chzhoo",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "threads",
+        "flaky",
+        "acl",
+        "unit",
+        "test",
+        "running"
+      ],
+      "projects": [
+        "general"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 5,
+      "pr_count": 2,
+      "review_count": 0
+    },
+    {
+      "id": "melatron",
+      "name": "melatron",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "hfe",
+        "active",
+        "expire",
+        "slow",
+        "drain",
+        "sparse"
+      ],
+      "projects": [
+        "general"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 6,
+      "pr_count": 2,
+      "review_count": 0
+    },
+    {
+      "id": "CMeans-Redis",
+      "name": "CMeans-Redis",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "security",
+        "vulnerability",
+        "reporting",
+        "instructions"
+      ],
+      "projects": [
+        "general"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 2,
+      "pr_count": 2,
+      "review_count": 0
+    },
+    {
+      "id": "rajkripal",
+      "name": "rajkripal",
+      "role": "Contributor",
+      "team": "bg_unlink",
+      "expertise": [
+        "defer",
+        "fallback",
+        "unlink",
+        "bio",
+        "instead",
+        "tracking"
+      ],
+      "projects": [
+        "bg_unlink",
+        "threads_mngr",
+        "release notes"
+      ],
+      "project_roles": {
+        "bg_unlink": {
+          "weight": 1,
+          "role": "lead"
+        },
+        "threads_mngr": {
+          "weight": 0.999,
+          "role": "lead"
+        },
+        "release notes": {
+          "weight": 0.994,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "pr_count": 3,
+      "review_count": 0
+    },
+    {
+      "id": "charsyam",
+      "name": "charsyam",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "fast",
+        "path",
+        "hash",
+        "pause",
+        "auto-resize",
+        "during"
+      ],
+      "projects": [
+        "general",
+        "action:run benchmark",
+        "string",
+        "aof",
+        "zset",
+        "class:cleanup"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "action:run benchmark": {
+          "weight": 0.697,
+          "role": "lead"
+        },
+        "string": {
+          "weight": 0.355,
+          "role": "lead"
+        },
+        "aof": {
+          "weight": 0.346,
+          "role": "lead"
+        },
+        "zset": {
+          "weight": 0.345,
+          "role": "lead"
+        },
+        "class:cleanup": {
+          "weight": 0.333,
+          "role": "lead"
+        }
+      },
+      "community": 7,
+      "avatar": "https://avatars.githubusercontent.com/u/439301?v=4",
+      "pr_count": 9,
+      "review_count": 0
+    },
+    {
+      "id": "pierluigilenoci",
+      "name": "pierluigilenoci",
+      "role": "Contributor",
+      "team": "ci",
+      "expertise": [
+        "ubuntu",
+        "build-old-chain-jemalloc",
+        "job",
+        "feat",
+        "null-safe",
+        "macro"
+      ],
+      "projects": [
+        "ci",
+        "feat",
+        "general"
+      ],
+      "project_roles": {
+        "ci": {
+          "weight": 1,
+          "role": "lead"
+        },
+        "feat": {
+          "weight": 0.902,
+          "role": "lead"
+        },
+        "general": {
+          "weight": 0.901,
+          "role": "peripheral"
+        }
+      },
+      "community": 0,
+      "pr_count": 3,
+      "review_count": 0
+    },
+    {
+      "id": "darsheel-rathore",
+      "name": "darsheel-rathore",
+      "role": "Contributor",
+      "team": "release notes",
+      "expertise": [
+        "use-after-free"
+      ],
+      "projects": [
+        "release notes"
+      ],
+      "project_roles": {
+        "release notes": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "pr_count": 1,
+      "review_count": 0
+    },
+    {
+      "id": "erhan1209",
+      "name": "erhan1209",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "avoid",
+        "redundant",
+        "keysizes",
+        "histogram",
+        "after",
+        "hgetex"
+      ],
+      "projects": [
+        "general"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "peripheral"
+        }
+      },
+      "community": 1,
+      "pr_count": 1,
+      "review_count": 0
+    },
+    {
+      "id": "raffertyyu",
+      "name": "raffertyyu",
+      "role": "Contributor",
+      "team": "state:needs doc pr",
+      "expertise": [
+        "increx",
+        "command",
+        "atomic",
+        "increment",
+        "ttl",
+        "bounds"
+      ],
+      "projects": [
+        "state:needs doc pr"
+      ],
+      "project_roles": {
+        "state:needs doc pr": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "pr_count": 1,
+      "review_count": 0
+    },
+    {
+      "id": "udi-speedb",
+      "name": "udi-speedb",
+      "role": "Contributor",
+      "team": "state:needs doc pr",
+      "expertise": [
+        "active",
+        "clients",
+        "stats",
+        "rename",
+        "fields",
+        "red-188967"
+      ],
+      "projects": [
+        "state:needs doc pr",
+        "red-184929"
+      ],
+      "project_roles": {
+        "state:needs doc pr": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "red-184929": {
+          "weight": 0.392,
+          "role": "lead"
+        }
+      },
+      "community": 0,
+      "pr_count": 3,
+      "review_count": 0
+    },
+    {
+      "id": "jjz921024",
+      "name": "jjz921024",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "module",
+        "api",
+        "feat",
+        "cluster",
+        "command",
+        "flags"
+      ],
+      "projects": [
+        "general",
+        "feat"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "feat": {
+          "weight": 0.134,
+          "role": "contributor"
+        }
+      },
+      "community": 1,
+      "pr_count": 6,
+      "review_count": 0
+    },
+    {
+      "id": "oranagra",
+      "name": "oranagra",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "keymodified",
+        "handleexpiredidmpentries",
+        "mark",
+        "keys",
+        "modified",
+        "fixes"
+      ],
+      "projects": [
+        "general",
+        "release notes"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "release notes": {
+          "weight": 0.415,
+          "role": "contributor"
+        }
+      },
+      "community": 1,
+      "avatar": "https://avatars.githubusercontent.com/u/7045099?v=4",
+      "pr_count": 6,
+      "review_count": 135
+    },
+    {
+      "id": "m-marinov",
+      "name": "m-marinov",
+      "role": "Contributor",
+      "team": "red-183356",
+      "expertise": [
+        "red-183356",
+        "automate",
+        "tarball",
+        "creation"
+      ],
+      "projects": [
+        "red-183356"
+      ],
+      "project_roles": {
+        "red-183356": {
+          "weight": 1,
+          "role": "lead"
+        }
+      },
+      "community": 2,
+      "pr_count": 1,
+      "review_count": 0
+    },
+    {
+      "id": "zzjas",
+      "name": "zzjas",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "memory",
+        "error",
+        "vsim",
+        "filter",
+        "leaks",
+        "duplicate"
+      ],
+      "projects": [
+        "general",
+        "release notes"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "peripheral"
+        },
+        "release notes": {
+          "weight": 0.475,
+          "role": "peripheral"
+        }
+      },
+      "community": 0,
+      "pr_count": 3,
+      "review_count": 0
+    },
+    {
+      "id": "apelfeld",
+      "name": "apelfeld",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "protect",
+        "keys",
+        "feature",
+        "pasten",
+        "strengthen",
+        "red"
+      ],
+      "projects": [
+        "general"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 8,
+      "pr_count": 3,
+      "review_count": 0
+    },
+    {
+      "id": "kolemannix",
+      "name": "kolemannix",
+      "role": "Contributor",
+      "team": "action:run benchmark",
+      "expertise": [
+        "replace",
+        "ffc"
+      ],
+      "projects": [
+        "action:run benchmark"
+      ],
+      "project_roles": {
+        "action:run benchmark": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 9,
+      "pr_count": 1,
+      "review_count": 0
+    },
+    {
+      "id": "paulorsousa",
+      "name": "paulorsousa",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "integer",
+        "underflow",
+        "calculation",
+        "optimize",
+        "peak",
+        "memory"
+      ],
+      "projects": [
+        "general"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "peripheral"
+        }
+      },
+      "community": 1,
+      "pr_count": 2,
+      "review_count": 0
+    },
+    {
+      "id": "judeng",
+      "name": "judeng",
+      "role": "Contributor",
+      "team": "state:to be merged",
+      "expertise": [
+        "asmtask",
+        "clusterlookupnode"
+      ],
+      "projects": [
+        "state:to be merged"
+      ],
+      "project_roles": {
+        "state:to be merged": {
+          "weight": 1,
+          "role": "core"
+        }
+      },
+      "community": 1,
+      "avatar": "https://avatars.githubusercontent.com/u/15336980?v=4",
+      "pr_count": 1,
+      "review_count": 0
+    },
+    {
+      "id": "RoyBenMoshe",
+      "name": "RoyBenMoshe",
+      "role": "Contributor",
+      "team": "release notes",
+      "expertise": [
+        "redact",
+        "user",
+        "input",
+        "selected",
+        "logs",
+        "hide"
+      ],
+      "projects": [
+        "release notes"
+      ],
+      "project_roles": {
+        "release notes": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "pr_count": 2,
+      "review_count": 0
+    },
+    {
+      "id": "alonre24",
+      "name": "alonre24",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "redisearch",
+        "module",
+        "version"
+      ],
+      "projects": [
+        "general"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "peripheral"
+        }
+      },
+      "community": 2,
+      "pr_count": 2,
+      "review_count": 3
+    },
+    {
+      "id": "bodhisilberling",
+      "name": "bodhisilberling",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "typos",
+        "typo",
+        "comment",
+        "given",
+        "give",
+        "vector-sets"
+      ],
+      "projects": [
+        "general",
+        "state:to be merged"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "peripheral"
+        },
+        "state:to be merged": {
+          "weight": 0.495,
+          "role": "contributor"
+        }
+      },
+      "community": 10,
+      "pr_count": 3,
+      "review_count": 0
+    },
+    {
+      "id": "konoongg",
+      "name": "konoongg",
+      "role": "Contributor",
+      "team": "state:to be merged",
+      "expertise": [
+        "graceful",
+        "shutdown",
+        "tls",
+        "redis-cli"
+      ],
+      "projects": [
+        "state:to be merged"
+      ],
+      "project_roles": {
+        "state:to be merged": {
+          "weight": 1,
+          "role": "peripheral"
+        }
+      },
+      "community": 0,
+      "pr_count": 1,
+      "review_count": 0
+    },
+    {
+      "id": "StavRLevi",
+      "name": "StavRLevi",
+      "role": "Contributor",
+      "team": "release notes",
+      "expertise": [
+        "command",
+        "security",
+        "configuration",
+        "warnings",
+        "startup",
+        "crash"
+      ],
+      "projects": [
+        "release notes",
+        "general"
+      ],
+      "project_roles": {
+        "release notes": {
+          "weight": 1,
+          "role": "core"
+        },
+        "general": {
+          "weight": 0.275,
+          "role": "peripheral"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/45394834?v=4",
+      "pr_count": 5,
+      "review_count": 1
+    },
+    {
+      "id": "yveslb",
+      "name": "yveslb",
+      "role": "Contributor",
+      "team": "release notes",
+      "expertise": [
+        "redis-cli",
+        "keystats",
+        "percentile",
+        "key",
+        "names",
+        "between"
+      ],
+      "projects": [
+        "release notes"
+      ],
+      "project_roles": {
+        "release notes": {
+          "weight": 1,
+          "role": "peripheral"
+        }
+      },
+      "community": 0,
+      "pr_count": 1,
+      "review_count": 0
+    },
+    {
+      "id": "RushabhMehta2005",
+      "name": "RushabhMehta2005",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "overflow",
+        "name",
+        "check",
+        "stack",
+        "prevent",
+        "server"
+      ],
+      "projects": [
+        "general",
+        "fix",
+        "deps"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "peripheral"
+        },
+        "fix": {
+          "weight": 0.633,
+          "role": "contributor"
+        },
+        "deps": {
+          "weight": 0.587,
+          "role": "lead"
+        }
+      },
+      "community": 0,
+      "pr_count": 4,
+      "review_count": 0
+    },
+    {
+      "id": "fanpei91",
+      "name": "fanpei91",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "incorrect",
+        "stream",
+        "comparison",
+        "streamreplywithrangefromconsumerpel"
+      ],
+      "projects": [
+        "general"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "peripheral"
+        }
+      },
+      "community": 0,
+      "pr_count": 1,
+      "review_count": 0
+    },
+    {
+      "id": "homerlsy",
+      "name": "homerlsy",
+      "role": "Contributor",
+      "team": "refactor",
+      "expertise": [
+        "simplify",
+        "empty",
+        "string",
+        "handling",
+        "sds"
+      ],
+      "projects": [
+        "refactor"
+      ],
+      "project_roles": {
+        "refactor": {
+          "weight": 1,
+          "role": "lead"
+        }
+      },
+      "community": 0,
+      "pr_count": 1,
+      "review_count": 0
+    },
+    {
+      "id": "Scut-Corgis",
+      "name": "Scut-Corgis",
+      "role": "Contributor",
+      "team": "release notes",
+      "expertise": [
+        "asynchronous",
+        "release",
+        "slavekeyswithexpire",
+        "writable",
+        "replica"
+      ],
+      "projects": [
+        "release notes"
+      ],
+      "project_roles": {
+        "release notes": {
+          "weight": 1,
+          "role": "peripheral"
+        }
+      },
+      "community": 0,
+      "pr_count": 1,
+      "review_count": 0
+    },
+    {
+      "id": "github-roushan",
+      "name": "github-roushan",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [
+        "ignore",
+        "module",
+        "sources",
+        "rust",
+        "toolchain",
+        "gitignore"
+      ],
+      "projects": [
+        "general"
+      ],
+      "project_roles": {
+        "general": {
+          "weight": 1,
+          "role": "peripheral"
+        }
+      },
+      "community": 0,
+      "pr_count": 2,
+      "review_count": 0
+    },
+    {
+      "id": "mgravell",
+      "name": "mgravell",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [],
+      "projects": [],
+      "project_roles": {},
+      "community": 0,
+      "pr_count": 0,
+      "review_count": 7
+    },
+    {
+      "id": "guybe7",
+      "name": "guybe7",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [],
+      "projects": [],
+      "project_roles": {},
+      "community": 6,
+      "pr_count": 0,
+      "review_count": 7
+    },
+    {
+      "id": "daemyung-lablup",
+      "name": "daemyung-lablup",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [],
+      "projects": [],
+      "project_roles": {},
+      "community": 7,
+      "pr_count": 0,
+      "review_count": 4
+    },
+    {
+      "id": "meiravgri",
+      "name": "meiravgri",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [],
+      "projects": [],
+      "project_roles": {},
+      "community": 1,
+      "pr_count": 0,
+      "review_count": 5
+    },
+    {
+      "id": "themavik",
+      "name": "themavik",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [],
+      "projects": [],
+      "project_roles": {},
+      "community": 0,
+      "pr_count": 0,
+      "review_count": 3
+    },
+    {
+      "id": "shahsb",
+      "name": "shahsb",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [],
+      "projects": [],
+      "project_roles": {},
+      "community": 0,
+      "pr_count": 0,
+      "review_count": 31
+    },
+    {
+      "id": "chenazulay",
+      "name": "chenazulay",
+      "role": "Contributor",
+      "team": "general",
+      "expertise": [],
+      "projects": [],
+      "project_roles": {},
+      "community": 2,
+      "pr_count": 0,
+      "review_count": 3
+    }
+  ],
+  "links": [
+    {
+      "source": "sundb",
+      "target": "tezc",
+      "weight": 0.1658
+    },
+    {
+      "source": "ShooterIT",
+      "target": "sundb",
+      "weight": 0.2529
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "oshadmi",
+      "weight": 0.0727
+    },
+    {
+      "source": "gentcys",
+      "target": "sundb",
+      "weight": 0.196
+    },
+    {
+      "source": "gabsow",
+      "target": "galcohen-redislabs",
+      "weight": 0.0121
+    },
+    {
+      "source": "LukeMathWalker",
+      "target": "kalinstaykov",
+      "weight": 0.0537
+    },
+    {
+      "source": "LukeMathWalker",
+      "target": "YaacovHazan",
+      "weight": 0.0354
+    },
+    {
+      "source": "minchopaskal",
+      "target": "slice4e",
+      "weight": 0.1277
+    },
+    {
+      "source": "slice4e",
+      "target": "sundb",
+      "weight": 0.0874
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "pony-maggie",
+      "weight": 0.0237
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "YaacovHazan",
+      "weight": 0.0118
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "tezc",
+      "weight": 0.0921
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "stav-nachmias",
+      "weight": 0.0477
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "sundb",
+      "weight": 0.0472
+    },
+    {
+      "source": "ShooterIT",
+      "target": "YaacovHazan",
+      "weight": 0.0359
+    },
+    {
+      "source": "AvivDavid23",
+      "target": "gabsow",
+      "weight": 0.0253
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "gabsow",
+      "weight": 0.0483
+    },
+    {
+      "source": "sggeorgiev",
+      "target": "sundb",
+      "weight": 1
+    },
+    {
+      "source": "sggeorgiev",
+      "target": "skaslev",
+      "weight": 0.078
+    },
+    {
+      "source": "ShooterIT",
+      "target": "tezc",
+      "weight": 0.7156
+    },
+    {
+      "source": "minchopaskal",
+      "target": "sundb",
+      "weight": 0.4437
+    },
+    {
+      "source": "ShooterIT",
+      "target": "minchopaskal",
+      "weight": 0.027
+    },
+    {
+      "source": "ShooterIT",
+      "target": "moticless",
+      "weight": 0.268
+    },
+    {
+      "source": "dannysheyn",
+      "target": "sundb",
+      "weight": 0.035
+    },
+    {
+      "source": "ShooterIT",
+      "target": "dannysheyn",
+      "weight": 0.0583
+    },
+    {
+      "source": "dannysheyn",
+      "target": "sggeorgiev",
+      "weight": 0.0117
+    },
+    {
+      "source": "LiorKogan",
+      "target": "YaacovHazan",
+      "weight": 0.0238
+    },
+    {
+      "source": "hristostaykov-del",
+      "target": "sundb",
+      "weight": 0.0663
+    },
+    {
+      "source": "AngelYanev",
+      "target": "Peter-Sh",
+      "weight": 0.0113
+    },
+    {
+      "source": "AngelYanev",
+      "target": "YaacovHazan",
+      "weight": 0.0113
+    },
+    {
+      "source": "YangboLong",
+      "target": "sundb",
+      "weight": 0.1853
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "antirez",
+      "weight": 0.045
+    },
+    {
+      "source": "ShooterIT",
+      "target": "antirez",
+      "weight": 0.0625
+    },
+    {
+      "source": "antirez",
+      "target": "sundb",
+      "weight": 0.3927
+    },
+    {
+      "source": "antirez",
+      "target": "minchopaskal",
+      "weight": 0.1161
+    },
+    {
+      "source": "antirez",
+      "target": "mgravell",
+      "weight": 0.0788
+    },
+    {
+      "source": "antirez",
+      "target": "oranagra",
+      "weight": 0.0175
+    },
+    {
+      "source": "kairosci",
+      "target": "sundb",
+      "weight": 0.1148
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "sundb",
+      "weight": 0.249
+    },
+    {
+      "source": "huynhanx03",
+      "target": "sundb",
+      "weight": 0.0318
+    },
+    {
+      "source": "sundb",
+      "target": "vitahlin",
+      "weight": 0.4897
+    },
+    {
+      "source": "ShooterIT",
+      "target": "fcostaoliveira",
+      "weight": 0.3536
+    },
+    {
+      "source": "fcostaoliveira",
+      "target": "sundb",
+      "weight": 0.263
+    },
+    {
+      "source": "oranagra",
+      "target": "vitahlin",
+      "weight": 0.0311
+    },
+    {
+      "source": "gentcys",
+      "target": "vitahlin",
+      "weight": 0.0109
+    },
+    {
+      "source": "minchopaskal",
+      "target": "vitahlin",
+      "weight": 0.049
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "oranagra",
+      "weight": 0.0177
+    },
+    {
+      "source": "hristostaykov-del",
+      "target": "oranagra",
+      "weight": 0.0374
+    },
+    {
+      "source": "hristostaykov-del",
+      "target": "moticless",
+      "weight": 0.1079
+    },
+    {
+      "source": "hristostaykov-del",
+      "target": "minchopaskal",
+      "weight": 0.0286
+    },
+    {
+      "source": "moticless",
+      "target": "sundb",
+      "weight": 0.2348
+    },
+    {
+      "source": "skaslev",
+      "target": "tezc",
+      "weight": 0.0426
+    },
+    {
+      "source": "oranagra",
+      "target": "tezc",
+      "weight": 0.0426
+    },
+    {
+      "source": "alonre24",
+      "target": "tezc",
+      "weight": 0.0107
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "tezc",
+      "weight": 0.0416
+    },
+    {
+      "source": "guybe7",
+      "target": "melatron",
+      "weight": 0.0505
+    },
+    {
+      "source": "CMeans-Redis",
+      "target": "LiorKogan",
+      "weight": 0.0106
+    },
+    {
+      "source": "CMeans-Redis",
+      "target": "YaacovHazan",
+      "weight": 0.0106
+    },
+    {
+      "source": "rajkripal",
+      "target": "sundb",
+      "weight": 0.0417
+    },
+    {
+      "source": "huynhanx03",
+      "target": "moticless",
+      "weight": 0.0208
+    },
+    {
+      "source": "fcostaoliveira",
+      "target": "moticless",
+      "weight": 0.0931
+    },
+    {
+      "source": "pierluigilenoci",
+      "target": "sundb",
+      "weight": 0.0197
+    },
+    {
+      "source": "darsheel-rathore",
+      "target": "sundb",
+      "weight": 0.0309
+    },
+    {
+      "source": "fcostaoliveira",
+      "target": "skaslev",
+      "weight": 0.0297
+    },
+    {
+      "source": "erhan1209",
+      "target": "skaslev",
+      "weight": 0.0205
+    },
+    {
+      "source": "erhan1209",
+      "target": "sundb",
+      "weight": 0.0205
+    },
+    {
+      "source": "moticless",
+      "target": "vitahlin",
+      "weight": 0.0102
+    },
+    {
+      "source": "raffertyyu",
+      "target": "sundb",
+      "weight": 0.4799
+    },
+    {
+      "source": "LiorKogan",
+      "target": "raffertyyu",
+      "weight": 0.143
+    },
+    {
+      "source": "oranagra",
+      "target": "raffertyyu",
+      "weight": 0.0613
+    },
+    {
+      "source": "raffertyyu",
+      "target": "tezc",
+      "weight": 0.0511
+    },
+    {
+      "source": "moticless",
+      "target": "raffertyyu",
+      "weight": 0.0408
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "oranagra",
+      "weight": 0.0102
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "TalBarYakar",
+      "weight": 0.0102
+    },
+    {
+      "source": "skaslev",
+      "target": "sundb",
+      "weight": 0.1712
+    },
+    {
+      "source": "AvivDavid23",
+      "target": "YaacovHazan",
+      "weight": 0.0101
+    },
+    {
+      "source": "daemyung-lablup",
+      "target": "fcostaoliveira",
+      "weight": 0.0198
+    },
+    {
+      "source": "fcostaoliveira",
+      "target": "oranagra",
+      "weight": 0.0429
+    },
+    {
+      "source": "tezc",
+      "target": "vitahlin",
+      "weight": 0.048
+    },
+    {
+      "source": "orbisai0security",
+      "target": "sundb",
+      "weight": 0.0396
+    },
+    {
+      "source": "charsyam",
+      "target": "sundb",
+      "weight": 0.0488
+    },
+    {
+      "source": "minchopaskal",
+      "target": "skaslev",
+      "weight": 0.0564
+    },
+    {
+      "source": "moticless",
+      "target": "tezc",
+      "weight": 0.1473
+    },
+    {
+      "source": "alonre24",
+      "target": "moticless",
+      "weight": 0.0098
+    },
+    {
+      "source": "charsyam",
+      "target": "daemyung-lablup",
+      "weight": 0.0195
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "sggeorgiev",
+      "weight": 0.0194
+    },
+    {
+      "source": "sundb",
+      "target": "udi-speedb",
+      "weight": 0.0956
+    },
+    {
+      "source": "LiorKogan",
+      "target": "minchopaskal",
+      "weight": 0.1396
+    },
+    {
+      "source": "moticless",
+      "target": "oranagra",
+      "weight": 0.071
+    },
+    {
+      "source": "ShooterIT",
+      "target": "meiravgri",
+      "weight": 0.0473
+    },
+    {
+      "source": "ShooterIT",
+      "target": "oshadmi",
+      "weight": 0.0095
+    },
+    {
+      "source": "ShooterIT",
+      "target": "jjz921024",
+      "weight": 0.0378
+    },
+    {
+      "source": "jjz921024",
+      "target": "tezc",
+      "weight": 0.0284
+    },
+    {
+      "source": "oranagra",
+      "target": "sundb",
+      "weight": 0.3308
+    },
+    {
+      "source": "melatron",
+      "target": "sundb",
+      "weight": 0.0093
+    },
+    {
+      "source": "jjz921024",
+      "target": "sundb",
+      "weight": 0.028
+    },
+    {
+      "source": "jjz921024",
+      "target": "oranagra",
+      "weight": 0.0093
+    },
+    {
+      "source": "oranagra",
+      "target": "sggeorgiev",
+      "weight": 0.0447
+    },
+    {
+      "source": "daguimu",
+      "target": "sundb",
+      "weight": 0.0093
+    },
+    {
+      "source": "JoanFM",
+      "target": "vitahlin",
+      "weight": 0.0093
+    },
+    {
+      "source": "ShooterIT",
+      "target": "skaslev",
+      "weight": 0.0271
+    },
+    {
+      "source": "JoanFM",
+      "target": "oranagra",
+      "weight": 0.0275
+    },
+    {
+      "source": "JoanFM",
+      "target": "moticless",
+      "weight": 0.0184
+    },
+    {
+      "source": "m-marinov",
+      "target": "stav-nachmias",
+      "weight": 0.0183
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "m-marinov",
+      "weight": 0.0274
+    },
+    {
+      "source": "YangboLong",
+      "target": "themavik",
+      "weight": 0.0181
+    },
+    {
+      "source": "ShooterIT",
+      "target": "YangboLong",
+      "weight": 0.0454
+    },
+    {
+      "source": "gentcys",
+      "target": "moticless",
+      "weight": 0.009
+    },
+    {
+      "source": "minchopaskal",
+      "target": "oranagra",
+      "weight": 0.1331
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "minchopaskal",
+      "weight": 0.024
+    },
+    {
+      "source": "ShooterIT",
+      "target": "oranagra",
+      "weight": 0.2199
+    },
+    {
+      "source": "oshadmi",
+      "target": "zzjas",
+      "weight": 0.0089
+    },
+    {
+      "source": "sundb",
+      "target": "zzjas",
+      "weight": 0.0674
+    },
+    {
+      "source": "minchopaskal",
+      "target": "sggeorgiev",
+      "weight": 0.1171
+    },
+    {
+      "source": "hristostaykov-del",
+      "target": "sggeorgiev",
+      "weight": 0.0088
+    },
+    {
+      "source": "LiorKogan",
+      "target": "hristostaykov-del",
+      "weight": 0.0088
+    },
+    {
+      "source": "TalBarYakar",
+      "target": "sundb",
+      "weight": 0.0351
+    },
+    {
+      "source": "TalBarYakar",
+      "target": "oranagra",
+      "weight": 0.0174
+    },
+    {
+      "source": "TalBarYakar",
+      "target": "gabsow",
+      "weight": 0.0088
+    },
+    {
+      "source": "gentcys",
+      "target": "guybe7",
+      "weight": 0.0173
+    },
+    {
+      "source": "ShooterIT",
+      "target": "vitahlin",
+      "weight": 0.0312
+    },
+    {
+      "source": "gentcys",
+      "target": "minchopaskal",
+      "weight": 0.0167
+    },
+    {
+      "source": "ShooterIT",
+      "target": "kairosci",
+      "weight": 0.0167
+    },
+    {
+      "source": "oranagra",
+      "target": "zzjas",
+      "weight": 0.0083
+    },
+    {
+      "source": "ShooterIT",
+      "target": "zzjas",
+      "weight": 0.0083
+    },
+    {
+      "source": "sundb",
+      "target": "themavik",
+      "weight": 0.0083
+    },
+    {
+      "source": "oranagra",
+      "target": "udi-speedb",
+      "weight": 0.0083
+    },
+    {
+      "source": "minchopaskal",
+      "target": "shahsb",
+      "weight": 0.0144
+    },
+    {
+      "source": "Rohan5commit",
+      "target": "sundb",
+      "weight": 0.0079
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "kalinstaykov",
+      "weight": 0.0143
+    },
+    {
+      "source": "chenazulay",
+      "target": "stav-nachmias",
+      "weight": 0.0233
+    },
+    {
+      "source": "shahsb",
+      "target": "stav-nachmias",
+      "weight": 0.0078
+    },
+    {
+      "source": "sggeorgiev",
+      "target": "shahsb",
+      "weight": 0.0208
+    },
+    {
+      "source": "moticless",
+      "target": "sggeorgiev",
+      "weight": 0.0154
+    },
+    {
+      "source": "LukeMathWalker",
+      "target": "oshadmi",
+      "weight": 0.0077
+    },
+    {
+      "source": "moticless",
+      "target": "skaslev",
+      "weight": 0.0834
+    },
+    {
+      "source": "ShooterIT",
+      "target": "shahsb",
+      "weight": 0.0404
+    },
+    {
+      "source": "kairosci",
+      "target": "moticless",
+      "weight": 0.0295
+    },
+    {
+      "source": "ShooterIT",
+      "target": "paulorsousa",
+      "weight": 0.0592
+    },
+    {
+      "source": "shahsb",
+      "target": "slice4e",
+      "weight": 0.0073
+    },
+    {
+      "source": "judeng",
+      "target": "shahsb",
+      "weight": 0.0072
+    },
+    {
+      "source": "ShooterIT",
+      "target": "judeng",
+      "weight": 0.0288
+    },
+    {
+      "source": "judeng",
+      "target": "tezc",
+      "weight": 0.0144
+    },
+    {
+      "source": "RoyBenMoshe",
+      "target": "sundb",
+      "weight": 0.0491
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "alonre24",
+      "weight": 0.0138
+    },
+    {
+      "source": "shahsb",
+      "target": "skaslev",
+      "weight": 0.0068
+    },
+    {
+      "source": "konoongg",
+      "target": "shahsb",
+      "weight": 0.0067
+    },
+    {
+      "source": "konoongg",
+      "target": "sundb",
+      "weight": 0.0403
+    },
+    {
+      "source": "oranagra",
+      "target": "skaslev",
+      "weight": 0.0459
+    },
+    {
+      "source": "StavRLevi",
+      "target": "sundb",
+      "weight": 0.0779
+    },
+    {
+      "source": "LiorKogan",
+      "target": "StavRLevi",
+      "weight": 0.0333
+    },
+    {
+      "source": "sundb",
+      "target": "yveslb",
+      "weight": 0.0328
+    },
+    {
+      "source": "LukeMathWalker",
+      "target": "alonre24",
+      "weight": 0.0065
+    },
+    {
+      "source": "YangboLong",
+      "target": "oranagra",
+      "weight": 0.0065
+    },
+    {
+      "source": "paulorsousa",
+      "target": "sundb",
+      "weight": 0.0065
+    },
+    {
+      "source": "RushabhMehta2005",
+      "target": "sundb",
+      "weight": 0.064
+    },
+    {
+      "source": "RushabhMehta2005",
+      "target": "shahsb",
+      "weight": 0.0065
+    },
+    {
+      "source": "ShooterIT",
+      "target": "StavRLevi",
+      "weight": 0.0345
+    },
+    {
+      "source": "StavRLevi",
+      "target": "shahsb",
+      "weight": 0.0171
+    },
+    {
+      "source": "antirez",
+      "target": "shahsb",
+      "weight": 0.0129
+    },
+    {
+      "source": "minchopaskal",
+      "target": "tezc",
+      "weight": 0.057
+    },
+    {
+      "source": "fcostaoliveira",
+      "target": "shahsb",
+      "weight": 0.0125
+    },
+    {
+      "source": "LiorKogan",
+      "target": "antirez",
+      "weight": 0.0062
+    },
+    {
+      "source": "antirez",
+      "target": "fcostaoliveira",
+      "weight": 0.0062
+    },
+    {
+      "source": "antirez",
+      "target": "moticless",
+      "weight": 0.0124
+    },
+    {
+      "source": "StavRLevi",
+      "target": "oranagra",
+      "weight": 0.0124
+    },
+    {
+      "source": "moticless",
+      "target": "shahsb",
+      "weight": 0.0118
+    },
+    {
+      "source": "YangboLong",
+      "target": "oshadmi",
+      "weight": 0.0057
+    },
+    {
+      "source": "shahsb",
+      "target": "sundb",
+      "weight": 0.0056
+    },
+    {
+      "source": "fanpei91",
+      "target": "sundb",
+      "weight": 0.0221
+    },
+    {
+      "source": "fanpei91",
+      "target": "sggeorgiev",
+      "weight": 0.0055
+    },
+    {
+      "source": "ShooterIT",
+      "target": "sggeorgiev",
+      "weight": 0.0054
+    },
+    {
+      "source": "LiorKogan",
+      "target": "sggeorgiev",
+      "weight": 0.0109
+    },
+    {
+      "source": "LiorKogan",
+      "target": "shahsb",
+      "weight": 0.0053
+    },
+    {
+      "source": "homerlsy",
+      "target": "sundb",
+      "weight": 0.0105
+    },
+    {
+      "source": "gabsow",
+      "target": "shahsb",
+      "weight": 0.0052
+    },
+    {
+      "source": "RushabhMehta2005",
+      "target": "ShooterIT",
+      "weight": 0.0206
+    },
+    {
+      "source": "Scut-Corgis",
+      "target": "shahsb",
+      "weight": 0.0051
+    },
+    {
+      "source": "Scut-Corgis",
+      "target": "sundb",
+      "weight": 0.0102
+    },
+    {
+      "source": "github-roushan",
+      "target": "sundb",
+      "weight": 0.0051
+    },
+    {
+      "source": "shahsb",
+      "target": "vitahlin",
+      "weight": 0.0051
+    },
+    {
+      "source": "JoanFM",
+      "target": "ShooterIT",
+      "weight": 0.0202
+    },
+    {
+      "source": "ShooterIT",
+      "target": "galcohen-redislabs",
+      "weight": 0.0101
+    }
+  ]
+}
