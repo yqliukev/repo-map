@@ -1,11 +1,26 @@
 // ── Scraper-internal types ────────────────────────────────────────────────────
 
+export interface PRFileChange {
+  path: string;
+  additions: number;
+  deletions: number;
+}
+
 export interface RawPR {
   number: number;
   title: string;
   author: string;
   created_at: string;
   labels: string[];
+  files: PRFileChange[];
+}
+
+export interface CacheMeta {
+  repo: string;
+  scraped_at: string;
+  window_start: string;
+  pr_count: number;
+  review_count: number;
 }
 
 export interface RawReview {
