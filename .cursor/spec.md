@@ -12,6 +12,7 @@
 | **D2** | **Directory-based** | Subprojects = path-derived areas from PR changed files (not PR labels). |
 | **D4** | **Two graph files** | `graph.json` (contributors) + `project_graph.json` (directory subprojects). **No** separate technology graph — languages/frameworks/tools live on each contributor node. |
 | **D7** | **`scraper/` + `compute/`** | Collect in `scraper/`; graph build in `compute/` (separate package). |
+| **D6** | **PR activity + shared paths** | Contributor edges strengthened by **shared PR participation** (author, reviewer, or both on the same PR) and **overlapping changed file paths** across PRs. Reviews remain a primary signal (`REVIEW_WEIGHT`). |
 
 ---
 
@@ -86,7 +87,7 @@ flowchart LR
 | Entity | Fields (target) | Notes |
 |--------|-----------------|--------|
 | Pull requests | `RawPR`: number, title, author, created_at, labels, **`files: { path, additions, deletions }[]`** | Labels kept for optional display; **D2** uses `files` only |
-| Reviews | `RawReview`: pr_number, reviewer, submitted_at | Collaboration edges |
+| Reviews | `RawReview`: pr_number, reviewer, submitted_at | PR participation + review edges (**D6**) |
 | Contributors | `ContributorStat`: login, name, avatar_url | Profile + avatar for nodes; commit count optional |
 
 **Deferred from research.md Stage 1:** issues, standalone commits, PR-linked issue cross-refs.
@@ -140,7 +141,11 @@ Local-only; not committed (see `.gitignore` patterns).
    - `expertise` = TF-IDF keywords from PR titles (v1 heuristic; **D3** open).  
    - **`technologies`** = structured list on the person (e.g. languages, frameworks, tools inferred from changed-file extensions, paths, and Stage 2 when available). Powers the “technology” exploration UI without a third graph file.
 
-3. **Collaboration edges** — Weighted by PR reviews. Recency: `weight *= exp(-LAMBDA * days)` with `LAMBDA = 0.005`. Review multiplier: `REVIEW_WEIGHT = 1.0`. Optional future: shared subproject ownership as edge boost (**D6**).
+3. **Collaboration edges (D6)** — For each contributor pair *(A, B)*, accumulate edge weight from:
+   - **Shared PR activity** — Same PR with both participating (roles: author, reviewer). Reviewer↔author on a PR adds `REVIEW_WEIGHT` (1.0) per review event; additional co-presence on a PR (e.g. multiple reviewers, or repeat interaction on the same PR) adds to the same edge bucket.
+   - **Shared changed paths** — For file paths each person touched (via their PRs’ `files`), add weight proportional to overlap (e.g. Jaccard or count of shared paths, scaled by recency and touch volume). Same path on the same PR counts under both signals; dedupe or cap in `compute/` implementation.
+   - **Recency** — Each event at time *t* contributes `base * exp(-LAMBDA * days_since_t)` with `LAMBDA = 0.005`.
+   - **Out of scope for edges:** issue comments, co-authored commits off-PR (**D1**).
 
 4. **Communities** — Louvain on the contributor graph (**D5** open; move `graphology` deps to `compute/`).
 
@@ -213,8 +218,9 @@ Frontend loads both files for people vs project views; technology discovery filt
 | `WINDOW_MONTHS` | 6 | Activity window |
 | `MIN_ACTIVITY` | 3 | Min PR+review actions for a node |
 | `LAMBDA` | 0.005 | Per-day recency decay on edges |
-| `REVIEW_WEIGHT` | 1.0 | Review edge multiplier |
+| `REVIEW_WEIGHT` | 1.0 | Per-review contribution within shared-PR activity (**D6**) |
 | `CO_COMMENT_WEIGHT` | 0.3 | Reserved; issues out of v1 ingestion scope |
+| *(TBD in `compute/`)* | — | Multiplier for shared changed-path overlap (**D6**) |
 | `GENERIC_LABELS` | (set in config) | Not used for directory subprojects; may be removed or repurposed later |
 
 ---
@@ -236,7 +242,7 @@ cd scraper && npm install
 
 # Architectural decisions to make
 
-Open items only. Resolved choices (D1, D2, D4, D7) are documented in **Resolved (architecture)** and in the workflow sections above.
+Open items only. Resolved choices (D1, D2, D4, D6, D7) are documented in **Resolved (architecture)** and in the workflow sections above.
 
 ---
 
@@ -265,22 +271,6 @@ Open items only. Resolved choices (D1, D2, D4, D7) are documented in **Resolved 
 | **Leiden** | Used in legacy Python (`leidenalg`); not in current deps |
 
 **Blocks:** Dependency choice; parity with any published comparison docs.
-
----
-
-## D6 — Edge semantics (collaboration)
-
-**Question:** What events create or strengthen edges?
-
-| Signal | Status |
-|--------|--------|
-| PR review | Planned (`REVIEW_WEIGHT`) |
-| Issue / PR co-comment | Out of scope (**D1**); `CO_COMMENT_WEIGHT` reserved |
-| Co-authored commits | Out of scope (**D1**) |
-| Shared directory subproject ownership | Optional v1 boost (same **D2** keys on both nodes) |
-| Shared changed paths | Folded into **D2** weights, not separate edge type in v1 |
-
-**Blocks:** Edge construction in compute stage.
 
 ---
 
@@ -406,7 +396,7 @@ Should happen after D10 (and other material choices) so agent and human docs mat
 ## Suggested decision order
 
 1. **D8** (cache → compute contracts) → implement `scraper/` collect + `compute/` build  
-2. **D3**, **D5**, **D6** (expertise, communities, edges) — tighten during first graph  
+2. **D3**, **D5** (expertise, communities) — tighten during first graph  
 3. **D9**, **D10** (parse depth, LLM) — scope v2 vs v1  
 4. **D11**–**D13** (frontend) once sample `graph.json` + `project_graph.json` exist  
 5. **D14**–**D15** (auth, incremental) before production / private repos  
