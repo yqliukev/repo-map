@@ -10,9 +10,12 @@
 |----|--------|---------|
 | **D1** | **A+** | PRs + reviews + **changed files per PR** (via PR API). No issues, global commit crawl, or standalone commit files in v1. |
 | **D2** | **Directory-based** | Subprojects = path-derived areas from PR changed files (not PR labels). |
-| **D4** | **Two graph files** | `graph.json` (contributors) + `project_graph.json` (directory subprojects). **No** separate technology graph — languages/frameworks/tools live on each contributor node. |
-| **D7** | **`scraper/` + `compute/`** | Collect in `scraper/`; graph build in `compute/` (separate package). |
+| **D4** | **Two graph files** | `graph.json` (contributors) + `project_graph.json` (directory subprojects). **No** separate technology graph — skills live on each contributor node (**D3**). |
+| **D7** | **`scraper/` + `compute/`** | Stages 1–2 in `scraper/`; Stage 3 graph build in `compute/`. |
 | **D6** | **PR activity + shared paths** | Contributor edges strengthened by **shared PR participation** (author, reviewer, or both on the same PR) and **overlapping changed file paths** across PRs. Reviews remain a primary signal (`REVIEW_WEIGHT`). |
+| **D3** | **Per-repo skills cache** | No global taxonomy. `compute/` derives **provisional signals** from PR evidence; the most frequent are promoted into a **canonical `skills.json` per repo**. Contributor nodes hold weighted skill refs. LLM explanations deferred post-v1 (**D10**). |
+| **D9** | **GitHub API (v1)** | Stage 2 enrichment via **Languages API** + **PR changed paths** (cache) + **targeted manifest fetch** (Contents API). **No repo clone in v1.** Full/shallow clone + static analysis deferred to **v2**. |
+| **D8** | **Per-repo cache artifacts** | All under `cache/<owner>_<repo>/`. **Stage 2 (`scraper/`):** `languages.json`, `manifests/`, `activity.json`. **Stage 3 (`compute/`):** `subprojects.json`, `skills.json`, `compute_meta.json`. Graphs publish to `frontend/public/graphs/`. |
 
 ---
 
@@ -20,9 +23,9 @@
 
 | Area | Status |
 |------|--------|
-| **Collect** (`scraper/`) | Skeleton: config, types, bot/activity filters. No fetch entrypoints or npm scripts. |
-| **Compute** (`compute/`) | Not created yet. Will read `cache/`, write graph JSON to `frontend/public/graphs/`. |
-| **Cache / raw data** | Not in git; intended layout described below. |
+| **Collect + enrich** (`scraper/`) | Stage 1 **complete** (`npm run scrape`). Stage 2 (**D8**, **D9**) not implemented — will add `languages.json`, `manifests/`, `activity.json` to the same per-repo cache dir. |
+| **Compute** (`compute/`) | Not created yet. Reads `cache/<owner>_<repo>/`; writes `subprojects.json`, `skills.json`, `compute_meta.json`, and graph JSON to `frontend/public/graphs/`. |
+| **Cache / raw data** | Not in git; per-repo dir at `cache/<owner>_<repo>/` (see **Per-repo cache layout** below). |
 | **Frontend** (`frontend/`) | Shell UI: layout, theme toggle, header logo. Graph components, chat API, and D3 removed. |
 | **Graph assets** | No committed `frontend/public/graphs/<repo>/graph.json` + `project_graph.json` on this branch. |
 | **Env** | Root `.env.example`: `GITHUB_TOKEN`, `K2_API_KEY` (K2 unused by current code). |
@@ -35,32 +38,31 @@ End-to-end flow aligned with [research.md](research.md), constrained by resolved
 
 ```mermaid
 flowchart LR
-  subgraph collect [1. Collect — scraper/]
+  subgraph stage1 [1. Collect — scraper/]
     GH[GitHub API via Octokit]
     Cache[(cache/owner_repo/)]
     GH --> Cache
   end
 
-  subgraph parse [2. Parse — planned]
-    Parse[Repo structure + tech detection]
-    Cache --> Parse
+  subgraph stage2 [2. Enrich — scraper/ D8 D9]
+    Enrich[languages manifests activity.json]
+    Cache --> Enrich
+    Enrich --> Cache
   end
 
-  subgraph computeStage [3. Compute — compute/]
-    KG[graph.json + project_graph.json]
-    Parse --> KG
+  subgraph stage3 [3. Compute — compute/ D8]
+    KG[subprojects skills graphs compute_meta]
     Cache --> KG
+    KG --> Pub[public/graphs/]
   end
 
-  subgraph viz [4. Visualize — frontend/]
-    JSON[public/graphs/]
+  subgraph stage4 [4. Visualize — frontend/]
     UI[Next.js + force graph]
-    KG --> JSON
-    JSON --> UI
+    Pub --> UI
   end
 ```
 
-### Stage 1 — GitHub data collection (planned)
+### Stage 1 — GitHub data collection (**complete**)
 
 **Goal:** Normalized per-repo activity for contributors, PRs, reviews, and per-PR file changes (**D1: A+**).
 
@@ -68,80 +70,149 @@ flowchart LR
 
 - Pull request metadata, authors, labels (metadata only; not used for subprojects per **D2**)
 - Reviews on those PRs
-- **Changed files** on each PR (`GET /repos/{owner}/{repo}/pulls/{pull_number}/files` or equivalent)
+- **Changed files** on each PR (`GET /repos/{owner}/{repo}/pulls/{pull_number}/files`)
 
 **Out of scope (v1)**
 
 - Issues, issue comments, assignees
 - Repository-wide commit history / co-author mining
-- Local repo clone at collect time
+- Local repo clone (**v2** per **D9**; not used in v1 collect or compute)
 
 **Inputs**
 
 - `GITHUB_TOKEN` (root `.env`)
 - Repo list: `scraper/src/config.ts` → `REPOS`
-- Time window: `WINDOW_MONTHS` (6 months)
+- Time window: `WINDOW_MONTHS` (6 months) — computed by `scraper/src/window.ts` `getWindowStart()`
 
-**Planned API surface (Octokit)**
+**Implemented API surface (Octokit)**
 
-| Entity | Fields (target) | Notes |
-|--------|-----------------|--------|
-| Pull requests | `RawPR`: number, title, author, created_at, labels, **`files: { path, additions, deletions }[]`** | Labels kept for optional display; **D2** uses `files` only |
-| Reviews | `RawReview`: pr_number, reviewer, submitted_at | PR participation + review edges (**D6**) |
-| Contributors | `ContributorStat`: login, name, avatar_url | Profile + avatar for nodes; commit count optional |
+| Entity | Type | Implementation |
+|--------|------|----------------|
+| Pull requests | `RawPR`: number, title, author, created_at, labels, `files: PRFileChange[]` | `scraper/src/fetch/prs.ts` `fetchPRs()` — paginates `pulls.list` with early stop at `windowStart`, concurrent files+reviews fetch per PR |
+| Changed files | `PRFileChange`: path, additions, deletions | `pulls.listFiles` — GitHub `filename` field mapped to `path` |
+| Reviews | `RawReview`: pr_number, reviewer, submitted_at | `pulls.listReviews` — `DISMISSED` and bot reviews excluded |
+| Contributors | `ContributorStat`: login, name, avatar_url, total | `scraper/src/fetch/contributors.ts` `fetchContributors()` — activity counts from PRs+reviews, profiles via `users.getByUsername` |
 
 **Deferred from research.md Stage 1:** issues, standalone commits, PR-linked issue cross-refs.
 
-**Filtering (implemented)**
+**Filtering**
 
-- Bots: `KNOWN_BOTS` + `[bot]` suffix (`filters.isBot`)
-- Active contributors: combined PR + review count ≥ `MIN_ACTIVITY` (`filterActiveContributors`)
+- Bots: `KNOWN_BOTS` + `[bot]` suffix — `scraper/src/filters.ts` `isBot()`
+- Active contributors: combined PR + review count ≥ `MIN_ACTIVITY` — `filterActiveContributors()` (applied by `compute/` at graph build time; all window humans stored in `contributors.json`)
 
-**Intended cache layout (not yet written by code)**
+**Cache outputs (Stage 1 only)** — written by `scraper/src/cache.ts` `writeCache()`:
 
-```
-cache/<owner>_<repo>/
-  prs.json          # includes per-PR changed file paths
-  reviews.json
-  contributors.json # optional; may be folded into compute from PR/review authors
-```
+| File | Content |
+|------|---------|
+| `prs.json` | `RawPR[]` — each entry includes `files: PRFileChange[]` |
+| `reviews.json` | `RawReview[]` |
+| `contributors.json` | `ContributorStat[]` — all human window participants, sorted by activity desc |
+| `meta.json` | `CacheMeta` — `scraped_at`, `window_start`, `pr_count`, `review_count` |
 
-Local-only; not committed (see `.gitignore` patterns).
+See **Per-repo cache layout** for Stage 2–3 artifacts in the same directory.
 
-**Status:** Not started (no fetch scripts). Extend `scraper/src/types.ts` `RawPR` with `files` before implement.
+**Key implementation files**
+
+| File | Role |
+|------|------|
+| `scraper/src/types.ts` | `PRFileChange`, `RawPR` (with `files`), `RawReview`, `ContributorStat`, `CacheMeta` |
+| `scraper/src/config.ts` | `REPOS`, `WINDOW_MONTHS`, `MIN_ACTIVITY`, `LAMBDA`, `REVIEW_WEIGHT`, `KNOWN_BOTS` |
+| `scraper/src/filters.ts` | `isBot()`, `filterActiveContributors()` |
+| `scraper/src/paths.ts` | `repoToCacheDir()` — maps `"owner/repo"` → repo-root `cache/owner_repo/` |
+| `scraper/src/window.ts` | `getWindowStart()` — returns `Date` for `now - WINDOW_MONTHS` |
+| `scraper/src/github.ts` | `createOctokit()` — loads `GITHUB_TOKEN` from root `.env`, fails fast if missing |
+| `scraper/src/cache.ts` | `writeCache()` — `mkdir -p` + writes all four JSON files |
+| `scraper/src/fetch/prs.ts` | `fetchPRs()` — PR list with early stop, concurrent files+reviews per PR, returns `prs` + `reviewPairs` |
+| `scraper/src/fetch/contributors.ts` | `fetchContributors()` — activity counts → profiles via `users.getByUsername` |
+| `scraper/src/scrape.ts` | CLI entrypoint — `--repo owner/name` flag or all `REPOS`; logs progress + summary per repo |
+
+**Status:** Complete.
 
 ---
 
-### Stage 2 — Repository parsing (planned)
+### Stage 2 — Repository enrichment (**D8**, **D9**, planned)
 
-**Goal:** Enrich per-contributor `technologies` and project tech summaries (not a separate graph file).
+**Owner:** `scraper/` (same package as Stage 1; runs after collect for each repo).
 
-**Research scope:** File paths from PRs, dependency manifests, imports, directory structure.
+**Goal:** API enrichment and a **normalized activity stream** in the per-repo cache, so `compute/` can rebuild graphs without re-parsing raw PR blobs or re-hitting GitHub for unchanged inputs.
 
-**Status:** Not implemented. May start as path/extension heuristics inside `compute/` before a dedicated parse step.
+**Inputs:** Stage 1 files in `cache/<owner>_<repo>/` (`prs.json`, `reviews.json`, `meta.json`).
+
+**GitHub API enrichment (D9 v1)**
+
+| Source | API | Cache output |
+|--------|-----|----------------|
+| Repository languages | `GET /repos/{owner}/{repo}/languages` | `languages.json` — Linguist language → byte counts (1 call/repo) |
+| Manifests | `GET /repos/{owner}/{repo}/contents/{path}?ref={ref}` | `manifests/<path-key>.json` — parsed deps per manifest file |
+
+**Manifest fetch (light):** root allowlist (`package.json`, `go.mod`, `Cargo.toml`, …) plus any manifest paths seen in PR `files`. Default `ref`: default branch.
+
+**Normalized activity (`activity.json`)**
+
+Flatten `prs.json` + `reviews.json` into a single event list for downstream stages:
+
+```ts
+// activity.json
+{
+  version: number
+  generated_at: string
+  events: Array<
+    | { kind: "pr_author"; login: string; pr: number; at: string; paths: string[]; title: string }
+    | { kind: "review"; login: string; pr: number; author: string; at: string }
+  >
+}
+```
+
+Used by `compute/` for collaboration edges (**D6**), directory subprojects (**D2**), and provisional skill extraction (**D3**).
+
+**Stage 2 cache outputs**
+
+| File | Writer |
+|------|--------|
+| `languages.json` | `scraper/` |
+| `manifests/*.json` | `scraper/` |
+| `activity.json` | `scraper/` |
+
+**Does not do in v1:** full recursive tree walk, import/AST analysis, git history.
+
+**v2 — Repo clone (deferred, D9):** shallow/sparse clone for import parsing and deeper framework detection; still writes into the same per-repo cache dir.
+
+**Status:** Not implemented.
 
 ---
 
 ### Stage 3 — Knowledge graph computation (planned)
 
-**Owner:** `compute/` package (**D7**). Reads `cache/<owner>_<repo>/`, writes two JSON files per repo (**D4**).
+**Owner:** `compute/` package (**D7**).
 
-**Goal:** Contributor + project graphs with directory-based subprojects, per-person technology properties, expertise, and collaboration edges.
+**Inputs:** `cache/<owner>_<repo>/` — primarily `activity.json`, `contributors.json`, `languages.json`, `manifests/`, `meta.json` (**D8**). Raw `prs.json` / `reviews.json` are fallback if `activity.json` is missing.
+
+**Goal:** Directory subprojects, per-repo skill registry, contributor + project graphs, and compute bookkeeping.
+
+**Stage 3 cache outputs (before publish)**
+
+| File | Purpose |
+|------|---------|
+| `subprojects.json` | Directory subproject map + per-contributor weights (**D2**) |
+| `skills.json` | Per-repo canonical skill registry (**D3**) |
+| `compute_meta.json` | Input fingerprints, stage timestamps, schema versions (**D8**) |
 
 **Algorithm (v1; not coded)**
 
-1. **Subsystems (“projects”) — directory-based**  
-   - For each PR, map every changed file path → a **subproject ID** (canonical directory key).  
-   - Default rule (until repo-specific tuning): use the **first meaningful path segment** after the repo root (e.g. `packages/react-reconciler/...` → `packages/react-reconciler`; `src/...` → `src`). Monorepos may need an allowlist of roots (`packages/*`, `cmd/`, etc.) — document per target repo in `compute/` config when needed.  
-   - Contributor touch weight on subproject *S*: sum over their PRs of (lines changed or file-count) in paths mapped to *S*.  
-   - `GraphNode.team` = highest-weight subproject; `projects` = ordered subproject IDs; `project_roles` = normalized weights + role string (e.g. `lead` / `core` / `contributor` by weight quantiles — TBD in compute).  
-   - `GENERIC_LABELS` in scraper config is **not** used for subproject boundaries; labels remain on `RawPR` for optional UI only.
+1. **Subsystems (“projects”) — directory-based (D2)** — Read `activity.json` `pr_author` events.  
+   - Map each path → **subproject ID** (default: first path segment under repo root; monorepo roots configurable in `compute/`).  
+   - Aggregate contributor touch weights per subproject.  
+   - **Write** `subprojects.json`: subproject IDs, labels, `contributor_weights`, optional `path_to_subproject` samples.  
+   - **Graph fields:** `GraphNode.team`, `projects`, `project_roles` derived from `subprojects.json`.  
+   - `GENERIC_LABELS` is **not** used for subproject boundaries.
 
-2. **Contributor nodes** — One node per active GitHub login.  
-   - `expertise` = TF-IDF keywords from PR titles (v1 heuristic; **D3** open).  
-   - **`technologies`** = structured list on the person (e.g. languages, frameworks, tools inferred from changed-file extensions, paths, and Stage 2 when available). Powers the “technology” exploration UI without a third graph file.
+2. **Contributor skills (D3)** — Extract provisional signals from `activity.json`, `manifests/`, and `languages.json` (extensions, path segments, deps, title tokens).  
+   - Count repo-wide; promote frequent signals into **`skills.json`** (`id`, `label`, optional `kind`).  
+   - Assign each active contributor `skills: { id, weight }[]` on graph nodes (canonical IDs only).  
+   - **Technology UI** — filter by `kind` from `skills.json`; no separate technology graph (**D4**).  
+   - **Post-v1** — LLM explanations (**D10**); v1 stays deterministic.
 
-3. **Collaboration edges (D6)** — For each contributor pair *(A, B)*, accumulate edge weight from:
+3. **Collaboration edges (D6)** — From `activity.json`, for each contributor pair *(A, B)*, accumulate edge weight from:
    - **Shared PR activity** — Same PR with both participating (roles: author, reviewer). Reviewer↔author on a PR adds `REVIEW_WEIGHT` (1.0) per review event; additional co-presence on a PR (e.g. multiple reviewers, or repeat interaction on the same PR) adds to the same edge bucket.
    - **Shared changed paths** — For file paths each person touched (via their PRs’ `files`), add weight proportional to overlap (e.g. Jaccard or count of shared paths, scaled by recency and touch volume). Same path on the same PR counts under both signals; dedupe or cap in `compute/` implementation.
    - **Recency** — Each event at time *t* contributes `base * exp(-LAMBDA * days_since_t)` with `LAMBDA = 0.005`.
@@ -149,9 +220,40 @@ Local-only; not committed (see `.gitignore` patterns).
 
 4. **Communities** — Louvain on the contributor graph (**D5** open; move `graphology` deps to `compute/`).
 
-5. **Project graph** — Nodes = directory subproject IDs; edges = shared contributors (and/or dependency hints later). Same keys as `GraphNode.projects`.
+5. **Project graph** — Nodes = directory subproject IDs from `subprojects.json`; edges = shared contributors. Same keys as `GraphNode.projects`.
 
-**Output artifacts (per repo in `REPOS`)**
+6. **`compute_meta.json`** — Written last; records input timestamps (`meta.scraped_at`, `activity.json` generation time) and output timestamps so `compute/` can skip rework when the cache is unchanged.
+
+**Stage 3 cache schemas (sketch)**
+
+```ts
+// subprojects.json
+{
+  version: number
+  generated_at: string
+  subprojects: Record<string, {
+    label: string
+    contributor_weights: Record<string, number>
+  }>
+}
+
+// skills.json — see also GraphNode.skills below
+{
+  version: number
+  updated_at: string
+  skills: Record<string, { label: string; kind?: string }>
+}
+
+// compute_meta.json
+{
+  compute_version: number
+  generated_at: string
+  inputs: { meta_scraped_at: string; activity_generated_at: string; pr_count: number }
+  outputs: { subprojects_at: string; skills_at: string; graphs_at: string }
+}
+```
+
+**Published output (per repo in `REPOS`)**
 
 ```
 frontend/public/graphs/<owner>_<repo>/
@@ -171,13 +273,13 @@ GraphData {
 
 GraphNode {
   // ...existing fields...
-  technologies: TechnologyRef[]  // e.g. { id, kind: 'language' | 'framework' | 'tool', weight? }
+  skills: SkillRef[]   // { id, weight } — id keys into cache/.../skills.json
 }
 ```
 
-**Project graph (`project_graph.json`)** — define in `compute/` (TBD): subproject nodes (id, label, tech stack summary), links weighted by shared membership.
+**Project graph (`project_graph.json`)** — define in `compute/` (TBD): subproject nodes (id, label, aggregated skill IDs from member contributors), links weighted by shared membership.
 
-Frontend loads both files for people vs project views; technology discovery filters/aggregates `nodes[].technologies`.
+Frontend loads `graph.json` + `skills.json` (or skills embedded in graph metadata) for people vs project views; technology discovery filters/aggregates skills by `kind`.
 
 **Status:** Contributor types in `scraper/`; `compute/` package and project graph types not created.
 
@@ -185,7 +287,7 @@ Frontend loads both files for people vs project views; technology discovery filt
 
 ### Stage 4 — Frontend visualization (partial)
 
-**Goal:** Interactive exploration per [research.md](research.md): contributor view (`graph.json`), project view (`project_graph.json`), technology discovery via per-person `technologies` (not a separate graph).
+**Goal:** Interactive exploration per [research.md](research.md): contributor view (`graph.json`), project view (`project_graph.json`), technology discovery via per-person `skills` + per-repo `skills.json` (not a separate graph).
 
 **Current UI**
 
@@ -203,10 +305,45 @@ Frontend loads both files for people vs project views; technology discovery filt
 
 | Stage | Input | Output | Owner |
 |-------|--------|--------|--------|
-| Collect | GitHub API | `cache/*/` raw JSON | `scraper/` |
-| Parse | Cache + repo tree | Tech signals for `technologies` on nodes | TBD (may live in `compute/` initially) |
-| Compute | Cache (+ parse) | `graph.json` + `project_graph.json` | `compute/` |
-| Visualize | Static JSON in `public/graphs/` | Browser UI | `frontend/` |
+| 1 Collect | GitHub API | `prs.json`, `reviews.json`, `contributors.json`, `meta.json` | `scraper/` |
+| 2 Enrich | Stage 1 cache + Languages/Contents API (**D9**) | `languages.json`, `manifests/`, `activity.json` | `scraper/` |
+| 3 Compute | Stage 1–2 cache (**D8**) | `subprojects.json`, `skills.json`, `compute_meta.json`, `public/graphs/.../graph.json`, `project_graph.json` | `compute/` |
+| 4 Visualize | `public/graphs/` | Browser UI | `frontend/` |
+
+---
+
+## Per-repo cache layout (`cache/<owner>_<repo>/`)
+
+All pipeline artifacts for one repository live in a **single dedicated directory**. Not committed (`cache/` in root `.gitignore`).
+
+```
+cache/<owner>_<repo>/
+  # Stage 1 — scraper/
+  meta.json
+  prs.json
+  reviews.json
+  contributors.json
+
+  # Stage 2 — scraper/ (D8, D9)
+  languages.json
+  manifests/
+  activity.json
+
+  # Stage 3 — compute/ (D8, D2, D3)
+  subprojects.json
+  skills.json
+  compute_meta.json
+```
+
+**Published graphs** (not under `cache/`):
+
+```
+frontend/public/graphs/<owner>_<repo>/
+  graph.json
+  project_graph.json
+```
+
+Re-running **`scraper/`** (new scrape) invalidates Stage 2–3 cache files for that repo. Re-running **`compute/`** refreshes `subprojects.json`, `skills.json`, `compute_meta.json`, and published graphs from the current cache.
 
 ---
 
@@ -221,6 +358,7 @@ Frontend loads both files for people vs project views; technology discovery filt
 | `REVIEW_WEIGHT` | 1.0 | Per-review contribution within shared-PR activity (**D6**) |
 | `CO_COMMENT_WEIGHT` | 0.3 | Reserved; issues out of v1 ingestion scope |
 | *(TBD in `compute/`)* | — | Multiplier for shared changed-path overlap (**D6**) |
+| *(TBD in `compute/`)* | — | Min frequency or top-*N* for promoting provisional signals → `skills.json` (**D3**) |
 | `GENERIC_LABELS` | (set in config) | Not used for directory subprojects; may be removed or repurposed later |
 
 ---
@@ -231,8 +369,12 @@ Frontend loads both files for people vs project views; technology discovery filt
 # Frontend shell
 cd frontend && npm install && npm run dev
 
-# Collect — no scripts defined yet
+# Collect — Stage 1 complete
+cp .env.example .env          # add real GITHUB_TOKEN
 cd scraper && npm install
+npm run scrape -- --repo redis/redis   # single repo (dev)
+npm run scrape                         # all REPOS
+npm run typecheck                      # tsc --noEmit
 
 # Compute — package not created yet
 # cd compute && npm install && npm run build
@@ -242,22 +384,7 @@ cd scraper && npm install
 
 # Architectural decisions to make
 
-Open items only. Resolved choices (D1, D2, D4, D6, D7) are documented in **Resolved (architecture)** and in the workflow sections above.
-
----
-
-## D3 — Skill / expertise representation
-
-**Question:** How are contributor skills stored?
-
-| Option | Notes |
-|--------|--------|
-| **TF-IDF on PR titles** | Declared in `GraphNode.expertise` comment |
-| **Structured taxonomy** | Languages, frameworks as typed entities (research.md) |
-| **LLM summaries** | Old Hop Onboard pattern; contradicts “no commit LLM” unless aggregated-only |
-| **Hybrid** | Heuristics for graph; optional LLM for panel copy |
-
-**Blocks:** Node schema, whether Stage 2 parse is mandatory for v1.
+Open items only. Resolved choices (D1–D4, D6–D9) are documented in **Resolved (architecture)** and in the workflow sections above.
 
 ---
 
@@ -271,30 +398,6 @@ Open items only. Resolved choices (D1, D2, D4, D6, D7) are documented in **Resol
 | **Leiden** | Used in legacy Python (`leidenalg`); not in current deps |
 
 **Blocks:** Dependency choice; parity with any published comparison docs.
-
----
-
-## D8 — Intermediate schemas
-
-**Question:** Are normalized artifacts required between cache and graph JSON?
-
-Examples: unified “activity event” stream, per-PR file lists, **path segment → subproject ID** map versioned per repo.
-
-**Blocks:** Ability to re-run compute without re-fetching; debugging and tests.
-
----
-
-## D9 — Repository parsing depth (Stage 2)
-
-**Question:** Is local clone + static analysis in scope for v1?
-
-| Option | Notes |
-|--------|--------|
-| **Skip** | Directory subprojects from PR paths only (**D1** + **D2**) |
-| **GitHub API tree** | Languages endpoint + paths from PR files + light manifest read |
-| **Full clone** | Manifests, imports, framework detection per research.md |
-
-**Blocks:** Rich `technologies` on contributor nodes (D3), timeline.
 
 ---
 
@@ -395,9 +498,11 @@ Should happen after D10 (and other material choices) so agent and human docs mat
 
 ## Suggested decision order
 
-1. **D8** (cache → compute contracts) → implement `scraper/` collect + `compute/` build  
-2. **D3**, **D5** (expertise, communities) — tighten during first graph  
-3. **D9**, **D10** (parse depth, LLM) — scope v2 vs v1  
-4. **D11**–**D13** (frontend) once sample `graph.json` + `project_graph.json` exist  
-5. **D14**–**D15** (auth, incremental) before production / private repos  
-6. **D16** — refresh `CLAUDE.md` / `README.md` when the pipeline stabilizes
+1. Implement **Stage 2** in `scraper/` (`languages.json`, `manifests/`, `activity.json`)  
+2. Implement **`compute/`** Stage 3 (`subprojects.json`, `skills.json`, `compute_meta.json`, graphs)  
+3. **D5** (communities) — tighten during first graph  
+4. **D10** (LLM) — v1 none; summaries/chat v2+  
+5. **D11**–**D13** (frontend) once sample graphs exist  
+6. **D14**–**D15** (auth, incremental) before production / private repos  
+7. **D16** — refresh `CLAUDE.md` / `README.md` when the pipeline stabilizes  
+8. **v2** — repo clone + import/static analysis (**D9** extension)
