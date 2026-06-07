@@ -13,9 +13,11 @@
 | **D4** | **Two graph files** | `graph.json` (contributors) + `project_graph.json` (directory subprojects). **No** separate technology graph — skills live on each contributor node (**D3**). |
 | **D7** | **`scraper/` + `compute/`** | Stages 1–2 in `scraper/`; Stage 3 graph build in `compute/`. |
 | **D6** | **PR activity + shared paths** | Contributor edges strengthened by **shared PR participation** (author, reviewer, or both on the same PR) and **overlapping changed file paths** across PRs. Reviews remain a primary signal (`REVIEW_WEIGHT`). |
-| **D3** | **Per-repo skills cache** | No global taxonomy. `compute/` derives **provisional signals** from PR evidence; the most frequent are promoted into a **canonical `skills.json` per repo**. Contributor nodes hold weighted skill refs. LLM explanations deferred post-v1 (**D10**). |
+| **D3** | **Per-repo skills cache** | No global taxonomy. `compute/` derives **provisional signals** from PR evidence; the most frequent are promoted into a **canonical `skills.json` per repo**. Contributor nodes hold weighted skill refs. |
 | **D9** | **GitHub API (v1)** | Stage 2 enrichment via **Languages API** + **PR changed paths** (cache) + **targeted manifest fetch** (Contents API). **No repo clone in v1.** Full/shallow clone + static analysis deferred to **v2**. |
 | **D8** | **Per-repo cache artifacts** | All under `cache/<owner>_<repo>/`. **Stage 2 (`scraper/`):** `languages.json`, `manifests/`, `activity.json`. **Stage 3 (`compute/`):** `subprojects.json`, `skills.json`, `compute_meta.json`. Graphs publish to `frontend/public/graphs/`. |
+| **D5** | **Out of v1** | No community detection (Louvain/Leiden) in v1. Contributor graphs omit community clustering. |
+| **D10** | **v2 only** | No LLM in v1. K2 (or equivalent) for summaries, panel copy, and/or chat in **v2+**. |
 
 ---
 
@@ -28,7 +30,7 @@
 | **Cache / raw data** | Not in git; per-repo dir at `cache/<owner>_<repo>/` (see **Per-repo cache layout** below). |
 | **Frontend** (`frontend/`) | Shell UI: layout, theme toggle, header logo. Graph components, chat API, and D3 removed. |
 | **Graph assets** | No committed `frontend/public/graphs/<repo>/graph.json` + `project_graph.json` on this branch. |
-| **Env** | Root `.env.example`: `GITHUB_TOKEN`, `K2_API_KEY` (K2 unused by current code). |
+| **Env** | Root `.env.example`: `GITHUB_TOKEN`, `K2_API_KEY` (`K2_API_KEY` for **v2** LLM only; unused in v1). |
 
 ---
 
@@ -175,7 +177,11 @@ Used by `compute/` for collaboration edges (**D6**), directory subprojects (**D2
 
 **Does not do in v1:** full recursive tree walk, import/AST analysis, git history.
 
-**v2 — Repo clone (deferred, D9):** shallow/sparse clone for import parsing and deeper framework detection; still writes into the same per-repo cache dir.
+**v2 additions (deferred):**
+
+- Repo clone (**D9**) — shallow/sparse clone for import parsing and deeper framework detection.
+- LLM summaries / chat (**D10**) — optional narratives keyed to graph + `skills.json`.
+- Community detection (**D5**) — Louvain or similar on contributor edges.
 
 **Status:** Not implemented.
 
@@ -210,7 +216,7 @@ Used by `compute/` for collaboration edges (**D6**), directory subprojects (**D2
    - Count repo-wide; promote frequent signals into **`skills.json`** (`id`, `label`, optional `kind`).  
    - Assign each active contributor `skills: { id, weight }[]` on graph nodes (canonical IDs only).  
    - **Technology UI** — filter by `kind` from `skills.json`; no separate technology graph (**D4**).  
-   - **Post-v1** — LLM explanations (**D10**); v1 stays deterministic.
+   - v1 stays fully deterministic (no LLM — **D10**).
 
 3. **Collaboration edges (D6)** — From `activity.json`, for each contributor pair *(A, B)*, accumulate edge weight from:
    - **Shared PR activity** — Same PR with both participating (roles: author, reviewer). Reviewer↔author on a PR adds `REVIEW_WEIGHT` (1.0) per review event; additional co-presence on a PR (e.g. multiple reviewers, or repeat interaction on the same PR) adds to the same edge bucket.
@@ -218,11 +224,11 @@ Used by `compute/` for collaboration edges (**D6**), directory subprojects (**D2
    - **Recency** — Each event at time *t* contributes `base * exp(-LAMBDA * days_since_t)` with `LAMBDA = 0.005`.
    - **Out of scope for edges:** issue comments, co-authored commits off-PR (**D1**).
 
-4. **Communities** — Louvain on the contributor graph (**D5** open; move `graphology` deps to `compute/`).
+4. **Project graph** — Nodes = directory subproject IDs from `subprojects.json`; edges = shared contributors. Same keys as `GraphNode.projects`.
 
-5. **Project graph** — Nodes = directory subproject IDs from `subprojects.json`; edges = shared contributors. Same keys as `GraphNode.projects`.
+5. **`compute_meta.json`** — Written last; records input timestamps (`meta.scraped_at`, `activity.json` generation time) and output timestamps so `compute/` can skip rework when the cache is unchanged.
 
-6. **`compute_meta.json`** — Written last; records input timestamps (`meta.scraped_at`, `activity.json` generation time) and output timestamps so `compute/` can skip rework when the cache is unchanged.
+**Out of v1:** community detection / Louvain (**D5**). `GraphNode.community` omitted or unused in v1 `graph.json`.
 
 **Stage 3 cache schemas (sketch)**
 
@@ -384,35 +390,7 @@ npm run typecheck                      # tsc --noEmit
 
 # Architectural decisions to make
 
-Open items only. Resolved choices (D1–D4, D6–D9) are documented in **Resolved (architecture)** and in the workflow sections above.
-
----
-
-## D5 — Community detection library
-
-**Question:** Which algorithm packages communities on contributor nodes?
-
-| Option | Notes |
-|--------|--------|
-| **Louvain** | Planned for `compute/` (`graphology-communities-louvain`; currently listed under `scraper/package.json`) |
-| **Leiden** | Used in legacy Python (`leidenalg`); not in current deps |
-
-**Blocks:** Dependency choice; parity with any published comparison docs.
-
----
-
-## D10 — LLM usage
-
-**Question:** Is K2 (or any LLM) used in this product?
-
-| Option | Notes |
-|--------|--------|
-| **None** | Heuristic graph only; matches research “no commit LLM” |
-| **Summaries only** | Optional narratives in side panels |
-| **Chat over graph** | Restore API route; needs graph context + key |
-| **Extraction pass** | Reintroduce multi-pass pipeline on aggregated data |
-
-**Blocks:** `.env` requirements, API routes, cost/latency, panel UI design.
+Open items only. Resolved choices (D1–D10) are documented in **Resolved (architecture)** and in the workflow sections above.
 
 ---
 
@@ -490,7 +468,7 @@ Open items only. Resolved choices (D1–D4, D6–D9) are documented in **Resolve
 
 **Question:** When to rewrite `CLAUDE.md` / `README.md`?
 
-Should happen after D10 (and other material choices) so agent and human docs match the GitHub pipeline.
+Should happen once v1 pipeline and open frontend/delivery choices stabilize.
 
 **Blocks:** Contributor onboarding only (not runtime).
 
@@ -500,9 +478,7 @@ Should happen after D10 (and other material choices) so agent and human docs mat
 
 1. Implement **Stage 2** in `scraper/` (`languages.json`, `manifests/`, `activity.json`)  
 2. Implement **`compute/`** Stage 3 (`subprojects.json`, `skills.json`, `compute_meta.json`, graphs)  
-3. **D5** (communities) — tighten during first graph  
-4. **D10** (LLM) — v1 none; summaries/chat v2+  
-5. **D11**–**D13** (frontend) once sample graphs exist  
-6. **D14**–**D15** (auth, incremental) before production / private repos  
-7. **D16** — refresh `CLAUDE.md` / `README.md` when the pipeline stabilizes  
-8. **v2** — repo clone + import/static analysis (**D9** extension)
+3. **D11**–**D13** (frontend) once sample graphs exist  
+4. **D14**–**D15** (auth, incremental) before production / private repos  
+5. **D16** — refresh `CLAUDE.md` / `README.md` when v1 stabilizes  
+6. **v2** — repo clone (**D9**), LLM (**D10**), communities (**D5**)
