@@ -3,6 +3,7 @@ import { writeCache } from "./cache";
 import { createOctokit } from "./github";
 import { fetchPRs } from "./fetch/prs";
 import { fetchContributors } from "./fetch/contributors";
+import { enrichRepo } from "./fetch/enrich";
 import { getWindowStart } from "./window";
 import type { RawReview } from "./types";
 
@@ -52,11 +53,21 @@ async function scrapeRepo(repo: string): Promise<void> {
   };
 
   const cacheDir = writeCache(repo, { prs, reviews, contributors, meta });
+
+  await enrichRepo({
+    octokit,
+    owner,
+    repo: repoName,
+    prs,
+    reviews,
+    log: (msg) => log(repo, msg),
+  });
+
   const elapsed = ((Date.now() - start) / 1000).toFixed(1);
 
   log(
     repo,
-    `Done — ${prs.length} PRs, ${reviews.length} reviews, ${contributors.length} contributors → ${cacheDir} (${elapsed}s)`
+    `Done — ${prs.length} PRs, ${reviews.length} reviews, ${contributors.length} contributors + enrichment → ${cacheDir} (${elapsed}s)`
   );
 }
 

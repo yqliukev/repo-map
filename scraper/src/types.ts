@@ -36,6 +36,24 @@ export interface ContributorStat {
   total: number; // commits within the time window
 }
 
+// ── Stage 2 enrichment types ──────────────────────────────────────────────────
+
+export type ActivityEvent =
+  | { kind: "pr_author"; login: string; pr: number; at: string; paths: string[]; title: string }
+  | { kind: "review"; login: string; pr: number; author: string; at: string };
+
+export interface ActivityData {
+  version: number;
+  generated_at: string;
+  events: ActivityEvent[];
+}
+
+export interface ManifestEntry {
+  source_path: string;
+  fetched_at: string;
+  deps: Record<string, string>;
+}
+
 // ── Graph output types (compatible with frontend schema) ──────────────────────
 
 export interface GraphNode {
@@ -50,6 +68,7 @@ export interface GraphNode {
   avatar?: string;
   pr_count: number;
   review_count: number;
+  skills: { id: string; weight: number }[];
 }
 
 export interface GraphLink {
