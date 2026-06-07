@@ -7,16 +7,16 @@ todos:
     status: completed
   - id: fetch-activity
     content: Create scraper/src/fetch/activity.ts — buildActivity(prs, reviews) → ActivityData
-    status: pending
+    status: completed
   - id: fetch-languages
     content: Create scraper/src/fetch/languages.ts — fetchLanguages(octokit, owner, repo) → Record<string, number>
-    status: pending
+    status: completed
   - id: fetch-manifests
     content: Create scraper/src/fetch/manifests.ts — detect + fetch + parse manifests from allowlist ∪ PR paths
-    status: pending
+    status: completed
   - id: fetch-enrich
     content: Create scraper/src/fetch/enrich.ts — enrichRepo() coordinator
-    status: pending
+    status: completed
   - id: cache
     content: Add writeEnrichCache() to scraper/src/cache.ts
     status: completed
