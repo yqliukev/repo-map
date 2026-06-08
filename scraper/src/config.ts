@@ -6,17 +6,10 @@ export const REPOS = [
   "rust-lang/rust",
 ];
 
-export const WINDOW_MONTHS = 6;
+export const WINDOW_MONTHS = 3;
 
 // Minimum combined PR + review actions to be included in the graph
 export const MIN_ACTIVITY = 3;
-
-// Recency decay constant (per day). Gentler than Slack version — PRs are slower.
-export const LAMBDA = 0.005;
-
-// Edge weight multipliers
-export const REVIEW_WEIGHT = 1.0;
-export const CO_COMMENT_WEIGHT = 0.3; // reserved for future issue-comment edges
 
 export const KNOWN_BOTS = new Set([
   "dependabot",
