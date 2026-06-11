@@ -455,3 +455,19 @@ cd compute && npm run build -- --repo redis/redis   # after package exists
 - Louvain clustering to **define** subprojects (Louvain applies to **contributor** communities only)
 - v2 clone-based module detection
 
+---
+
+## v2 — PR titles (deferred)
+
+v1 subproject boundaries use **changed file paths only** (`activity.json` → `pr_author.paths[]`). PR titles are **not** read for D2 in v1.
+
+PR titles are a better fit for **subprojects than skills**: titles often name the feature area or subsystem (e.g. "Fix react-dom hydration bug" → `react-dom`), while they are weak evidence for contributor technology skills. Title-token extraction was explicitly removed from the skills pipeline ([`.cursor/plans/stage_3_skills_4e4f6918.plan.md`](.cursor/plans/stage_3_skills_4e4f6918.plan.md)).
+
+**v2 should incorporate PR title text into subproject work**, e.g.:
+
+- Read `activity.json` → `pr_author.title` (GitHub PR title from Stage 1, copied by [`buildActivity()`](scraper/src/fetch/activity.ts) — same field skills v1 ignores)
+- Use title tokens or ML/LLM labeling (**D10**) to reinforce subproject assignment, improve `subprojects.json` labels, or disambiguate path-only buckets in monorepos
+- Attribute title signal to `event.login` (PR author), consistent with path-based weights
+
+Keep `activity.json` as the single read path; do not parse `prs.json` directly in `compute/`.
+
