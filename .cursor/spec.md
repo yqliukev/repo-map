@@ -18,6 +18,9 @@
 | **D8** | **Per-repo cache artifacts** | All under `cache/<owner>_<repo>/`. **Stage 2 (`scraper/`):** `languages.json`, `manifests/`, `activity.json`. **Stage 3 (`compute/`):** `subprojects.json`, `skills.json`, `compute_meta.json`. Graphs publish to `frontend/public/graphs/`. |
 | **D5** | **Out of v1** | No community detection (Louvain/Leiden) in v1. Contributor graphs omit community clustering. |
 | **D10** | **v2 only** | No LLM in v1. K2 (or equivalent) for summaries, panel copy, and/or chat in **v2+**. |
+| **D11** | **D3** | Force-directed SVG graphs via `d3-force`, `d3-selection`, `d3-zoom`, `d3-drag` in `frontend/`. |
+| **D12** | **In-app dropdown** | Repo list from `cache/<owner>_<repo>/` directories with `meta.json`. |
+| **D13** | **API + published graphs** | `GET /api/repos` scans cache; `GET /api/repos/[slug]` returns meta + `public/graphs/<slug>/` JSON bundle. |
 
 ---
 
@@ -28,7 +31,7 @@
 | **Collect + enrich** (`scraper/`) | Stages 1–2 **complete** (`npm run scrape`). Writes Stage 1 cache + `languages.json`, `manifests/`, `activity.json` per repo. |
 | **Compute** (`compute/`) | **Complete** (`npm run build`). Subprojects (**D2**), skills (**D3**), collaboration edges (**D6**), contributor + project graphs, `compute_meta.json`, publish to `frontend/public/graphs/`. Skips rework when input fingerprints unchanged. |
 | **Cache / raw data** | Not in git; per-repo dir at `cache/<owner>_<repo>/` (see **Per-repo cache layout** below). |
-| **Frontend** (`frontend/`) | Shell UI: layout, theme toggle, header logo. Graph components, chat API, and D3 removed. |
+| **Frontend** (`frontend/`) | **Complete** (v1). Repo dropdown, API routes, D3 force graphs, Contributors/Projects tabs, technology sidebar on node select. Next.js 16, React 19, Tailwind 4, **d3**. |
 | **Graph assets** | Generated at compute time under `frontend/public/graphs/<owner>_<repo>/` (`graph.json`, `project_graph.json`, `skills.json`). Not committed by default; run scrape + compute to produce locally. |
 | **Env** | Root `.env.example`: `GITHUB_TOKEN`, `K2_API_KEY` (`K2_API_KEY` for **v2** LLM only; unused in v1). |
 
@@ -355,19 +358,55 @@ Frontend loads `graph.json` + `skills.json` for people vs project views; technol
 
 ---
 
-### Stage 4 — Frontend visualization (partial)
+### Stage 4 — Frontend visualization (**complete**)
 
-**Goal:** Interactive exploration per [research.md](research.md): contributor view (`graph.json`), project view (`project_graph.json`), technology discovery via per-person `skills` + per-repo `skills.json` (not a separate graph).
+**Goal:** Interactive exploration per [research.md](research.md): contributor view (`graph.json`), project view (`project_graph.json`), technology discovery via per-node `skills` + per-repo `skills.json` (not a separate graph).
 
-**Current UI**
+**Resolved UI decisions**
 
-- `app/page.tsx` — full-height layout: `AppHeader` + empty `MainArea`
-- `AppHeader.tsx` — logo, dark/light toggle (`ThemeContext`)
-- Dependencies: Next.js 16, React 19, Tailwind 4 — **no** D3, graphology, or OpenAI client
+| Item | Choice |
+|------|--------|
+| Graph rendering (**D11**) | D3 (`d3-force`, `d3-selection`, `d3-zoom`, `d3-drag`) |
+| Repo selection (**D12**) | In-app dropdown; options from `cache/<owner>_<repo>/` dirs with `meta.json` |
+| Data delivery (**D13**) | `GET /api/repos` scans cache; `GET /api/repos/[slug]` returns meta + published graphs from `public/graphs/<slug>/` |
+| Views | Two tabs: **Contributors** (`graph.json`) and **Projects** (`project_graph.json`) |
+| Node detail | `TechnologySidebar` — skills/technology only, resolved from `skills.json` by `kind` |
+| Search | **v2** |
 
-**Removed (not on branch)** — To be reimplemented or replaced: `OrgGraph`, `ProjectGraph`, graph panels, search, view switcher, `api/chat/route.ts`.
+**Browser data flow**
 
-**Status:** Shell only.
+```mermaid
+flowchart LR
+  Dropdown[RepoSelector] --> API["GET /api/repos/slug"]
+  API --> Cache["cache/meta"]
+  API --> Graphs["public/graphs/"]
+  Graphs --> RepoCtx[RepoContext in memory]
+  RepoCtx --> Tabs[Contributors or Projects tab]
+  Tabs --> D3[ForceGraph]
+  D3 --> Sidebar[TechnologySidebar on click]
+```
+
+**Key implementation files**
+
+| File | Role |
+|------|------|
+| `frontend/app/api/repos/route.ts` | List cached repos |
+| `frontend/app/api/repos/[slug]/route.ts` | Load repo bundle (meta + graphs + skills) |
+| `frontend/lib/paths.ts` | Cache/graph dir helpers, slug conversion |
+| `frontend/lib/repos.ts` | `listCachedRepos()`, `loadRepoBundle()` |
+| `frontend/lib/skills.ts` | `resolveNodeTechnologies()` for sidebar |
+| `frontend/app/components/RepoContext.tsx` | In-memory repo state |
+| `frontend/app/components/RepoSelector.tsx` | Header dropdown |
+| `frontend/app/components/GraphTabs.tsx` | Contributors / Projects tab bar |
+| `frontend/app/components/ForceGraph.tsx` | Shared D3 force simulation |
+| `frontend/app/components/ContributorGraph.tsx` | Contributor tab wrapper |
+| `frontend/app/components/ProjectGraph.tsx` | Project tab wrapper |
+| `frontend/app/components/TechnologySidebar.tsx` | Skills panel on node select |
+| `frontend/app/page.tsx` | Layout, loading/error states, graph area |
+
+**Dependencies:** Next.js 16, React 19, Tailwind 4, **d3**.
+
+**Status:** Complete for v1. Search, URL deep links, deployment hosting, auth, and LLM chat deferred to v2.
 
 ---
 
@@ -450,7 +489,7 @@ Re-running **`scraper/`** (new scrape) invalidates Stage 2–3 cache files for t
 ## Commands (today)
 
 ```bash
-# Frontend shell
+# Frontend (repo dropdown + D3 graphs)
 cd frontend && npm install && npm run dev
 
 # Collect + enrich — Stages 1–2 (requires GITHUB_TOKEN)
@@ -477,77 +516,26 @@ cd ../compute && npm run build -- --repo redis/redis
 
 # Architectural decisions to make
 
-Open items only. Resolved choices (D1–D10) are documented in **Resolved (architecture)** and in the workflow sections above.
+Open items only. Resolved choices (D1–D13) are documented in **Resolved (architecture)** and in the workflow sections above.
 
 ---
 
-## D11 — Frontend graph stack
+## Deferred (v2+)
 
-**Question:** How is the force-directed graph rendered?
+### D14 — Authentication and private repos
 
-| Option | Notes |
-|--------|--------|
-| **D3 (prior art)** | Previous implementation removed; team knows it |
-| **React wrapper** | e.g. react-force-graph, vis-network |
-| **WebGL / large-graph lib** | If OSS repos produce huge node counts |
+CLI-only scrape of public repos in v1. User OAuth or server-side tokens deferred.
 
-**Blocks:** Component architecture, performance tuning, migration effort.
+### D15 — Incremental updates
 
----
+Full re-scrape in v1. Since-last-run cursors deferred.
 
-## D12 — Multi-repo UX
+### v2 frontend
 
-**Question:** How does the user pick a repository?
-
-| Option | Notes |
-|--------|--------|
-| **Build-time** | One repo per deployment |
-| **URL param** | `/repo/facebook/react` |
-| **In-app selector** | Dropdown over `REPOS` or user input |
-| **Arbitrary GitHub URL** | Requires token + on-demand pipeline |
-
-**Blocks:** Routing, static asset paths, whether compute is online or offline.
-
----
-
-## D13 — Data delivery to the browser
-
-**Question:** How does the frontend get graph data?
-
-| Option | Notes |
-|--------|--------|
-| **Static JSON in `public/graphs/`** | Precomputed demo; simple hosting — **v1 default** (`compute/` writes here) |
-| **Next.js API route** | Read cache or graph at request time |
-| **External store** | DB or object storage for production |
-
-**Blocks:** Hosting model, refresh story, private repos.
-
----
-
-## D14 — Authentication and private repos
-
-**Question:** Who supplies `GITHUB_TOKEN`?
-
-| Option | Notes |
-|--------|--------|
-| **Developer-only** | CLI scrape of public repos |
-| **Server-side secret** | Single org token for demo |
-| **User OAuth** | Per-user private repo access |
-
-**Blocks:** Security model, deployment, scraper entrypoint design.
-
----
-
-## D15 — Incremental updates
-
-**Question:** After initial scrape, how is data refreshed?
-
-| Option | Notes |
-|--------|--------|
-| **Full re-scrape** | Simplest |
-| **Incremental** | Since-last-run cursors; harder with GitHub rate limits |
-
-**Blocks:** Cache schema versioning, CI scheduling.
+- Search / filter by login, subproject, skill label
+- URL deep links / shareability (`?repo=owner/name`)
+- Deployment / hosting model (static `public/graphs/` vs API reading cache at runtime)
+- LLM chat panel (**D10**)
 
 ---
 
@@ -555,7 +543,7 @@ Open items only. Resolved choices (D1–D10) are documented in **Resolved (archi
 
 **Question:** When to rewrite `CLAUDE.md` / `README.md`?
 
-Should happen once v1 pipeline and open frontend/delivery choices stabilize.
+Frontend choices (D11–D13) are now stable; refresh docs when v1 ships.
 
 **Blocks:** Contributor onboarding only (not runtime).
 
@@ -565,7 +553,6 @@ Should happen once v1 pipeline and open frontend/delivery choices stabilize.
 
 1. ~~Implement **Stage 2** in `scraper/`~~ — **done**  
 2. ~~Implement **`compute/`** Stage 3 (subprojects, skills, edges, graphs, `compute_meta.json`)~~ — **done**  
-3. **D11**–**D13** (frontend) once sample graphs exist  
-4. **D14**–**D15** (auth, incremental) before production / private repos  
-5. **D16** — refresh `CLAUDE.md` / `README.md` when v1 stabilizes  
-6. **v2** — repo clone (**D9**), LLM (**D10**), communities (**D5**), PR titles for subprojects
+3. ~~**D11**–**D13** (frontend)~~ — **done**  
+4. **D16** — refresh `CLAUDE.md` / `README.md` when v1 stabilizes  
+5. **v2** — repo clone (**D9**), LLM (**D10**), communities (**D5**), PR titles for subprojects, search, auth (**D14**), incremental updates (**D15**)

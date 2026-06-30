@@ -1,5 +1,6 @@
 "use client";
 
+import RepoSelector from "./RepoSelector";
 import { useTheme } from "./ThemeContext";
 
 export default function AppHeader() {
@@ -14,6 +15,10 @@ export default function AppHeader() {
           : "bg-white border-slate-200 shadow-sm"
       }`}
     >
+      <div className="absolute top-1/2 left-4 -translate-y-1/2">
+        <RepoSelector />
+      </div>
+
       <img
         src="/hoponboard.png"
         alt="HopOnBoard"

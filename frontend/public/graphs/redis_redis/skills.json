@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "updated_at": "2026-06-30T02:57:26.827Z",
+  "skills": {
+    "lang:c": {
+      "label": "C++",
+      "kind": "language"
+    },
+    "path:unit": {
+      "label": "unit"
+    },
+    "path:type": {
+      "label": "type"
+    },
+    "path:cluster": {
+      "label": "cluster"
+    },
+    "lang:json": {
+      "label": "JSON",
+      "kind": "language"
+    },
+    "path:integration": {
+      "label": "integration"
+    },
+    "lang:yaml": {
+      "label": "YAML",
+      "kind": "language"
+    },
+    "path:workflows": {
+      "label": "workflows"
+    },
+    "path:moduleapi": {
+      "label": "moduleapi"
+    },
+    "path:redisearch": {
+      "label": "redisearch"
+    },
+    "lang:markdown": {
+      "label": "Markdown",
+      "kind": "language"
+    },
+    "path:support": {
+      "label": "support"
+    },
+    "path:redistimeseries": {
+      "label": "redistimeseries"
+    },
+    "path:redisbloom": {
+      "label": "redisbloom"
+    },
+    "path:redisjson": {
+      "label": "redisjson"
+    },
+    "lang:python": {
+      "label": "Python",
+      "kind": "language"
+    },
+    "path:vector-sets": {
+      "label": "vector-sets"
+    },
+    "path:helpers": {
+      "label": "helpers"
+    },
+    "path:include": {
+      "label": "include"
+    },
+    "path:runtest-moduleapi": {
+      "label": "runtest-moduleapi"
+    },
+    "path:sentinel": {
+      "label": "sentinel"
+    },
+    "lang:shell": {
+      "label": "Shell",
+      "kind": "language"
+    },
+    "path:releasetools": {
+      "label": "releasetools"
+    },
+    "lang:makefile": {
+      "label": "Makefile",
+      "kind": "language"
+    },
+    "lang:ruby": {
+      "label": "Ruby",
+      "kind": "language"
+    },
+    "lang:smarty": {
+      "label": "Smarty",
+      "kind": "language"
+    },
+    "lang:tcl": {
+      "label": "Tcl",
+      "kind": "language"
+    }
+  }
+}

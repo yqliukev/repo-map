@@ -1,0 +1,6196 @@
+{
+  "repo": "redis/redis",
+  "generated_at": "2026-06-30T02:57:26.835Z",
+  "nodes": [
+    {
+      "id": "sundb",
+      "name": "debing.sun",
+      "role": "owner",
+      "team": "tests",
+      "expertise": [],
+      "projects": [
+        "tests",
+        "_root",
+        "modules",
+        ".github",
+        "commands"
+      ],
+      "project_roles": {
+        "tests": {
+          "weight": 92,
+          "role": "owner"
+        },
+        "_root": {
+          "weight": 89,
+          "role": "owner"
+        },
+        "modules": {
+          "weight": 10,
+          "role": "contributor"
+        },
+        ".github": {
+          "weight": 7,
+          "role": "contributor"
+        },
+        "commands": {
+          "weight": 4,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/965798?v=4",
+      "pr_count": 17,
+      "review_count": 509,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 13
+        },
+        {
+          "id": "path:unit",
+          "weight": 12
+        },
+        {
+          "id": "path:cluster",
+          "weight": 11
+        },
+        {
+          "id": "path:type",
+          "weight": 11
+        },
+        {
+          "id": "lang:yaml",
+          "weight": 6
+        },
+        {
+          "id": "path:integration",
+          "weight": 6
+        },
+        {
+          "id": "path:workflows",
+          "weight": 6
+        },
+        {
+          "id": "path:helpers",
+          "weight": 4
+        },
+        {
+          "id": "lang:json",
+          "weight": 3
+        },
+        {
+          "id": "path:redisearch",
+          "weight": 3
+        },
+        {
+          "id": "path:vector-sets",
+          "weight": 3
+        },
+        {
+          "id": "lang:python",
+          "weight": 2
+        },
+        {
+          "id": "lang:markdown",
+          "weight": 1
+        },
+        {
+          "id": "path:moduleapi",
+          "weight": 1
+        },
+        {
+          "id": "path:sentinel",
+          "weight": 1
+        },
+        {
+          "id": "path:support",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "ShooterIT",
+      "name": "Yuan Wang",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 24,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 7,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/18362176?v=4",
+      "pr_count": 6,
+      "review_count": 110,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 6
+        },
+        {
+          "id": "path:unit",
+          "weight": 4
+        },
+        {
+          "id": "path:cluster",
+          "weight": 2
+        },
+        {
+          "id": "path:integration",
+          "weight": 1
+        },
+        {
+          "id": "path:moduleapi",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "tezc",
+      "name": "Ozan Tezcan",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests",
+        "deps",
+        "Makefile",
+        ".github"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 17,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 2,
+          "role": "contributor"
+        },
+        "deps": {
+          "weight": 2,
+          "role": "contributor"
+        },
+        "Makefile": {
+          "weight": 2,
+          "role": "contributor"
+        },
+        ".github": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/17865367?v=4",
+      "pr_count": 5,
+      "review_count": 85,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 5
+        },
+        {
+          "id": "lang:yaml",
+          "weight": 1
+        },
+        {
+          "id": "path:support",
+          "weight": 1
+        },
+        {
+          "id": "path:unit",
+          "weight": 1
+        },
+        {
+          "id": "path:workflows",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "minchopaskal",
+      "name": "Mincho Paskalev",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests",
+        "commands",
+        ".github",
+        "utils",
+        "Makefile"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 66,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 19,
+          "role": "contributor"
+        },
+        "commands": {
+          "weight": 5,
+          "role": "contributor"
+        },
+        ".github": {
+          "weight": 2,
+          "role": "contributor"
+        },
+        "utils": {
+          "weight": 2,
+          "role": "contributor"
+        },
+        "Makefile": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/7338971?v=4",
+      "pr_count": 8,
+      "review_count": 78,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 8
+        },
+        {
+          "id": "path:unit",
+          "weight": 6
+        },
+        {
+          "id": "lang:json",
+          "weight": 3
+        },
+        {
+          "id": "path:integration",
+          "weight": 3
+        },
+        {
+          "id": "lang:python",
+          "weight": 2
+        },
+        {
+          "id": "path:support",
+          "weight": 2
+        },
+        {
+          "id": "lang:yaml",
+          "weight": 1
+        },
+        {
+          "id": "path:cluster",
+          "weight": 1
+        },
+        {
+          "id": "path:moduleapi",
+          "weight": 1
+        },
+        {
+          "id": "path:workflows",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "oranagra",
+      "name": "Oran Agra",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "commands"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 9,
+          "role": "owner"
+        },
+        "commands": {
+          "weight": 9,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/7045099?v=4",
+      "pr_count": 3,
+      "review_count": 76,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 2
+        },
+        {
+          "id": "lang:json",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "hristostaykov-del",
+      "name": "hristostaykov-del",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests",
+        "commands"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 29,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 12,
+          "role": "contributor"
+        },
+        "commands": {
+          "weight": 3,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/263368074?v=4",
+      "pr_count": 7,
+      "review_count": 69,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 5
+        },
+        {
+          "id": "path:unit",
+          "weight": 5
+        },
+        {
+          "id": "lang:json",
+          "weight": 3
+        },
+        {
+          "id": "path:sentinel",
+          "weight": 2
+        },
+        {
+          "id": "path:type",
+          "weight": 2
+        },
+        {
+          "id": "path:cluster",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "moticless",
+      "name": "Moti Cohen",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests",
+        ".github",
+        "Makefile"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 48,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 14,
+          "role": "contributor"
+        },
+        ".github": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "Makefile": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/24944278?v=4",
+      "pr_count": 13,
+      "review_count": 63,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 12
+        },
+        {
+          "id": "path:unit",
+          "weight": 7
+        },
+        {
+          "id": "path:moduleapi",
+          "weight": 3
+        },
+        {
+          "id": "path:type",
+          "weight": 3
+        },
+        {
+          "id": "lang:yaml",
+          "weight": 1
+        },
+        {
+          "id": "path:integration",
+          "weight": 1
+        },
+        {
+          "id": "path:support",
+          "weight": 1
+        },
+        {
+          "id": "path:workflows",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "sggeorgiev",
+      "name": "Sergei Georgiev",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests",
+        "commands",
+        "Makefile"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 35,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 14,
+          "role": "contributor"
+        },
+        "commands": {
+          "weight": 6,
+          "role": "contributor"
+        },
+        "Makefile": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/4948654?v=4",
+      "pr_count": 14,
+      "review_count": 55,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 14
+        },
+        {
+          "id": "path:unit",
+          "weight": 7
+        },
+        {
+          "id": "path:type",
+          "weight": 6
+        },
+        {
+          "id": "path:integration",
+          "weight": 5
+        },
+        {
+          "id": "lang:json",
+          "weight": 2
+        },
+        {
+          "id": "path:cluster",
+          "weight": 1
+        },
+        {
+          "id": "path:support",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "ShubhamTaple",
+      "name": "Shubham S Taple",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests",
+        "commands",
+        "modules"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 43,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 12,
+          "role": "contributor"
+        },
+        "commands": {
+          "weight": 3,
+          "role": "contributor"
+        },
+        "modules": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/155555100?v=4",
+      "pr_count": 21,
+      "review_count": 45,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 21
+        },
+        {
+          "id": "path:unit",
+          "weight": 9
+        },
+        {
+          "id": "lang:json",
+          "weight": 3
+        },
+        {
+          "id": "path:cluster",
+          "weight": 3
+        },
+        {
+          "id": "path:type",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "id": "fcostaoliveira",
+      "name": "Filipe Oliveira (Redis)",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests",
+        "deps"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 20,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 4,
+          "role": "contributor"
+        },
+        "deps": {
+          "weight": 2,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/52153106?v=4",
+      "pr_count": 13,
+      "review_count": 47,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 13
+        },
+        {
+          "id": "path:type",
+          "weight": 4
+        },
+        {
+          "id": "path:unit",
+          "weight": 4
+        }
+      ]
+    },
+    {
+      "id": "vitahlin",
+      "name": "Vitah Lin",
+      "role": "contributor",
+      "team": "tests",
+      "expertise": [],
+      "projects": [
+        "tests",
+        "_root",
+        ".github",
+        "deps",
+        "commands",
+        "modules"
+      ],
+      "project_roles": {
+        "tests": {
+          "weight": 25,
+          "role": "contributor"
+        },
+        "_root": {
+          "weight": 19,
+          "role": "contributor"
+        },
+        ".github": {
+          "weight": 16,
+          "role": "contributor"
+        },
+        "deps": {
+          "weight": 2,
+          "role": "contributor"
+        },
+        "commands": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "modules": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/6998610?v=4",
+      "pr_count": 30,
+      "review_count": 29,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 13
+        },
+        {
+          "id": "path:unit",
+          "weight": 12
+        },
+        {
+          "id": "lang:yaml",
+          "weight": 5
+        },
+        {
+          "id": "path:workflows",
+          "weight": 5
+        },
+        {
+          "id": "path:integration",
+          "weight": 4
+        },
+        {
+          "id": "path:cluster",
+          "weight": 3
+        },
+        {
+          "id": "path:support",
+          "weight": 3
+        },
+        {
+          "id": "path:type",
+          "weight": 3
+        },
+        {
+          "id": "path:moduleapi",
+          "weight": 2
+        },
+        {
+          "id": "lang:json",
+          "weight": 1
+        },
+        {
+          "id": "lang:python",
+          "weight": 1
+        },
+        {
+          "id": "path:helpers",
+          "weight": 1
+        },
+        {
+          "id": "path:include",
+          "weight": 1
+        },
+        {
+          "id": "path:runtest-moduleapi",
+          "weight": 1
+        },
+        {
+          "id": "path:vector-sets",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "YaacovHazan",
+      "name": "YaacovHazan",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests",
+        "commands",
+        "deps",
+        "modules",
+        ".github",
+        "00-RELEASENOTES",
+        "Makefile",
+        "utils"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 174,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 90,
+          "role": "contributor"
+        },
+        "commands": {
+          "weight": 52,
+          "role": "contributor"
+        },
+        "deps": {
+          "weight": 32,
+          "role": "contributor"
+        },
+        "modules": {
+          "weight": 30,
+          "role": "contributor"
+        },
+        ".github": {
+          "weight": 10,
+          "role": "contributor"
+        },
+        "00-RELEASENOTES": {
+          "weight": 10,
+          "role": "contributor"
+        },
+        "Makefile": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "utils": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/31382944?v=4",
+      "pr_count": 14,
+      "review_count": 31,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 13
+        },
+        {
+          "id": "path:integration",
+          "weight": 11
+        },
+        {
+          "id": "lang:json",
+          "weight": 10
+        },
+        {
+          "id": "path:unit",
+          "weight": 10
+        },
+        {
+          "id": "path:cluster",
+          "weight": 7
+        },
+        {
+          "id": "path:redisearch",
+          "weight": 6
+        },
+        {
+          "id": "lang:python",
+          "weight": 5
+        },
+        {
+          "id": "path:vector-sets",
+          "weight": 5
+        },
+        {
+          "id": "path:redisbloom",
+          "weight": 4
+        },
+        {
+          "id": "path:redistimeseries",
+          "weight": 4
+        },
+        {
+          "id": "path:type",
+          "weight": 3
+        },
+        {
+          "id": "lang:markdown",
+          "weight": 2
+        },
+        {
+          "id": "path:moduleapi",
+          "weight": 2
+        },
+        {
+          "id": "path:support",
+          "weight": 2
+        },
+        {
+          "id": "lang:yaml",
+          "weight": 1
+        },
+        {
+          "id": "path:redisjson",
+          "weight": 1
+        },
+        {
+          "id": "path:sentinel",
+          "weight": 1
+        },
+        {
+          "id": "path:workflows",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "JoanFM",
+      "name": "Joan Fontanals",
+      "role": "owner",
+      "team": "tests",
+      "expertise": [],
+      "projects": [
+        "tests",
+        "_root"
+      ],
+      "project_roles": {
+        "tests": {
+          "weight": 13,
+          "role": "owner"
+        },
+        "_root": {
+          "weight": 12,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/19825685?v=4",
+      "pr_count": 8,
+      "review_count": 25,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 7
+        },
+        {
+          "id": "path:moduleapi",
+          "weight": 5
+        },
+        {
+          "id": "path:unit",
+          "weight": 5
+        },
+        {
+          "id": "lang:markdown",
+          "weight": 1
+        },
+        {
+          "id": "path:runtest-moduleapi",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "rantidhar",
+      "name": "rantidhar",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 4,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/205895819?v=4",
+      "pr_count": 1,
+      "review_count": 31,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 1
+        },
+        {
+          "id": "path:unit",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "LiorKogan",
+      "name": "Lior Kogan",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "commands"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 1,
+          "role": "owner"
+        },
+        "commands": {
+          "weight": 1,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/7252991?v=4",
+      "pr_count": 2,
+      "review_count": 25,
+      "skills": [
+        {
+          "id": "lang:json",
+          "weight": 1
+        },
+        {
+          "id": "lang:markdown",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "Peter-Sh",
+      "name": "Peter-Sh",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests",
+        "modules"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 12,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 5,
+          "role": "contributor"
+        },
+        "modules": {
+          "weight": 2,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/11922623?v=4",
+      "pr_count": 3,
+      "review_count": 20,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 2
+        },
+        {
+          "id": "path:moduleapi",
+          "weight": 2
+        },
+        {
+          "id": "path:unit",
+          "weight": 2
+        },
+        {
+          "id": "lang:markdown",
+          "weight": 1
+        },
+        {
+          "id": "path:redisjson",
+          "weight": 1
+        },
+        {
+          "id": "path:runtest-moduleapi",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "gabsow",
+      "name": "Tom Gabsow",
+      "role": "owner",
+      "team": "modules",
+      "expertise": [],
+      "projects": [
+        "modules",
+        "_root",
+        "tests",
+        "utils",
+        ".github",
+        "Makefile"
+      ],
+      "project_roles": {
+        "modules": {
+          "weight": 21,
+          "role": "owner"
+        },
+        "_root": {
+          "weight": 6,
+          "role": "contributor"
+        },
+        "tests": {
+          "weight": 2,
+          "role": "contributor"
+        },
+        "utils": {
+          "weight": 2,
+          "role": "contributor"
+        },
+        ".github": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "Makefile": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/4652717?v=4",
+      "pr_count": 8,
+      "review_count": 10,
+      "skills": [
+        {
+          "id": "path:redistimeseries",
+          "weight": 7
+        },
+        {
+          "id": "path:redisbloom",
+          "weight": 6
+        },
+        {
+          "id": "path:redisjson",
+          "weight": 5
+        },
+        {
+          "id": "lang:c",
+          "weight": 1
+        },
+        {
+          "id": "lang:json",
+          "weight": 1
+        },
+        {
+          "id": "lang:shell",
+          "weight": 1
+        },
+        {
+          "id": "lang:yaml",
+          "weight": 1
+        },
+        {
+          "id": "path:moduleapi",
+          "weight": 1
+        },
+        {
+          "id": "path:redisearch",
+          "weight": 1
+        },
+        {
+          "id": "path:releasetools",
+          "weight": 1
+        },
+        {
+          "id": "path:unit",
+          "weight": 1
+        },
+        {
+          "id": "path:workflows",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "skaslev",
+      "name": "Slavomir Kaslev",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 2,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/94503?v=4",
+      "pr_count": 2,
+      "review_count": 16,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 2
+        },
+        {
+          "id": "path:cluster",
+          "weight": 1
+        },
+        {
+          "id": "path:unit",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "kalinstaykov",
+      "name": "Kalin Staykov",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 2,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/11727250?v=4",
+      "pr_count": 1,
+      "review_count": 16,
+      "skills": [
+        {
+          "id": "lang:markdown",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "TalBarYakar",
+      "name": "Tal Bar Yakar",
+      "role": "contributor",
+      "team": "scripts",
+      "expertise": [],
+      "projects": [
+        "scripts",
+        "modules",
+        "_root",
+        ".github",
+        "Makefile",
+        "utils"
+      ],
+      "project_roles": {
+        "scripts": {
+          "weight": 12,
+          "role": "contributor"
+        },
+        "modules": {
+          "weight": 11,
+          "role": "contributor"
+        },
+        "_root": {
+          "weight": 7,
+          "role": "contributor"
+        },
+        ".github": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "Makefile": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "utils": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/62205470?v=4",
+      "pr_count": 1,
+      "review_count": 16,
+      "skills": [
+        {
+          "id": "lang:json",
+          "weight": 1
+        },
+        {
+          "id": "lang:markdown",
+          "weight": 1
+        },
+        {
+          "id": "lang:shell",
+          "weight": 1
+        },
+        {
+          "id": "lang:yaml",
+          "weight": 1
+        },
+        {
+          "id": "path:redisbloom",
+          "weight": 1
+        },
+        {
+          "id": "path:redisearch",
+          "weight": 1
+        },
+        {
+          "id": "path:redisjson",
+          "weight": 1
+        },
+        {
+          "id": "path:redistimeseries",
+          "weight": 1
+        },
+        {
+          "id": "path:releasetools",
+          "weight": 1
+        },
+        {
+          "id": "path:workflows",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "charsyam",
+      "name": "charsyam",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 10,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 2,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/439301?v=4",
+      "pr_count": 9,
+      "review_count": 3,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 9
+        },
+        {
+          "id": "path:unit",
+          "weight": 2
+        },
+        {
+          "id": "path:type",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "gentcys",
+      "name": "Cong Chen",
+      "role": "owner",
+      "team": ".github",
+      "expertise": [],
+      "projects": [
+        ".github",
+        "tests"
+      ],
+      "project_roles": {
+        ".github": {
+          "weight": 7,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 3,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/10412450?v=4",
+      "pr_count": 4,
+      "review_count": 7,
+      "skills": [
+        {
+          "id": "path:unit",
+          "weight": 2
+        },
+        {
+          "id": "lang:yaml",
+          "weight": 1
+        },
+        {
+          "id": "path:integration",
+          "weight": 1
+        },
+        {
+          "id": "path:type",
+          "weight": 1
+        },
+        {
+          "id": "path:workflows",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "huynhanx03",
+      "name": "Nhan (Nolan) Huynh",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 4,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/157712338?v=4",
+      "pr_count": 3,
+      "review_count": 8,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "id": "YangboLong",
+      "name": "h.o.t. neglected",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 28,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 7,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/10876678?v=4",
+      "pr_count": 6,
+      "review_count": 5,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 5
+        },
+        {
+          "id": "path:cluster",
+          "weight": 1
+        },
+        {
+          "id": "path:moduleapi",
+          "weight": 1
+        },
+        {
+          "id": "path:type",
+          "weight": 1
+        },
+        {
+          "id": "path:unit",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "daguimu",
+      "name": "Guimu",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests",
+        "commands"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 16,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 11,
+          "role": "contributor"
+        },
+        "commands": {
+          "weight": 3,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/30684111?v=4",
+      "pr_count": 10,
+      "review_count": 0,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 8
+        },
+        {
+          "id": "path:unit",
+          "weight": 5
+        },
+        {
+          "id": "path:cluster",
+          "weight": 3
+        },
+        {
+          "id": "path:type",
+          "weight": 3
+        },
+        {
+          "id": "lang:json",
+          "weight": 2
+        },
+        {
+          "id": "path:integration",
+          "weight": 2
+        },
+        {
+          "id": "path:helpers",
+          "weight": 1
+        },
+        {
+          "id": "path:moduleapi",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "jjz921024",
+      "name": "anotherJJz",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 16,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 4,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/19649281?v=4",
+      "pr_count": 5,
+      "review_count": 4,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 5
+        },
+        {
+          "id": "path:cluster",
+          "weight": 2
+        },
+        {
+          "id": "path:unit",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "m-marinov",
+      "name": "Momchil Marinov",
+      "role": "owner",
+      "team": ".github",
+      "expertise": [],
+      "projects": [
+        ".github"
+      ],
+      "project_roles": {
+        ".github": {
+          "weight": 1,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/223265081?v=4",
+      "pr_count": 1,
+      "review_count": 8,
+      "skills": [
+        {
+          "id": "lang:yaml",
+          "weight": 1
+        },
+        {
+          "id": "path:workflows",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "oshadmi",
+      "name": "Omer Shadmi",
+      "role": "owner",
+      "team": "modules",
+      "expertise": [],
+      "projects": [
+        "modules"
+      ],
+      "project_roles": {
+        "modules": {
+          "weight": 4,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/76992134?v=4",
+      "pr_count": 4,
+      "review_count": 5,
+      "skills": [
+        {
+          "id": "path:redisearch",
+          "weight": 4
+        }
+      ]
+    },
+    {
+      "id": "wlswo",
+      "name": "nuyb",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests",
+        "commands"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 8,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 2,
+          "role": "contributor"
+        },
+        "commands": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/103496262?v=4",
+      "pr_count": 3,
+      "review_count": 6,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 3
+        },
+        {
+          "id": "lang:json",
+          "weight": 1
+        },
+        {
+          "id": "path:integration",
+          "weight": 1
+        },
+        {
+          "id": "path:unit",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "2030XiaoGe",
+      "name": "2030XiaoGe",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests",
+        "deps",
+        ".github",
+        "modules",
+        "Makefile",
+        "00-RELEASENOTES"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 73,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 63,
+          "role": "contributor"
+        },
+        "deps": {
+          "weight": 20,
+          "role": "contributor"
+        },
+        ".github": {
+          "weight": 12,
+          "role": "contributor"
+        },
+        "modules": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "Makefile": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "00-RELEASENOTES": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/246644050?v=4",
+      "pr_count": 3,
+      "review_count": 5,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 3
+        },
+        {
+          "id": "lang:yaml",
+          "weight": 2
+        },
+        {
+          "id": "path:unit",
+          "weight": 2
+        },
+        {
+          "id": "path:workflows",
+          "weight": 2
+        },
+        {
+          "id": "lang:markdown",
+          "weight": 1
+        },
+        {
+          "id": "path:cluster",
+          "weight": 1
+        },
+        {
+          "id": "path:helpers",
+          "weight": 1
+        },
+        {
+          "id": "path:include",
+          "weight": 1
+        },
+        {
+          "id": "path:integration",
+          "weight": 1
+        },
+        {
+          "id": "path:moduleapi",
+          "weight": 1
+        },
+        {
+          "id": "path:runtest-moduleapi",
+          "weight": 1
+        },
+        {
+          "id": "path:support",
+          "weight": 1
+        },
+        {
+          "id": "path:type",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "kairosci",
+      "name": "Alessio Attilio",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests",
+        "modules",
+        "commands",
+        ".github",
+        "deps",
+        "Makefile"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 44,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 27,
+          "role": "contributor"
+        },
+        "modules": {
+          "weight": 6,
+          "role": "contributor"
+        },
+        "commands": {
+          "weight": 5,
+          "role": "contributor"
+        },
+        ".github": {
+          "weight": 2,
+          "role": "contributor"
+        },
+        "deps": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "Makefile": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/252924706?v=4",
+      "pr_count": 5,
+      "review_count": 3,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 4
+        },
+        {
+          "id": "path:cluster",
+          "weight": 2
+        },
+        {
+          "id": "path:moduleapi",
+          "weight": 2
+        },
+        {
+          "id": "path:unit",
+          "weight": 2
+        },
+        {
+          "id": "lang:json",
+          "weight": 1
+        },
+        {
+          "id": "lang:markdown",
+          "weight": 1
+        },
+        {
+          "id": "lang:yaml",
+          "weight": 1
+        },
+        {
+          "id": "path:integration",
+          "weight": 1
+        },
+        {
+          "id": "path:redisbloom",
+          "weight": 1
+        },
+        {
+          "id": "path:redisearch",
+          "weight": 1
+        },
+        {
+          "id": "path:redisjson",
+          "weight": 1
+        },
+        {
+          "id": "path:redistimeseries",
+          "weight": 1
+        },
+        {
+          "id": "path:support",
+          "weight": 1
+        },
+        {
+          "id": "path:type",
+          "weight": 1
+        },
+        {
+          "id": "path:workflows",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "raffertyyu",
+      "name": "raffertyyu",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests",
+        "commands"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 4,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "commands": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/104707498?v=4",
+      "pr_count": 1,
+      "review_count": 7,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 1
+        },
+        {
+          "id": "lang:json",
+          "weight": 1
+        },
+        {
+          "id": "path:type",
+          "weight": 1
+        },
+        {
+          "id": "path:unit",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "slice4e",
+      "name": "Martin Dimitrov",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 4,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 2,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/8259383?v=4",
+      "pr_count": 4,
+      "review_count": 4,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 4
+        },
+        {
+          "id": "path:type",
+          "weight": 2
+        },
+        {
+          "id": "path:unit",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "stav-nachmias",
+      "name": "stav-nachmias",
+      "role": "owner",
+      "team": ".github",
+      "expertise": [],
+      "projects": [
+        ".github",
+        "utils"
+      ],
+      "project_roles": {
+        ".github": {
+          "weight": 3,
+          "role": "owner"
+        },
+        "utils": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/99652558?v=4",
+      "pr_count": 3,
+      "review_count": 5,
+      "skills": [
+        {
+          "id": "lang:yaml",
+          "weight": 3
+        },
+        {
+          "id": "path:workflows",
+          "weight": 3
+        },
+        {
+          "id": "lang:shell",
+          "weight": 1
+        },
+        {
+          "id": "path:releasetools",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "CMeans-Redis",
+      "name": "Curtis Means",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 1,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/256151008?v=4",
+      "pr_count": 2,
+      "review_count": 5,
+      "skills": [
+        {
+          "id": "lang:markdown",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "mgravell",
+      "name": "Marc Gravell",
+      "role": "contributor",
+      "team": "_root",
+      "expertise": [],
+      "projects": [],
+      "project_roles": {},
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/17328?v=4",
+      "pr_count": 0,
+      "review_count": 7,
+      "skills": []
+    },
+    {
+      "id": "orbisai0security",
+      "name": "OrbisAI Security",
+      "role": "owner",
+      "team": "tests",
+      "expertise": [],
+      "projects": [
+        "tests"
+      ],
+      "project_roles": {
+        "tests": {
+          "weight": 1,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/242526317?v=4",
+      "pr_count": 2,
+      "review_count": 5,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "pierluigilenoci",
+      "name": "Pierluigi Lenoci",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        ".github"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 2,
+          "role": "owner"
+        },
+        ".github": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/36044817?v=4",
+      "pr_count": 3,
+      "review_count": 4,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 2
+        },
+        {
+          "id": "lang:yaml",
+          "weight": 1
+        },
+        {
+          "id": "path:workflows",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "antirez",
+      "name": "Salvatore Sanfilippo",
+      "role": "contributor",
+      "team": "deps",
+      "expertise": [],
+      "projects": [
+        "deps",
+        "_root",
+        "commands",
+        "tests",
+        "Makefile",
+        "utils"
+      ],
+      "project_roles": {
+        "deps": {
+          "weight": 32,
+          "role": "contributor"
+        },
+        "_root": {
+          "weight": 26,
+          "role": "contributor"
+        },
+        "commands": {
+          "weight": 19,
+          "role": "contributor"
+        },
+        "tests": {
+          "weight": 7,
+          "role": "contributor"
+        },
+        "Makefile": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "utils": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/65632?v=4",
+      "pr_count": 1,
+      "review_count": 5,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 1
+        },
+        {
+          "id": "lang:json",
+          "weight": 1
+        },
+        {
+          "id": "lang:markdown",
+          "weight": 1
+        },
+        {
+          "id": "lang:python",
+          "weight": 1
+        },
+        {
+          "id": "path:integration",
+          "weight": 1
+        },
+        {
+          "id": "path:support",
+          "weight": 1
+        },
+        {
+          "id": "path:type",
+          "weight": 1
+        },
+        {
+          "id": "path:unit",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "AvivDavid23",
+      "name": "Aviv David",
+      "role": "owner",
+      "team": "modules",
+      "expertise": [],
+      "projects": [
+        "modules"
+      ],
+      "project_roles": {
+        "modules": {
+          "weight": 6,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/40210928?v=4",
+      "pr_count": 4,
+      "review_count": 2,
+      "skills": [
+        {
+          "id": "path:redisjson",
+          "weight": 4
+        },
+        {
+          "id": "path:redisbloom",
+          "weight": 1
+        },
+        {
+          "id": "path:redistimeseries",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "aviggiano",
+      "name": "Antonio Viggiano",
+      "role": "owner",
+      "team": "deps",
+      "expertise": [],
+      "projects": [
+        "deps",
+        "_root",
+        "tests",
+        "commands",
+        "Makefile"
+      ],
+      "project_roles": {
+        "deps": {
+          "weight": 117,
+          "role": "owner"
+        },
+        "_root": {
+          "weight": 45,
+          "role": "contributor"
+        },
+        "tests": {
+          "weight": 23,
+          "role": "contributor"
+        },
+        "commands": {
+          "weight": 3,
+          "role": "contributor"
+        },
+        "Makefile": {
+          "weight": 2,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/3029017?v=4",
+      "pr_count": 2,
+      "review_count": 3,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 2
+        },
+        {
+          "id": "lang:markdown",
+          "weight": 2
+        },
+        {
+          "id": "path:include",
+          "weight": 2
+        },
+        {
+          "id": "path:integration",
+          "weight": 2
+        },
+        {
+          "id": "path:moduleapi",
+          "weight": 2
+        },
+        {
+          "id": "path:support",
+          "weight": 2
+        },
+        {
+          "id": "path:unit",
+          "weight": 2
+        },
+        {
+          "id": "lang:json",
+          "weight": 1
+        },
+        {
+          "id": "path:cluster",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "erhan1209",
+      "name": "erhan1209",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 1,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 1,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/82086267?v=4",
+      "pr_count": 1,
+      "review_count": 4,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 1
+        },
+        {
+          "id": "path:unit",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "guybe7",
+      "name": "guybe7",
+      "role": "contributor",
+      "team": "_root",
+      "expertise": [],
+      "projects": [],
+      "project_roles": {},
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/19590683?v=4",
+      "pr_count": 0,
+      "review_count": 5,
+      "skills": []
+    },
+    {
+      "id": "meiravgri",
+      "name": "meiravgri",
+      "role": "contributor",
+      "team": "_root",
+      "expertise": [],
+      "projects": [],
+      "project_roles": {},
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/109056284?v=4",
+      "pr_count": 0,
+      "review_count": 5,
+      "skills": []
+    },
+    {
+      "id": "SebTardif",
+      "name": "Sebastien Tardif",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 2,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 2,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/1413412?v=4",
+      "pr_count": 2,
+      "review_count": 3,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 2
+        },
+        {
+          "id": "path:cluster",
+          "weight": 1
+        },
+        {
+          "id": "path:support",
+          "weight": 1
+        },
+        {
+          "id": "path:unit",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "alonre24",
+      "name": "alonre24",
+      "role": "owner",
+      "team": "modules",
+      "expertise": [],
+      "projects": [
+        "modules"
+      ],
+      "project_roles": {
+        "modules": {
+          "weight": 2,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/28729016?v=4",
+      "pr_count": 2,
+      "review_count": 2,
+      "skills": [
+        {
+          "id": "path:redisearch",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "AngelYanev",
+      "name": "Angel Yanev",
+      "role": "owner",
+      "team": "modules",
+      "expertise": [],
+      "projects": [
+        "modules"
+      ],
+      "project_roles": {
+        "modules": {
+          "weight": 4,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/18575557?v=4",
+      "pr_count": 4,
+      "review_count": 0,
+      "skills": [
+        {
+          "id": "path:redisearch",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "daemyung-lablup",
+      "name": "DaeMyung Kang",
+      "role": "contributor",
+      "team": "_root",
+      "expertise": [],
+      "projects": [],
+      "project_roles": {},
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/219643654?v=4",
+      "pr_count": 0,
+      "review_count": 4,
+      "skills": []
+    },
+    {
+      "id": "melatron",
+      "name": "Antoni Dikov",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests",
+        "commands"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 12,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 2,
+          "role": "contributor"
+        },
+        "commands": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/3736939?v=4",
+      "pr_count": 2,
+      "review_count": 2,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 2
+        },
+        {
+          "id": "path:unit",
+          "weight": 2
+        },
+        {
+          "id": "lang:json",
+          "weight": 1
+        },
+        {
+          "id": "path:type",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "myhearwillgoon",
+      "name": "Sigma-Chan",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 4,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/149338457?v=4",
+      "pr_count": 4,
+      "review_count": 0,
+      "skills": [
+        {
+          "id": "lang:markdown",
+          "weight": 4
+        }
+      ]
+    },
+    {
+      "id": "a981008",
+      "name": "帝皇侠",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "commands",
+        "tests"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 16,
+          "role": "owner"
+        },
+        "commands": {
+          "weight": 4,
+          "role": "contributor"
+        },
+        "tests": {
+          "weight": 2,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/33506313?v=4",
+      "pr_count": 3,
+      "review_count": 0,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 3
+        },
+        {
+          "id": "lang:json",
+          "weight": 1
+        },
+        {
+          "id": "path:cluster",
+          "weight": 1
+        },
+        {
+          "id": "path:unit",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "dannysheyn",
+      "name": "dannysheyn",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 1,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 1,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/35047315?v=4",
+      "pr_count": 1,
+      "review_count": 2,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 1
+        },
+        {
+          "id": "path:cluster",
+          "weight": 1
+        },
+        {
+          "id": "path:unit",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "darsheel-rathore",
+      "name": "Darsheel Rathore",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 1,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/135693104?v=4",
+      "pr_count": 1,
+      "review_count": 2,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "LukeMathWalker",
+      "name": "Luca Palmieri",
+      "role": "owner",
+      "team": "modules",
+      "expertise": [],
+      "projects": [
+        "modules"
+      ],
+      "project_roles": {
+        "modules": {
+          "weight": 2,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/20745048?v=4",
+      "pr_count": 2,
+      "review_count": 1,
+      "skills": [
+        {
+          "id": "path:redisearch",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "mdali9821",
+      "name": "mdali9821",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests",
+        "commands"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 7,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 3,
+          "role": "contributor"
+        },
+        "commands": {
+          "weight": 3,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/77425900?v=4",
+      "pr_count": 3,
+      "review_count": 0,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 3
+        },
+        {
+          "id": "path:unit",
+          "weight": 3
+        },
+        {
+          "id": "lang:json",
+          "weight": 2
+        },
+        {
+          "id": "path:type",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "pony-maggie",
+      "name": "Lucas Ma",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "modules"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 3,
+          "role": "owner"
+        },
+        "modules": {
+          "weight": 2,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/7184042?v=4",
+      "pr_count": 3,
+      "review_count": 0,
+      "skills": [
+        {
+          "id": "path:vector-sets",
+          "weight": 2
+        },
+        {
+          "id": "lang:c",
+          "weight": 1
+        },
+        {
+          "id": "lang:json",
+          "weight": 1
+        },
+        {
+          "id": "lang:markdown",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "rajkripal",
+      "name": "Raj Kripal Danday",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root",
+        "tests"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 5,
+          "role": "owner"
+        },
+        "tests": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/8570244?v=4",
+      "pr_count": 3,
+      "review_count": 0,
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 3
+        },
+        {
+          "id": "path:unit",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "source": "YaacovHazan",
+      "target": "antirez",
+      "weight": 97.52613313327036
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "sundb",
+      "weight": 92.50493968013865
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "YaacovHazan",
+      "weight": 68.47480388328471
+    },
+    {
+      "source": "sggeorgiev",
+      "target": "sundb",
+      "weight": 64.54096563225545
+    },
+    {
+      "source": "sundb",
+      "target": "vitahlin",
+      "weight": 62.41101859077567
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "sundb",
+      "weight": 58.26471817526902
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "sundb",
+      "weight": 50.98045922629945
+    },
+    {
+      "source": "minchopaskal",
+      "target": "sundb",
+      "weight": 46.500723644358175
+    },
+    {
+      "source": "raffertyyu",
+      "target": "sundb",
+      "weight": 44.00902133468509
+    },
+    {
+      "source": "hristostaykov-del",
+      "target": "sundb",
+      "weight": 43.96684765787478
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "minchopaskal",
+      "weight": 43.692431813662246
+    },
+    {
+      "source": "kairosci",
+      "target": "sundb",
+      "weight": 34.99476791459265
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "kairosci",
+      "weight": 34.65098855360401
+    },
+    {
+      "source": "moticless",
+      "target": "sundb",
+      "weight": 33.75013687135831
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "kairosci",
+      "weight": 33.63631127176875
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "aviggiano",
+      "weight": 32.19219873015868
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "vitahlin",
+      "weight": 31.33451894954883
+    },
+    {
+      "source": "antirez",
+      "target": "sundb",
+      "weight": 29.11210751289529
+    },
+    {
+      "source": "fcostaoliveira",
+      "target": "sundb",
+      "weight": 28.917522495341554
+    },
+    {
+      "source": "aviggiano",
+      "target": "sundb",
+      "weight": 28.4565594022454
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "YaacovHazan",
+      "weight": 27.40227987472928
+    },
+    {
+      "source": "aviggiano",
+      "target": "minchopaskal",
+      "weight": 26.3138684203404
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "moticless",
+      "weight": 26.215328765699866
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "vitahlin",
+      "weight": 25.675523314057656
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "sggeorgiev",
+      "weight": 25.495778107228116
+    },
+    {
+      "source": "YangboLong",
+      "target": "sundb",
+      "weight": 25.479915727135467
+    },
+    {
+      "source": "oranagra",
+      "target": "sundb",
+      "weight": 24.99465895650284
+    },
+    {
+      "source": "ShooterIT",
+      "target": "fcostaoliveira",
+      "weight": 23.539630018717343
+    },
+    {
+      "source": "ShooterIT",
+      "target": "tezc",
+      "weight": 23.21818066467128
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "tezc",
+      "weight": 22.78247758273595
+    },
+    {
+      "source": "antirez",
+      "target": "minchopaskal",
+      "weight": 22.024387946485657
+    },
+    {
+      "source": "sundb",
+      "target": "tezc",
+      "weight": 21.52530802028328
+    },
+    {
+      "source": "ShooterIT",
+      "target": "YaacovHazan",
+      "weight": 20.805101336357602
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "hristostaykov-del",
+      "weight": 20.272871305180992
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "minchopaskal",
+      "weight": 19.941084180050083
+    },
+    {
+      "source": "antirez",
+      "target": "aviggiano",
+      "weight": 19.25803332516768
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "ShubhamTaple",
+      "weight": 18.81791535802731
+    },
+    {
+      "source": "daguimu",
+      "target": "sundb",
+      "weight": 18.648034505196744
+    },
+    {
+      "source": "hristostaykov-del",
+      "target": "moticless",
+      "weight": 18.238163092684076
+    },
+    {
+      "source": "ShooterIT",
+      "target": "moticless",
+      "weight": 17.91602919150836
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "YangboLong",
+      "weight": 17.26440336657059
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "aviggiano",
+      "weight": 17.112943308289175
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "gabsow",
+      "weight": 16.789916324814826
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "moticless",
+      "weight": 16.72879707869104
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "fcostaoliveira",
+      "weight": 16.20302505237577
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "antirez",
+      "weight": 15.550173955499432
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "minchopaskal",
+      "weight": 15.103300264190109
+    },
+    {
+      "source": "minchopaskal",
+      "target": "vitahlin",
+      "weight": 15.012253667666977
+    },
+    {
+      "source": "ShooterIT",
+      "target": "sundb",
+      "weight": 14.629264747509472
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "YangboLong",
+      "weight": 14.529608901002387
+    },
+    {
+      "source": "JoanFM",
+      "target": "moticless",
+      "weight": 14.032094178162069
+    },
+    {
+      "source": "TalBarYakar",
+      "target": "gabsow",
+      "weight": 13.840595900273216
+    },
+    {
+      "source": "kairosci",
+      "target": "minchopaskal",
+      "weight": 13.728781537002304
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "kairosci",
+      "weight": 13.728160917031975
+    },
+    {
+      "source": "ShooterIT",
+      "target": "minchopaskal",
+      "weight": 13.285511518141472
+    },
+    {
+      "source": "rantidhar",
+      "target": "sundb",
+      "weight": 13.01981363151918
+    },
+    {
+      "source": "minchopaskal",
+      "target": "oranagra",
+      "weight": 12.924826390921023
+    },
+    {
+      "source": "fcostaoliveira",
+      "target": "moticless",
+      "weight": 12.60770442008879
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "kalinstaykov",
+      "weight": 12.570000509320248
+    },
+    {
+      "source": "minchopaskal",
+      "target": "moticless",
+      "weight": 12.417493900372024
+    },
+    {
+      "source": "hristostaykov-del",
+      "target": "minchopaskal",
+      "weight": 12.264878840458877
+    },
+    {
+      "source": "aviggiano",
+      "target": "moticless",
+      "weight": 12.229152942955999
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "hristostaykov-del",
+      "weight": 11.852090054864842
+    },
+    {
+      "source": "YangboLong",
+      "target": "kairosci",
+      "weight": 11.605048652077848
+    },
+    {
+      "source": "kairosci",
+      "target": "moticless",
+      "weight": 11.59565710677197
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "tezc",
+      "weight": 10.998646810991138
+    },
+    {
+      "source": "gentcys",
+      "target": "vitahlin",
+      "weight": 10.754196052561763
+    },
+    {
+      "source": "YangboLong",
+      "target": "minchopaskal",
+      "weight": 10.619243634586843
+    },
+    {
+      "source": "hristostaykov-del",
+      "target": "kairosci",
+      "weight": 10.314222222353862
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "sggeorgiev",
+      "weight": 10.196573767222219
+    },
+    {
+      "source": "LiorKogan",
+      "target": "raffertyyu",
+      "weight": 10.194217610129693
+    },
+    {
+      "source": "ShooterIT",
+      "target": "antirez",
+      "weight": 10.169620292921875
+    },
+    {
+      "source": "ShooterIT",
+      "target": "jjz921024",
+      "weight": 10.1496026200507
+    },
+    {
+      "source": "aviggiano",
+      "target": "kairosci",
+      "weight": 10.148111410751532
+    },
+    {
+      "source": "aviggiano",
+      "target": "sggeorgiev",
+      "weight": 10.125501748307263
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "daguimu",
+      "weight": 10.067016859793654
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "YaacovHazan",
+      "weight": 9.990866008656042
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "fcostaoliveira",
+      "weight": 9.914074430323673
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "gentcys",
+      "weight": 9.795477664690353
+    },
+    {
+      "source": "ShooterIT",
+      "target": "ShubhamTaple",
+      "weight": 9.744645858311692
+    },
+    {
+      "source": "charsyam",
+      "target": "sundb",
+      "weight": 9.547503803370134
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "ShooterIT",
+      "weight": 9.461246174833425
+    },
+    {
+      "source": "ShooterIT",
+      "target": "kairosci",
+      "weight": 9.397848965740156
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "daguimu",
+      "weight": 9.37041445655216
+    },
+    {
+      "source": "kairosci",
+      "target": "vitahlin",
+      "weight": 9.326086658655031
+    },
+    {
+      "source": "kairosci",
+      "target": "sggeorgiev",
+      "weight": 9.16217890265471
+    },
+    {
+      "source": "melatron",
+      "target": "sundb",
+      "weight": 9.103260682629482
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "YangboLong",
+      "weight": 8.9936897297676
+    },
+    {
+      "source": "gentcys",
+      "target": "sundb",
+      "weight": 8.870169993866211
+    },
+    {
+      "source": "ShooterIT",
+      "target": "YangboLong",
+      "weight": 8.840528978304448
+    },
+    {
+      "source": "TalBarYakar",
+      "target": "YaacovHazan",
+      "weight": 8.58913040576328
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "sggeorgiev",
+      "weight": 8.52236346937459
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "hristostaykov-del",
+      "weight": 8.462067479651616
+    },
+    {
+      "source": "tezc",
+      "target": "vitahlin",
+      "weight": 8.411491150277024
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "charsyam",
+      "weight": 8.41012885858054
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "antirez",
+      "weight": 8.3640841204082
+    },
+    {
+      "source": "antirez",
+      "target": "kairosci",
+      "weight": 8.3496394864959
+    },
+    {
+      "source": "a981008",
+      "target": "sundb",
+      "weight": 8.302757709797984
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "gentcys",
+      "weight": 8.19987475560181
+    },
+    {
+      "source": "moticless",
+      "target": "vitahlin",
+      "weight": 8.171538904776238
+    },
+    {
+      "source": "ShooterIT",
+      "target": "aviggiano",
+      "weight": 8.091650230233448
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "aviggiano",
+      "weight": 7.929801565507734
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "charsyam",
+      "weight": 7.916750320546544
+    },
+    {
+      "source": "minchopaskal",
+      "target": "sggeorgiev",
+      "weight": 7.694423024632992
+    },
+    {
+      "source": "moticless",
+      "target": "oranagra",
+      "weight": 7.654582529266741
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "sundb",
+      "weight": 7.6489951791485025
+    },
+    {
+      "source": "sundb",
+      "target": "wlswo",
+      "weight": 7.563635489928945
+    },
+    {
+      "source": "moticless",
+      "target": "sggeorgiev",
+      "weight": 7.4923998677782935
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "oshadmi",
+      "weight": 7.373422644186034
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "TalBarYakar",
+      "weight": 7.3463250639149535
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "vitahlin",
+      "weight": 7.225203407852133
+    },
+    {
+      "source": "moticless",
+      "target": "tezc",
+      "weight": 7.2206948908034985
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "a981008",
+      "weight": 7.213056773189974
+    },
+    {
+      "source": "jjz921024",
+      "target": "sundb",
+      "weight": 7.124868587568794
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "moticless",
+      "weight": 7.083793286565576
+    },
+    {
+      "source": "minchopaskal",
+      "target": "tezc",
+      "weight": 7.032298221468297
+    },
+    {
+      "source": "gabsow",
+      "target": "kairosci",
+      "weight": 6.770062684948305
+    },
+    {
+      "source": "oranagra",
+      "target": "sggeorgiev",
+      "weight": 6.709761793043557
+    },
+    {
+      "source": "YangboLong",
+      "target": "hristostaykov-del",
+      "weight": 6.623441084593045
+    },
+    {
+      "source": "AvivDavid23",
+      "target": "gabsow",
+      "weight": 6.588927440140097
+    },
+    {
+      "source": "raffertyyu",
+      "target": "tezc",
+      "weight": 6.481025358586389
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "Peter-Sh",
+      "weight": 6.407235542928629
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "oranagra",
+      "weight": 6.376258219505275
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "tezc",
+      "weight": 6.342485271667565
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "wlswo",
+      "weight": 6.287150315590933
+    },
+    {
+      "source": "antirez",
+      "target": "moticless",
+      "weight": 6.233174616664611
+    },
+    {
+      "source": "kairosci",
+      "target": "tezc",
+      "weight": 6.111815517547996
+    },
+    {
+      "source": "aviggiano",
+      "target": "tezc",
+      "weight": 6.093915691809101
+    },
+    {
+      "source": "a981008",
+      "target": "minchopaskal",
+      "weight": 6.069948502393632
+    },
+    {
+      "source": "SebTardif",
+      "target": "sundb",
+      "weight": 6.014905920111202
+    },
+    {
+      "source": "antirez",
+      "target": "vitahlin",
+      "weight": 5.9898178461189255
+    },
+    {
+      "source": "LiorKogan",
+      "target": "minchopaskal",
+      "weight": 5.9658770297633845
+    },
+    {
+      "source": "hristostaykov-del",
+      "target": "oranagra",
+      "weight": 5.945073663088364
+    },
+    {
+      "source": "TalBarYakar",
+      "target": "kairosci",
+      "weight": 5.905095179760262
+    },
+    {
+      "source": "YangboLong",
+      "target": "aviggiano",
+      "weight": 5.895812237194231
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "JoanFM",
+      "weight": 5.894212129632976
+    },
+    {
+      "source": "fcostaoliveira",
+      "target": "vitahlin",
+      "weight": 5.892857228993953
+    },
+    {
+      "source": "fcostaoliveira",
+      "target": "kairosci",
+      "weight": 5.88794301878264
+    },
+    {
+      "source": "aviggiano",
+      "target": "vitahlin",
+      "weight": 5.7629421704831145
+    },
+    {
+      "source": "daguimu",
+      "target": "vitahlin",
+      "weight": 5.751805151849281
+    },
+    {
+      "source": "JoanFM",
+      "target": "YaacovHazan",
+      "weight": 5.732110399731491
+    },
+    {
+      "source": "antirez",
+      "target": "mgravell",
+      "weight": 5.7070786915022875
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "melatron",
+      "weight": 5.657237507873339
+    },
+    {
+      "source": "oranagra",
+      "target": "raffertyyu",
+      "weight": 5.652629033207596
+    },
+    {
+      "source": "gabsow",
+      "target": "tezc",
+      "weight": 5.648001508890697
+    },
+    {
+      "source": "melatron",
+      "target": "moticless",
+      "weight": 5.597863934299812
+    },
+    {
+      "source": "rajkripal",
+      "target": "sundb",
+      "weight": 5.551672952327645
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "a981008",
+      "weight": 5.53347877024169
+    },
+    {
+      "source": "aviggiano",
+      "target": "hristostaykov-del",
+      "weight": 5.4949737694722725
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "a981008",
+      "weight": 5.49169814159334
+    },
+    {
+      "source": "antirez",
+      "target": "tezc",
+      "weight": 5.490202755386872
+    },
+    {
+      "source": "YangboLong",
+      "target": "sggeorgiev",
+      "weight": 5.415417813957351
+    },
+    {
+      "source": "mdali9821",
+      "target": "sundb",
+      "weight": 5.331596862407561
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "raffertyyu",
+      "weight": 5.2422732285947164
+    },
+    {
+      "source": "fcostaoliveira",
+      "target": "hristostaykov-del",
+      "weight": 5.215633833295704
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "wlswo",
+      "weight": 5.031329519597218
+    },
+    {
+      "source": "jjz921024",
+      "target": "kairosci",
+      "weight": 4.978230149718452
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "mdali9821",
+      "weight": 4.931989381925894
+    },
+    {
+      "source": "hristostaykov-del",
+      "target": "tezc",
+      "weight": 4.889347534833204
+    },
+    {
+      "source": "SebTardif",
+      "target": "sggeorgiev",
+      "weight": 4.865965100829
+    },
+    {
+      "source": "YangboLong",
+      "target": "moticless",
+      "weight": 4.863484053830861
+    },
+    {
+      "source": "antirez",
+      "target": "hristostaykov-del",
+      "weight": 4.863049012317403
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "daguimu",
+      "weight": 4.8170946058393
+    },
+    {
+      "source": "ShooterIT",
+      "target": "vitahlin",
+      "weight": 4.807222881644991
+    },
+    {
+      "source": "JoanFM",
+      "target": "kairosci",
+      "weight": 4.804941916212
+    },
+    {
+      "source": "daguimu",
+      "target": "kairosci",
+      "weight": 4.7201868824791875
+    },
+    {
+      "source": "antirez",
+      "target": "sggeorgiev",
+      "weight": 4.688780827580971
+    },
+    {
+      "source": "ShooterIT",
+      "target": "dannysheyn",
+      "weight": 4.681570438871117
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "slice4e",
+      "weight": 4.648735888718088
+    },
+    {
+      "source": "YangboLong",
+      "target": "tezc",
+      "weight": 4.6463977121381355
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "minchopaskal",
+      "weight": 4.635354362734139
+    },
+    {
+      "source": "ShooterIT",
+      "target": "sggeorgiev",
+      "weight": 4.631875608554661
+    },
+    {
+      "source": "a981008",
+      "target": "moticless",
+      "weight": 4.612019593432395
+    },
+    {
+      "source": "dannysheyn",
+      "target": "sundb",
+      "weight": 4.480102274666857
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "kairosci",
+      "weight": 4.475383204922078
+    },
+    {
+      "source": "daguimu",
+      "target": "sggeorgiev",
+      "weight": 4.468139182406477
+    },
+    {
+      "source": "a981008",
+      "target": "kairosci",
+      "weight": 4.320364412338389
+    },
+    {
+      "source": "daguimu",
+      "target": "minchopaskal",
+      "weight": 4.304501955178355
+    },
+    {
+      "source": "YangboLong",
+      "target": "antirez",
+      "weight": 4.283849855628979
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "mdali9821",
+      "weight": 4.2835554777933815
+    },
+    {
+      "source": "ShooterIT",
+      "target": "wlswo",
+      "weight": 4.27339196651903
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "jjz921024",
+      "weight": 4.2658748684245245
+    },
+    {
+      "source": "minchopaskal",
+      "target": "wlswo",
+      "weight": 4.245667266143027
+    },
+    {
+      "source": "YangboLong",
+      "target": "vitahlin",
+      "weight": 4.241621828553704
+    },
+    {
+      "source": "charsyam",
+      "target": "moticless",
+      "weight": 4.204455656929957
+    },
+    {
+      "source": "hristostaykov-del",
+      "target": "sggeorgiev",
+      "weight": 4.188367944186908
+    },
+    {
+      "source": "oranagra",
+      "target": "vitahlin",
+      "weight": 4.15109641920094
+    },
+    {
+      "source": "moticless",
+      "target": "raffertyyu",
+      "weight": 4.136840685765564
+    },
+    {
+      "source": "oranagra",
+      "target": "tezc",
+      "weight": 4.086816554835828
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "mdali9821",
+      "weight": 4.070333081462548
+    },
+    {
+      "source": "charsyam",
+      "target": "kairosci",
+      "weight": 4.024749827305051
+    },
+    {
+      "source": "charsyam",
+      "target": "fcostaoliveira",
+      "weight": 4.003706234334191
+    },
+    {
+      "source": "a981008",
+      "target": "aviggiano",
+      "weight": 4.001850240847816
+    },
+    {
+      "source": "JoanFM",
+      "target": "vitahlin",
+      "weight": 3.9795543722561266
+    },
+    {
+      "source": "YangboLong",
+      "target": "daguimu",
+      "weight": 3.9700463857689554
+    },
+    {
+      "source": "JoanFM",
+      "target": "ShooterIT",
+      "weight": 3.964038037624189
+    },
+    {
+      "source": "ShooterIT",
+      "target": "skaslev",
+      "weight": 3.8567338294763784
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "vitahlin",
+      "weight": 3.8457782101913205
+    },
+    {
+      "source": "ShooterIT",
+      "target": "a981008",
+      "weight": 3.83880911620918
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "oranagra",
+      "weight": 3.7567874192504678
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "melatron",
+      "weight": 3.7372584439944756
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "melatron",
+      "weight": 3.7277341504734607
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "jjz921024",
+      "weight": 3.714656193890927
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "ShubhamTaple",
+      "weight": 3.708273128214378
+    },
+    {
+      "source": "AvivDavid23",
+      "target": "YaacovHazan",
+      "weight": 3.706312576490432
+    },
+    {
+      "source": "daguimu",
+      "target": "fcostaoliveira",
+      "weight": 3.6862333036902415
+    },
+    {
+      "source": "guybe7",
+      "target": "melatron",
+      "weight": 3.64854685001502
+    },
+    {
+      "source": "JoanFM",
+      "target": "sundb",
+      "weight": 3.6414331358711713
+    },
+    {
+      "source": "jjz921024",
+      "target": "moticless",
+      "weight": 3.6363841381900923
+    },
+    {
+      "source": "JoanFM",
+      "target": "jjz921024",
+      "weight": 3.6149855664623294
+    },
+    {
+      "source": "jjz921024",
+      "target": "tezc",
+      "weight": 3.5984829145902917
+    },
+    {
+      "source": "JoanFM",
+      "target": "aviggiano",
+      "weight": 3.59821590022565
+    },
+    {
+      "source": "aviggiano",
+      "target": "oranagra",
+      "weight": 3.5973871247307936
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "oranagra",
+      "weight": 3.594269577926498
+    },
+    {
+      "source": "melatron",
+      "target": "vitahlin",
+      "weight": 3.5843893912652556
+    },
+    {
+      "source": "ShooterIT",
+      "target": "meiravgri",
+      "weight": 3.5440116086583715
+    },
+    {
+      "source": "a981008",
+      "target": "jjz921024",
+      "weight": 3.522823177086628
+    },
+    {
+      "source": "antirez",
+      "target": "oranagra",
+      "weight": 3.4900477499424927
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "hristostaykov-del",
+      "weight": 3.4771070759795726
+    },
+    {
+      "source": "skaslev",
+      "target": "tezc",
+      "weight": 3.4508316089419133
+    },
+    {
+      "source": "minchopaskal",
+      "target": "slice4e",
+      "weight": 3.4456414962917967
+    },
+    {
+      "source": "ShooterIT",
+      "target": "hristostaykov-del",
+      "weight": 3.443217885781751
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "rantidhar",
+      "weight": 3.422549841162793
+    },
+    {
+      "source": "aviggiano",
+      "target": "rantidhar",
+      "weight": 3.415182562846612
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "stav-nachmias",
+      "weight": 3.3658044138027745
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "alonre24",
+      "weight": 3.3523359390516183
+    },
+    {
+      "source": "kairosci",
+      "target": "oranagra",
+      "weight": 3.337910415502298
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "aviggiano",
+      "weight": 3.3324673614943303
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "fcostaoliveira",
+      "weight": 3.2861085777097623
+    },
+    {
+      "source": "mdali9821",
+      "target": "vitahlin",
+      "weight": 3.2499103632057005
+    },
+    {
+      "source": "YangboLong",
+      "target": "a981008",
+      "weight": 3.248087926064846
+    },
+    {
+      "source": "JoanFM",
+      "target": "minchopaskal",
+      "weight": 3.23620907741929
+    },
+    {
+      "source": "skaslev",
+      "target": "sundb",
+      "weight": 3.197953611038624
+    },
+    {
+      "source": "slice4e",
+      "target": "sundb",
+      "weight": 3.1704588822138033
+    },
+    {
+      "source": "fcostaoliveira",
+      "target": "sggeorgiev",
+      "weight": 3.147485631040997
+    },
+    {
+      "source": "LiorKogan",
+      "target": "YaacovHazan",
+      "weight": 3.1361314256121062
+    },
+    {
+      "source": "charsyam",
+      "target": "sggeorgiev",
+      "weight": 3.1227521753637983
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "wlswo",
+      "weight": 3.111353831621409
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "a981008",
+      "weight": 3.0715245059915928
+    },
+    {
+      "source": "JoanFM",
+      "target": "oranagra",
+      "weight": 3.030761046629543
+    },
+    {
+      "source": "sggeorgiev",
+      "target": "skaslev",
+      "weight": 3.0291108339732045
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "gabsow",
+      "weight": 3.0216885016330766
+    },
+    {
+      "source": "gentcys",
+      "target": "moticless",
+      "weight": 3.0169197771338863
+    },
+    {
+      "source": "aviggiano",
+      "target": "melatron",
+      "weight": 3.0029211382167658
+    },
+    {
+      "source": "jjz921024",
+      "target": "minchopaskal",
+      "weight": 2.9920013903337006
+    },
+    {
+      "source": "a981008",
+      "target": "hristostaykov-del",
+      "weight": 2.9785526852678155
+    },
+    {
+      "source": "antirez",
+      "target": "rantidhar",
+      "weight": 2.9760375762815277
+    },
+    {
+      "source": "AvivDavid23",
+      "target": "TalBarYakar",
+      "weight": 2.968594900422768
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "m-marinov",
+      "weight": 2.962826238776543
+    },
+    {
+      "source": "sggeorgiev",
+      "target": "vitahlin",
+      "weight": 2.9590097342367305
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "YangboLong",
+      "weight": 2.956489115406505
+    },
+    {
+      "source": "oshadmi",
+      "target": "sundb",
+      "weight": 2.9351438850063913
+    },
+    {
+      "source": "huynhanx03",
+      "target": "moticless",
+      "weight": 2.9348552650784745
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "gabsow",
+      "weight": 2.9264973696446486
+    },
+    {
+      "source": "kairosci",
+      "target": "melatron",
+      "weight": 2.9256752333838696
+    },
+    {
+      "source": "aviggiano",
+      "target": "jjz921024",
+      "weight": 2.9240738159228328
+    },
+    {
+      "source": "a981008",
+      "target": "vitahlin",
+      "weight": 2.922776958227836
+    },
+    {
+      "source": "vitahlin",
+      "target": "wlswo",
+      "weight": 2.884137837986071
+    },
+    {
+      "source": "gabsow",
+      "target": "sundb",
+      "weight": 2.868736863054034
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "pony-maggie",
+      "weight": 2.829781460602302
+    },
+    {
+      "source": "orbisai0security",
+      "target": "sundb",
+      "weight": 2.8245579973991126
+    },
+    {
+      "source": "JoanFM",
+      "target": "ShubhamTaple",
+      "weight": 2.8179143845160466
+    },
+    {
+      "source": "LukeMathWalker",
+      "target": "kalinstaykov",
+      "weight": 2.817035530261053
+    },
+    {
+      "source": "a981008",
+      "target": "melatron",
+      "weight": 2.7896807899172944
+    },
+    {
+      "source": "gentcys",
+      "target": "kairosci",
+      "weight": 2.7454581184685183
+    },
+    {
+      "source": "mdali9821",
+      "target": "sggeorgiev",
+      "weight": 2.7289952260176493
+    },
+    {
+      "source": "JoanFM",
+      "target": "Peter-Sh",
+      "weight": 2.7135961291210027
+    },
+    {
+      "source": "darsheel-rathore",
+      "target": "sundb",
+      "weight": 2.7068535111716003
+    },
+    {
+      "source": "hristostaykov-del",
+      "target": "mdali9821",
+      "weight": 2.6799583531904547
+    },
+    {
+      "source": "melatron",
+      "target": "sggeorgiev",
+      "weight": 2.6709286987983463
+    },
+    {
+      "source": "hristostaykov-del",
+      "target": "vitahlin",
+      "weight": 2.6580064648677415
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "moticless",
+      "weight": 2.6052594491666334
+    },
+    {
+      "source": "huynhanx03",
+      "target": "sundb",
+      "weight": 2.585441604878179
+    },
+    {
+      "source": "melatron",
+      "target": "minchopaskal",
+      "weight": 2.582207396841162
+    },
+    {
+      "source": "mdali9821",
+      "target": "minchopaskal",
+      "weight": 2.576740004018927
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "rantidhar",
+      "weight": 2.5690559418562375
+    },
+    {
+      "source": "hristostaykov-del",
+      "target": "rantidhar",
+      "weight": 2.5690559418562375
+    },
+    {
+      "source": "aviggiano",
+      "target": "gabsow",
+      "weight": 2.535522301930885
+    },
+    {
+      "source": "aviggiano",
+      "target": "wlswo",
+      "weight": 2.519387672817926
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "rajkripal",
+      "weight": 2.513276505581353
+    },
+    {
+      "source": "daguimu",
+      "target": "mdali9821",
+      "weight": 2.4996441650555745
+    },
+    {
+      "source": "YangboLong",
+      "target": "jjz921024",
+      "weight": 2.49760361434571
+    },
+    {
+      "source": "ShooterIT",
+      "target": "oranagra",
+      "weight": 2.4752422542704395
+    },
+    {
+      "source": "AvivDavid23",
+      "target": "kairosci",
+      "weight": 2.4736210404933745
+    },
+    {
+      "source": "daguimu",
+      "target": "wlswo",
+      "weight": 2.4710135555266417
+    },
+    {
+      "source": "minchopaskal",
+      "target": "rantidhar",
+      "weight": 2.454625072301899
+    },
+    {
+      "source": "moticless",
+      "target": "rantidhar",
+      "weight": 2.454625072301899
+    },
+    {
+      "source": "antirez",
+      "target": "wlswo",
+      "weight": 2.438429102682701
+    },
+    {
+      "source": "fcostaoliveira",
+      "target": "skaslev",
+      "weight": 2.434832328531122
+    },
+    {
+      "source": "aviggiano",
+      "target": "slice4e",
+      "weight": 2.4234210456118586
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "kalinstaykov",
+      "weight": 2.420095265145823
+    },
+    {
+      "source": "daguimu",
+      "target": "hristostaykov-del",
+      "weight": 2.412683906474702
+    },
+    {
+      "source": "kairosci",
+      "target": "wlswo",
+      "weight": 2.392869258855558
+    },
+    {
+      "source": "a981008",
+      "target": "fcostaoliveira",
+      "weight": 2.3772136338665737
+    },
+    {
+      "source": "fcostaoliveira",
+      "target": "oranagra",
+      "weight": 2.354227373796343
+    },
+    {
+      "source": "gabsow",
+      "target": "moticless",
+      "weight": 2.35286324095461
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "jjz921024",
+      "weight": 2.3348340504166325
+    },
+    {
+      "source": "a981008",
+      "target": "tezc",
+      "weight": 2.3314538752176643
+    },
+    {
+      "source": "gentcys",
+      "target": "minchopaskal",
+      "weight": 2.3310328981672646
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "tezc",
+      "weight": 2.3279304943118633
+    },
+    {
+      "source": "LukeMathWalker",
+      "target": "YaacovHazan",
+      "weight": 2.3271077812645156
+    },
+    {
+      "source": "melatron",
+      "target": "oranagra",
+      "weight": 2.3004884894398985
+    },
+    {
+      "source": "JoanFM",
+      "target": "YangboLong",
+      "weight": 2.292263318486167
+    },
+    {
+      "source": "a981008",
+      "target": "sggeorgiev",
+      "weight": 2.2895427368334973
+    },
+    {
+      "source": "m-marinov",
+      "target": "stav-nachmias",
+      "weight": 2.2712845520506635
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "rajkripal",
+      "weight": 2.259419576992255
+    },
+    {
+      "source": "aviggiano",
+      "target": "daguimu",
+      "weight": 2.254784479560377
+    },
+    {
+      "source": "hristostaykov-del",
+      "target": "melatron",
+      "weight": 2.2491750147280714
+    },
+    {
+      "source": "fcostaoliveira",
+      "target": "mdali9821",
+      "weight": 2.2254007304387207
+    },
+    {
+      "source": "AngelYanev",
+      "target": "YaacovHazan",
+      "weight": 2.220993259840184
+    },
+    {
+      "source": "fcostaoliveira",
+      "target": "minchopaskal",
+      "weight": 2.220830107350909
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "charsyam",
+      "weight": 2.22045350100078
+    },
+    {
+      "source": "TalBarYakar",
+      "target": "sundb",
+      "weight": 2.2089984540513807
+    },
+    {
+      "source": "daguimu",
+      "target": "moticless",
+      "weight": 2.202468527995265
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "antirez",
+      "weight": 2.198420315278891
+    },
+    {
+      "source": "erhan1209",
+      "target": "sundb",
+      "weight": 2.1963622050102094
+    },
+    {
+      "source": "sggeorgiev",
+      "target": "tezc",
+      "weight": 2.1832305016513356
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "mdali9821",
+      "weight": 2.1626833102603698
+    },
+    {
+      "source": "YangboLong",
+      "target": "melatron",
+      "weight": 2.1615466742360656
+    },
+    {
+      "source": "kairosci",
+      "target": "slice4e",
+      "weight": 2.1429327350637974
+    },
+    {
+      "source": "LiorKogan",
+      "target": "sggeorgiev",
+      "weight": 2.141725434821095
+    },
+    {
+      "source": "ShooterIT",
+      "target": "melatron",
+      "weight": 2.141099617132248
+    },
+    {
+      "source": "CMeans-Redis",
+      "target": "YaacovHazan",
+      "weight": 2.1293611495932048
+    },
+    {
+      "source": "minchopaskal",
+      "target": "skaslev",
+      "weight": 2.115189783616305
+    },
+    {
+      "source": "pony-maggie",
+      "target": "sundb",
+      "weight": 2.1046522604786517
+    },
+    {
+      "source": "daguimu",
+      "target": "tezc",
+      "weight": 2.10278939072059
+    },
+    {
+      "source": "aviggiano",
+      "target": "charsyam",
+      "weight": 2.0580103196762467
+    },
+    {
+      "source": "a981008",
+      "target": "antirez",
+      "weight": 2.0524718766169814
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "ShooterIT",
+      "weight": 2.0439431301417095
+    },
+    {
+      "source": "antirez",
+      "target": "mdali9821",
+      "weight": 2.006816430800257
+    },
+    {
+      "source": "ShooterIT",
+      "target": "charsyam",
+      "weight": 2.0057409959216708
+    },
+    {
+      "source": "hristostaykov-del",
+      "target": "wlswo",
+      "weight": 1.9934239206266313
+    },
+    {
+      "source": "alonre24",
+      "target": "sundb",
+      "weight": 1.962826859178091
+    },
+    {
+      "source": "YangboLong",
+      "target": "oranagra",
+      "weight": 1.9576098739974306
+    },
+    {
+      "source": "pierluigilenoci",
+      "target": "sundb",
+      "weight": 1.9491270020678078
+    },
+    {
+      "source": "kairosci",
+      "target": "mdali9821",
+      "weight": 1.9295646853260626
+    },
+    {
+      "source": "TalBarYakar",
+      "target": "aviggiano",
+      "weight": 1.9223589923624278
+    },
+    {
+      "source": "antirez",
+      "target": "gabsow",
+      "weight": 1.9165873946273453
+    },
+    {
+      "source": "antirez",
+      "target": "raffertyyu",
+      "weight": 1.8918800536259157
+    },
+    {
+      "source": "JoanFM",
+      "target": "antirez",
+      "weight": 1.8792603626105575
+    },
+    {
+      "source": "aviggiano",
+      "target": "fcostaoliveira",
+      "weight": 1.8785735817396223
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "pierluigilenoci",
+      "weight": 1.8601318497033632
+    },
+    {
+      "source": "hristostaykov-del",
+      "target": "rajkripal",
+      "weight": 1.8597109573943773
+    },
+    {
+      "source": "jjz921024",
+      "target": "vitahlin",
+      "weight": 1.8377460784535167
+    },
+    {
+      "source": "JoanFM",
+      "target": "charsyam",
+      "weight": 1.820233250933947
+    },
+    {
+      "source": "YangboLong",
+      "target": "charsyam",
+      "weight": 1.8167512549877998
+    },
+    {
+      "source": "fcostaoliveira",
+      "target": "slice4e",
+      "weight": 1.795244276974395
+    },
+    {
+      "source": "aviggiano",
+      "target": "mdali9821",
+      "weight": 1.791526355358262
+    },
+    {
+      "source": "JoanFM",
+      "target": "sggeorgiev",
+      "weight": 1.7859738785916093
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "pierluigilenoci",
+      "weight": 1.7645271031939125
+    },
+    {
+      "source": "jjz921024",
+      "target": "sggeorgiev",
+      "weight": 1.761026431187215
+    },
+    {
+      "source": "TalBarYakar",
+      "target": "antirez",
+      "weight": 1.7577161814856201
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "dannysheyn",
+      "weight": 1.752400885712077
+    },
+    {
+      "source": "antirez",
+      "target": "melatron",
+      "weight": 1.7414827554172556
+    },
+    {
+      "source": "YangboLong",
+      "target": "fcostaoliveira",
+      "weight": 1.72386770378938
+    },
+    {
+      "source": "alonre24",
+      "target": "oshadmi",
+      "weight": 1.717554151761092
+    },
+    {
+      "source": "AngelYanev",
+      "target": "oshadmi",
+      "weight": 1.717554151761092
+    },
+    {
+      "source": "AngelYanev",
+      "target": "TalBarYakar",
+      "weight": 1.7085977984198493
+    },
+    {
+      "source": "LukeMathWalker",
+      "target": "TalBarYakar",
+      "weight": 1.7085977984198493
+    },
+    {
+      "source": "charsyam",
+      "target": "minchopaskal",
+      "weight": 1.6936905122490171
+    },
+    {
+      "source": "AngelYanev",
+      "target": "Peter-Sh",
+      "weight": 1.6841988742913594
+    },
+    {
+      "source": "fcostaoliveira",
+      "target": "melatron",
+      "weight": 1.67844384308279
+    },
+    {
+      "source": "minchopaskal",
+      "target": "pierluigilenoci",
+      "weight": 1.64914800308273
+    },
+    {
+      "source": "moticless",
+      "target": "pierluigilenoci",
+      "weight": 1.6373824794669452
+    },
+    {
+      "source": "sggeorgiev",
+      "target": "wlswo",
+      "weight": 1.6214679997518406
+    },
+    {
+      "source": "AngelYanev",
+      "target": "sundb",
+      "weight": 1.6210803747377458
+    },
+    {
+      "source": "kairosci",
+      "target": "rantidhar",
+      "weight": 1.6141657533317968
+    },
+    {
+      "source": "rantidhar",
+      "target": "sggeorgiev",
+      "weight": 1.6141657533317968
+    },
+    {
+      "source": "AngelYanev",
+      "target": "alonre24",
+      "weight": 1.6026527802125017
+    },
+    {
+      "source": "jjz921024",
+      "target": "oranagra",
+      "weight": 1.5809701982458946
+    },
+    {
+      "source": "daemyung-lablup",
+      "target": "fcostaoliveira",
+      "weight": 1.5786711167777523
+    },
+    {
+      "source": "AngelYanev",
+      "target": "LukeMathWalker",
+      "weight": 1.568698902165171
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "huynhanx03",
+      "weight": 1.5494174968363426
+    },
+    {
+      "source": "erhan1209",
+      "target": "skaslev",
+      "weight": 1.5481969658172616
+    },
+    {
+      "source": "charsyam",
+      "target": "daemyung-lablup",
+      "weight": 1.537098669811877
+    },
+    {
+      "source": "AngelYanev",
+      "target": "gabsow",
+      "weight": 1.529065534601687
+    },
+    {
+      "source": "AngelYanev",
+      "target": "kairosci",
+      "weight": 1.529065534601687
+    },
+    {
+      "source": "slice4e",
+      "target": "vitahlin",
+      "weight": 1.5228424003912708
+    },
+    {
+      "source": "erhan1209",
+      "target": "kairosci",
+      "weight": 1.5152881066022892
+    },
+    {
+      "source": "JoanFM",
+      "target": "hristostaykov-del",
+      "weight": 1.5129797559566076
+    },
+    {
+      "source": "moticless",
+      "target": "rajkripal",
+      "weight": 1.5082710701280213
+    },
+    {
+      "source": "gabsow",
+      "target": "jjz921024",
+      "weight": 1.5013378111987081
+    },
+    {
+      "source": "gabsow",
+      "target": "minchopaskal",
+      "weight": 1.5013378111987081
+    },
+    {
+      "source": "JoanFM",
+      "target": "gabsow",
+      "weight": 1.5013378111987081
+    },
+    {
+      "source": "ShooterIT",
+      "target": "gabsow",
+      "weight": 1.5013378111987081
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "gabsow",
+      "weight": 1.5013378111987081
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "jjz921024",
+      "weight": 1.4866704908742179
+    },
+    {
+      "source": "SebTardif",
+      "target": "a981008",
+      "weight": 1.475933082559424
+    },
+    {
+      "source": "hristostaykov-del",
+      "target": "jjz921024",
+      "weight": 1.4701589174187837
+    },
+    {
+      "source": "YangboLong",
+      "target": "mdali9821",
+      "weight": 1.4561610869827881
+    },
+    {
+      "source": "LukeMathWalker",
+      "target": "gabsow",
+      "weight": 1.4538847925294105
+    },
+    {
+      "source": "LukeMathWalker",
+      "target": "kairosci",
+      "weight": 1.433250524626497
+    },
+    {
+      "source": "aviggiano",
+      "target": "pony-maggie",
+      "weight": 1.4153349413291179
+    },
+    {
+      "source": "fcostaoliveira",
+      "target": "wlswo",
+      "weight": 1.4041139258888604
+    },
+    {
+      "source": "JoanFM",
+      "target": "melatron",
+      "weight": 1.3833949567610226
+    },
+    {
+      "source": "kairosci",
+      "target": "raffertyyu",
+      "weight": 1.381096612480102
+    },
+    {
+      "source": "antirez",
+      "target": "fcostaoliveira",
+      "weight": 1.366706107607245
+    },
+    {
+      "source": "kalinstaykov",
+      "target": "sundb",
+      "weight": 1.3584886519360009
+    },
+    {
+      "source": "YangboLong",
+      "target": "rajkripal",
+      "weight": 1.3568086513504314
+    },
+    {
+      "source": "SebTardif",
+      "target": "ShubhamTaple",
+      "weight": 1.3493485595205144
+    },
+    {
+      "source": "antirez",
+      "target": "charsyam",
+      "weight": 1.3399953197158883
+    },
+    {
+      "source": "daguimu",
+      "target": "jjz921024",
+      "weight": 1.326443175111042
+    },
+    {
+      "source": "mdali9821",
+      "target": "slice4e",
+      "weight": 1.3215948632222037
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "skaslev",
+      "weight": 1.3171791766618157
+    },
+    {
+      "source": "daguimu",
+      "target": "oranagra",
+      "weight": 1.2946808678570036
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "pony-maggie",
+      "weight": 1.2907569464487034
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "pony-maggie",
+      "weight": 1.2795101679844905
+    },
+    {
+      "source": "JoanFM",
+      "target": "pony-maggie",
+      "weight": 1.2729419000207156
+    },
+    {
+      "source": "charsyam",
+      "target": "melatron",
+      "weight": 1.2627629963935503
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "slice4e",
+      "weight": 1.260485370034612
+    },
+    {
+      "source": "daguimu",
+      "target": "slice4e",
+      "weight": 1.2601587843642454
+    },
+    {
+      "source": "sggeorgiev",
+      "target": "slice4e",
+      "weight": 1.2601587843642454
+    },
+    {
+      "source": "fcostaoliveira",
+      "target": "tezc",
+      "weight": 1.2524886975264207
+    },
+    {
+      "source": "moticless",
+      "target": "pony-maggie",
+      "weight": 1.2501118176622432
+    },
+    {
+      "source": "erhan1209",
+      "target": "hristostaykov-del",
+      "weight": 1.2499507056129275
+    },
+    {
+      "source": "antirez",
+      "target": "pony-maggie",
+      "weight": 1.2293710154909443
+    },
+    {
+      "source": "jjz921024",
+      "target": "pony-maggie",
+      "weight": 1.2293710154909443
+    },
+    {
+      "source": "kairosci",
+      "target": "pony-maggie",
+      "weight": 1.2293710154909443
+    },
+    {
+      "source": "minchopaskal",
+      "target": "pony-maggie",
+      "weight": 1.2293710154909443
+    },
+    {
+      "source": "ShooterIT",
+      "target": "pony-maggie",
+      "weight": 1.2293710154909443
+    },
+    {
+      "source": "ShooterIT",
+      "target": "daguimu",
+      "weight": 1.1960252989712814
+    },
+    {
+      "source": "mdali9821",
+      "target": "rantidhar",
+      "weight": 1.1806880687869845
+    },
+    {
+      "source": "JoanFM",
+      "target": "fcostaoliveira",
+      "weight": 1.1763197294558043
+    },
+    {
+      "source": "antirez",
+      "target": "jjz921024",
+      "weight": 1.1679566792918221
+    },
+    {
+      "source": "kairosci",
+      "target": "skaslev",
+      "weight": 1.1645205917389894
+    },
+    {
+      "source": "mdali9821",
+      "target": "oranagra",
+      "weight": 1.1511676839856022
+    },
+    {
+      "source": "LiorKogan",
+      "target": "aviggiano",
+      "weight": 1.148388891689616
+    },
+    {
+      "source": "charsyam",
+      "target": "slice4e",
+      "weight": 1.146971599824809
+    },
+    {
+      "source": "gabsow",
+      "target": "vitahlin",
+      "weight": 1.14450566079896
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "raffertyyu",
+      "weight": 1.127544383638871
+    },
+    {
+      "source": "TalBarYakar",
+      "target": "skaslev",
+      "weight": 1.1153747171595452
+    },
+    {
+      "source": "alonre24",
+      "target": "tezc",
+      "weight": 1.1020610991924116
+    },
+    {
+      "source": "JoanFM",
+      "target": "tezc",
+      "weight": 1.0875372784461375
+    },
+    {
+      "source": "aviggiano",
+      "target": "pierluigilenoci",
+      "weight": 1.074540662710137
+    },
+    {
+      "source": "gabsow",
+      "target": "pierluigilenoci",
+      "weight": 1.0692695427707295
+    },
+    {
+      "source": "gabsow",
+      "target": "pony-maggie",
+      "weight": 1.0692695427707295
+    },
+    {
+      "source": "pierluigilenoci",
+      "target": "vitahlin",
+      "weight": 1.0682969180402722
+    },
+    {
+      "source": "tezc",
+      "target": "wlswo",
+      "weight": 1.0321580050140695
+    },
+    {
+      "source": "YangboLong",
+      "target": "wlswo",
+      "weight": 1.0321580050140695
+    },
+    {
+      "source": "a981008",
+      "target": "oranagra",
+      "weight": 1.0259549091226006
+    },
+    {
+      "source": "charsyam",
+      "target": "vitahlin",
+      "weight": 1.018234102865402
+    },
+    {
+      "source": "LiorKogan",
+      "target": "TalBarYakar",
+      "weight": 1.0148758041290724
+    },
+    {
+      "source": "TalBarYakar",
+      "target": "kalinstaykov",
+      "weight": 1.0148758041290724
+    },
+    {
+      "source": "LiorKogan",
+      "target": "Peter-Sh",
+      "weight": 1.0019916047882766
+    },
+    {
+      "source": "fcostaoliveira",
+      "target": "raffertyyu",
+      "weight": 0.9928666783806969
+    },
+    {
+      "source": "LiorKogan",
+      "target": "kalinstaykov",
+      "weight": 0.9840428473822939
+    },
+    {
+      "source": "a981008",
+      "target": "wlswo",
+      "weight": 0.982322169557706
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "wlswo",
+      "weight": 0.982322169557706
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "sggeorgiev",
+      "weight": 0.9803868251906744
+    },
+    {
+      "source": "dannysheyn",
+      "target": "sggeorgiev",
+      "weight": 0.9788787422659879
+    },
+    {
+      "source": "JoanFM",
+      "target": "pierluigilenoci",
+      "weight": 0.9664340170640148
+    },
+    {
+      "source": "charsyam",
+      "target": "daguimu",
+      "weight": 0.9627801627517406
+    },
+    {
+      "source": "LiorKogan",
+      "target": "ShubhamTaple",
+      "weight": 0.9609966609642713
+    },
+    {
+      "source": "aviggiano",
+      "target": "raffertyyu",
+      "weight": 0.9496700234898507
+    },
+    {
+      "source": "mdali9821",
+      "target": "moticless",
+      "weight": 0.9428298162959219
+    },
+    {
+      "source": "TalBarYakar",
+      "target": "m-marinov",
+      "weight": 0.9388432921646229
+    },
+    {
+      "source": "TalBarYakar",
+      "target": "moticless",
+      "weight": 0.9388432921646229
+    },
+    {
+      "source": "TalBarYakar",
+      "target": "stav-nachmias",
+      "weight": 0.9388432921646229
+    },
+    {
+      "source": "TalBarYakar",
+      "target": "vitahlin",
+      "weight": 0.9388432921646229
+    },
+    {
+      "source": "charsyam",
+      "target": "raffertyyu",
+      "weight": 0.9383762422779616
+    },
+    {
+      "source": "pierluigilenoci",
+      "target": "pony-maggie",
+      "weight": 0.9333544358494643
+    },
+    {
+      "source": "charsyam",
+      "target": "mdali9821",
+      "weight": 0.9294802765074714
+    },
+    {
+      "source": "AvivDavid23",
+      "target": "Peter-Sh",
+      "weight": 0.9269243518600025
+    },
+    {
+      "source": "LukeMathWalker",
+      "target": "Peter-Sh",
+      "weight": 0.9269243518600025
+    },
+    {
+      "source": "mdali9821",
+      "target": "wlswo",
+      "weight": 0.9191531133566718
+    },
+    {
+      "source": "melatron",
+      "target": "wlswo",
+      "weight": 0.9191531133566718
+    },
+    {
+      "source": "raffertyyu",
+      "target": "wlswo",
+      "weight": 0.9191531133566718
+    },
+    {
+      "source": "a981008",
+      "target": "mdali9821",
+      "weight": 0.9127716679884454
+    },
+    {
+      "source": "LiorKogan",
+      "target": "sundb",
+      "weight": 0.909823887368675
+    },
+    {
+      "source": "hristostaykov-del",
+      "target": "raffertyyu",
+      "weight": 0.9047909980008964
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "TalBarYakar",
+      "weight": 0.901126018507667
+    },
+    {
+      "source": "gabsow",
+      "target": "stav-nachmias",
+      "weight": 0.8909976131057928
+    },
+    {
+      "source": "stav-nachmias",
+      "target": "vitahlin",
+      "weight": 0.8909976131057928
+    },
+    {
+      "source": "antirez",
+      "target": "pierluigilenoci",
+      "weight": 0.88672787446652
+    },
+    {
+      "source": "CMeans-Redis",
+      "target": "LiorKogan",
+      "weight": 0.8829451981570293
+    },
+    {
+      "source": "TalBarYakar",
+      "target": "wlswo",
+      "weight": 0.8667969383872242
+    },
+    {
+      "source": "gabsow",
+      "target": "hristostaykov-del",
+      "weight": 0.8641365368559575
+    },
+    {
+      "source": "YangboLong",
+      "target": "gabsow",
+      "weight": 0.8641365368559575
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "skaslev",
+      "weight": 0.8603936819685069
+    },
+    {
+      "source": "gabsow",
+      "target": "oshadmi",
+      "weight": 0.858777075880546
+    },
+    {
+      "source": "kairosci",
+      "target": "oshadmi",
+      "weight": 0.858777075880546
+    },
+    {
+      "source": "LukeMathWalker",
+      "target": "oshadmi",
+      "weight": 0.858777075880546
+    },
+    {
+      "source": "TalBarYakar",
+      "target": "oshadmi",
+      "weight": 0.858777075880546
+    },
+    {
+      "source": "ShooterIT",
+      "target": "huynhanx03",
+      "weight": 0.856268575278744
+    },
+    {
+      "source": "gentcys",
+      "target": "pierluigilenoci",
+      "weight": 0.8470375418713072
+    },
+    {
+      "source": "oranagra",
+      "target": "rantidhar",
+      "weight": 0.8404593189701023
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "huynhanx03",
+      "weight": 0.8374067809307628
+    },
+    {
+      "source": "ShooterIT",
+      "target": "oshadmi",
+      "weight": 0.8363784610986971
+    },
+    {
+      "source": "raffertyyu",
+      "target": "sggeorgiev",
+      "weight": 0.8244304018152596
+    },
+    {
+      "source": "alonre24",
+      "target": "moticless",
+      "weight": 0.8212677772446525
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "TalBarYakar",
+      "weight": 0.8188728893209973
+    },
+    {
+      "source": "ShooterIT",
+      "target": "TalBarYakar",
+      "weight": 0.8188728893209973
+    },
+    {
+      "source": "TalBarYakar",
+      "target": "minchopaskal",
+      "weight": 0.8188728893209973
+    },
+    {
+      "source": "jjz921024",
+      "target": "melatron",
+      "weight": 0.8176580214241536
+    },
+    {
+      "source": "minchopaskal",
+      "target": "raffertyyu",
+      "weight": 0.8166198332700929
+    },
+    {
+      "source": "LukeMathWalker",
+      "target": "sundb",
+      "weight": 0.8105401873688729
+    },
+    {
+      "source": "LiorKogan",
+      "target": "hristostaykov-del",
+      "weight": 0.8047451022319272
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "pierluigilenoci",
+      "weight": 0.8036598015003318
+    },
+    {
+      "source": "alonre24",
+      "target": "gabsow",
+      "weight": 0.8013263901062508
+    },
+    {
+      "source": "alonre24",
+      "target": "kairosci",
+      "weight": 0.8013263901062508
+    },
+    {
+      "source": "LukeMathWalker",
+      "target": "alonre24",
+      "weight": 0.8013263901062508
+    },
+    {
+      "source": "TalBarYakar",
+      "target": "alonre24",
+      "weight": 0.8013263901062508
+    },
+    {
+      "source": "mdali9821",
+      "target": "tezc",
+      "weight": 0.7813206719645213
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "gentcys",
+      "weight": 0.7777038291137313
+    },
+    {
+      "source": "a981008",
+      "target": "rantidhar",
+      "weight": 0.7737064343616944
+    },
+    {
+      "source": "charsyam",
+      "target": "rantidhar",
+      "weight": 0.7737064343616944
+    },
+    {
+      "source": "fcostaoliveira",
+      "target": "rantidhar",
+      "weight": 0.7737064343616944
+    },
+    {
+      "source": "jjz921024",
+      "target": "rantidhar",
+      "weight": 0.7737064343616944
+    },
+    {
+      "source": "JoanFM",
+      "target": "rantidhar",
+      "weight": 0.7737064343616944
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "rantidhar",
+      "weight": 0.7737064343616944
+    },
+    {
+      "source": "rantidhar",
+      "target": "tezc",
+      "weight": 0.7737064343616944
+    },
+    {
+      "source": "ShooterIT",
+      "target": "rantidhar",
+      "weight": 0.7737064343616944
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "rantidhar",
+      "weight": 0.7737064343616944
+    },
+    {
+      "source": "YangboLong",
+      "target": "rantidhar",
+      "weight": 0.7737064343616944
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "raffertyyu",
+      "weight": 0.7719970956463731
+    },
+    {
+      "source": "huynhanx03",
+      "target": "wlswo",
+      "weight": 0.7714012591037173
+    },
+    {
+      "source": "mdali9821",
+      "target": "melatron",
+      "weight": 0.756129426646809
+    },
+    {
+      "source": "mdali9821",
+      "target": "raffertyyu",
+      "weight": 0.756129426646809
+    },
+    {
+      "source": "ShooterIT",
+      "target": "pierluigilenoci",
+      "weight": 0.7453722394990205
+    },
+    {
+      "source": "jjz921024",
+      "target": "pierluigilenoci",
+      "weight": 0.7447596297650583
+    },
+    {
+      "source": "gentcys",
+      "target": "melatron",
+      "weight": 0.7438079028228433
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "pony-maggie",
+      "weight": 0.7436778689720066
+    },
+    {
+      "source": "a981008",
+      "target": "skaslev",
+      "weight": 0.737966541279712
+    },
+    {
+      "source": "kairosci",
+      "target": "pierluigilenoci",
+      "weight": 0.7345778830026648
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "huynhanx03",
+      "weight": 0.7313959120086526
+    },
+    {
+      "source": "a981008",
+      "target": "charsyam",
+      "weight": 0.7211276686391832
+    },
+    {
+      "source": "JoanFM",
+      "target": "a981008",
+      "weight": 0.7211276686391832
+    },
+    {
+      "source": "melatron",
+      "target": "raffertyyu",
+      "weight": 0.7207403199816786
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "rajkripal",
+      "weight": 0.720014941400362
+    },
+    {
+      "source": "hristostaykov-del",
+      "target": "pony-maggie",
+      "weight": 0.7198333993260899
+    },
+    {
+      "source": "gabsow",
+      "target": "m-marinov",
+      "weight": 0.7124373923709812
+    },
+    {
+      "source": "skaslev",
+      "target": "wlswo",
+      "weight": 0.7023148863951688
+    },
+    {
+      "source": "m-marinov",
+      "target": "vitahlin",
+      "weight": 0.7008821270005869
+    },
+    {
+      "source": "a981008",
+      "target": "rajkripal",
+      "weight": 0.6975545385900357
+    },
+    {
+      "source": "SebTardif",
+      "target": "ShooterIT",
+      "weight": 0.6850821939292846
+    },
+    {
+      "source": "kairosci",
+      "target": "rajkripal",
+      "weight": 0.684902384150314
+    },
+    {
+      "source": "daguimu",
+      "target": "huynhanx03",
+      "weight": 0.6833865807434498
+    },
+    {
+      "source": "huynhanx03",
+      "target": "kairosci",
+      "weight": 0.6833865807434498
+    },
+    {
+      "source": "huynhanx03",
+      "target": "vitahlin",
+      "weight": 0.6833865807434498
+    },
+    {
+      "source": "pony-maggie",
+      "target": "tezc",
+      "weight": 0.6806907124106998
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "fcostaoliveira",
+      "weight": 0.6757068543967268
+    },
+    {
+      "source": "SebTardif",
+      "target": "jjz921024",
+      "weight": 0.6746742797602572
+    },
+    {
+      "source": "SebTardif",
+      "target": "kairosci",
+      "weight": 0.6746742797602572
+    },
+    {
+      "source": "SebTardif",
+      "target": "minchopaskal",
+      "weight": 0.6746742797602572
+    },
+    {
+      "source": "SebTardif",
+      "target": "skaslev",
+      "weight": 0.6746742797602572
+    },
+    {
+      "source": "aviggiano",
+      "target": "dannysheyn",
+      "weight": 0.6741420843028176
+    },
+    {
+      "source": "pony-maggie",
+      "target": "vitahlin",
+      "weight": 0.6731645472924391
+    },
+    {
+      "source": "YangboLong",
+      "target": "pony-maggie",
+      "weight": 0.6731645472924391
+    },
+    {
+      "source": "dannysheyn",
+      "target": "vitahlin",
+      "weight": 0.666579308763488
+    },
+    {
+      "source": "charsyam",
+      "target": "hristostaykov-del",
+      "weight": 0.6648955996471845
+    },
+    {
+      "source": "jjz921024",
+      "target": "skaslev",
+      "weight": 0.6589779258314076
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "rajkripal",
+      "weight": 0.6582012508304081
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "melatron",
+      "weight": 0.6540480481736465
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "charsyam",
+      "weight": 0.6533628011038513
+    },
+    {
+      "source": "dannysheyn",
+      "target": "wlswo",
+      "weight": 0.6524790509388052
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "dannysheyn",
+      "weight": 0.6469024600658516
+    },
+    {
+      "source": "a981008",
+      "target": "dannysheyn",
+      "weight": 0.6267227540672355
+    },
+    {
+      "source": "fcostaoliveira",
+      "target": "jjz921024",
+      "weight": 0.6223576414216312
+    },
+    {
+      "source": "YangboLong",
+      "target": "skaslev",
+      "weight": 0.6185388743244606
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "dannysheyn",
+      "weight": 0.6148039964237175
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "erhan1209",
+      "weight": 0.6148039964237175
+    },
+    {
+      "source": "charsyam",
+      "target": "tezc",
+      "weight": 0.6053632124106099
+    },
+    {
+      "source": "oranagra",
+      "target": "wlswo",
+      "weight": 0.589309994737771
+    },
+    {
+      "source": "antirez",
+      "target": "daguimu",
+      "weight": 0.5890246509166853
+    },
+    {
+      "source": "daguimu",
+      "target": "melatron",
+      "weight": 0.5890246509166853
+    },
+    {
+      "source": "daguimu",
+      "target": "raffertyyu",
+      "weight": 0.5890246509166853
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "erhan1209",
+      "weight": 0.5856875406255697
+    },
+    {
+      "source": "dannysheyn",
+      "target": "minchopaskal",
+      "weight": 0.5796937703273766
+    },
+    {
+      "source": "minchopaskal",
+      "target": "rajkripal",
+      "weight": 0.5771989513072309
+    },
+    {
+      "source": "rajkripal",
+      "target": "tezc",
+      "weight": 0.5771989513072309
+    },
+    {
+      "source": "antirez",
+      "target": "dannysheyn",
+      "weight": 0.576359789343588
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "dannysheyn",
+      "weight": 0.576359789343588
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "erhan1209",
+      "weight": 0.5481393241607709
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "slice4e",
+      "weight": 0.5481393241607709
+    },
+    {
+      "source": "charsyam",
+      "target": "jjz921024",
+      "weight": 0.5367313383734265
+    },
+    {
+      "source": "melatron",
+      "target": "tezc",
+      "weight": 0.5324034021082207
+    },
+    {
+      "source": "erhan1209",
+      "target": "melatron",
+      "weight": 0.5242488797096178
+    },
+    {
+      "source": "melatron",
+      "target": "slice4e",
+      "weight": 0.5242488797096178
+    },
+    {
+      "source": "charsyam",
+      "target": "erhan1209",
+      "weight": 0.5168922076426862
+    },
+    {
+      "source": "erhan1209",
+      "target": "fcostaoliveira",
+      "weight": 0.5064396918142658
+    },
+    {
+      "source": "erhan1209",
+      "target": "moticless",
+      "weight": 0.5064396918142658
+    },
+    {
+      "source": "erhan1209",
+      "target": "slice4e",
+      "weight": 0.5064396918142658
+    },
+    {
+      "source": "JoanFM",
+      "target": "erhan1209",
+      "weight": 0.5064396918142658
+    },
+    {
+      "source": "ShooterIT",
+      "target": "erhan1209",
+      "weight": 0.5064396918142658
+    },
+    {
+      "source": "moticless",
+      "target": "slice4e",
+      "weight": 0.4913214191722319
+    },
+    {
+      "source": "LiorKogan",
+      "target": "oranagra",
+      "weight": 0.46853790895955183
+    },
+    {
+      "source": "ShooterIT",
+      "target": "slice4e",
+      "weight": 0.46762939045041724
+    },
+    {
+      "source": "JoanFM",
+      "target": "slice4e",
+      "weight": 0.453484579938688
+    },
+    {
+      "source": "charsyam",
+      "target": "oranagra",
+      "weight": 0.43960039681597307
+    },
+    {
+      "source": "aviggiano",
+      "target": "darsheel-rathore",
+      "weight": 0.4341982118835779
+    },
+    {
+      "source": "daguimu",
+      "target": "rantidhar",
+      "weight": 0.4334776845448123
+    },
+    {
+      "source": "gabsow",
+      "target": "rantidhar",
+      "weight": 0.4334776845448123
+    },
+    {
+      "source": "a981008",
+      "target": "gabsow",
+      "weight": 0.43206826842797874
+    },
+    {
+      "source": "charsyam",
+      "target": "gabsow",
+      "weight": 0.43206826842797874
+    },
+    {
+      "source": "daguimu",
+      "target": "gabsow",
+      "weight": 0.43206826842797874
+    },
+    {
+      "source": "darsheel-rathore",
+      "target": "gabsow",
+      "weight": 0.43206826842797874
+    },
+    {
+      "source": "fcostaoliveira",
+      "target": "gabsow",
+      "weight": 0.43206826842797874
+    },
+    {
+      "source": "gabsow",
+      "target": "oranagra",
+      "weight": 0.43206826842797874
+    },
+    {
+      "source": "gabsow",
+      "target": "sggeorgiev",
+      "weight": 0.43206826842797874
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "darsheel-rathore",
+      "weight": 0.41665384488518337
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "oranagra",
+      "weight": 0.41665384488518337
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "pierluigilenoci",
+      "weight": 0.41665384488518337
+    },
+    {
+      "source": "a981008",
+      "target": "daguimu",
+      "weight": 0.4036565962858813
+    },
+    {
+      "source": "darsheel-rathore",
+      "target": "hristostaykov-del",
+      "weight": 0.4026316588857996
+    },
+    {
+      "source": "hristostaykov-del",
+      "target": "pierluigilenoci",
+      "weight": 0.4026316588857996
+    },
+    {
+      "source": "darsheel-rathore",
+      "target": "moticless",
+      "weight": 0.39788876982225807
+    },
+    {
+      "source": "2030XiaoGe",
+      "target": "darsheel-rathore",
+      "weight": 0.3959800198234561
+    },
+    {
+      "source": "JoanFM",
+      "target": "daguimu",
+      "weight": 0.39051469774471825
+    },
+    {
+      "source": "JoanFM",
+      "target": "darsheel-rathore",
+      "weight": 0.39051469774471825
+    },
+    {
+      "source": "darsheel-rathore",
+      "target": "tezc",
+      "weight": 0.3846741327692199
+    },
+    {
+      "source": "pierluigilenoci",
+      "target": "tezc",
+      "weight": 0.3846741327692199
+    },
+    {
+      "source": "YaacovHazan",
+      "target": "darsheel-rathore",
+      "weight": 0.37722683212265057
+    },
+    {
+      "source": "darsheel-rathore",
+      "target": "pony-maggie",
+      "weight": 0.3771479676509592
+    },
+    {
+      "source": "oranagra",
+      "target": "pony-maggie",
+      "weight": 0.3771479676509592
+    },
+    {
+      "source": "darsheel-rathore",
+      "target": "minchopaskal",
+      "weight": 0.37336639319365567
+    },
+    {
+      "source": "antirez",
+      "target": "darsheel-rathore",
+      "weight": 0.3583072012832228
+    },
+    {
+      "source": "YangboLong",
+      "target": "darsheel-rathore",
+      "weight": 0.35793229470628063
+    },
+    {
+      "source": "YangboLong",
+      "target": "pierluigilenoci",
+      "weight": 0.35793229470628063
+    },
+    {
+      "source": "darsheel-rathore",
+      "target": "vitahlin",
+      "weight": 0.3431448241889186
+    },
+    {
+      "source": "melatron",
+      "target": "rantidhar",
+      "weight": 0.3402287498168821
+    },
+    {
+      "source": "pony-maggie",
+      "target": "rantidhar",
+      "weight": 0.3402287498168821
+    },
+    {
+      "source": "raffertyyu",
+      "target": "rantidhar",
+      "weight": 0.3402287498168821
+    },
+    {
+      "source": "rantidhar",
+      "target": "vitahlin",
+      "weight": 0.3402287498168821
+    },
+    {
+      "source": "rantidhar",
+      "target": "wlswo",
+      "weight": 0.3402287498168821
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "daguimu",
+      "weight": 0.3397567236925374
+    },
+    {
+      "source": "charsyam",
+      "target": "wlswo",
+      "weight": 0.3298431186189008
+    },
+    {
+      "source": "jjz921024",
+      "target": "wlswo",
+      "weight": 0.3298431186189008
+    },
+    {
+      "source": "JoanFM",
+      "target": "wlswo",
+      "weight": 0.3298431186189008
+    },
+    {
+      "source": "moticless",
+      "target": "wlswo",
+      "weight": 0.3298431186189008
+    },
+    {
+      "source": "pony-maggie",
+      "target": "wlswo",
+      "weight": 0.3298431186189008
+    },
+    {
+      "source": "daemyung-lablup",
+      "target": "sundb",
+      "weight": 0.3284375834925739
+    },
+    {
+      "source": "darsheel-rathore",
+      "target": "jjz921024",
+      "weight": 0.3280512831140059
+    },
+    {
+      "source": "darsheel-rathore",
+      "target": "kairosci",
+      "weight": 0.3280512831140059
+    },
+    {
+      "source": "darsheel-rathore",
+      "target": "oranagra",
+      "weight": 0.3280512831140059
+    },
+    {
+      "source": "darsheel-rathore",
+      "target": "pierluigilenoci",
+      "weight": 0.3280512831140059
+    },
+    {
+      "source": "ShooterIT",
+      "target": "darsheel-rathore",
+      "weight": 0.3280512831140059
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "darsheel-rathore",
+      "weight": 0.3280512831140059
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "raffertyyu",
+      "weight": 0.32702402408682324
+    },
+    {
+      "source": "a981008",
+      "target": "pony-maggie",
+      "weight": 0.31747107235330196
+    },
+    {
+      "source": "a981008",
+      "target": "raffertyyu",
+      "weight": 0.31747107235330196
+    },
+    {
+      "source": "JoanFM",
+      "target": "mdali9821",
+      "weight": 0.30650788295670095
+    },
+    {
+      "source": "JoanFM",
+      "target": "raffertyyu",
+      "weight": 0.30650788295670095
+    },
+    {
+      "source": "oranagra",
+      "target": "pierluigilenoci",
+      "weight": 0.2964611684491499
+    },
+    {
+      "source": "charsyam",
+      "target": "pony-maggie",
+      "weight": 0.2960165796414799
+    },
+    {
+      "source": "fcostaoliveira",
+      "target": "pony-maggie",
+      "weight": 0.2960165796414799
+    },
+    {
+      "source": "mdali9821",
+      "target": "pony-maggie",
+      "weight": 0.2960165796414799
+    },
+    {
+      "source": "melatron",
+      "target": "pony-maggie",
+      "weight": 0.2960165796414799
+    },
+    {
+      "source": "pony-maggie",
+      "target": "raffertyyu",
+      "weight": 0.2960165796414799
+    },
+    {
+      "source": "pony-maggie",
+      "target": "sggeorgiev",
+      "weight": 0.2960165796414799
+    },
+    {
+      "source": "YangboLong",
+      "target": "raffertyyu",
+      "weight": 0.28093454747245783
+    },
+    {
+      "source": "jjz921024",
+      "target": "mdali9821",
+      "weight": 0.2686828448963696
+    },
+    {
+      "source": "ShooterIT",
+      "target": "mdali9821",
+      "weight": 0.2686828448963696
+    },
+    {
+      "source": "raffertyyu",
+      "target": "vitahlin",
+      "weight": 0.2568129026697667
+    },
+    {
+      "source": "jjz921024",
+      "target": "raffertyyu",
+      "weight": 0.2550716428657218
+    },
+    {
+      "source": "ShooterIT",
+      "target": "raffertyyu",
+      "weight": 0.2550716428657218
+    },
+    {
+      "source": "gabsow",
+      "target": "skaslev",
+      "weight": 0.20851212906868585
+    },
+    {
+      "source": "Peter-Sh",
+      "target": "skaslev",
+      "weight": 0.20851212906868585
+    },
+    {
+      "source": "mgravell",
+      "target": "minchopaskal",
+      "weight": 0.1881848129107672
+    },
+    {
+      "source": "mgravell",
+      "target": "oranagra",
+      "weight": 0.1881848129107672
+    },
+    {
+      "source": "mgravell",
+      "target": "sundb",
+      "weight": 0.1881848129107672
+    },
+    {
+      "source": "ShooterIT",
+      "target": "mgravell",
+      "weight": 0.1881848129107672
+    },
+    {
+      "source": "ShubhamTaple",
+      "target": "mgravell",
+      "weight": 0.1881848129107672
+    },
+    {
+      "source": "gentcys",
+      "target": "oranagra",
+      "weight": 0.1829561626828634
+    },
+    {
+      "source": "alonre24",
+      "target": "oranagra",
+      "weight": 0.17812939659760169
+    },
+    {
+      "source": "alonre24",
+      "target": "skaslev",
+      "weight": 0.17812939659760169
+    },
+    {
+      "source": "oranagra",
+      "target": "skaslev",
+      "weight": 0.17812939659760169
+    },
+    {
+      "source": "ShooterIT",
+      "target": "alonre24",
+      "weight": 0.17812939659760169
+    },
+    {
+      "source": "LiorKogan",
+      "target": "moticless",
+      "weight": 0.17068169607073372
+    },
+    {
+      "source": "LiorKogan",
+      "target": "tezc",
+      "weight": 0.17068169607073372
+    },
+    {
+      "source": "TalBarYakar",
+      "target": "oranagra",
+      "weight": 0.17055578576486313
+    },
+    {
+      "source": "daemyung-lablup",
+      "target": "oranagra",
+      "weight": 0.16562422510094332
+    },
+    {
+      "source": "ShooterIT",
+      "target": "daemyung-lablup",
+      "weight": 0.16562422510094332
+    },
+    {
+      "source": "meiravgri",
+      "target": "moticless",
+      "weight": 0.15818577432607686
+    },
+    {
+      "source": "meiravgri",
+      "target": "oshadmi",
+      "weight": 0.15818577432607686
+    },
+    {
+      "source": "moticless",
+      "target": "oshadmi",
+      "weight": 0.15818577432607686
+    },
+    {
+      "source": "guybe7",
+      "target": "sundb",
+      "weight": 0.15586220697195
+    }
+  ]
+}

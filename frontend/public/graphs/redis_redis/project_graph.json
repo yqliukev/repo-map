@@ -1,0 +1,1250 @@
+{
+  "repo": "redis/redis",
+  "generated_at": "2026-06-30T02:57:26.835Z",
+  "nodes": [
+    {
+      "id": "_root",
+      "name": "Repository root",
+      "total_weight": 952,
+      "contributor_count": 44,
+      "sample_paths": [
+        "src/commands.def",
+        "src/t_zset.c",
+        "src/db.c",
+        "src/hyperloglog.c",
+        "src/hyperloglog.h",
+        "src/server.h",
+        "src/t_set.c",
+        "src/server.c",
+        "src/slowlog.c",
+        "src/slowlog.h"
+      ],
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 8064
+        },
+        {
+          "id": "path:unit",
+          "weight": 5434
+        },
+        {
+          "id": "path:integration",
+          "weight": 3242
+        },
+        {
+          "id": "path:cluster",
+          "weight": 2896
+        },
+        {
+          "id": "lang:json",
+          "weight": 2737
+        },
+        {
+          "id": "path:type",
+          "weight": 2439
+        },
+        {
+          "id": "path:redisearch",
+          "weight": 1368
+        },
+        {
+          "id": "lang:python",
+          "weight": 1225
+        },
+        {
+          "id": "path:vector-sets",
+          "weight": 1162
+        },
+        {
+          "id": "lang:yaml",
+          "weight": 1139
+        },
+        {
+          "id": "path:workflows",
+          "weight": 1139
+        },
+        {
+          "id": "path:moduleapi",
+          "weight": 1094
+        },
+        {
+          "id": "path:support",
+          "weight": 961
+        },
+        {
+          "id": "path:redistimeseries",
+          "weight": 789
+        },
+        {
+          "id": "path:redisbloom",
+          "weight": 783
+        }
+      ],
+      "top_contributors": [
+        {
+          "login": "YaacovHazan",
+          "weight": 174
+        },
+        {
+          "login": "sundb",
+          "weight": 89
+        },
+        {
+          "login": "2030XiaoGe",
+          "weight": 73
+        },
+        {
+          "login": "minchopaskal",
+          "weight": 66
+        },
+        {
+          "login": "moticless",
+          "weight": 48
+        },
+        {
+          "login": "aviggiano",
+          "weight": 45
+        },
+        {
+          "login": "kairosci",
+          "weight": 44
+        },
+        {
+          "login": "ShubhamTaple",
+          "weight": 43
+        }
+      ]
+    },
+    {
+      "id": "tests",
+      "name": "tests",
+      "total_weight": 478,
+      "contributor_count": 36,
+      "sample_paths": [
+        "tests/unit/type/zset.tcl",
+        "tests/unit/info-keysizes.tcl",
+        "tests/unit/type/set.tcl",
+        "tests/unit/moduleapi/moduleauth.tcl",
+        "tests/unit/slowlog.tcl",
+        "tests/unit/type/stream.tcl",
+        "tests/unit/dump.tcl",
+        "tests/integration/failover.tcl",
+        "tests/modules/moduleconfigs.c",
+        "tests/unit/moduleapi/aclcheck.tcl"
+      ],
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 4284
+        },
+        {
+          "id": "path:unit",
+          "weight": 3247
+        },
+        {
+          "id": "path:cluster",
+          "weight": 2006
+        },
+        {
+          "id": "path:integration",
+          "weight": 1960
+        },
+        {
+          "id": "path:type",
+          "weight": 1711
+        },
+        {
+          "id": "lang:json",
+          "weight": 1452
+        },
+        {
+          "id": "lang:yaml",
+          "weight": 960
+        },
+        {
+          "id": "path:workflows",
+          "weight": 960
+        },
+        {
+          "id": "path:redisearch",
+          "weight": 845
+        },
+        {
+          "id": "path:vector-sets",
+          "weight": 751
+        },
+        {
+          "id": "lang:python",
+          "weight": 704
+        },
+        {
+          "id": "path:moduleapi",
+          "weight": 648
+        },
+        {
+          "id": "path:support",
+          "weight": 560
+        },
+        {
+          "id": "path:helpers",
+          "weight": 467
+        },
+        {
+          "id": "lang:markdown",
+          "weight": 433
+        }
+      ],
+      "top_contributors": [
+        {
+          "login": "sundb",
+          "weight": 92
+        },
+        {
+          "login": "YaacovHazan",
+          "weight": 90
+        },
+        {
+          "login": "2030XiaoGe",
+          "weight": 63
+        },
+        {
+          "login": "kairosci",
+          "weight": 27
+        },
+        {
+          "login": "vitahlin",
+          "weight": 25
+        },
+        {
+          "login": "aviggiano",
+          "weight": 23
+        },
+        {
+          "login": "minchopaskal",
+          "weight": 19
+        },
+        {
+          "login": "moticless",
+          "weight": 14
+        }
+      ]
+    },
+    {
+      "id": "deps",
+      "name": "deps",
+      "total_weight": 208,
+      "contributor_count": 8,
+      "sample_paths": [
+        "deps/linenoise/linenoise.c",
+        "deps/jemalloc/include/jemalloc/internal/util.h",
+        "deps/fast_float/fast_float_strtod.cpp",
+        "deps/fast_float/fast_float_strtod.h",
+        "deps/Makefile",
+        "deps/hiredis/net.c",
+        "deps/tre/LICENSE",
+        "deps/tre/Makefile",
+        "deps/tre/README.md",
+        "deps/tre/lib/regcomp.c"
+      ],
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 808
+        },
+        {
+          "id": "path:unit",
+          "weight": 662
+        },
+        {
+          "id": "path:integration",
+          "weight": 647
+        },
+        {
+          "id": "lang:json",
+          "weight": 472
+        },
+        {
+          "id": "path:cluster",
+          "weight": 369
+        },
+        {
+          "id": "path:support",
+          "weight": 359
+        },
+        {
+          "id": "lang:markdown",
+          "weight": 351
+        },
+        {
+          "id": "path:moduleapi",
+          "weight": 324
+        },
+        {
+          "id": "path:include",
+          "weight": 256
+        },
+        {
+          "id": "lang:python",
+          "weight": 194
+        },
+        {
+          "id": "path:redisearch",
+          "weight": 193
+        },
+        {
+          "id": "path:type",
+          "weight": 163
+        },
+        {
+          "id": "path:vector-sets",
+          "weight": 162
+        },
+        {
+          "id": "path:redisbloom",
+          "weight": 129
+        },
+        {
+          "id": "path:redistimeseries",
+          "weight": 129
+        }
+      ],
+      "top_contributors": [
+        {
+          "login": "aviggiano",
+          "weight": 117
+        },
+        {
+          "login": "antirez",
+          "weight": 32
+        },
+        {
+          "login": "YaacovHazan",
+          "weight": 32
+        },
+        {
+          "login": "2030XiaoGe",
+          "weight": 20
+        },
+        {
+          "login": "fcostaoliveira",
+          "weight": 2
+        },
+        {
+          "login": "tezc",
+          "weight": 2
+        },
+        {
+          "login": "vitahlin",
+          "weight": 2
+        },
+        {
+          "login": "kairosci",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "commands",
+      "name": "commands",
+      "total_weight": 124,
+      "contributor_count": 18,
+      "sample_paths": [
+        "src/commands/zinter.json",
+        "src/commands/zinterstore.json",
+        "src/commands/zunion.json",
+        "src/commands/zunionstore.json",
+        "src/commands/sunioncard.json",
+        "src/commands/xidmprecord.json",
+        "src/commands/gcra.json",
+        "src/commands/gcrasetvalue.json",
+        "src/commands/hotkeys-get.json",
+        "src/commands/hotkeys-help.json"
+      ],
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 1057
+        },
+        {
+          "id": "path:unit",
+          "weight": 761
+        },
+        {
+          "id": "path:integration",
+          "weight": 682
+        },
+        {
+          "id": "lang:json",
+          "weight": 634
+        },
+        {
+          "id": "path:cluster",
+          "weight": 460
+        },
+        {
+          "id": "path:redisearch",
+          "weight": 329
+        },
+        {
+          "id": "lang:python",
+          "weight": 298
+        },
+        {
+          "id": "path:type",
+          "weight": 292
+        },
+        {
+          "id": "path:vector-sets",
+          "weight": 273
+        },
+        {
+          "id": "path:redisbloom",
+          "weight": 213
+        },
+        {
+          "id": "path:redistimeseries",
+          "weight": 213
+        },
+        {
+          "id": "path:support",
+          "weight": 157
+        },
+        {
+          "id": "lang:markdown",
+          "weight": 139
+        },
+        {
+          "id": "path:moduleapi",
+          "weight": 134
+        },
+        {
+          "id": "lang:yaml",
+          "weight": 91
+        }
+      ],
+      "top_contributors": [
+        {
+          "login": "YaacovHazan",
+          "weight": 52
+        },
+        {
+          "login": "antirez",
+          "weight": 19
+        },
+        {
+          "login": "oranagra",
+          "weight": 9
+        },
+        {
+          "login": "sggeorgiev",
+          "weight": 6
+        },
+        {
+          "login": "kairosci",
+          "weight": 5
+        },
+        {
+          "login": "minchopaskal",
+          "weight": 5
+        },
+        {
+          "login": "a981008",
+          "weight": 4
+        },
+        {
+          "login": "sundb",
+          "weight": 4
+        }
+      ]
+    },
+    {
+      "id": "modules",
+      "name": "modules",
+      "total_weight": 103,
+      "contributor_count": 15,
+      "sample_paths": [
+        "modules/redisbloom/Makefile",
+        "modules/redisjson/Makefile",
+        "modules/redistimeseries/Makefile",
+        "modules/Makefile",
+        "modules/common.mk",
+        "modules/redisearch/Makefile",
+        "src/modules/helloblock.c",
+        "modules/vector-sets/tests/dimension_max_limit.py",
+        "modules/vector-sets/tests/dimension_validation.py",
+        "modules/vector-sets/vset.c"
+      ],
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 608
+        },
+        {
+          "id": "path:unit",
+          "weight": 480
+        },
+        {
+          "id": "path:integration",
+          "weight": 401
+        },
+        {
+          "id": "lang:json",
+          "weight": 374
+        },
+        {
+          "id": "path:cluster",
+          "weight": 339
+        },
+        {
+          "id": "path:redistimeseries",
+          "weight": 290
+        },
+        {
+          "id": "path:redisearch",
+          "weight": 278
+        },
+        {
+          "id": "path:redisbloom",
+          "weight": 269
+        },
+        {
+          "id": "path:type",
+          "weight": 213
+        },
+        {
+          "id": "path:vector-sets",
+          "weight": 185
+        },
+        {
+          "id": "path:redisjson",
+          "weight": 178
+        },
+        {
+          "id": "lang:python",
+          "weight": 171
+        },
+        {
+          "id": "lang:yaml",
+          "weight": 135
+        },
+        {
+          "id": "path:workflows",
+          "weight": 135
+        },
+        {
+          "id": "path:moduleapi",
+          "weight": 110
+        }
+      ],
+      "top_contributors": [
+        {
+          "login": "YaacovHazan",
+          "weight": 30
+        },
+        {
+          "login": "gabsow",
+          "weight": 21
+        },
+        {
+          "login": "TalBarYakar",
+          "weight": 11
+        },
+        {
+          "login": "sundb",
+          "weight": 10
+        },
+        {
+          "login": "AvivDavid23",
+          "weight": 6
+        },
+        {
+          "login": "kairosci",
+          "weight": 6
+        },
+        {
+          "login": "AngelYanev",
+          "weight": 4
+        },
+        {
+          "login": "oshadmi",
+          "weight": 4
+        }
+      ]
+    },
+    {
+      "id": ".github",
+      "name": ".github",
+      "total_weight": 65,
+      "contributor_count": 14,
+      "sample_paths": [
+        ".github/workflows/post-release-automation.yml",
+        ".github/workflows/ci.yml",
+        ".github/workflows/daily.yml",
+        ".github/workflows/external.yml",
+        ".github/workflows/codecov.yml",
+        ".github/workflows/codeql-analysis.yml",
+        ".github/workflows/coverity.yml",
+        ".github/workflows/redis_docs_sync.yaml",
+        ".github/workflows/reply-schemas-linter.yml",
+        ".github/workflows/spell-check.yml"
+      ],
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 509
+        },
+        {
+          "id": "path:unit",
+          "weight": 439
+        },
+        {
+          "id": "path:integration",
+          "weight": 244
+        },
+        {
+          "id": "path:cluster",
+          "weight": 213
+        },
+        {
+          "id": "lang:yaml",
+          "weight": 182
+        },
+        {
+          "id": "path:workflows",
+          "weight": 182
+        },
+        {
+          "id": "path:type",
+          "weight": 179
+        },
+        {
+          "id": "lang:json",
+          "weight": 147
+        },
+        {
+          "id": "path:support",
+          "weight": 95
+        },
+        {
+          "id": "path:vector-sets",
+          "weight": 87
+        },
+        {
+          "id": "path:redisearch",
+          "weight": 85
+        },
+        {
+          "id": "lang:python",
+          "weight": 84
+        },
+        {
+          "id": "path:moduleapi",
+          "weight": 81
+        },
+        {
+          "id": "path:helpers",
+          "weight": 56
+        },
+        {
+          "id": "path:redistimeseries",
+          "weight": 50
+        }
+      ],
+      "top_contributors": [
+        {
+          "login": "vitahlin",
+          "weight": 16
+        },
+        {
+          "login": "2030XiaoGe",
+          "weight": 12
+        },
+        {
+          "login": "YaacovHazan",
+          "weight": 10
+        },
+        {
+          "login": "gentcys",
+          "weight": 7
+        },
+        {
+          "login": "sundb",
+          "weight": 7
+        },
+        {
+          "login": "stav-nachmias",
+          "weight": 3
+        },
+        {
+          "login": "kairosci",
+          "weight": 2
+        },
+        {
+          "login": "minchopaskal",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "Makefile",
+      "name": "Makefile",
+      "total_weight": 13,
+      "contributor_count": 11,
+      "sample_paths": [
+        "src/Makefile",
+        "Makefile"
+      ],
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 70
+        },
+        {
+          "id": "path:unit",
+          "weight": 42
+        },
+        {
+          "id": "path:integration",
+          "weight": 27
+        },
+        {
+          "id": "lang:json",
+          "weight": 21
+        },
+        {
+          "id": "path:support",
+          "weight": 15
+        },
+        {
+          "id": "path:type",
+          "weight": 15
+        },
+        {
+          "id": "path:cluster",
+          "weight": 14
+        },
+        {
+          "id": "path:moduleapi",
+          "weight": 14
+        },
+        {
+          "id": "path:redistimeseries",
+          "weight": 13
+        },
+        {
+          "id": "path:redisbloom",
+          "weight": 12
+        },
+        {
+          "id": "lang:markdown",
+          "weight": 10
+        },
+        {
+          "id": "lang:yaml",
+          "weight": 10
+        },
+        {
+          "id": "path:workflows",
+          "weight": 10
+        },
+        {
+          "id": "path:redisearch",
+          "weight": 9
+        },
+        {
+          "id": "lang:python",
+          "weight": 8
+        }
+      ],
+      "top_contributors": [
+        {
+          "login": "aviggiano",
+          "weight": 2
+        },
+        {
+          "login": "tezc",
+          "weight": 2
+        },
+        {
+          "login": "2030XiaoGe",
+          "weight": 1
+        },
+        {
+          "login": "antirez",
+          "weight": 1
+        },
+        {
+          "login": "gabsow",
+          "weight": 1
+        },
+        {
+          "login": "kairosci",
+          "weight": 1
+        },
+        {
+          "login": "minchopaskal",
+          "weight": 1
+        },
+        {
+          "login": "moticless",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "scripts",
+      "name": "scripts",
+      "total_weight": 12,
+      "contributor_count": 1,
+      "sample_paths": [
+        "scripts/apply-redis-conf.sh",
+        "scripts/bootstrap.sh",
+        "scripts/build.sh",
+        "scripts/clean.sh",
+        "scripts/deploy.sh",
+        "scripts/lib/manifest.sh",
+        "scripts/modules-shallow.sh",
+        "scripts/modules-update.sh",
+        "scripts/run.sh",
+        "scripts/sync-redis-conf.sh"
+      ],
+      "skills": [
+        {
+          "id": "lang:json",
+          "weight": 12
+        },
+        {
+          "id": "lang:markdown",
+          "weight": 12
+        },
+        {
+          "id": "lang:shell",
+          "weight": 12
+        },
+        {
+          "id": "lang:yaml",
+          "weight": 12
+        },
+        {
+          "id": "path:redisbloom",
+          "weight": 12
+        },
+        {
+          "id": "path:redisearch",
+          "weight": 12
+        },
+        {
+          "id": "path:redisjson",
+          "weight": 12
+        },
+        {
+          "id": "path:redistimeseries",
+          "weight": 12
+        },
+        {
+          "id": "path:releasetools",
+          "weight": 12
+        },
+        {
+          "id": "path:workflows",
+          "weight": 12
+        }
+      ],
+      "top_contributors": [
+        {
+          "login": "TalBarYakar",
+          "weight": 12
+        }
+      ]
+    },
+    {
+      "id": "00-RELEASENOTES",
+      "name": "00-RELEASENOTES",
+      "total_weight": 11,
+      "contributor_count": 2,
+      "sample_paths": [
+        "00-RELEASENOTES"
+      ],
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 133
+        },
+        {
+          "id": "path:integration",
+          "weight": 111
+        },
+        {
+          "id": "path:unit",
+          "weight": 102
+        },
+        {
+          "id": "lang:json",
+          "weight": 100
+        },
+        {
+          "id": "path:cluster",
+          "weight": 71
+        },
+        {
+          "id": "path:redisearch",
+          "weight": 60
+        },
+        {
+          "id": "lang:python",
+          "weight": 50
+        },
+        {
+          "id": "path:vector-sets",
+          "weight": 50
+        },
+        {
+          "id": "path:redisbloom",
+          "weight": 40
+        },
+        {
+          "id": "path:redistimeseries",
+          "weight": 40
+        },
+        {
+          "id": "path:type",
+          "weight": 31
+        },
+        {
+          "id": "lang:markdown",
+          "weight": 21
+        },
+        {
+          "id": "path:moduleapi",
+          "weight": 21
+        },
+        {
+          "id": "path:support",
+          "weight": 21
+        },
+        {
+          "id": "lang:yaml",
+          "weight": 12
+        }
+      ],
+      "top_contributors": [
+        {
+          "login": "YaacovHazan",
+          "weight": 10
+        },
+        {
+          "login": "2030XiaoGe",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "utils",
+      "name": "utils",
+      "total_weight": 8,
+      "contributor_count": 6,
+      "sample_paths": [
+        "utils/generate-command-code.py",
+        "utils/modules/update-modules.sh",
+        "utils/releasetools/01_create_tarball.sh",
+        "utils/releasetools/02_upload_tarball.sh"
+      ],
+      "skills": [
+        {
+          "id": "lang:c",
+          "weight": 32
+        },
+        {
+          "id": "path:unit",
+          "weight": 25
+        },
+        {
+          "id": "lang:json",
+          "weight": 20
+        },
+        {
+          "id": "path:redistimeseries",
+          "weight": 19
+        },
+        {
+          "id": "path:integration",
+          "weight": 18
+        },
+        {
+          "id": "path:redisbloom",
+          "weight": 17
+        },
+        {
+          "id": "path:redisjson",
+          "weight": 12
+        },
+        {
+          "id": "lang:python",
+          "weight": 10
+        },
+        {
+          "id": "lang:yaml",
+          "weight": 9
+        },
+        {
+          "id": "path:cluster",
+          "weight": 9
+        },
+        {
+          "id": "path:redisearch",
+          "weight": 9
+        },
+        {
+          "id": "path:workflows",
+          "weight": 9
+        },
+        {
+          "id": "path:support",
+          "weight": 7
+        },
+        {
+          "id": "path:moduleapi",
+          "weight": 6
+        },
+        {
+          "id": "path:vector-sets",
+          "weight": 5
+        }
+      ],
+      "top_contributors": [
+        {
+          "login": "gabsow",
+          "weight": 2
+        },
+        {
+          "login": "minchopaskal",
+          "weight": 2
+        },
+        {
+          "login": "antirez",
+          "weight": 1
+        },
+        {
+          "login": "stav-nachmias",
+          "weight": 1
+        },
+        {
+          "login": "TalBarYakar",
+          "weight": 1
+        },
+        {
+          "login": "YaacovHazan",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "source": "_root",
+      "target": "tests",
+      "weight": 464
+    },
+    {
+      "source": "_root",
+      "target": "deps",
+      "weight": 130
+    },
+    {
+      "source": "_root",
+      "target": "commands",
+      "weight": 124
+    },
+    {
+      "source": "commands",
+      "target": "tests",
+      "weight": 100
+    },
+    {
+      "source": "deps",
+      "target": "tests",
+      "weight": 89
+    },
+    {
+      "source": "_root",
+      "target": "modules",
+      "weight": 66
+    },
+    {
+      "source": "commands",
+      "target": "deps",
+      "weight": 56
+    },
+    {
+      "source": ".github",
+      "target": "tests",
+      "weight": 55
+    },
+    {
+      "source": ".github",
+      "target": "_root",
+      "weight": 54
+    },
+    {
+      "source": "modules",
+      "target": "tests",
+      "weight": 53
+    },
+    {
+      "source": "commands",
+      "target": "modules",
+      "weight": 41
+    },
+    {
+      "source": "deps",
+      "target": "modules",
+      "weight": 33
+    },
+    {
+      "source": ".github",
+      "target": "deps",
+      "weight": 26
+    },
+    {
+      "source": ".github",
+      "target": "modules",
+      "weight": 23
+    },
+    {
+      "source": ".github",
+      "target": "commands",
+      "weight": 19
+    },
+    {
+      "source": "Makefile",
+      "target": "_root",
+      "weight": 13
+    },
+    {
+      "source": "Makefile",
+      "target": "tests",
+      "weight": 12
+    },
+    {
+      "source": ".github",
+      "target": "00-RELEASENOTES",
+      "weight": 11
+    },
+    {
+      "source": "00-RELEASENOTES",
+      "target": "_root",
+      "weight": 11
+    },
+    {
+      "source": "00-RELEASENOTES",
+      "target": "deps",
+      "weight": 11
+    },
+    {
+      "source": "00-RELEASENOTES",
+      "target": "modules",
+      "weight": 11
+    },
+    {
+      "source": "00-RELEASENOTES",
+      "target": "tests",
+      "weight": 11
+    },
+    {
+      "source": "modules",
+      "target": "scripts",
+      "weight": 11
+    },
+    {
+      "source": "00-RELEASENOTES",
+      "target": "commands",
+      "weight": 10
+    },
+    {
+      "source": ".github",
+      "target": "Makefile",
+      "weight": 8
+    },
+    {
+      "source": "Makefile",
+      "target": "deps",
+      "weight": 8
+    },
+    {
+      "source": "_root",
+      "target": "scripts",
+      "weight": 7
+    },
+    {
+      "source": "_root",
+      "target": "utils",
+      "weight": 7
+    },
+    {
+      "source": "Makefile",
+      "target": "commands",
+      "weight": 7
+    },
+    {
+      "source": ".github",
+      "target": "utils",
+      "weight": 6
+    },
+    {
+      "source": "tests",
+      "target": "utils",
+      "weight": 6
+    },
+    {
+      "source": "Makefile",
+      "target": "modules",
+      "weight": 5
+    },
+    {
+      "source": "Makefile",
+      "target": "utils",
+      "weight": 5
+    },
+    {
+      "source": "commands",
+      "target": "utils",
+      "weight": 4
+    },
+    {
+      "source": "modules",
+      "target": "utils",
+      "weight": 4
+    },
+    {
+      "source": "00-RELEASENOTES",
+      "target": "Makefile",
+      "weight": 2
+    },
+    {
+      "source": "deps",
+      "target": "utils",
+      "weight": 2
+    },
+    {
+      "source": ".github",
+      "target": "scripts",
+      "weight": 1
+    },
+    {
+      "source": "00-RELEASENOTES",
+      "target": "utils",
+      "weight": 1
+    },
+    {
+      "source": "Makefile",
+      "target": "scripts",
+      "weight": 1
+    },
+    {
+      "source": "scripts",
+      "target": "utils",
+      "weight": 1
+    }
+  ]
+}
