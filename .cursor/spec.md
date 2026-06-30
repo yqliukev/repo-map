@@ -25,8 +25,8 @@
 
 | Area | Status |
 |------|--------|
-| **Collect + enrich** (`scraper/`) | Stage 1 **complete** (`npm run scrape`). Stage 2 (**D8**, **D9**) not implemented — will add `languages.json`, `manifests/`, `activity.json` to the same per-repo cache dir. |
-| **Compute** (`compute/`) | Not created yet. Reads `cache/<owner>_<repo>/`; writes `subprojects.json`, `skills.json`, `compute_meta.json`, and graph JSON to `frontend/public/graphs/`. |
+| **Collect + enrich** (`scraper/`) | Stages 1–2 **complete** (`npm run scrape`). Writes Stage 1 cache + `languages.json`, `manifests/`, `activity.json` per repo. |
+| **Compute** (`compute/`) | **Partial.** Subprojects (**D2**) and skills (**D3**) implemented (`npm run build`). Not yet: collaboration edges (**D6**), `graph.json` / `project_graph.json` publish, `compute_meta.json`. |
 | **Cache / raw data** | Not in git; per-repo dir at `cache/<owner>_<repo>/` (see **Per-repo cache layout** below). |
 | **Frontend** (`frontend/`) | Shell UI: layout, theme toggle, header logo. Graph components, chat API, and D3 removed. |
 | **Graph assets** | No committed `frontend/public/graphs/<repo>/graph.json` + `project_graph.json` on this branch. |
@@ -126,13 +126,13 @@ See **Per-repo cache layout** for Stage 2–3 artifacts in the same directory.
 | `scraper/src/cache.ts` | `writeCache()` — `mkdir -p` + writes all four JSON files |
 | `scraper/src/fetch/prs.ts` | `fetchPRs()` — PR list with early stop, concurrent files+reviews per PR, returns `prs` + `reviewPairs` |
 | `scraper/src/fetch/contributors.ts` | `fetchContributors()` — activity counts → profiles via `users.getByUsername` |
-| `scraper/src/scrape.ts` | CLI entrypoint — `--repo owner/name` flag or all `REPOS`; logs progress + summary per repo |
+| `scraper/src/scrape.ts` | CLI entrypoint — `--repo owner/name` or all `REPOS`; Stage 1 collect + Stage 2 enrich per repo |
 
 **Status:** Complete.
 
 ---
 
-### Stage 2 — Repository enrichment (**D8**, **D9**, planned)
+### Stage 2 — Repository enrichment (**D8**, **D9**, **complete**)
 
 **Owner:** `scraper/` (same package as Stage 1; runs after collect for each repo).
 
@@ -165,7 +165,7 @@ Flatten `prs.json` + `reviews.json` into a single event list for downstream stag
 }
 ```
 
-Used by `compute/` for collaboration edges (**D6**), directory subprojects (**D2**), and provisional skill extraction (**D3**).
+Used by `compute/` for collaboration edges (**D6**), directory subprojects (**D2**), and provisional skill extraction (**D3**). Skills v1 reads `pr_author.paths[]` only — not `pr_author.title` (PR titles deferred to subproject v2).
 
 **Stage 2 cache outputs**
 
@@ -175,6 +175,17 @@ Used by `compute/` for collaboration edges (**D6**), directory subprojects (**D2
 | `manifests/*.json` | `scraper/` |
 | `activity.json` | `scraper/` |
 
+**Key implementation files**
+
+| File | Role |
+|------|------|
+| `scraper/src/fetch/activity.ts` | `buildActivity(prs, reviews)` — pure flatten to `ActivityData` |
+| `scraper/src/fetch/languages.ts` | `fetchLanguages()` — one Languages API call per repo |
+| `scraper/src/fetch/manifests.ts` | `fetchManifests()` — root allowlist ∪ PR paths; parses deps |
+| `scraper/src/fetch/enrich.ts` | `enrichRepo()` — coordinator; writes Stage 2 cache |
+| `scraper/src/cache.ts` | `writeEnrichCache()` — writes `languages.json`, `manifests/`, `activity.json` |
+| `scraper/src/scrape.ts` | Calls `enrichRepo()` after `writeCache()` on each scrape |
+
 **Does not do in v1:** full recursive tree walk, import/AST analysis, git history.
 
 **v2 additions (deferred):**
@@ -182,75 +193,84 @@ Used by `compute/` for collaboration edges (**D6**), directory subprojects (**D2
 - Repo clone (**D9**) — shallow/sparse clone for import parsing and deeper framework detection.
 - LLM summaries / chat (**D10**) — optional narratives keyed to graph + `skills.json`.
 - Community detection (**D5**) — Louvain or similar on contributor edges.
+- PR title tokens for **subproject** detection/labeling (not skills).
 
-**Status:** Not implemented.
+**Status:** Complete. Runs automatically as part of `npm run scrape`.
 
 ---
 
-### Stage 3 — Knowledge graph computation (planned)
+### Stage 3 — Knowledge graph computation (**partial**)
 
 **Owner:** `compute/` package (**D7**).
 
-**Inputs:** `cache/<owner>_<repo>/` — primarily `activity.json`, `contributors.json`, `languages.json`, `manifests/`, `meta.json` (**D8**). Raw `prs.json` / `reviews.json` are fallback if `activity.json` is missing.
+**Inputs:** `cache/<owner>_<repo>/` — primarily `activity.json`, `contributors.json`, `languages.json`, `manifests/`, `meta.json` (**D8**). Raw `prs.json` / `reviews.json` are fallback if `activity.json` is missing (`ensureActivity()` regenerates it via `buildActivity()`).
 
 **Goal:** Directory subprojects, per-repo skill registry, contributor + project graphs, and compute bookkeeping.
 
 **Stage 3 cache outputs (before publish)**
 
-| File | Purpose |
-|------|---------|
-| `subprojects.json` | Directory subproject map + per-contributor weights (**D2**) |
-| `skills.json` | Per-repo canonical skill registry (**D3**) |
-| `compute_meta.json` | Input fingerprints, stage timestamps, schema versions (**D8**) |
+| File | Purpose | Status |
+|------|---------|--------|
+| `subprojects.json` | Directory subproject map + per-contributor weights (**D2**) | **Implemented** |
+| `skills.json` | Per-repo canonical skill registry (**D3**) | **Implemented** |
+| `compute_meta.json` | Input fingerprints, stage timestamps, schema versions (**D8**) | Planned |
 
-**Algorithm (v1; not coded)**
+**Algorithm (v1)**
 
-1. **Subsystems (“projects”) — directory-based (D2)** — Read `activity.json` `pr_author` events.  
-   - Map each path → **subproject ID** (default: first path segment under repo root; monorepo roots configurable in `compute/`).  
-   - Aggregate contributor touch weights per subproject.  
-   - **Write** `subprojects.json`: subproject IDs, labels, `contributor_weights`, optional `path_to_subproject` samples.  
-   - **Graph fields:** `GraphNode.team`, `projects`, `project_roles` derived from `subprojects.json`.  
+1. **Subsystems (“projects”) — directory-based (D2)** — **Implemented.** Read `activity.json` `pr_author` events.  
+   - Map each path → **subproject ID** (default: first path segment; monorepo depth overrides in `compute/src/config.ts` → `SUBPROJECT_RULES_BY_REPO`).  
+   - Skip layout-only segments (`src`, `lib`, `internal`, …) via `enter_dirs` traversal.  
+   - Aggregate contributor touch weights per subproject; prune buckets below `MIN_SUBPROJECT_WEIGHT`.  
+   - **Write** `subprojects.json`: subproject IDs, labels, `contributor_weights`, `sample_paths`, applied `rules`.  
+   - **Graph fields:** `GraphNode.team`, `projects`, `project_roles` via `subprojectFieldsForContributor()` (consumed when building `graph.json`).  
    - `GENERIC_LABELS` is **not** used for subproject boundaries.
 
-2. **Contributor skills (D3)** — Extract provisional signals from `activity.json`, `manifests/`, and `languages.json` (extensions, path segments, deps, title tokens).  
+2. **Contributor skills (D3)** — **Implemented.** Extract provisional signals from `activity.json` (`pr_author.paths[]` only), `manifests/`, and `languages.json`.  
+   - **Three extractors:** file extensions → `lang:*`; path segments → `path:*` (excludes subproject IDs); manifest deps → `dep:*` (longest manifest-prefix match per path).  
+   - **Not used:** PR title tokens (`pr_author.title`) — deferred to subproject v2.  
    - Count repo-wide; promote frequent signals into **`skills.json`** (`id`, `label`, optional `kind`).  
-   - Assign each active contributor `skills: { id, weight }[]` on graph nodes (canonical IDs only).  
-   - **Technology UI** — filter by `kind` from `skills.json`; no separate technology graph (**D4**).  
+   - `kind` is uniform per ID prefix: `lang:` → `"language"`, `dep:` → `"dependency"`, `path:` → omitted.  
+   - Assign each active contributor `skills: { id, weight }[]` in memory via `assignContributorSkills()` (top `MAX_CONTRIBUTOR_SKILLS`); written to `graph.json` in a later pass.  
+   - Repo-wide `languages.json` entries promoted without fabricating per-contributor weights.  
    - v1 stays fully deterministic (no LLM — **D10**).
 
-3. **Collaboration edges (D6)** — From `activity.json`, for each contributor pair *(A, B)*, accumulate edge weight from:
+3. **Collaboration edges (D6)** — **Not implemented.** From `activity.json`, for each contributor pair *(A, B)*, accumulate edge weight from:
    - **Shared PR activity** — Same PR with both participating (roles: author, reviewer). Reviewer↔author on a PR adds `REVIEW_WEIGHT` (1.0) per review event; additional co-presence on a PR (e.g. multiple reviewers, or repeat interaction on the same PR) adds to the same edge bucket.
    - **Shared changed paths** — For file paths each person touched (via their PRs’ `files`), add weight proportional to overlap (e.g. Jaccard or count of shared paths, scaled by recency and touch volume). Same path on the same PR counts under both signals; dedupe or cap in `compute/` implementation.
    - **Recency** — Each event at time *t* contributes `base * exp(-LAMBDA * days_since_t)` with `LAMBDA = 0.005`.
    - **Out of scope for edges:** issue comments, co-authored commits off-PR (**D1**).
 
-4. **Project graph** — Nodes = directory subproject IDs from `subprojects.json`; edges = shared contributors. Same keys as `GraphNode.projects`.
+4. **Project graph** — **Not implemented.** Nodes = directory subproject IDs from `subprojects.json`; edges = shared contributors. Same keys as `GraphNode.projects`.
 
-5. **`compute_meta.json`** — Written last; records input timestamps (`meta.scraped_at`, `activity.json` generation time) and output timestamps so `compute/` can skip rework when the cache is unchanged.
+5. **`compute_meta.json`** — **Not implemented.** Written last; records input timestamps (`meta.scraped_at`, `activity.json` generation time) and output timestamps so `compute/` can skip rework when the cache is unchanged.
 
 **Out of v1:** community detection / Louvain (**D5**). `GraphNode.community` omitted or unused in v1 `graph.json`.
 
-**Stage 3 cache schemas (sketch)**
+**Stage 3 cache schemas**
 
 ```ts
 // subprojects.json
 {
-  version: number
+  version: 1
   generated_at: string
+  rules: SubprojectRules
   subprojects: Record<string, {
     label: string
+    total_weight: number
     contributor_weights: Record<string, number>
+    sample_paths: string[]
   }>
 }
 
 // skills.json — see also GraphNode.skills below
 {
-  version: number
+  version: 1
   updated_at: string
   skills: Record<string, { label: string; kind?: string }>
+  // kind: "language" | "dependency" | omitted for path:*
 }
 
-// compute_meta.json
+// compute_meta.json (planned)
 {
   compute_version: number
   generated_at: string
@@ -259,7 +279,19 @@ Used by `compute/` for collaboration edges (**D6**), directory subprojects (**D2
 }
 ```
 
-**Published output (per repo in `REPOS`)**
+**Key implementation files**
+
+| File | Role |
+|------|------|
+| `compute/src/build.ts` | CLI — `ensureActivity()` → subprojects → skills |
+| `compute/src/io/activity.ts` | `ensureActivity()` — read or regenerate `activity.json` |
+| `compute/src/io/cache.ts` | Read/write cache artifacts (`subprojects.json`, `skills.json`, …) |
+| `compute/src/config.ts` | Subproject rules, skill promotion thresholds, `EXT_TO_LANGUAGE` |
+| `compute/src/types.ts` | `SubprojectsData`, `SkillsData`, `SkillRef`, graph field types |
+| `compute/src/subprojects/` | `buildSubprojects()`, path→ID resolution, `subprojectFieldsForContributor()` |
+| `compute/src/skills/` | `extractSignalHits()`, `buildSkills()`, `assignContributorSkills()` |
+
+**Published output (per repo in `REPOS`)** — not yet written by `compute/`
 
 ```
 frontend/public/graphs/<owner>_<repo>/
@@ -287,7 +319,7 @@ GraphNode {
 
 Frontend loads `graph.json` + `skills.json` (or skills embedded in graph metadata) for people vs project views; technology discovery filters/aggregates skills by `kind`.
 
-**Status:** Contributor types in `scraper/`; `compute/` package and project graph types not created.
+**Status:** Subprojects (**D2**) and skills registry (**D3**) complete. Collaboration edges (**D6**), graph publish, and `compute_meta.json` remain.
 
 ---
 
@@ -313,7 +345,7 @@ Frontend loads `graph.json` + `skills.json` (or skills embedded in graph metadat
 |-------|--------|--------|--------|
 | 1 Collect | GitHub API | `prs.json`, `reviews.json`, `contributors.json`, `meta.json` | `scraper/` |
 | 2 Enrich | Stage 1 cache + Languages/Contents API (**D9**) | `languages.json`, `manifests/`, `activity.json` | `scraper/` |
-| 3 Compute | Stage 1–2 cache (**D8**) | `subprojects.json`, `skills.json`, `compute_meta.json`, `public/graphs/.../graph.json`, `project_graph.json` | `compute/` |
+| 3 Compute | Stage 1–2 cache (**D8**) | `subprojects.json`, `skills.json` *(done)*; `compute_meta.json`, `public/graphs/.../graph.json`, `project_graph.json` *(planned)* | `compute/` |
 | 4 Visualize | `public/graphs/` | Browser UI | `frontend/` |
 
 ---
@@ -355,17 +387,23 @@ Re-running **`scraper/`** (new scrape) invalidates Stage 2–3 cache files for t
 
 ## Configuration reference
 
-| Constant | Value | Purpose |
-|----------|-------|---------|
-| `REPOS` | 5 OSS repos (react, vscode, redis, k8s, rust) | Demo / dev targets |
-| `WINDOW_MONTHS` | 6 | Activity window |
-| `MIN_ACTIVITY` | 3 | Min PR+review actions for a node |
-| `LAMBDA` | 0.005 | Per-day recency decay on edges |
-| `REVIEW_WEIGHT` | 1.0 | Per-review contribution within shared-PR activity (**D6**) |
-| `CO_COMMENT_WEIGHT` | 0.3 | Reserved; issues out of v1 ingestion scope |
-| *(TBD in `compute/`)* | — | Multiplier for shared changed-path overlap (**D6**) |
-| *(TBD in `compute/`)* | — | Min frequency or top-*N* for promoting provisional signals → `skills.json` (**D3**) |
-| `GENERIC_LABELS` | (set in config) | Not used for directory subprojects; may be removed or repurposed later |
+| Constant | Value | Location | Purpose |
+|----------|-------|----------|---------|
+| `REPOS` | 5 OSS repos (react, vscode, redis, k8s, rust) | `scraper/src/config.ts` | Demo / dev targets |
+| `WINDOW_MONTHS` | 6 | `scraper/src/config.ts` | Activity window |
+| `MIN_ACTIVITY` | 3 | `scraper/` + `compute/` | Min PR+review actions for a graph node |
+| `LAMBDA` | 0.005 | `scraper/` + `compute/` | Per-day recency decay on edges (reserved) |
+| `REVIEW_WEIGHT` | 1.0 | `scraper/src/config.ts` | Per-review contribution within shared-PR activity (**D6**) |
+| `CO_COMMENT_WEIGHT` | 0.3 | `scraper/src/config.ts` | Reserved; issues out of v1 ingestion scope |
+| `MIN_SUBPROJECT_WEIGHT` | 5 | `compute/src/config.ts` | Min total path touches to keep a subproject bucket |
+| `SUBPROJECT_OWNER_THRESHOLD` | 0.4 | `compute/src/config.ts` | Fraction of personal weight for `"owner"` role |
+| `MIN_SKILL_REPO_COUNT` | 3 | `compute/src/config.ts` | Min repo-wide hits to promote a skill |
+| `MIN_SKILL_CONTRIBUTORS` | 2 | `compute/src/config.ts` | Min distinct contributors (waived for `languages.json`-only langs) |
+| `MAX_CANONICAL_SKILLS` | 150 | `compute/src/config.ts` | Cap on `skills.json` registry size |
+| `MIN_DEP_HITS` | 2 | `compute/src/config.ts` | Min hits to promote a manifest dep |
+| `MAX_CONTRIBUTOR_SKILLS` | 20 | `compute/src/config.ts` | Max skills per contributor node |
+| *(TBD in `compute/`)* | — | — | Multiplier for shared changed-path overlap (**D6**) |
+| `GENERIC_LABELS` | (set in config) | `scraper/src/config.ts` | Not used for directory subprojects or skills |
 
 ---
 
@@ -375,15 +413,23 @@ Re-running **`scraper/`** (new scrape) invalidates Stage 2–3 cache files for t
 # Frontend shell
 cd frontend && npm install && npm run dev
 
-# Collect — Stage 1 complete
+# Collect + enrich — Stages 1–2 (requires GITHUB_TOKEN)
 cp .env.example .env          # add real GITHUB_TOKEN
 cd scraper && npm install
 npm run scrape -- --repo redis/redis   # single repo (dev)
 npm run scrape                         # all REPOS
 npm run typecheck                      # tsc --noEmit
 
-# Compute — package not created yet
-# cd compute && npm install && npm run build
+# Compute — Stage 3 partial (subprojects + skills; no graph publish yet)
+cd compute && npm install
+npm run build -- --repo redis/redis    # single repo
+npm run build                          # all REPOS
+npm run typecheck
+
+# Full pipeline (single repo)
+cd scraper && npm run scrape -- --repo redis/redis
+cd ../compute && npm run build -- --repo redis/redis
+# Inspect cache/redis_redis/subprojects.json and skills.json
 ```
 
 ---
@@ -476,9 +522,9 @@ Should happen once v1 pipeline and open frontend/delivery choices stabilize.
 
 ## Suggested decision order
 
-1. Implement **Stage 2** in `scraper/` (`languages.json`, `manifests/`, `activity.json`)  
-2. Implement **`compute/`** Stage 3 (`subprojects.json`, `skills.json`, `compute_meta.json`, graphs)  
+1. ~~Implement **Stage 2** in `scraper/`~~ — **done**  
+2. ~~Implement **`compute/`** subprojects + skills~~ — **done**; remaining Stage 3: edges (**D6**), graphs, `compute_meta.json`  
 3. **D11**–**D13** (frontend) once sample graphs exist  
 4. **D14**–**D15** (auth, incremental) before production / private repos  
 5. **D16** — refresh `CLAUDE.md` / `README.md` when v1 stabilizes  
-6. **v2** — repo clone (**D9**), LLM (**D10**), communities (**D5**)
+6. **v2** — repo clone (**D9**), LLM (**D10**), communities (**D5**), PR titles for subprojects
