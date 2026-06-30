@@ -1,0 +1,5712 @@
+{
+  "repo": "react/react",
+  "generated_at": "2026-06-30T02:29:52.184Z",
+  "nodes": [
+    {
+      "id": "eps1lon",
+      "name": "Sebastian \"Sebbie\" Silbermann",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages",
+        "scripts",
+        ".github",
+        "compiler",
+        "_root",
+        "fixtures",
+        "flow-typed"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 218,
+          "role": "owner"
+        },
+        "scripts": {
+          "weight": 90,
+          "role": "contributor"
+        },
+        ".github": {
+          "weight": 67,
+          "role": "contributor"
+        },
+        "compiler": {
+          "weight": 40,
+          "role": "contributor"
+        },
+        "_root": {
+          "weight": 19,
+          "role": "contributor"
+        },
+        "fixtures": {
+          "weight": 2,
+          "role": "contributor"
+        },
+        "flow-typed": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/12292047?v=4",
+      "pr_count": 36,
+      "review_count": 63,
+      "skills": [
+        {
+          "id": "dep:babel-parser",
+          "weight": 31
+        },
+        {
+          "id": "dep:babel-preset-env",
+          "weight": 31
+        },
+        {
+          "id": "dep:babel-preset-flow",
+          "weight": 31
+        },
+        {
+          "id": "dep:babel-traverse",
+          "weight": 31
+        },
+        {
+          "id": "lang:javascript",
+          "weight": 31
+        },
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 30
+        },
+        {
+          "id": "dep:art",
+          "weight": 30
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 30
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 30
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 30
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 30
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 30
+        },
+        {
+          "id": "dep:babel-plugin-external-helpers",
+          "weight": 30
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 30
+        },
+        {
+          "id": "dep:babel-plugin-proposal-object-rest-spread",
+          "weight": 30
+        },
+        {
+          "id": "dep:babel-plugin-syntax-dynamic-import",
+          "weight": 30
+        },
+        {
+          "id": "dep:babel-plugin-syntax-hermes-parser",
+          "weight": 30
+        },
+        {
+          "id": "dep:babel-plugin-syntax-import-meta",
+          "weight": 30
+        },
+        {
+          "id": "dep:babel-plugin-syntax-jsx",
+          "weight": 30
+        },
+        {
+          "id": "dep:babel-plugin-syntax-trailing-function-commas",
+          "weight": 30
+        }
+      ]
+    },
+    {
+      "id": "poteto",
+      "name": "lauren",
+      "role": "owner",
+      "team": "compiler",
+      "expertise": [],
+      "projects": [
+        "compiler",
+        "_root"
+      ],
+      "project_roles": {
+        "compiler": {
+          "weight": 358,
+          "role": "owner"
+        },
+        "_root": {
+          "weight": 4,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/1390709?v=4",
+      "pr_count": 40,
+      "review_count": 6,
+      "skills": [
+        {
+          "id": "path:crates",
+          "weight": 37
+        },
+        {
+          "id": "lang:rust",
+          "weight": 35
+        },
+        {
+          "id": "dep:indexmap",
+          "weight": 22
+        },
+        {
+          "id": "dep:react-compiler-diagnostics",
+          "weight": 22
+        },
+        {
+          "id": "dep:rustc-hash",
+          "weight": 22
+        },
+        {
+          "id": "lang:typescript",
+          "weight": 22
+        },
+        {
+          "id": "lang:markdown",
+          "weight": 19
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 15
+        },
+        {
+          "id": "dep:babel-generator",
+          "weight": 15
+        },
+        {
+          "id": "dep:babel-jest",
+          "weight": 15
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 15
+        },
+        {
+          "id": "dep:babel-plugin-fbt",
+          "weight": 15
+        },
+        {
+          "id": "dep:babel-plugin-fbt-runtime",
+          "weight": 15
+        },
+        {
+          "id": "dep:babel-plugin-syntax-typescript",
+          "weight": 15
+        },
+        {
+          "id": "dep:babel-plugin-transform-block-scoping",
+          "weight": 15
+        },
+        {
+          "id": "dep:babel-plugin-transform-modules-commonjs",
+          "weight": 15
+        },
+        {
+          "id": "dep:babel-preset-react",
+          "weight": 15
+        },
+        {
+          "id": "dep:babel-preset-typescript",
+          "weight": 15
+        },
+        {
+          "id": "dep:babel-traverse",
+          "weight": 15
+        },
+        {
+          "id": "dep:babel-types",
+          "weight": 15
+        }
+      ]
+    },
+    {
+      "id": "hoxyq",
+      "name": "Ruslan Lesiutin",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages",
+        "scripts",
+        "_root",
+        ".github"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 70,
+          "role": "owner"
+        },
+        "scripts": {
+          "weight": 14,
+          "role": "contributor"
+        },
+        "_root": {
+          "weight": 5,
+          "role": "contributor"
+        },
+        ".github": {
+          "weight": 3,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/28902667?v=4",
+      "pr_count": 16,
+      "review_count": 29,
+      "skills": [
+        {
+          "id": "lang:javascript",
+          "weight": 15
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 10
+        },
+        {
+          "id": "dep:babel-preset-env",
+          "weight": 10
+        },
+        {
+          "id": "dep:babel-preset-flow",
+          "weight": 10
+        },
+        {
+          "id": "dep:babel-traverse",
+          "weight": 10
+        },
+        {
+          "id": "dep:error-stack-parser",
+          "weight": 10
+        },
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 9
+        },
+        {
+          "id": "dep:art",
+          "weight": 9
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 9
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 9
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 9
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 9
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 9
+        },
+        {
+          "id": "dep:babel-plugin-external-helpers",
+          "weight": 9
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 9
+        },
+        {
+          "id": "dep:babel-plugin-proposal-object-rest-spread",
+          "weight": 9
+        },
+        {
+          "id": "dep:babel-plugin-syntax-dynamic-import",
+          "weight": 9
+        },
+        {
+          "id": "dep:babel-plugin-syntax-hermes-parser",
+          "weight": 9
+        },
+        {
+          "id": "dep:babel-plugin-syntax-import-meta",
+          "weight": 9
+        },
+        {
+          "id": "dep:babel-plugin-syntax-jsx",
+          "weight": 9
+        }
+      ]
+    },
+    {
+      "id": "unstubbable",
+      "name": "Hendrik Liebau",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages",
+        "fixtures",
+        "_root",
+        "scripts"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 40,
+          "role": "owner"
+        },
+        "fixtures": {
+          "weight": 40,
+          "role": "owner"
+        },
+        "_root": {
+          "weight": 3,
+          "role": "contributor"
+        },
+        "scripts": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/761683?v=4",
+      "pr_count": 7,
+      "review_count": 38,
+      "skills": [
+        {
+          "id": "dep:react",
+          "weight": 7
+        },
+        {
+          "id": "lang:javascript",
+          "weight": 7
+        },
+        {
+          "id": "dep:react-dom",
+          "weight": 6
+        },
+        {
+          "id": "dep:webpack",
+          "weight": 6
+        },
+        {
+          "id": "path:react-server",
+          "weight": 5
+        },
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 4
+        },
+        {
+          "id": "dep:art",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-external-helpers",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-proposal-object-rest-spread",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-syntax-dynamic-import",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-syntax-hermes-parser",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-syntax-import-meta",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-syntax-jsx",
+          "weight": 4
+        }
+      ]
+    },
+    {
+      "id": "gnoff",
+      "name": "Josh Story",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages",
+        "_root"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 67,
+          "role": "owner"
+        },
+        "_root": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/2716369?v=4",
+      "pr_count": 16,
+      "review_count": 15,
+      "skills": [
+        {
+          "id": "dep:react",
+          "weight": 16
+        },
+        {
+          "id": "lang:javascript",
+          "weight": 16
+        },
+        {
+          "id": "path:react-server",
+          "weight": 14
+        },
+        {
+          "id": "dep:scheduler",
+          "weight": 10
+        },
+        {
+          "id": "path:react-dom",
+          "weight": 10
+        },
+        {
+          "id": "dep:react-dom",
+          "weight": 5
+        },
+        {
+          "id": "dep:webpack",
+          "weight": 5
+        },
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 1
+        },
+        {
+          "id": "dep:art",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-external-helpers",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-proposal-object-rest-spread",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-dynamic-import",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-hermes-parser",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "raashish1601",
+      "name": "Raashish Aggarwal",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages",
+        "compiler"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 32,
+          "role": "owner"
+        },
+        "compiler": {
+          "weight": 29,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/94279692?v=4",
+      "pr_count": 20,
+      "review_count": 0,
+      "skills": [
+        {
+          "id": "dep:babel-parser",
+          "weight": 17
+        },
+        {
+          "id": "lang:javascript",
+          "weight": 17
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 16
+        },
+        {
+          "id": "dep:babel-preset-typescript",
+          "weight": 16
+        },
+        {
+          "id": "dep:babel-types",
+          "weight": 16
+        },
+        {
+          "id": "dep:eslint",
+          "weight": 16
+        },
+        {
+          "id": "dep:jest",
+          "weight": 16
+        },
+        {
+          "id": "dep:types-node",
+          "weight": 16
+        },
+        {
+          "id": "dep:zod",
+          "weight": 16
+        },
+        {
+          "id": "dep:zod-validation-error",
+          "weight": 16
+        },
+        {
+          "id": "dep:react",
+          "weight": 14
+        },
+        {
+          "id": "lang:typescript",
+          "weight": 14
+        },
+        {
+          "id": "dep:babel-traverse",
+          "weight": 12
+        },
+        {
+          "id": "dep:babel-generator",
+          "weight": 11
+        },
+        {
+          "id": "dep:babel-jest",
+          "weight": 11
+        },
+        {
+          "id": "dep:babel-plugin-fbt",
+          "weight": 11
+        },
+        {
+          "id": "dep:babel-plugin-fbt-runtime",
+          "weight": 11
+        },
+        {
+          "id": "dep:babel-plugin-syntax-typescript",
+          "weight": 11
+        },
+        {
+          "id": "dep:babel-plugin-transform-block-scoping",
+          "weight": 11
+        },
+        {
+          "id": "dep:babel-plugin-transform-modules-commonjs",
+          "weight": 11
+        }
+      ]
+    },
+    {
+      "id": "sleitor",
+      "name": "Dmitrii",
+      "role": "owner",
+      "team": "compiler",
+      "expertise": [],
+      "projects": [
+        "compiler",
+        "packages"
+      ],
+      "project_roles": {
+        "compiler": {
+          "weight": 70,
+          "role": "owner"
+        },
+        "packages": {
+          "weight": 17,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/14165771?v=4",
+      "pr_count": 13,
+      "review_count": 7,
+      "skills": [
+        {
+          "id": "dep:react",
+          "weight": 12
+        },
+        {
+          "id": "lang:javascript",
+          "weight": 10
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 9
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 9
+        },
+        {
+          "id": "dep:babel-plugin-syntax-typescript",
+          "weight": 9
+        },
+        {
+          "id": "dep:babel-plugin-transform-block-scoping",
+          "weight": 9
+        },
+        {
+          "id": "dep:babel-plugin-transform-modules-commonjs",
+          "weight": 9
+        },
+        {
+          "id": "dep:babel-preset-react",
+          "weight": 9
+        },
+        {
+          "id": "dep:babel-preset-typescript",
+          "weight": 9
+        },
+        {
+          "id": "dep:babel-traverse",
+          "weight": 9
+        },
+        {
+          "id": "dep:eslint",
+          "weight": 9
+        },
+        {
+          "id": "dep:jest",
+          "weight": 9
+        },
+        {
+          "id": "dep:jest-environment-jsdom",
+          "weight": 9
+        },
+        {
+          "id": "dep:pretty-format",
+          "weight": 9
+        },
+        {
+          "id": "dep:types-invariant",
+          "weight": 9
+        },
+        {
+          "id": "dep:typescript-eslint-eslint-plugin",
+          "weight": 9
+        },
+        {
+          "id": "dep:typescript-eslint-parser",
+          "weight": 9
+        },
+        {
+          "id": "dep:babel-generator",
+          "weight": 8
+        },
+        {
+          "id": "dep:babel-jest",
+          "weight": 8
+        },
+        {
+          "id": "dep:babel-plugin-fbt",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "id": "AlpianPPLG",
+      "name": "Ubermensch",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages",
+        "_root"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 11,
+          "role": "owner"
+        },
+        "_root": {
+          "weight": 6,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/155133944?v=4",
+      "pr_count": 4,
+      "review_count": 11,
+      "skills": [
+        {
+          "id": "dep:react",
+          "weight": 3
+        },
+        {
+          "id": "lang:javascript",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-preset-env",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-preset-flow",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-traverse",
+          "weight": 2
+        },
+        {
+          "id": "dep:scheduler",
+          "weight": 2
+        },
+        {
+          "id": "path:react-dom-bindings",
+          "weight": 2
+        },
+        {
+          "id": "path:react-reconciler",
+          "weight": 2
+        },
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 1
+        },
+        {
+          "id": "dep:art",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-external-helpers",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-proposal-object-rest-spread",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-dynamic-import",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "daltino",
+      "name": "Dalton Whyte",
+      "role": "contributor",
+      "team": "_root",
+      "expertise": [],
+      "projects": [],
+      "project_roles": {},
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/451688?v=4",
+      "pr_count": 0,
+      "review_count": 15,
+      "skills": []
+    },
+    {
+      "id": "mofeiZ",
+      "name": "mofeiZ",
+      "role": "owner",
+      "team": "compiler",
+      "expertise": [],
+      "projects": [
+        "compiler",
+        "packages",
+        "_root"
+      ],
+      "project_roles": {
+        "compiler": {
+          "weight": 7,
+          "role": "owner"
+        },
+        "packages": {
+          "weight": 6,
+          "role": "owner"
+        },
+        "_root": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/34200447?v=4",
+      "pr_count": 4,
+      "review_count": 11,
+      "skills": [
+        {
+          "id": "dep:babel-core",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-preset-typescript",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-types",
+          "weight": 4
+        },
+        {
+          "id": "dep:eslint",
+          "weight": 4
+        },
+        {
+          "id": "dep:hermes-parser",
+          "weight": 4
+        },
+        {
+          "id": "dep:types-node",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-eslint",
+          "weight": 3
+        },
+        {
+          "id": "dep:jest",
+          "weight": 3
+        },
+        {
+          "id": "dep:typescript",
+          "weight": 3
+        },
+        {
+          "id": "dep:zod",
+          "weight": 3
+        },
+        {
+          "id": "dep:zod-validation-error",
+          "weight": 3
+        },
+        {
+          "id": "lang:markdown",
+          "weight": 3
+        },
+        {
+          "id": "lang:typescript",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-syntax-typescript",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-transform-block-scoping",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-transform-modules-commonjs",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-preset-react",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-traverse",
+          "weight": 2
+        },
+        {
+          "id": "dep:hermes-eslint",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "jackpope",
+      "name": "Jack Pope",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages",
+        "fixtures",
+        "scripts"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 28,
+          "role": "owner"
+        },
+        "fixtures": {
+          "weight": 8,
+          "role": "contributor"
+        },
+        "scripts": {
+          "weight": 3,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/8965173?v=4",
+      "pr_count": 4,
+      "review_count": 9,
+      "skills": [
+        {
+          "id": "lang:javascript",
+          "weight": 4
+        },
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 3
+        },
+        {
+          "id": "dep:art",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-external-helpers",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-proposal-object-rest-spread",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-syntax-dynamic-import",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-syntax-hermes-parser",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-syntax-import-meta",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-syntax-jsx",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-syntax-trailing-function-commas",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-syntax-typescript",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-transform-arrow-functions",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-transform-block-scoped-functions",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "id": "rubennorte",
+      "name": "Rubén Norte",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages",
+        "scripts",
+        "_root"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 46,
+          "role": "owner"
+        },
+        "scripts": {
+          "weight": 8,
+          "role": "contributor"
+        },
+        "_root": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/117921?v=4",
+      "pr_count": 4,
+      "review_count": 9,
+      "skills": [
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 4
+        },
+        {
+          "id": "dep:art",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-external-helpers",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-proposal-object-rest-spread",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-syntax-dynamic-import",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-syntax-hermes-parser",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-syntax-import-meta",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-syntax-jsx",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-syntax-trailing-function-commas",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-syntax-typescript",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-transform-arrow-functions",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-transform-block-scoped-functions",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-transform-block-scoping",
+          "weight": 4
+        }
+      ]
+    },
+    {
+      "id": "dimaMachina",
+      "name": "Dimitri POSTOLOV",
+      "role": "contributor",
+      "team": "_root",
+      "expertise": [],
+      "projects": [],
+      "project_roles": {},
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/7361780?v=4",
+      "pr_count": 0,
+      "review_count": 9,
+      "skills": []
+    },
+    {
+      "id": "Biki-das",
+      "name": "BIKI DAS",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 10,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/72331432?v=4",
+      "pr_count": 2,
+      "review_count": 6,
+      "skills": [
+        {
+          "id": "dep:babel-parser",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-preset-env",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-preset-flow",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-traverse",
+          "weight": 2
+        },
+        {
+          "id": "lang:javascript",
+          "weight": 2
+        },
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 1
+        },
+        {
+          "id": "dep:art",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-eslint",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-external-helpers",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-proposal-object-rest-spread",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-dynamic-import",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-hermes-parser",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-import-meta",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-jsx",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "ousamabenyounes",
+      "name": "Ben Younes",
+      "role": "owner",
+      "team": "compiler",
+      "expertise": [],
+      "projects": [
+        "compiler"
+      ],
+      "project_roles": {
+        "compiler": {
+          "weight": 31,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/2910651?v=4",
+      "pr_count": 7,
+      "review_count": 1,
+      "skills": [
+        {
+          "id": "dep:babel-core",
+          "weight": 7
+        },
+        {
+          "id": "dep:babel-generator",
+          "weight": 7
+        },
+        {
+          "id": "dep:babel-jest",
+          "weight": 7
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 7
+        },
+        {
+          "id": "dep:babel-plugin-fbt",
+          "weight": 7
+        },
+        {
+          "id": "dep:babel-plugin-fbt-runtime",
+          "weight": 7
+        },
+        {
+          "id": "dep:babel-plugin-syntax-typescript",
+          "weight": 7
+        },
+        {
+          "id": "dep:babel-plugin-transform-block-scoping",
+          "weight": 7
+        },
+        {
+          "id": "dep:babel-plugin-transform-modules-commonjs",
+          "weight": 7
+        },
+        {
+          "id": "dep:babel-preset-react",
+          "weight": 7
+        },
+        {
+          "id": "dep:babel-preset-typescript",
+          "weight": 7
+        },
+        {
+          "id": "dep:babel-traverse",
+          "weight": 7
+        },
+        {
+          "id": "dep:babel-types",
+          "weight": 7
+        },
+        {
+          "id": "dep:eslint",
+          "weight": 7
+        },
+        {
+          "id": "dep:invariant",
+          "weight": 7
+        },
+        {
+          "id": "dep:jest",
+          "weight": 7
+        },
+        {
+          "id": "dep:jest-environment-jsdom",
+          "weight": 7
+        },
+        {
+          "id": "dep:pretty-format",
+          "weight": 7
+        },
+        {
+          "id": "dep:react",
+          "weight": 7
+        },
+        {
+          "id": "dep:react-dom",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "id": "wyf027",
+      "name": "吴杨帆",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages",
+        "compiler",
+        "_root"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 12,
+          "role": "owner"
+        },
+        "compiler": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "_root": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/39647285?v=4",
+      "pr_count": 8,
+      "review_count": 0,
+      "skills": [
+        {
+          "id": "dep:babel-parser",
+          "weight": 5
+        },
+        {
+          "id": "dep:babel-preset-env",
+          "weight": 5
+        },
+        {
+          "id": "lang:javascript",
+          "weight": 5
+        },
+        {
+          "id": "dep:babel-preset-flow",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-traverse",
+          "weight": 4
+        },
+        {
+          "id": "dep:react",
+          "weight": 3
+        },
+        {
+          "id": "lang:markdown",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-preset-typescript",
+          "weight": 2
+        },
+        {
+          "id": "dep:eslint",
+          "weight": 2
+        },
+        {
+          "id": "dep:hermes-eslint",
+          "weight": 2
+        },
+        {
+          "id": "dep:hermes-parser",
+          "weight": 2
+        },
+        {
+          "id": "dep:jest",
+          "weight": 2
+        },
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 1
+        },
+        {
+          "id": "dep:art",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-jest",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "zeyap",
+      "name": "Zeya Peng",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages",
+        "fixtures",
+        "scripts",
+        ".github"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 21,
+          "role": "owner"
+        },
+        "fixtures": {
+          "weight": 5,
+          "role": "contributor"
+        },
+        "scripts": {
+          "weight": 2,
+          "role": "contributor"
+        },
+        ".github": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/11704179?v=4",
+      "pr_count": 7,
+      "review_count": 1,
+      "skills": [
+        {
+          "id": "dep:react",
+          "weight": 6
+        },
+        {
+          "id": "dep:scheduler",
+          "weight": 6
+        },
+        {
+          "id": "lang:javascript",
+          "weight": 6
+        },
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 4
+        },
+        {
+          "id": "dep:art",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-external-helpers",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-proposal-object-rest-spread",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-syntax-dynamic-import",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-syntax-hermes-parser",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-syntax-import-meta",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-syntax-jsx",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-syntax-trailing-function-commas",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-syntax-typescript",
+          "weight": 4
+        }
+      ]
+    },
+    {
+      "id": "Jah-yee",
+      "name": "RoomWithOutRoof",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages",
+        "scripts",
+        "_root"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 10,
+          "role": "owner"
+        },
+        "scripts": {
+          "weight": 2,
+          "role": "contributor"
+        },
+        "_root": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/166608075?v=4",
+      "pr_count": 7,
+      "review_count": 0,
+      "skills": [
+        {
+          "id": "lang:json",
+          "weight": 6
+        },
+        {
+          "id": "lang:javascript",
+          "weight": 5
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-preset-typescript",
+          "weight": 4
+        },
+        {
+          "id": "dep:eslint",
+          "weight": 4
+        },
+        {
+          "id": "dep:hermes-parser",
+          "weight": 4
+        },
+        {
+          "id": "dep:jest",
+          "weight": 4
+        },
+        {
+          "id": "dep:react",
+          "weight": 4
+        },
+        {
+          "id": "dep:typescript",
+          "weight": 4
+        },
+        {
+          "id": "dep:webpack",
+          "weight": 4
+        },
+        {
+          "id": "path:react-dom-bindings",
+          "weight": 3
+        },
+        {
+          "id": "path:server",
+          "weight": 3
+        },
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 2
+        },
+        {
+          "id": "dep:art",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-eslint",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "mvitousek",
+      "name": "Michael Vitousek",
+      "role": "owner",
+      "team": "compiler",
+      "expertise": [],
+      "projects": [
+        "compiler"
+      ],
+      "project_roles": {
+        "compiler": {
+          "weight": 107,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/1629813?v=4",
+      "pr_count": 2,
+      "review_count": 5,
+      "skills": [
+        {
+          "id": "dep:indexmap",
+          "weight": 2
+        },
+        {
+          "id": "dep:react-compiler-diagnostics",
+          "weight": 2
+        },
+        {
+          "id": "dep:rustc-hash",
+          "weight": 2
+        },
+        {
+          "id": "lang:rust",
+          "weight": 2
+        },
+        {
+          "id": "lang:typescript",
+          "weight": 2
+        },
+        {
+          "id": "path:crates",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "UditDewan",
+      "name": "udit",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages",
+        "compiler"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 32,
+          "role": "owner"
+        },
+        "compiler": {
+          "weight": 3,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/194863456?v=4",
+      "pr_count": 5,
+      "review_count": 2,
+      "skills": [
+        {
+          "id": "lang:javascript",
+          "weight": 5
+        },
+        {
+          "id": "dep:react",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-traverse",
+          "weight": 3
+        },
+        {
+          "id": "dep:scheduler",
+          "weight": 3
+        },
+        {
+          "id": "path:react-dom",
+          "weight": 3
+        },
+        {
+          "id": "path:shared",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-preset-env",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-preset-flow",
+          "weight": 2
+        },
+        {
+          "id": "lang:markdown",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-generator",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-jest",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-fbt",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-fbt-runtime",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-typescript",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-transform-block-scoping",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-transform-modules-commonjs",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-preset-react",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-preset-typescript",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "yudin-s",
+      "name": "Serge Yudin",
+      "role": "owner",
+      "team": "compiler",
+      "expertise": [],
+      "projects": [
+        "compiler",
+        "packages"
+      ],
+      "project_roles": {
+        "compiler": {
+          "weight": 11,
+          "role": "owner"
+        },
+        "packages": {
+          "weight": 6,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/781481?v=4",
+      "pr_count": 7,
+      "review_count": 0,
+      "skills": [
+        {
+          "id": "dep:babel-parser",
+          "weight": 7
+        },
+        {
+          "id": "dep:babel-traverse",
+          "weight": 7
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-generator",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-jest",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-fbt",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-fbt-runtime",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-syntax-typescript",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-transform-block-scoping",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-plugin-transform-modules-commonjs",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-preset-react",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-preset-typescript",
+          "weight": 4
+        },
+        {
+          "id": "dep:babel-types",
+          "weight": 4
+        },
+        {
+          "id": "dep:eslint",
+          "weight": 4
+        },
+        {
+          "id": "dep:invariant",
+          "weight": 4
+        },
+        {
+          "id": "dep:jest",
+          "weight": 4
+        },
+        {
+          "id": "dep:jest-environment-jsdom",
+          "weight": 4
+        },
+        {
+          "id": "dep:pretty-format",
+          "weight": 4
+        },
+        {
+          "id": "dep:react",
+          "weight": 4
+        },
+        {
+          "id": "dep:react-dom",
+          "weight": 4
+        }
+      ]
+    },
+    {
+      "id": "codeCraft-Ritik",
+      "name": "Ritik Kumar",
+      "role": "contributor",
+      "team": "_root",
+      "expertise": [],
+      "projects": [],
+      "project_roles": {},
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/190937827?v=4",
+      "pr_count": 0,
+      "review_count": 6,
+      "skills": []
+    },
+    {
+      "id": "myhearwillgoon",
+      "name": "Sigma-Chan",
+      "role": "owner",
+      "team": "_root",
+      "expertise": [],
+      "projects": [
+        "_root"
+      ],
+      "project_roles": {
+        "_root": {
+          "weight": 6,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/149338457?v=4",
+      "pr_count": 6,
+      "review_count": 0,
+      "skills": [
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 6
+        },
+        {
+          "id": "dep:art",
+          "weight": 6
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 6
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 6
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 6
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 6
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 6
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 6
+        },
+        {
+          "id": "dep:babel-plugin-external-helpers",
+          "weight": 6
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 6
+        },
+        {
+          "id": "dep:babel-plugin-proposal-object-rest-spread",
+          "weight": 6
+        },
+        {
+          "id": "dep:babel-plugin-syntax-dynamic-import",
+          "weight": 6
+        },
+        {
+          "id": "dep:babel-plugin-syntax-hermes-parser",
+          "weight": 6
+        },
+        {
+          "id": "dep:babel-plugin-syntax-import-meta",
+          "weight": 6
+        },
+        {
+          "id": "dep:babel-plugin-syntax-jsx",
+          "weight": 6
+        },
+        {
+          "id": "dep:babel-plugin-syntax-trailing-function-commas",
+          "weight": 6
+        },
+        {
+          "id": "dep:babel-plugin-syntax-typescript",
+          "weight": 6
+        },
+        {
+          "id": "dep:babel-plugin-transform-arrow-functions",
+          "weight": 6
+        },
+        {
+          "id": "dep:babel-plugin-transform-block-scoped-functions",
+          "weight": 6
+        },
+        {
+          "id": "dep:babel-plugin-transform-block-scoping",
+          "weight": 6
+        }
+      ]
+    },
+    {
+      "id": "Boshen",
+      "name": "Boshen",
+      "role": "owner",
+      "team": "compiler",
+      "expertise": [],
+      "projects": [
+        "compiler"
+      ],
+      "project_roles": {
+        "compiler": {
+          "weight": 100,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/1430279?v=4",
+      "pr_count": 3,
+      "review_count": 2,
+      "skills": [
+        {
+          "id": "dep:indexmap",
+          "weight": 3
+        },
+        {
+          "id": "dep:react-compiler-diagnostics",
+          "weight": 3
+        },
+        {
+          "id": "dep:rustc-hash",
+          "weight": 3
+        },
+        {
+          "id": "lang:rust",
+          "weight": 3
+        },
+        {
+          "id": "path:crates",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "id": "fallintoplace",
+      "name": "Minh Vu",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 7,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/38443830?v=4",
+      "pr_count": 5,
+      "review_count": 0,
+      "skills": [
+        {
+          "id": "lang:javascript",
+          "weight": 5
+        },
+        {
+          "id": "dep:webpack",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-eslint",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-transform-modules-commonjs",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-transform-react-jsx-source",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-preset-react",
+          "weight": 2
+        },
+        {
+          "id": "dep:chalk",
+          "weight": 2
+        },
+        {
+          "id": "dep:filesize",
+          "weight": 2
+        },
+        {
+          "id": "dep:react",
+          "weight": 2
+        },
+        {
+          "id": "dep:rimraf",
+          "weight": 2
+        },
+        {
+          "id": "dep:scheduler",
+          "weight": 2
+        },
+        {
+          "id": "path:react-dom",
+          "weight": 2
+        },
+        {
+          "id": "path:react-dom-bindings",
+          "weight": 2
+        },
+        {
+          "id": "path:server",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "josephsavona",
+      "name": "Joseph Savona",
+      "role": "owner",
+      "team": "compiler",
+      "expertise": [],
+      "projects": [
+        "compiler",
+        "_root",
+        "packages",
+        ".github"
+      ],
+      "project_roles": {
+        "compiler": {
+          "weight": 454,
+          "role": "owner"
+        },
+        "_root": {
+          "weight": 5,
+          "role": "contributor"
+        },
+        "packages": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        ".github": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/6425824?v=4",
+      "pr_count": 1,
+      "review_count": 4,
+      "skills": [
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 1
+        },
+        {
+          "id": "dep:art",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-eslint",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-generator",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-jest",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-external-helpers",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-fbt",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-fbt-runtime",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-proposal-object-rest-spread",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-dynamic-import",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-hermes-parser",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-import-meta",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-jsx",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "junhyeong9812",
+      "name": "김준형",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 13,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/158379358?v=4",
+      "pr_count": 5,
+      "review_count": 0,
+      "skills": [
+        {
+          "id": "dep:react",
+          "weight": 5
+        },
+        {
+          "id": "lang:javascript",
+          "weight": 5
+        },
+        {
+          "id": "dep:scheduler",
+          "weight": 3
+        },
+        {
+          "id": "path:react-dom-bindings",
+          "weight": 3
+        },
+        {
+          "id": "path:react-dom",
+          "weight": 2
+        },
+        {
+          "id": "path:server",
+          "weight": 2
+        },
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 1
+        },
+        {
+          "id": "dep:art",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-external-helpers",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-proposal-object-rest-spread",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-dynamic-import",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-hermes-parser",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-import-meta",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "creazyfrog",
+      "name": "Rohit Sharma",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages",
+        "scripts",
+        "_root"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 5,
+          "role": "owner"
+        },
+        "scripts": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "_root": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/42964735?v=4",
+      "pr_count": 4,
+      "review_count": 0,
+      "skills": [
+        {
+          "id": "lang:javascript",
+          "weight": 3
+        },
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 2
+        },
+        {
+          "id": "dep:art",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-external-helpers",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-proposal-object-rest-spread",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-syntax-dynamic-import",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-syntax-hermes-parser",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-syntax-import-meta",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-syntax-jsx",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-syntax-trailing-function-commas",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-syntax-typescript",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-transform-arrow-functions",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-transform-block-scoped-functions",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "devjiwonchoi",
+      "name": "Jiwon Choi",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 6,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/120007119?v=4",
+      "pr_count": 2,
+      "review_count": 2,
+      "skills": [
+        {
+          "id": "lang:javascript",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-preset-env",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-preset-flow",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-traverse",
+          "weight": 1
+        },
+        {
+          "id": "dep:react",
+          "weight": 1
+        },
+        {
+          "id": "dep:scheduler",
+          "weight": 1
+        },
+        {
+          "id": "path:react-dom",
+          "weight": 1
+        },
+        {
+          "id": "path:react-reconciler",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "EugeneChoi4",
+      "name": "Eugene Choi",
+      "role": "owner",
+      "team": "scripts",
+      "expertise": [],
+      "projects": [
+        "scripts",
+        "packages",
+        ".github"
+      ],
+      "project_roles": {
+        "scripts": {
+          "weight": 4,
+          "role": "owner"
+        },
+        "packages": {
+          "weight": 2,
+          "role": "contributor"
+        },
+        ".github": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/20482229?v=4",
+      "pr_count": 2,
+      "review_count": 2,
+      "skills": [
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 2
+        },
+        {
+          "id": "dep:art",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-external-helpers",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-proposal-object-rest-spread",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-syntax-dynamic-import",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-syntax-hermes-parser",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-syntax-import-meta",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-syntax-jsx",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-syntax-trailing-function-commas",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-syntax-typescript",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-transform-arrow-functions",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-transform-block-scoped-functions",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-transform-block-scoping",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "javache",
+      "name": "Pieter De Baets",
+      "role": "contributor",
+      "team": "_root",
+      "expertise": [],
+      "projects": [],
+      "project_roles": {},
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/5676?v=4",
+      "pr_count": 0,
+      "review_count": 4,
+      "skills": []
+    },
+    {
+      "id": "orbisai0security",
+      "name": "OrbisAI Security",
+      "role": "owner",
+      "team": "compiler",
+      "expertise": [],
+      "projects": [
+        "compiler",
+        "fixtures"
+      ],
+      "project_roles": {
+        "compiler": {
+          "weight": 6,
+          "role": "owner"
+        },
+        "fixtures": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/242526317?v=4",
+      "pr_count": 4,
+      "review_count": 0,
+      "skills": [
+        {
+          "id": "lang:json",
+          "weight": 3
+        },
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 1
+        },
+        {
+          "id": "dep:art",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-external-helpers",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-proposal-object-rest-spread",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-dynamic-import",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-hermes-parser",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-import-meta",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-jsx",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-trailing-function-commas",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-typescript",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-transform-arrow-functions",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-transform-block-scoped-functions",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "rickhanlonii",
+      "name": "Ricky",
+      "role": "contributor",
+      "team": "_root",
+      "expertise": [],
+      "projects": [],
+      "project_roles": {},
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/2440089?v=4",
+      "pr_count": 0,
+      "review_count": 4,
+      "skills": []
+    },
+    {
+      "id": "ulises-jeremias",
+      "name": "Ulises Jeremias",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages",
+        "scripts"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 5,
+          "role": "owner"
+        },
+        "scripts": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/17727170?v=4",
+      "pr_count": 2,
+      "review_count": 2,
+      "skills": [
+        {
+          "id": "dep:react",
+          "weight": 2
+        },
+        {
+          "id": "dep:scheduler",
+          "weight": 2
+        },
+        {
+          "id": "lang:javascript",
+          "weight": 2
+        },
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 1
+        },
+        {
+          "id": "dep:art",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-external-helpers",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-proposal-object-rest-spread",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-dynamic-import",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-hermes-parser",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-import-meta",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-jsx",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-trailing-function-commas",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-typescript",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "ViperDroid",
+      "name": "Viper Droid",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages",
+        "compiler",
+        "scripts",
+        "_root"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 8,
+          "role": "owner"
+        },
+        "compiler": {
+          "weight": 2,
+          "role": "contributor"
+        },
+        "scripts": {
+          "weight": 1,
+          "role": "contributor"
+        },
+        "_root": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/190035540?v=4",
+      "pr_count": 4,
+      "review_count": 0,
+      "skills": [
+        {
+          "id": "lang:javascript",
+          "weight": 4
+        },
+        {
+          "id": "dep:react",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-syntax-typescript",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-transform-block-scoping",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-transform-modules-commonjs",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-preset-react",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-preset-typescript",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-traverse",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-types",
+          "weight": 2
+        },
+        {
+          "id": "dep:eslint",
+          "weight": 2
+        },
+        {
+          "id": "dep:jest",
+          "weight": 2
+        },
+        {
+          "id": "dep:jest-environment-jsdom",
+          "weight": 2
+        },
+        {
+          "id": "dep:pretty-format",
+          "weight": 2
+        },
+        {
+          "id": "dep:scheduler",
+          "weight": 2
+        },
+        {
+          "id": "dep:types-invariant",
+          "weight": 2
+        },
+        {
+          "id": "dep:types-node",
+          "weight": 2
+        },
+        {
+          "id": "dep:typescript-eslint-eslint-plugin",
+          "weight": 2
+        },
+        {
+          "id": "dep:typescript-eslint-parser",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "vmx906",
+      "name": "vmx906",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 7,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/271309149?v=4",
+      "pr_count": 2,
+      "review_count": 2,
+      "skills": [
+        {
+          "id": "dep:react",
+          "weight": 2
+        },
+        {
+          "id": "dep:scheduler",
+          "weight": 2
+        },
+        {
+          "id": "lang:javascript",
+          "weight": 2
+        },
+        {
+          "id": "path:react-dom",
+          "weight": 2
+        },
+        {
+          "id": "path:react-dom-bindings",
+          "weight": 2
+        },
+        {
+          "id": "path:shared",
+          "weight": 2
+        },
+        {
+          "id": "path:server",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "acdlite",
+      "name": "Andrew Clark",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 2,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/3624098?v=4",
+      "pr_count": 1,
+      "review_count": 2,
+      "skills": [
+        {
+          "id": "dep:react",
+          "weight": 1
+        },
+        {
+          "id": "dep:scheduler",
+          "weight": 1
+        },
+        {
+          "id": "lang:javascript",
+          "weight": 1
+        },
+        {
+          "id": "path:react-reconciler",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "geetexe",
+      "name": "Geet Trivedi",
+      "role": "owner",
+      "team": "scripts",
+      "expertise": [],
+      "projects": [
+        "scripts",
+        "compiler"
+      ],
+      "project_roles": {
+        "scripts": {
+          "weight": 2,
+          "role": "owner"
+        },
+        "compiler": {
+          "weight": 1,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/23524319?v=4",
+      "pr_count": 3,
+      "review_count": 0,
+      "skills": [
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 2
+        },
+        {
+          "id": "dep:art",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-external-helpers",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-proposal-object-rest-spread",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-syntax-dynamic-import",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-syntax-hermes-parser",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-syntax-import-meta",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-syntax-jsx",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-syntax-trailing-function-commas",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-syntax-typescript",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-transform-arrow-functions",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-transform-block-scoped-functions",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-plugin-transform-block-scoping",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "Gourav2580",
+      "name": "Ayush kumar",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 4,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/97639995?v=4",
+      "pr_count": 3,
+      "review_count": 0,
+      "skills": [
+        {
+          "id": "dep:babel-core",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-eslint",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-preset-typescript",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-types",
+          "weight": 2
+        },
+        {
+          "id": "dep:eslint",
+          "weight": 2
+        },
+        {
+          "id": "dep:hermes-parser",
+          "weight": 2
+        },
+        {
+          "id": "dep:jest",
+          "weight": 2
+        },
+        {
+          "id": "dep:types-node",
+          "weight": 2
+        },
+        {
+          "id": "dep:typescript",
+          "weight": 2
+        },
+        {
+          "id": "dep:zod",
+          "weight": 2
+        },
+        {
+          "id": "dep:zod-validation-error",
+          "weight": 2
+        },
+        {
+          "id": "lang:json",
+          "weight": 2
+        },
+        {
+          "id": "dep:react",
+          "weight": 1
+        },
+        {
+          "id": "dep:scheduler",
+          "weight": 1
+        },
+        {
+          "id": "lang:javascript",
+          "weight": 1
+        },
+        {
+          "id": "path:react-dom",
+          "weight": 1
+        },
+        {
+          "id": "path:react-dom-bindings",
+          "weight": 1
+        },
+        {
+          "id": "path:server",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "harshagarwalnyu",
+      "name": "Harsh Agarwal",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 2,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/193159477?v=4",
+      "pr_count": 1,
+      "review_count": 2,
+      "skills": [
+        {
+          "id": "dep:react",
+          "weight": 1
+        },
+        {
+          "id": "dep:scheduler",
+          "weight": 1
+        },
+        {
+          "id": "lang:javascript",
+          "weight": 1
+        },
+        {
+          "id": "path:react-dom",
+          "weight": 1
+        },
+        {
+          "id": "path:react-reconciler",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "MaxwellCohen",
+      "name": "MaxwellCohen",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages",
+        "fixtures",
+        "flow-typed"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 16,
+          "role": "owner"
+        },
+        "fixtures": {
+          "weight": 2,
+          "role": "contributor"
+        },
+        "flow-typed": {
+          "weight": 2,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/12485737?v=4",
+      "pr_count": 2,
+      "review_count": 1,
+      "skills": [
+        {
+          "id": "dep:react",
+          "weight": 2
+        },
+        {
+          "id": "dep:scheduler",
+          "weight": 2
+        },
+        {
+          "id": "lang:javascript",
+          "weight": 2
+        },
+        {
+          "id": "path:react-dom",
+          "weight": 2
+        },
+        {
+          "id": "path:react-dom-bindings",
+          "weight": 2
+        },
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 1
+        },
+        {
+          "id": "dep:art",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-external-helpers",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-proposal-object-rest-spread",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-dynamic-import",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-hermes-parser",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-import-meta",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-jsx",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "SamChou19815",
+      "name": "Sam Zhou",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages",
+        "_root",
+        "scripts",
+        "flow-typed"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 519,
+          "role": "owner"
+        },
+        "_root": {
+          "weight": 9,
+          "role": "contributor"
+        },
+        "scripts": {
+          "weight": 4,
+          "role": "contributor"
+        },
+        "flow-typed": {
+          "weight": 4,
+          "role": "contributor"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/4290500?v=4",
+      "pr_count": 3,
+      "review_count": 0,
+      "skills": [
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 3
+        },
+        {
+          "id": "dep:art",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-external-helpers",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-proposal-object-rest-spread",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-syntax-dynamic-import",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-syntax-hermes-parser",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-syntax-import-meta",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-syntax-jsx",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-syntax-trailing-function-commas",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-syntax-typescript",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-transform-arrow-functions",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-transform-block-scoped-functions",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-transform-block-scoping",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "id": "starboyvarun",
+      "name": "Varun",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 11,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/26819449?v=4",
+      "pr_count": 3,
+      "review_count": 0,
+      "skills": [
+        {
+          "id": "dep:react",
+          "weight": 3
+        },
+        {
+          "id": "dep:scheduler",
+          "weight": 3
+        },
+        {
+          "id": "lang:javascript",
+          "weight": 3
+        },
+        {
+          "id": "path:react-dom",
+          "weight": 2
+        },
+        {
+          "id": "path:react-dom-bindings",
+          "weight": 2
+        },
+        {
+          "id": "path:react-reconciler",
+          "weight": 2
+        },
+        {
+          "id": "path:shared",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-preset-env",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-preset-flow",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-traverse",
+          "weight": 1
+        },
+        {
+          "id": "path:server",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "tejasupmanyu",
+      "name": "Tejas Upmanyu",
+      "role": "owner",
+      "team": "compiler",
+      "expertise": [],
+      "projects": [
+        "compiler"
+      ],
+      "project_roles": {
+        "compiler": {
+          "weight": 9,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/17105810?v=4",
+      "pr_count": 3,
+      "review_count": 0,
+      "skills": [
+        {
+          "id": "dep:babel-core",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-generator",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-jest",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-fbt",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-fbt-runtime",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-syntax-typescript",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-transform-block-scoping",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-plugin-transform-modules-commonjs",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-preset-react",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-preset-typescript",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-traverse",
+          "weight": 3
+        },
+        {
+          "id": "dep:babel-types",
+          "weight": 3
+        },
+        {
+          "id": "dep:eslint",
+          "weight": 3
+        },
+        {
+          "id": "dep:invariant",
+          "weight": 3
+        },
+        {
+          "id": "dep:jest",
+          "weight": 3
+        },
+        {
+          "id": "dep:jest-environment-jsdom",
+          "weight": 3
+        },
+        {
+          "id": "dep:pretty-format",
+          "weight": 3
+        },
+        {
+          "id": "dep:react",
+          "weight": 3
+        },
+        {
+          "id": "dep:react-dom",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "id": "vansszh",
+      "name": "Vansh ",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 17,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/99832447?v=4",
+      "pr_count": 3,
+      "review_count": 0,
+      "skills": [
+        {
+          "id": "dep:react",
+          "weight": 3
+        },
+        {
+          "id": "dep:scheduler",
+          "weight": 3
+        },
+        {
+          "id": "lang:javascript",
+          "weight": 3
+        },
+        {
+          "id": "path:react-dom-bindings",
+          "weight": 2
+        },
+        {
+          "id": "path:react-reconciler",
+          "weight": 2
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-preset-env",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-preset-flow",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-traverse",
+          "weight": 1
+        },
+        {
+          "id": "dep:webpack",
+          "weight": 1
+        },
+        {
+          "id": "path:react-dom",
+          "weight": 1
+        },
+        {
+          "id": "path:react-server",
+          "weight": 1
+        },
+        {
+          "id": "path:server",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "w3di",
+      "name": "Džoni",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 5,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/99047300?v=4",
+      "pr_count": 3,
+      "review_count": 0,
+      "skills": [
+        {
+          "id": "dep:react",
+          "weight": 3
+        },
+        {
+          "id": "dep:scheduler",
+          "weight": 3
+        },
+        {
+          "id": "lang:javascript",
+          "weight": 3
+        },
+        {
+          "id": "path:react-reconciler",
+          "weight": 3
+        },
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 1
+        },
+        {
+          "id": "dep:art",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-external-helpers",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-proposal-object-rest-spread",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-dynamic-import",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-hermes-parser",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-import-meta",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-jsx",
+          "weight": 1
+        },
+        {
+          "id": "dep:babel-plugin-syntax-trailing-function-commas",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "ybfn5jfbk4-jpg",
+      "name": "ybfn5jfbk4-jpg",
+      "role": "contributor",
+      "team": "_root",
+      "expertise": [],
+      "projects": [],
+      "project_roles": {},
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/294087969?v=4",
+      "pr_count": 0,
+      "review_count": 3,
+      "skills": []
+    },
+    {
+      "id": "Zelys-DFKH",
+      "name": "Zelys",
+      "role": "owner",
+      "team": "packages",
+      "expertise": [],
+      "projects": [
+        "packages"
+      ],
+      "project_roles": {
+        "packages": {
+          "weight": 10,
+          "role": "owner"
+        }
+      },
+      "community": 0,
+      "avatar": "https://avatars.githubusercontent.com/u/18008809?v=4",
+      "pr_count": 3,
+      "review_count": 0,
+      "skills": [
+        {
+          "id": "dep:react",
+          "weight": 3
+        },
+        {
+          "id": "dep:scheduler",
+          "weight": 3
+        },
+        {
+          "id": "lang:javascript",
+          "weight": 3
+        },
+        {
+          "id": "path:react-dom",
+          "weight": 3
+        },
+        {
+          "id": "path:react-dom-bindings",
+          "weight": 3
+        },
+        {
+          "id": "path:shared",
+          "weight": 2
+        },
+        {
+          "id": "path:server",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "source": "josephsavona",
+      "target": "poteto",
+      "weight": 239.63978150958653
+    },
+    {
+      "source": "josephsavona",
+      "target": "mvitousek",
+      "weight": 135.29681221318594
+    },
+    {
+      "source": "Boshen",
+      "target": "josephsavona",
+      "weight": 121.64232425244894
+    },
+    {
+      "source": "Boshen",
+      "target": "mvitousek",
+      "weight": 85.37739386782765
+    },
+    {
+      "source": "mvitousek",
+      "target": "poteto",
+      "weight": 53.153975295226495
+    },
+    {
+      "source": "Boshen",
+      "target": "poteto",
+      "weight": 46.77892468647699
+    },
+    {
+      "source": "SamChou19815",
+      "target": "eps1lon",
+      "weight": 44.075656519589494
+    },
+    {
+      "source": "eps1lon",
+      "target": "hoxyq",
+      "weight": 41.83996815080222
+    },
+    {
+      "source": "SamChou19815",
+      "target": "gnoff",
+      "weight": 33.308619081842686
+    },
+    {
+      "source": "eps1lon",
+      "target": "unstubbable",
+      "weight": 32.748368432114994
+    },
+    {
+      "source": "jackpope",
+      "target": "zeyap",
+      "weight": 24.92988706747649
+    },
+    {
+      "source": "gnoff",
+      "target": "unstubbable",
+      "weight": 23.611117345072945
+    },
+    {
+      "source": "SamChou19815",
+      "target": "unstubbable",
+      "weight": 20.37592916564042
+    },
+    {
+      "source": "SamChou19815",
+      "target": "zeyap",
+      "weight": 16.25036761349409
+    },
+    {
+      "source": "SamChou19815",
+      "target": "UditDewan",
+      "weight": 15.368433083214503
+    },
+    {
+      "source": "SamChou19815",
+      "target": "vansszh",
+      "weight": 15.144766942401212
+    },
+    {
+      "source": "eps1lon",
+      "target": "gnoff",
+      "weight": 14.8758788549696
+    },
+    {
+      "source": "hoxyq",
+      "target": "jackpope",
+      "weight": 14.18928946212997
+    },
+    {
+      "source": "SamChou19815",
+      "target": "hoxyq",
+      "weight": 13.621155927235082
+    },
+    {
+      "source": "SamChou19815",
+      "target": "sleitor",
+      "weight": 12.273419706746099
+    },
+    {
+      "source": "SamChou19815",
+      "target": "junhyeong9812",
+      "weight": 12.149267093850543
+    },
+    {
+      "source": "SamChou19815",
+      "target": "jackpope",
+      "weight": 11.248759035944376
+    },
+    {
+      "source": "UditDewan",
+      "target": "vansszh",
+      "weight": 10.313108617294972
+    },
+    {
+      "source": "poteto",
+      "target": "raashish1601",
+      "weight": 10.028704205969511
+    },
+    {
+      "source": "SamChou19815",
+      "target": "raashish1601",
+      "weight": 9.395735199701207
+    },
+    {
+      "source": "MaxwellCohen",
+      "target": "SamChou19815",
+      "weight": 9.373273297344799
+    },
+    {
+      "source": "eps1lon",
+      "target": "jackpope",
+      "weight": 9.325846096586375
+    },
+    {
+      "source": "junhyeong9812",
+      "target": "sleitor",
+      "weight": 9.297843052715631
+    },
+    {
+      "source": "SamChou19815",
+      "target": "rubennorte",
+      "weight": 9.128502056148351
+    },
+    {
+      "source": "AlpianPPLG",
+      "target": "UditDewan",
+      "weight": 8.11839639984112
+    },
+    {
+      "source": "SamChou19815",
+      "target": "wyf027",
+      "weight": 7.267070955503815
+    },
+    {
+      "source": "hoxyq",
+      "target": "zeyap",
+      "weight": 7.090570920730462
+    },
+    {
+      "source": "poteto",
+      "target": "sleitor",
+      "weight": 7.088251756256958
+    },
+    {
+      "source": "mofeiZ",
+      "target": "poteto",
+      "weight": 6.687372990724937
+    },
+    {
+      "source": "SamChou19815",
+      "target": "starboyvarun",
+      "weight": 6.6752672195002845
+    },
+    {
+      "source": "eps1lon",
+      "target": "ulises-jeremias",
+      "weight": 6.43086659414482
+    },
+    {
+      "source": "dimaMachina",
+      "target": "sleitor",
+      "weight": 6.31052338463606
+    },
+    {
+      "source": "eps1lon",
+      "target": "josephsavona",
+      "weight": 5.8872995522038
+    },
+    {
+      "source": "SamChou19815",
+      "target": "w3di",
+      "weight": 5.555705024604576
+    },
+    {
+      "source": "UditDewan",
+      "target": "wyf027",
+      "weight": 5.453803186136202
+    },
+    {
+      "source": "daltino",
+      "target": "hoxyq",
+      "weight": 4.988811663244603
+    },
+    {
+      "source": "SamChou19815",
+      "target": "ViperDroid",
+      "weight": 4.970243434864674
+    },
+    {
+      "source": "ViperDroid",
+      "target": "eps1lon",
+      "weight": 4.703439194211045
+    },
+    {
+      "source": "MaxwellCohen",
+      "target": "vmx906",
+      "weight": 4.700553501417552
+    },
+    {
+      "source": "UditDewan",
+      "target": "starboyvarun",
+      "weight": 4.600450541705202
+    },
+    {
+      "source": "rubennorte",
+      "target": "zeyap",
+      "weight": 4.5360626328025955
+    },
+    {
+      "source": "UditDewan",
+      "target": "creazyfrog",
+      "weight": 4.381251118583988
+    },
+    {
+      "source": "eps1lon",
+      "target": "orbisai0security",
+      "weight": 4.349440355506815
+    },
+    {
+      "source": "Biki-das",
+      "target": "hoxyq",
+      "weight": 4.096921238940803
+    },
+    {
+      "source": "SamChou19815",
+      "target": "yudin-s",
+      "weight": 4.041058297206199
+    },
+    {
+      "source": "eps1lon",
+      "target": "poteto",
+      "weight": 3.9838326097762145
+    },
+    {
+      "source": "eps1lon",
+      "target": "sleitor",
+      "weight": 3.9239490750716906
+    },
+    {
+      "source": "poteto",
+      "target": "yudin-s",
+      "weight": 3.864282845348542
+    },
+    {
+      "source": "Biki-das",
+      "target": "SamChou19815",
+      "weight": 3.8631376784851694
+    },
+    {
+      "source": "eps1lon",
+      "target": "zeyap",
+      "weight": 3.6826873922918435
+    },
+    {
+      "source": "UditDewan",
+      "target": "gnoff",
+      "weight": 3.6717978111993332
+    },
+    {
+      "source": "raashish1601",
+      "target": "sleitor",
+      "weight": 3.6582400381212166
+    },
+    {
+      "source": "hoxyq",
+      "target": "vmx906",
+      "weight": 3.6529742519399537
+    },
+    {
+      "source": "MaxwellCohen",
+      "target": "raashish1601",
+      "weight": 3.572188715312678
+    },
+    {
+      "source": "AlpianPPLG",
+      "target": "SamChou19815",
+      "weight": 3.3285981433075875
+    },
+    {
+      "source": "raashish1601",
+      "target": "vmx906",
+      "weight": 3.243887310140497
+    },
+    {
+      "source": "Zelys-DFKH",
+      "target": "raashish1601",
+      "weight": 3.2099372483469866
+    },
+    {
+      "source": "SamChou19815",
+      "target": "josephsavona",
+      "weight": 3.1161044804725178
+    },
+    {
+      "source": "SamChou19815",
+      "target": "poteto",
+      "weight": 3.1161044804725178
+    },
+    {
+      "source": "AlpianPPLG",
+      "target": "starboyvarun",
+      "weight": 3.0697024367118635
+    },
+    {
+      "source": "Zelys-DFKH",
+      "target": "vmx906",
+      "weight": 3.067807433701747
+    },
+    {
+      "source": "EugeneChoi4",
+      "target": "jackpope",
+      "weight": 3.0677717647001095
+    },
+    {
+      "source": "EugeneChoi4",
+      "target": "eps1lon",
+      "weight": 3.029329177667781
+    },
+    {
+      "source": "ousamabenyounes",
+      "target": "poteto",
+      "weight": 3.0080701315180223
+    },
+    {
+      "source": "josephsavona",
+      "target": "mofeiZ",
+      "weight": 2.972560012409174
+    },
+    {
+      "source": "SamChou19815",
+      "target": "ulises-jeremias",
+      "weight": 2.970811343165497
+    },
+    {
+      "source": "eps1lon",
+      "target": "yudin-s",
+      "weight": 2.9066889412829577
+    },
+    {
+      "source": "vansszh",
+      "target": "w3di",
+      "weight": 2.8419132165966063
+    },
+    {
+      "source": "ousamabenyounes",
+      "target": "raashish1601",
+      "weight": 2.810581822423739
+    },
+    {
+      "source": "MaxwellCohen",
+      "target": "junhyeong9812",
+      "weight": 2.713163033790601
+    },
+    {
+      "source": "UditDewan",
+      "target": "sleitor",
+      "weight": 2.689761661050574
+    },
+    {
+      "source": "SamChou19815",
+      "target": "mvitousek",
+      "weight": 2.6881562823203975
+    },
+    {
+      "source": "UditDewan",
+      "target": "hoxyq",
+      "weight": 2.6724197279431645
+    },
+    {
+      "source": "gnoff",
+      "target": "sleitor",
+      "weight": 2.6680922285757234
+    },
+    {
+      "source": "UditDewan",
+      "target": "ulises-jeremias",
+      "weight": 2.5749865967070917
+    },
+    {
+      "source": "SamChou19815",
+      "target": "Zelys-DFKH",
+      "weight": 2.5659700568959156
+    },
+    {
+      "source": "SamChou19815",
+      "target": "fallintoplace",
+      "weight": 2.497148054114491
+    },
+    {
+      "source": "eps1lon",
+      "target": "rubennorte",
+      "weight": 2.3963546487403775
+    },
+    {
+      "source": "poteto",
+      "target": "tejasupmanyu",
+      "weight": 2.3805088521128077
+    },
+    {
+      "source": "MaxwellCohen",
+      "target": "Zelys-DFKH",
+      "weight": 2.3730325999994224
+    },
+    {
+      "source": "ViperDroid",
+      "target": "ulises-jeremias",
+      "weight": 2.3227826152674735
+    },
+    {
+      "source": "UditDewan",
+      "target": "fallintoplace",
+      "weight": 2.3041944033505275
+    },
+    {
+      "source": "Biki-das",
+      "target": "wyf027",
+      "weight": 2.3019895580167535
+    },
+    {
+      "source": "Gourav2580",
+      "target": "eps1lon",
+      "weight": 2.2672058308238014
+    },
+    {
+      "source": "Jah-yee",
+      "target": "eps1lon",
+      "weight": 2.2672058308238014
+    },
+    {
+      "source": "UditDewan",
+      "target": "raashish1601",
+      "weight": 2.2615631321223826
+    },
+    {
+      "source": "eps1lon",
+      "target": "wyf027",
+      "weight": 2.2416452956443442
+    },
+    {
+      "source": "josephsavona",
+      "target": "raashish1601",
+      "weight": 2.2166123945253036
+    },
+    {
+      "source": "creazyfrog",
+      "target": "gnoff",
+      "weight": 2.2136263146876844
+    },
+    {
+      "source": "javache",
+      "target": "rubennorte",
+      "weight": 2.2103043339916306
+    },
+    {
+      "source": "UditDewan",
+      "target": "eps1lon",
+      "weight": 2.1600241397122932
+    },
+    {
+      "source": "Gourav2580",
+      "target": "Jah-yee",
+      "weight": 2.1383797171300984
+    },
+    {
+      "source": "AlpianPPLG",
+      "target": "fallintoplace",
+      "weight": 2.1018452636139067
+    },
+    {
+      "source": "creazyfrog",
+      "target": "fallintoplace",
+      "weight": 2.1018452636139067
+    },
+    {
+      "source": "AlpianPPLG",
+      "target": "vansszh",
+      "weight": 2.064074337376795
+    },
+    {
+      "source": "hoxyq",
+      "target": "josephsavona",
+      "weight": 2.0600697467159477
+    },
+    {
+      "source": "ViperDroid",
+      "target": "hoxyq",
+      "weight": 2.0461240650753583
+    },
+    {
+      "source": "poteto",
+      "target": "unstubbable",
+      "weight": 2.0336480326490576
+    },
+    {
+      "source": "ousamabenyounes",
+      "target": "yudin-s",
+      "weight": 1.9576647884087508
+    },
+    {
+      "source": "raashish1601",
+      "target": "yudin-s",
+      "weight": 1.9576647884087508
+    },
+    {
+      "source": "EugeneChoi4",
+      "target": "hoxyq",
+      "weight": 1.953309872348059
+    },
+    {
+      "source": "UditDewan",
+      "target": "ViperDroid",
+      "weight": 1.9461438323041478
+    },
+    {
+      "source": "UditDewan",
+      "target": "daltino",
+      "weight": 1.928417496464144
+    },
+    {
+      "source": "daltino",
+      "target": "junhyeong9812",
+      "weight": 1.9084677602651847
+    },
+    {
+      "source": "UditDewan",
+      "target": "w3di",
+      "weight": 1.8925453698538062
+    },
+    {
+      "source": "harshagarwalnyu",
+      "target": "hoxyq",
+      "weight": 1.8777162684560444
+    },
+    {
+      "source": "ousamabenyounes",
+      "target": "sleitor",
+      "weight": 1.856063532646579
+    },
+    {
+      "source": "ulises-jeremias",
+      "target": "vansszh",
+      "weight": 1.80942003553176
+    },
+    {
+      "source": "poteto",
+      "target": "rickhanlonii",
+      "weight": 1.8081318062527743
+    },
+    {
+      "source": "AlpianPPLG",
+      "target": "creazyfrog",
+      "weight": 1.8008969355945683
+    },
+    {
+      "source": "gnoff",
+      "target": "vansszh",
+      "weight": 1.7868121698469235
+    },
+    {
+      "source": "hoxyq",
+      "target": "unstubbable",
+      "weight": 1.778705740774116
+    },
+    {
+      "source": "hoxyq",
+      "target": "rubennorte",
+      "weight": 1.7675847811725238
+    },
+    {
+      "source": "hoxyq",
+      "target": "wyf027",
+      "weight": 1.7610465758150555
+    },
+    {
+      "source": "Jah-yee",
+      "target": "SamChou19815",
+      "weight": 1.7136892617576054
+    },
+    {
+      "source": "codeCraft-Ritik",
+      "target": "raashish1601",
+      "weight": 1.6912630447410018
+    },
+    {
+      "source": "codeCraft-Ritik",
+      "target": "yudin-s",
+      "weight": 1.6911366954347424
+    },
+    {
+      "source": "fallintoplace",
+      "target": "gnoff",
+      "weight": 1.6495256644172187
+    },
+    {
+      "source": "EugeneChoi4",
+      "target": "zeyap",
+      "weight": 1.649278968252632
+    },
+    {
+      "source": "josephsavona",
+      "target": "unstubbable",
+      "weight": 1.6009085563920213
+    },
+    {
+      "source": "AlpianPPLG",
+      "target": "gnoff",
+      "weight": 1.5475679950576138
+    },
+    {
+      "source": "raashish1601",
+      "target": "wyf027",
+      "weight": 1.5464785165580346
+    },
+    {
+      "source": "hoxyq",
+      "target": "starboyvarun",
+      "weight": 1.5205991084723256
+    },
+    {
+      "source": "mofeiZ",
+      "target": "sleitor",
+      "weight": 1.4884165020611393
+    },
+    {
+      "source": "Gourav2580",
+      "target": "UditDewan",
+      "weight": 1.4280696763054364
+    },
+    {
+      "source": "junhyeong9812",
+      "target": "raashish1601",
+      "weight": 1.4159858588273946
+    },
+    {
+      "source": "junhyeong9812",
+      "target": "vmx906",
+      "weight": 1.4159858588273946
+    },
+    {
+      "source": "Zelys-DFKH",
+      "target": "junhyeong9812",
+      "weight": 1.4159858588273946
+    },
+    {
+      "source": "AlpianPPLG",
+      "target": "ulises-jeremias",
+      "weight": 1.4135952890733547
+    },
+    {
+      "source": "creazyfrog",
+      "target": "ulises-jeremias",
+      "weight": 1.4135952890733547
+    },
+    {
+      "source": "fallintoplace",
+      "target": "ulises-jeremias",
+      "weight": 1.4135952890733547
+    },
+    {
+      "source": "Zelys-DFKH",
+      "target": "ulises-jeremias",
+      "weight": 1.4135952890733547
+    },
+    {
+      "source": "ViperDroid",
+      "target": "raashish1601",
+      "weight": 1.4071162321872928
+    },
+    {
+      "source": "SamChou19815",
+      "target": "acdlite",
+      "weight": 1.4068493749121118
+    },
+    {
+      "source": "creazyfrog",
+      "target": "starboyvarun",
+      "weight": 1.4064942287382782
+    },
+    {
+      "source": "creazyfrog",
+      "target": "sleitor",
+      "weight": 1.3861791939262595
+    },
+    {
+      "source": "vansszh",
+      "target": "wyf027",
+      "weight": 1.3777472945005833
+    },
+    {
+      "source": "UditDewan",
+      "target": "Zelys-DFKH",
+      "weight": 1.3760603007337135
+    },
+    {
+      "source": "AlpianPPLG",
+      "target": "wyf027",
+      "weight": 1.3422190636308589
+    },
+    {
+      "source": "SamChou19815",
+      "target": "vmx906",
+      "weight": 1.3386105095139407
+    },
+    {
+      "source": "hoxyq",
+      "target": "mofeiZ",
+      "weight": 1.334650080501127
+    },
+    {
+      "source": "gnoff",
+      "target": "junhyeong9812",
+      "weight": 1.320380351218647
+    },
+    {
+      "source": "Gourav2580",
+      "target": "fallintoplace",
+      "weight": 1.2842252012587427
+    },
+    {
+      "source": "Zelys-DFKH",
+      "target": "fallintoplace",
+      "weight": 1.2841910857284464
+    },
+    {
+      "source": "SamChou19815",
+      "target": "creazyfrog",
+      "weight": 1.2794993155967544
+    },
+    {
+      "source": "starboyvarun",
+      "target": "wyf027",
+      "weight": 1.2693865420791721
+    },
+    {
+      "source": "Jah-yee",
+      "target": "UditDewan",
+      "weight": 1.2616969132358706
+    },
+    {
+      "source": "orbisai0security",
+      "target": "poteto",
+      "weight": 1.2349900994165661
+    },
+    {
+      "source": "josephsavona",
+      "target": "orbisai0security",
+      "weight": 1.2134864956991143
+    },
+    {
+      "source": "eps1lon",
+      "target": "starboyvarun",
+      "weight": 1.2131695418423096
+    },
+    {
+      "source": "gnoff",
+      "target": "hoxyq",
+      "weight": 1.2101133041858423
+    },
+    {
+      "source": "eps1lon",
+      "target": "mofeiZ",
+      "weight": 1.2024454977155101
+    },
+    {
+      "source": "devjiwonchoi",
+      "target": "eps1lon",
+      "weight": 1.1999431621051322
+    },
+    {
+      "source": "devjiwonchoi",
+      "target": "hoxyq",
+      "weight": 1.1998858003568036
+    },
+    {
+      "source": "daltino",
+      "target": "eps1lon",
+      "weight": 1.1877578622259626
+    },
+    {
+      "source": "creazyfrog",
+      "target": "vansszh",
+      "weight": 1.1850618662622066
+    },
+    {
+      "source": "raashish1601",
+      "target": "vansszh",
+      "weight": 1.1850618662622066
+    },
+    {
+      "source": "AlpianPPLG",
+      "target": "unstubbable",
+      "weight": 1.1833793249666096
+    },
+    {
+      "source": "junhyeong9812",
+      "target": "unstubbable",
+      "weight": 1.1829788462967081
+    },
+    {
+      "source": "Jah-yee",
+      "target": "vansszh",
+      "weight": 1.1367559188313332
+    },
+    {
+      "source": "starboyvarun",
+      "target": "vansszh",
+      "weight": 1.1367559188313332
+    },
+    {
+      "source": "AlpianPPLG",
+      "target": "Gourav2580",
+      "weight": 1.1003282360103106
+    },
+    {
+      "source": "AlpianPPLG",
+      "target": "Zelys-DFKH",
+      "weight": 1.1003282360103106
+    },
+    {
+      "source": "Gourav2580",
+      "target": "creazyfrog",
+      "weight": 1.0986518957519562
+    },
+    {
+      "source": "Zelys-DFKH",
+      "target": "creazyfrog",
+      "weight": 1.0986518957519562
+    },
+    {
+      "source": "EugeneChoi4",
+      "target": "rubennorte",
+      "weight": 1.0954656371705196
+    },
+    {
+      "source": "jackpope",
+      "target": "starboyvarun",
+      "weight": 1.0945998124979914
+    },
+    {
+      "source": "creazyfrog",
+      "target": "raashish1601",
+      "weight": 1.0941710914118874
+    },
+    {
+      "source": "sleitor",
+      "target": "unstubbable",
+      "weight": 1.0605926260335026
+    },
+    {
+      "source": "geetexe",
+      "target": "ulises-jeremias",
+      "weight": 1.0570988663571375
+    },
+    {
+      "source": "hoxyq",
+      "target": "ulises-jeremias",
+      "weight": 1.0570988663571375
+    },
+    {
+      "source": "ulises-jeremias",
+      "target": "unstubbable",
+      "weight": 1.0570988663571375
+    },
+    {
+      "source": "eps1lon",
+      "target": "raashish1601",
+      "weight": 1.0326084422193615
+    },
+    {
+      "source": "AlpianPPLG",
+      "target": "Jah-yee",
+      "weight": 1.0149821527290634
+    },
+    {
+      "source": "AlpianPPLG",
+      "target": "eps1lon",
+      "weight": 1.008880743220519
+    },
+    {
+      "source": "Jah-yee",
+      "target": "starboyvarun",
+      "weight": 1.0035846169574012
+    },
+    {
+      "source": "daltino",
+      "target": "fallintoplace",
+      "weight": 0.9642098084158706
+    },
+    {
+      "source": "eps1lon",
+      "target": "fallintoplace",
+      "weight": 0.9636538741297684
+    },
+    {
+      "source": "gnoff",
+      "target": "josephsavona",
+      "weight": 0.9558606663889744
+    },
+    {
+      "source": "acdlite",
+      "target": "gnoff",
+      "weight": 0.9515247569729524
+    },
+    {
+      "source": "Biki-das",
+      "target": "UditDewan",
+      "weight": 0.946272684926903
+    },
+    {
+      "source": "UditDewan",
+      "target": "ousamabenyounes",
+      "weight": 0.9462677564361703
+    },
+    {
+      "source": "UditDewan",
+      "target": "poteto",
+      "weight": 0.9462677564361703
+    },
+    {
+      "source": "UditDewan",
+      "target": "tejasupmanyu",
+      "weight": 0.9462677564361703
+    },
+    {
+      "source": "Jah-yee",
+      "target": "fallintoplace",
+      "weight": 0.9331420467465655
+    },
+    {
+      "source": "geetexe",
+      "target": "unstubbable",
+      "weight": 0.9287492982440108
+    },
+    {
+      "source": "ousamabenyounes",
+      "target": "tejasupmanyu",
+      "weight": 0.9280317663232895
+    },
+    {
+      "source": "eps1lon",
+      "target": "vansszh",
+      "weight": 0.9273375232189356
+    },
+    {
+      "source": "EugeneChoi4",
+      "target": "SamChou19815",
+      "weight": 0.9205196605364813
+    },
+    {
+      "source": "sleitor",
+      "target": "tejasupmanyu",
+      "weight": 0.9145470068865218
+    },
+    {
+      "source": "ViperDroid",
+      "target": "junhyeong9812",
+      "weight": 0.9015449565715866
+    },
+    {
+      "source": "gnoff",
+      "target": "ulises-jeremias",
+      "weight": 0.9000229031614827
+    },
+    {
+      "source": "Zelys-DFKH",
+      "target": "eps1lon",
+      "weight": 0.8877446512263536
+    },
+    {
+      "source": "starboyvarun",
+      "target": "zeyap",
+      "weight": 0.8764495785927802
+    },
+    {
+      "source": "raashish1601",
+      "target": "tejasupmanyu",
+      "weight": 0.8744813358501109
+    },
+    {
+      "source": "Jah-yee",
+      "target": "ViperDroid",
+      "weight": 0.8662593855977505
+    },
+    {
+      "source": "eps1lon",
+      "target": "geetexe",
+      "weight": 0.8616818513127211
+    },
+    {
+      "source": "Gourav2580",
+      "target": "ViperDroid",
+      "weight": 0.861151342997342
+    },
+    {
+      "source": "ViperDroid",
+      "target": "jackpope",
+      "weight": 0.861151342997342
+    },
+    {
+      "source": "hoxyq",
+      "target": "poteto",
+      "weight": 0.8499564425301053
+    },
+    {
+      "source": "Jah-yee",
+      "target": "codeCraft-Ritik",
+      "weight": 0.8456532262094921
+    },
+    {
+      "source": "Zelys-DFKH",
+      "target": "gnoff",
+      "weight": 0.8318714865317588
+    },
+    {
+      "source": "geetexe",
+      "target": "hoxyq",
+      "weight": 0.8235270704056536
+    },
+    {
+      "source": "fallintoplace",
+      "target": "sleitor",
+      "weight": 0.81765417788546
+    },
+    {
+      "source": "acdlite",
+      "target": "eps1lon",
+      "weight": 0.8102909369274782
+    },
+    {
+      "source": "poteto",
+      "target": "wyf027",
+      "weight": 0.798100773938429
+    },
+    {
+      "source": "ViperDroid",
+      "target": "poteto",
+      "weight": 0.798100773938429
+    },
+    {
+      "source": "josephsavona",
+      "target": "wyf027",
+      "weight": 0.7918318438087393
+    },
+    {
+      "source": "unstubbable",
+      "target": "wyf027",
+      "weight": 0.7918318438087393
+    },
+    {
+      "source": "ViperDroid",
+      "target": "wyf027",
+      "weight": 0.7918318438087393
+    },
+    {
+      "source": "hoxyq",
+      "target": "javache",
+      "weight": 0.7850808391523969
+    },
+    {
+      "source": "Biki-das",
+      "target": "starboyvarun",
+      "weight": 0.7844711754262481
+    },
+    {
+      "source": "MaxwellCohen",
+      "target": "ViperDroid",
+      "weight": 0.7835386453454939
+    },
+    {
+      "source": "UditDewan",
+      "target": "harshagarwalnyu",
+      "weight": 0.7617613395472485
+    },
+    {
+      "source": "SamChou19815",
+      "target": "harshagarwalnyu",
+      "weight": 0.7410298330063447
+    },
+    {
+      "source": "sleitor",
+      "target": "vansszh",
+      "weight": 0.7346329903070852
+    },
+    {
+      "source": "ViperDroid",
+      "target": "vansszh",
+      "weight": 0.7346329903070852
+    },
+    {
+      "source": "AlpianPPLG",
+      "target": "sleitor",
+      "weight": 0.7179881619145356
+    },
+    {
+      "source": "Gourav2580",
+      "target": "sleitor",
+      "weight": 0.7179881619145356
+    },
+    {
+      "source": "Gourav2580",
+      "target": "gnoff",
+      "weight": 0.715696508525855
+    },
+    {
+      "source": "ViperDroid",
+      "target": "unstubbable",
+      "weight": 0.7076420612874225
+    },
+    {
+      "source": "jackpope",
+      "target": "mofeiZ",
+      "weight": 0.6900918957681578
+    },
+    {
+      "source": "harshagarwalnyu",
+      "target": "vansszh",
+      "weight": 0.6863270428762119
+    },
+    {
+      "source": "hoxyq",
+      "target": "vansszh",
+      "weight": 0.6863270428762119
+    },
+    {
+      "source": "eps1lon",
+      "target": "rickhanlonii",
+      "weight": 0.6853414163395304
+    },
+    {
+      "source": "jackpope",
+      "target": "rubennorte",
+      "weight": 0.6825221016364633
+    },
+    {
+      "source": "gnoff",
+      "target": "raashish1601",
+      "weight": 0.6782834798454582
+    },
+    {
+      "source": "ViperDroid",
+      "target": "sleitor",
+      "weight": 0.6681910320117239
+    },
+    {
+      "source": "ViperDroid",
+      "target": "vmx906",
+      "weight": 0.6673242088053734
+    },
+    {
+      "source": "ViperDroid",
+      "target": "Zelys-DFKH",
+      "weight": 0.6673242088053734
+    },
+    {
+      "source": "ViperDroid",
+      "target": "gnoff",
+      "weight": 0.6660583196300705
+    },
+    {
+      "source": "ViperDroid",
+      "target": "creazyfrog",
+      "weight": 0.6510397838442602
+    },
+    {
+      "source": "AlpianPPLG",
+      "target": "harshagarwalnyu",
+      "weight": 0.6478221716181839
+    },
+    {
+      "source": "harshagarwalnyu",
+      "target": "starboyvarun",
+      "weight": 0.6478221716181839
+    },
+    {
+      "source": "harshagarwalnyu",
+      "target": "w3di",
+      "weight": 0.6478221716181839
+    },
+    {
+      "source": "Jah-yee",
+      "target": "harshagarwalnyu",
+      "weight": 0.6478221716181839
+    },
+    {
+      "source": "EugeneChoi4",
+      "target": "mofeiZ",
+      "weight": 0.624280092860158
+    },
+    {
+      "source": "ViperDroid",
+      "target": "josephsavona",
+      "weight": 0.6209392507302369
+    },
+    {
+      "source": "AlpianPPLG",
+      "target": "hoxyq",
+      "weight": 0.6095089751873755
+    },
+    {
+      "source": "hoxyq",
+      "target": "w3di",
+      "weight": 0.6095089751873755
+    },
+    {
+      "source": "Jah-yee",
+      "target": "hoxyq",
+      "weight": 0.6095089751873755
+    },
+    {
+      "source": "AlpianPPLG",
+      "target": "w3di",
+      "weight": 0.6091212067944658
+    },
+    {
+      "source": "starboyvarun",
+      "target": "w3di",
+      "weight": 0.5977236710228035
+    },
+    {
+      "source": "Jah-yee",
+      "target": "w3di",
+      "weight": 0.5835622827016962
+    },
+    {
+      "source": "AlpianPPLG",
+      "target": "junhyeong9812",
+      "weight": 0.514440902255808
+    },
+    {
+      "source": "creazyfrog",
+      "target": "junhyeong9812",
+      "weight": 0.514440902255808
+    },
+    {
+      "source": "fallintoplace",
+      "target": "junhyeong9812",
+      "weight": 0.514440902255808
+    },
+    {
+      "source": "Gourav2580",
+      "target": "junhyeong9812",
+      "weight": 0.514440902255808
+    },
+    {
+      "source": "Jah-yee",
+      "target": "junhyeong9812",
+      "weight": 0.514440902255808
+    },
+    {
+      "source": "junhyeong9812",
+      "target": "starboyvarun",
+      "weight": 0.514440902255808
+    },
+    {
+      "source": "junhyeong9812",
+      "target": "ulises-jeremias",
+      "weight": 0.514440902255808
+    },
+    {
+      "source": "junhyeong9812",
+      "target": "vansszh",
+      "weight": 0.514440902255808
+    },
+    {
+      "source": "junhyeong9812",
+      "target": "wyf027",
+      "weight": 0.514440902255808
+    },
+    {
+      "source": "UditDewan",
+      "target": "junhyeong9812",
+      "weight": 0.514440902255808
+    },
+    {
+      "source": "Gourav2580",
+      "target": "ulises-jeremias",
+      "weight": 0.513572385911872
+    },
+    {
+      "source": "Jah-yee",
+      "target": "ulises-jeremias",
+      "weight": 0.513572385911872
+    },
+    {
+      "source": "MaxwellCohen",
+      "target": "ulises-jeremias",
+      "weight": 0.513572385911872
+    },
+    {
+      "source": "raashish1601",
+      "target": "ulises-jeremias",
+      "weight": 0.513572385911872
+    },
+    {
+      "source": "starboyvarun",
+      "target": "ulises-jeremias",
+      "weight": 0.513572385911872
+    },
+    {
+      "source": "ulises-jeremias",
+      "target": "vmx906",
+      "weight": 0.513572385911872
+    },
+    {
+      "source": "ulises-jeremias",
+      "target": "wyf027",
+      "weight": 0.513572385911872
+    },
+    {
+      "source": "MaxwellCohen",
+      "target": "UditDewan",
+      "weight": 0.4999355736886223
+    },
+    {
+      "source": "UditDewan",
+      "target": "vmx906",
+      "weight": 0.4999355736886223
+    },
+    {
+      "source": "Gourav2580",
+      "target": "SamChou19815",
+      "weight": 0.48632971437563033
+    },
+    {
+      "source": "fallintoplace",
+      "target": "raashish1601",
+      "weight": 0.46657102337328277
+    },
+    {
+      "source": "fallintoplace",
+      "target": "starboyvarun",
+      "weight": 0.46657102337328277
+    },
+    {
+      "source": "fallintoplace",
+      "target": "vansszh",
+      "weight": 0.46657102337328277
+    },
+    {
+      "source": "fallintoplace",
+      "target": "vmx906",
+      "weight": 0.46657102337328277
+    },
+    {
+      "source": "fallintoplace",
+      "target": "wyf027",
+      "weight": 0.46657102337328277
+    },
+    {
+      "source": "MaxwellCohen",
+      "target": "fallintoplace",
+      "weight": 0.46657102337328277
+    },
+    {
+      "source": "AlpianPPLG",
+      "target": "MaxwellCohen",
+      "weight": 0.46112916854905467
+    },
+    {
+      "source": "Gourav2580",
+      "target": "MaxwellCohen",
+      "weight": 0.46112916854905467
+    },
+    {
+      "source": "Jah-yee",
+      "target": "MaxwellCohen",
+      "weight": 0.46112916854905467
+    },
+    {
+      "source": "MaxwellCohen",
+      "target": "creazyfrog",
+      "weight": 0.46112916854905467
+    },
+    {
+      "source": "MaxwellCohen",
+      "target": "starboyvarun",
+      "weight": 0.46112916854905467
+    },
+    {
+      "source": "MaxwellCohen",
+      "target": "vansszh",
+      "weight": 0.46112916854905467
+    },
+    {
+      "source": "MaxwellCohen",
+      "target": "wyf027",
+      "weight": 0.46112916854905467
+    },
+    {
+      "source": "Gourav2580",
+      "target": "vansszh",
+      "weight": 0.4504288759551214
+    },
+    {
+      "source": "vansszh",
+      "target": "vmx906",
+      "weight": 0.4504288759551214
+    },
+    {
+      "source": "Zelys-DFKH",
+      "target": "vansszh",
+      "weight": 0.4504288759551214
+    },
+    {
+      "source": "creazyfrog",
+      "target": "wyf027",
+      "weight": 0.4387059930367626
+    },
+    {
+      "source": "Gourav2580",
+      "target": "wyf027",
+      "weight": 0.4387059930367626
+    },
+    {
+      "source": "Jah-yee",
+      "target": "wyf027",
+      "weight": 0.4387059930367626
+    },
+    {
+      "source": "vmx906",
+      "target": "wyf027",
+      "weight": 0.4387059930367626
+    },
+    {
+      "source": "Zelys-DFKH",
+      "target": "wyf027",
+      "weight": 0.4387059930367626
+    },
+    {
+      "source": "AlpianPPLG",
+      "target": "raashish1601",
+      "weight": 0.4158876115664291
+    },
+    {
+      "source": "Gourav2580",
+      "target": "raashish1601",
+      "weight": 0.4158876115664291
+    },
+    {
+      "source": "Jah-yee",
+      "target": "raashish1601",
+      "weight": 0.4158876115664291
+    },
+    {
+      "source": "raashish1601",
+      "target": "starboyvarun",
+      "weight": 0.4158876115664291
+    },
+    {
+      "source": "Jah-yee",
+      "target": "creazyfrog",
+      "weight": 0.40586094593459754
+    },
+    {
+      "source": "Jah-yee",
+      "target": "vmx906",
+      "weight": 0.40586094593459754
+    },
+    {
+      "source": "Jah-yee",
+      "target": "Zelys-DFKH",
+      "weight": 0.40586094593459754
+    },
+    {
+      "source": "AlpianPPLG",
+      "target": "vmx906",
+      "weight": 0.399759536426053
+    },
+    {
+      "source": "creazyfrog",
+      "target": "vmx906",
+      "weight": 0.3991505063360847
+    },
+    {
+      "source": "Gourav2580",
+      "target": "starboyvarun",
+      "weight": 0.39231242303884073
+    },
+    {
+      "source": "Gourav2580",
+      "target": "vmx906",
+      "weight": 0.39231242303884073
+    },
+    {
+      "source": "Gourav2580",
+      "target": "Zelys-DFKH",
+      "weight": 0.39231242303884073
+    },
+    {
+      "source": "starboyvarun",
+      "target": "vmx906",
+      "weight": 0.3922794592826931
+    },
+    {
+      "source": "Zelys-DFKH",
+      "target": "starboyvarun",
+      "weight": 0.3922794592826931
+    },
+    {
+      "source": "mofeiZ",
+      "target": "mvitousek",
+      "weight": 0.3846046916544995
+    },
+    {
+      "source": "eps1lon",
+      "target": "ybfn5jfbk4-jpg",
+      "weight": 0.2330492480960246
+    },
+    {
+      "source": "unstubbable",
+      "target": "ybfn5jfbk4-jpg",
+      "weight": 0.2330492480960246
+    },
+    {
+      "source": "Boshen",
+      "target": "mofeiZ",
+      "weight": 0.22617431077074268
+    },
+    {
+      "source": "codeCraft-Ritik",
+      "target": "eps1lon",
+      "weight": 0.19810838185533491
+    },
+    {
+      "source": "dimaMachina",
+      "target": "mofeiZ",
+      "weight": 0.16334712152238823
+    }
+  ]
+}

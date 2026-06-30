@@ -1,0 +1,866 @@
+{
+  "repo": "react/react",
+  "generated_at": "2026-06-30T02:29:52.184Z",
+  "nodes": [
+    {
+      "id": "packages",
+      "name": "packages",
+      "total_weight": 1266,
+      "contributor_count": 34,
+      "sample_paths": [
+        "packages/react-devtools-shared/src/devtools/store.js",
+        "packages/react-dom/src/__tests__/ReactDOMViewTransition-test.js",
+        "packages/react-reconciler/src/ReactFiberCommitViewTransitions.js",
+        "packages/react-reconciler/src/ReactFiberCompleteWork.js",
+        "packages/react-reconciler/src/ReactFiberFlags.js",
+        "packages/shared/ReactFeatureFlags.js",
+        "packages/shared/forks/ReactFeatureFlags.native-fb-dynamic.js",
+        "packages/shared/forks/ReactFeatureFlags.native-fb.js",
+        "packages/shared/forks/ReactFeatureFlags.native-oss.js",
+        "packages/shared/forks/ReactFeatureFlags.test-renderer.js"
+      ],
+      "skills": [
+        {
+          "id": "lang:javascript",
+          "weight": 10787
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 10721
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 10228
+        },
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 9413
+        },
+        {
+          "id": "dep:art",
+          "weight": 9413
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 9413
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 9413
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 9413
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 9413
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 9395
+        },
+        {
+          "id": "dep:babel-plugin-external-helpers",
+          "weight": 9381
+        },
+        {
+          "id": "dep:babel-plugin-proposal-object-rest-spread",
+          "weight": 9381
+        },
+        {
+          "id": "dep:babel-plugin-syntax-dynamic-import",
+          "weight": 9381
+        },
+        {
+          "id": "dep:babel-plugin-syntax-hermes-parser",
+          "weight": 9370
+        },
+        {
+          "id": "dep:babel-plugin-syntax-import-meta",
+          "weight": 9303
+        }
+      ],
+      "top_contributors": [
+        {
+          "login": "SamChou19815",
+          "weight": 519
+        },
+        {
+          "login": "eps1lon",
+          "weight": 218
+        },
+        {
+          "login": "hoxyq",
+          "weight": 70
+        },
+        {
+          "login": "gnoff",
+          "weight": 67
+        },
+        {
+          "login": "rubennorte",
+          "weight": 46
+        },
+        {
+          "login": "unstubbable",
+          "weight": 40
+        },
+        {
+          "login": "raashish1601",
+          "weight": 32
+        },
+        {
+          "login": "UditDewan",
+          "weight": 32
+        }
+      ]
+    },
+    {
+      "id": "compiler",
+      "name": "compiler",
+      "total_weight": 1229,
+      "contributor_count": 16,
+      "sample_paths": [
+        "compiler/apps/playground/__tests__/e2e/__snapshots__/page.spec.ts/default-config.txt",
+        "compiler/apps/playground/__tests__/e2e/page.spec.ts",
+        "compiler/apps/playground/__tests__/parseConfigOverrides.test.mjs",
+        "compiler/apps/playground/components/Editor/ConfigEditor.tsx",
+        "compiler/apps/playground/lib/compilation.ts",
+        "compiler/apps/playground/lib/defaultStore.ts",
+        "compiler/apps/playground/package.json",
+        "compiler/.claude/agents/analyze-pass-impact.md",
+        "compiler/.claude/agents/compiler-review.md",
+        "compiler/.claude/agents/port-pass.md"
+      ],
+      "skills": [
+        {
+          "id": "path:crates",
+          "weight": 13760
+        },
+        {
+          "id": "lang:rust",
+          "weight": 13044
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 8562
+        },
+        {
+          "id": "lang:typescript",
+          "weight": 8517
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 8451
+        },
+        {
+          "id": "dep:indexmap",
+          "weight": 8390
+        },
+        {
+          "id": "dep:react-compiler-diagnostics",
+          "weight": 8390
+        },
+        {
+          "id": "dep:rustc-hash",
+          "weight": 8390
+        },
+        {
+          "id": "dep:babel-traverse",
+          "weight": 7940
+        },
+        {
+          "id": "dep:babel-jest",
+          "weight": 6995
+        },
+        {
+          "id": "dep:babel-generator",
+          "weight": 6994
+        },
+        {
+          "id": "dep:babel-plugin-fbt",
+          "weight": 6994
+        },
+        {
+          "id": "lang:markdown",
+          "weight": 6832
+        },
+        {
+          "id": "dep:babel-preset-typescript",
+          "weight": 6789
+        },
+        {
+          "id": "dep:babel-plugin-syntax-typescript",
+          "weight": 6636
+        }
+      ],
+      "top_contributors": [
+        {
+          "login": "josephsavona",
+          "weight": 454
+        },
+        {
+          "login": "poteto",
+          "weight": 358
+        },
+        {
+          "login": "mvitousek",
+          "weight": 107
+        },
+        {
+          "login": "Boshen",
+          "weight": 100
+        },
+        {
+          "login": "sleitor",
+          "weight": 70
+        },
+        {
+          "login": "eps1lon",
+          "weight": 40
+        },
+        {
+          "login": "ousamabenyounes",
+          "weight": 31
+        },
+        {
+          "login": "raashish1601",
+          "weight": 29
+        }
+      ]
+    },
+    {
+      "id": "scripts",
+      "name": "scripts",
+      "total_weight": 133,
+      "contributor_count": 13,
+      "sample_paths": [
+        "scripts/flow/react-native-host-hooks.js",
+        "scripts/flow/environment.js",
+        "scripts/rollup/bundles.js",
+        "scripts/rollup/forks.js",
+        "scripts/rollup/validate/index.js",
+        "scripts/error-codes/codes.json",
+        "scripts/rollup/build.js",
+        "scripts/rollup/wrappers.js",
+        "scripts/rollup/validate/eslintrc.rn.js",
+        "scripts/devtools/build-and-test.js"
+      ],
+      "skills": [
+        {
+          "id": "lang:javascript",
+          "weight": 3050
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 3020
+        },
+        {
+          "id": "dep:babel-traverse",
+          "weight": 2932
+        },
+        {
+          "id": "dep:babel-preset-env",
+          "weight": 2930
+        },
+        {
+          "id": "dep:babel-preset-flow",
+          "weight": 2930
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 2916
+        },
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 2910
+        },
+        {
+          "id": "dep:art",
+          "weight": 2910
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 2910
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 2910
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 2910
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 2910
+        },
+        {
+          "id": "dep:babel-plugin-external-helpers",
+          "weight": 2906
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 2906
+        },
+        {
+          "id": "dep:babel-plugin-proposal-object-rest-spread",
+          "weight": 2906
+        }
+      ],
+      "top_contributors": [
+        {
+          "login": "eps1lon",
+          "weight": 90
+        },
+        {
+          "login": "hoxyq",
+          "weight": 14
+        },
+        {
+          "login": "rubennorte",
+          "weight": 8
+        },
+        {
+          "login": "EugeneChoi4",
+          "weight": 4
+        },
+        {
+          "login": "SamChou19815",
+          "weight": 4
+        },
+        {
+          "login": "jackpope",
+          "weight": 3
+        },
+        {
+          "login": "geetexe",
+          "weight": 2
+        },
+        {
+          "login": "Jah-yee",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": ".github",
+      "name": ".github",
+      "total_weight": 73,
+      "contributor_count": 5,
+      "sample_paths": [
+        ".github/workflows/compiler_rust.yml",
+        ".github/workflows/runtime_commit_artifacts.yml",
+        ".github/workflows/runtime_build_and_test.yml",
+        ".github/workflows/runtime_prereleases.yml",
+        ".github/workflows/runtime_prereleases_manual.yml",
+        ".github/workflows/runtime_prereleases_nightly.yml",
+        ".github/workflows/runtime_release_from_ci.yml",
+        ".github/workflows/runtime_releases_from_npm_manual.yml",
+        ".github/workflows/compiler_playground.yml",
+        ".github/workflows/compiler_prereleases.yml"
+      ],
+      "skills": [
+        {
+          "id": "lang:javascript",
+          "weight": 2128
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 2114
+        },
+        {
+          "id": "dep:babel-preset-env",
+          "weight": 2107
+        },
+        {
+          "id": "dep:babel-preset-flow",
+          "weight": 2107
+        },
+        {
+          "id": "dep:babel-traverse",
+          "weight": 2107
+        },
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 2044
+        },
+        {
+          "id": "dep:art",
+          "weight": 2044
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 2044
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 2044
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 2044
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 2044
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 2044
+        },
+        {
+          "id": "dep:babel-plugin-external-helpers",
+          "weight": 2044
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 2044
+        },
+        {
+          "id": "dep:babel-plugin-proposal-object-rest-spread",
+          "weight": 2044
+        }
+      ],
+      "top_contributors": [
+        {
+          "login": "eps1lon",
+          "weight": 67
+        },
+        {
+          "login": "hoxyq",
+          "weight": 3
+        },
+        {
+          "login": "EugeneChoi4",
+          "weight": 1
+        },
+        {
+          "login": "josephsavona",
+          "weight": 1
+        },
+        {
+          "login": "zeyap",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "_root",
+      "name": "Repository root",
+      "total_weight": 64,
+      "contributor_count": 15,
+      "sample_paths": [
+        ".eslintrc.js",
+        ".gitignore",
+        ".prettierrc.js",
+        "CLAUDE.md",
+        "package.json",
+        "yarn.lock",
+        "ReactVersions.js",
+        "CONTRIBUTING.md",
+        "BUGS_ANALYSIS.md",
+        "CONTRIBUTION_PLAN.md"
+      ],
+      "skills": [
+        {
+          "id": "dep:babel-parser",
+          "weight": 813
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 780
+        },
+        {
+          "id": "lang:javascript",
+          "weight": 736
+        },
+        {
+          "id": "dep:babel-traverse",
+          "weight": 719
+        },
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 711
+        },
+        {
+          "id": "dep:art",
+          "weight": 711
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 711
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 711
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 711
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 711
+        },
+        {
+          "id": "dep:babel-plugin-external-helpers",
+          "weight": 708
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 708
+        },
+        {
+          "id": "dep:babel-plugin-proposal-object-rest-spread",
+          "weight": 708
+        },
+        {
+          "id": "dep:babel-plugin-syntax-dynamic-import",
+          "weight": 708
+        },
+        {
+          "id": "dep:babel-plugin-syntax-hermes-parser",
+          "weight": 702
+        }
+      ],
+      "top_contributors": [
+        {
+          "login": "eps1lon",
+          "weight": 19
+        },
+        {
+          "login": "SamChou19815",
+          "weight": 9
+        },
+        {
+          "login": "AlpianPPLG",
+          "weight": 6
+        },
+        {
+          "login": "myhearwillgoon",
+          "weight": 6
+        },
+        {
+          "login": "hoxyq",
+          "weight": 5
+        },
+        {
+          "login": "josephsavona",
+          "weight": 5
+        },
+        {
+          "login": "poteto",
+          "weight": 4
+        },
+        {
+          "login": "unstubbable",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "id": "fixtures",
+      "name": "fixtures",
+      "total_weight": 58,
+      "contributor_count": 6,
+      "sample_paths": [
+        "fixtures/view-transition/server/index.js",
+        "fixtures/view-transition/src/components/NestedExit.css",
+        "fixtures/view-transition/src/components/NestedExit.js",
+        "fixtures/view-transition/src/components/Page.js",
+        "fixtures/view-transition/src/components/SwipeRecognizer.js",
+        "fixtures/flight-esm/server/region.js",
+        "fixtures/flight-ssr-bench/README.md",
+        "fixtures/flight-ssr-bench/bench-server.js",
+        "fixtures/flight-ssr-bench/bench.js",
+        "fixtures/flight-ssr-bench/package.json"
+      ],
+      "skills": [
+        {
+          "id": "lang:javascript",
+          "weight": 408
+        },
+        {
+          "id": "dep:react",
+          "weight": 314
+        },
+        {
+          "id": "dep:babel-parser",
+          "weight": 269
+        },
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 267
+        },
+        {
+          "id": "dep:art",
+          "weight": 267
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 267
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 267
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 267
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 267
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 267
+        },
+        {
+          "id": "dep:babel-plugin-external-helpers",
+          "weight": 267
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 267
+        },
+        {
+          "id": "dep:babel-plugin-proposal-object-rest-spread",
+          "weight": 267
+        },
+        {
+          "id": "dep:babel-plugin-syntax-dynamic-import",
+          "weight": 267
+        },
+        {
+          "id": "dep:babel-plugin-syntax-hermes-parser",
+          "weight": 267
+        }
+      ],
+      "top_contributors": [
+        {
+          "login": "unstubbable",
+          "weight": 40
+        },
+        {
+          "login": "jackpope",
+          "weight": 8
+        },
+        {
+          "login": "zeyap",
+          "weight": 5
+        },
+        {
+          "login": "eps1lon",
+          "weight": 2
+        },
+        {
+          "login": "MaxwellCohen",
+          "weight": 2
+        },
+        {
+          "login": "orbisai0security",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "flow-typed",
+      "name": "flow-typed",
+      "total_weight": 7,
+      "contributor_count": 3,
+      "sample_paths": [
+        "flow-typed/environments/bom.js",
+        "flow-typed/environments/dom.js",
+        "flow-typed/environments/node.js",
+        "flow-typed/environments/streams.js",
+        "flow-typed/environments/html.js"
+      ],
+      "skills": [
+        {
+          "id": "dep:babel-parser",
+          "weight": 45
+        },
+        {
+          "id": "dep:abortcontroller-polyfill",
+          "weight": 44
+        },
+        {
+          "id": "dep:art",
+          "weight": 44
+        },
+        {
+          "id": "dep:babel-cli",
+          "weight": 44
+        },
+        {
+          "id": "dep:babel-code-frame",
+          "weight": 44
+        },
+        {
+          "id": "dep:babel-core",
+          "weight": 44
+        },
+        {
+          "id": "dep:babel-helper-define-map",
+          "weight": 44
+        },
+        {
+          "id": "dep:babel-helper-module-imports",
+          "weight": 44
+        },
+        {
+          "id": "dep:babel-plugin-external-helpers",
+          "weight": 44
+        },
+        {
+          "id": "dep:babel-plugin-proposal-class-properties",
+          "weight": 44
+        },
+        {
+          "id": "dep:babel-plugin-proposal-object-rest-spread",
+          "weight": 44
+        },
+        {
+          "id": "dep:babel-plugin-syntax-dynamic-import",
+          "weight": 44
+        },
+        {
+          "id": "dep:babel-plugin-syntax-hermes-parser",
+          "weight": 44
+        },
+        {
+          "id": "dep:babel-plugin-syntax-import-meta",
+          "weight": 44
+        },
+        {
+          "id": "dep:babel-plugin-syntax-jsx",
+          "weight": 44
+        }
+      ],
+      "top_contributors": [
+        {
+          "login": "SamChou19815",
+          "weight": 4
+        },
+        {
+          "login": "MaxwellCohen",
+          "weight": 2
+        },
+        {
+          "login": "eps1lon",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "source": "packages",
+      "target": "scripts",
+      "weight": 129
+    },
+    {
+      "source": "compiler",
+      "target": "packages",
+      "weight": 105
+    },
+    {
+      "source": ".github",
+      "target": "packages",
+      "weight": 73
+    },
+    {
+      "source": ".github",
+      "target": "scripts",
+      "weight": 72
+    },
+    {
+      "source": "fixtures",
+      "target": "packages",
+      "weight": 57
+    },
+    {
+      "source": "_root",
+      "target": "packages",
+      "weight": 50
+    },
+    {
+      "source": "compiler",
+      "target": "scripts",
+      "weight": 42
+    },
+    {
+      "source": ".github",
+      "target": "compiler",
+      "weight": 41
+    },
+    {
+      "source": "_root",
+      "target": "scripts",
+      "weight": 33
+    },
+    {
+      "source": "_root",
+      "target": "compiler",
+      "weight": 31
+    },
+    {
+      "source": ".github",
+      "target": "_root",
+      "weight": 23
+    },
+    {
+      "source": "fixtures",
+      "target": "scripts",
+      "weight": 8
+    },
+    {
+      "source": "flow-typed",
+      "target": "packages",
+      "weight": 7
+    },
+    {
+      "source": "_root",
+      "target": "fixtures",
+      "weight": 5
+    },
+    {
+      "source": "_root",
+      "target": "flow-typed",
+      "weight": 5
+    },
+    {
+      "source": "flow-typed",
+      "target": "scripts",
+      "weight": 5
+    },
+    {
+      "source": ".github",
+      "target": "fixtures",
+      "weight": 3
+    },
+    {
+      "source": "compiler",
+      "target": "fixtures",
+      "weight": 3
+    },
+    {
+      "source": "fixtures",
+      "target": "flow-typed",
+      "weight": 3
+    },
+    {
+      "source": ".github",
+      "target": "flow-typed",
+      "weight": 1
+    },
+    {
+      "source": "compiler",
+      "target": "flow-typed",
+      "weight": 1
+    }
+  ]
+}

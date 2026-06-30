@@ -1,0 +1,598 @@
+{
+  "version": 1,
+  "updated_at": "2026-06-30T02:29:52.176Z",
+  "skills": {
+    "lang:javascript": {
+      "label": "JavaScript",
+      "kind": "language"
+    },
+    "dep:react": {
+      "label": "react",
+      "kind": "dependency"
+    },
+    "dep:babel-parser": {
+      "label": "@babel/parser",
+      "kind": "dependency"
+    },
+    "dep:babel-traverse": {
+      "label": "@babel/traverse",
+      "kind": "dependency"
+    },
+    "dep:babel-core": {
+      "label": "@babel/core",
+      "kind": "dependency"
+    },
+    "dep:babel-preset-typescript": {
+      "label": "@babel/preset-typescript",
+      "kind": "dependency"
+    },
+    "dep:eslint": {
+      "label": "eslint",
+      "kind": "dependency"
+    },
+    "dep:jest": {
+      "label": "jest",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-transform-modules-commonjs": {
+      "label": "@babel/plugin-transform-modules-commonjs",
+      "kind": "dependency"
+    },
+    "dep:babel-preset-react": {
+      "label": "@babel/preset-react",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-syntax-typescript": {
+      "label": "@babel/plugin-syntax-typescript",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-transform-block-scoping": {
+      "label": "@babel/plugin-transform-block-scoping",
+      "kind": "dependency"
+    },
+    "dep:pretty-format": {
+      "label": "pretty-format",
+      "kind": "dependency"
+    },
+    "dep:jest-environment-jsdom": {
+      "label": "jest-environment-jsdom",
+      "kind": "dependency"
+    },
+    "dep:types-invariant": {
+      "label": "@types/invariant",
+      "kind": "dependency"
+    },
+    "dep:typescript-eslint-eslint-plugin": {
+      "label": "@typescript-eslint/eslint-plugin",
+      "kind": "dependency"
+    },
+    "dep:typescript-eslint-parser": {
+      "label": "@typescript-eslint/parser",
+      "kind": "dependency"
+    },
+    "dep:hermes-parser": {
+      "label": "hermes-parser",
+      "kind": "dependency"
+    },
+    "dep:babel-preset-flow": {
+      "label": "@babel/preset-flow",
+      "kind": "dependency"
+    },
+    "dep:babel-preset-env": {
+      "label": "@babel/preset-env",
+      "kind": "dependency"
+    },
+    "dep:typescript": {
+      "label": "typescript",
+      "kind": "dependency"
+    },
+    "dep:chalk": {
+      "label": "chalk",
+      "kind": "dependency"
+    },
+    "dep:babel-code-frame": {
+      "label": "@babel/code-frame",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-syntax-hermes-parser": {
+      "label": "babel-plugin-syntax-hermes-parser",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-syntax-jsx": {
+      "label": "@babel/plugin-syntax-jsx",
+      "kind": "dependency"
+    },
+    "dep:glob": {
+      "label": "glob",
+      "kind": "dependency"
+    },
+    "dep:yargs": {
+      "label": "yargs",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-proposal-class-properties": {
+      "label": "@babel/plugin-proposal-class-properties",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-transform-react-jsx-source": {
+      "label": "@babel/plugin-transform-react-jsx-source",
+      "kind": "dependency"
+    },
+    "dep:filesize": {
+      "label": "filesize",
+      "kind": "dependency"
+    },
+    "dep:hermes-eslint": {
+      "label": "hermes-eslint",
+      "kind": "dependency"
+    },
+    "dep:rimraf": {
+      "label": "rimraf",
+      "kind": "dependency"
+    },
+    "dep:error-stack-parser": {
+      "label": "error-stack-parser",
+      "kind": "dependency"
+    },
+    "dep:prettier": {
+      "label": "prettier",
+      "kind": "dependency"
+    },
+    "dep:abortcontroller-polyfill": {
+      "label": "abortcontroller-polyfill",
+      "kind": "dependency"
+    },
+    "dep:art": {
+      "label": "art",
+      "kind": "dependency"
+    },
+    "dep:babel-cli": {
+      "label": "@babel/cli",
+      "kind": "dependency"
+    },
+    "dep:babel-helper-define-map": {
+      "label": "@babel/helper-define-map",
+      "kind": "dependency"
+    },
+    "dep:babel-helper-module-imports": {
+      "label": "@babel/helper-module-imports",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-external-helpers": {
+      "label": "@babel/plugin-external-helpers",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-proposal-object-rest-spread": {
+      "label": "@babel/plugin-proposal-object-rest-spread",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-syntax-dynamic-import": {
+      "label": "@babel/plugin-syntax-dynamic-import",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-syntax-import-meta": {
+      "label": "@babel/plugin-syntax-import-meta",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-syntax-trailing-function-commas": {
+      "label": "babel-plugin-syntax-trailing-function-commas",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-transform-arrow-functions": {
+      "label": "@babel/plugin-transform-arrow-functions",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-transform-block-scoped-functions": {
+      "label": "@babel/plugin-transform-block-scoped-functions",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-transform-class-properties": {
+      "label": "@babel/plugin-transform-class-properties",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-transform-classes": {
+      "label": "@babel/plugin-transform-classes",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-transform-destructuring": {
+      "label": "@babel/plugin-transform-destructuring",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-transform-for-of": {
+      "label": "@babel/plugin-transform-for-of",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-transform-literals": {
+      "label": "@babel/plugin-transform-literals",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-transform-object-super": {
+      "label": "@babel/plugin-transform-object-super",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-transform-parameters": {
+      "label": "@babel/plugin-transform-parameters",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-transform-private-methods": {
+      "label": "@babel/plugin-transform-private-methods",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-transform-react-jsx": {
+      "label": "@babel/plugin-transform-react-jsx",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-transform-react-jsx-development": {
+      "label": "@babel/plugin-transform-react-jsx-development",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-transform-shorthand-properties": {
+      "label": "@babel/plugin-transform-shorthand-properties",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-transform-spread": {
+      "label": "@babel/plugin-transform-spread",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-transform-template-literals": {
+      "label": "@babel/plugin-transform-template-literals",
+      "kind": "dependency"
+    },
+    "dep:busboy": {
+      "label": "busboy",
+      "kind": "dependency"
+    },
+    "dep:cli-table": {
+      "label": "cli-table",
+      "kind": "dependency"
+    },
+    "dep:coffee-script": {
+      "label": "coffee-script",
+      "kind": "dependency"
+    },
+    "dep:confusing-browser-globals": {
+      "label": "confusing-browser-globals",
+      "kind": "dependency"
+    },
+    "dep:core-js": {
+      "label": "core-js",
+      "kind": "dependency"
+    },
+    "dep:create-react-class": {
+      "label": "create-react-class",
+      "kind": "dependency"
+    },
+    "dep:danger": {
+      "label": "danger",
+      "kind": "dependency"
+    },
+    "dep:eslint-config-prettier": {
+      "label": "eslint-config-prettier",
+      "kind": "dependency"
+    },
+    "dep:eslint-plugin-babel": {
+      "label": "eslint-plugin-babel",
+      "kind": "dependency"
+    },
+    "dep:eslint-plugin-es": {
+      "label": "eslint-plugin-es",
+      "kind": "dependency"
+    },
+    "dep:eslint-plugin-eslint-plugin": {
+      "label": "eslint-plugin-eslint-plugin",
+      "kind": "dependency"
+    },
+    "dep:eslint-plugin-ft-flow": {
+      "label": "eslint-plugin-ft-flow",
+      "kind": "dependency"
+    },
+    "dep:eslint-plugin-jest": {
+      "label": "eslint-plugin-jest",
+      "kind": "dependency"
+    },
+    "dep:eslint-plugin-no-for-of-loops": {
+      "label": "eslint-plugin-no-for-of-loops",
+      "kind": "dependency"
+    },
+    "dep:eslint-plugin-no-function-declare-after-return": {
+      "label": "eslint-plugin-no-function-declare-after-return",
+      "kind": "dependency"
+    },
+    "dep:eslint-plugin-react": {
+      "label": "eslint-plugin-react",
+      "kind": "dependency"
+    },
+    "dep:eslint-plugin-react-hooks-published": {
+      "label": "eslint-plugin-react-hooks-published",
+      "kind": "dependency"
+    },
+    "dep:eslint-plugin-react-internal": {
+      "label": "eslint-plugin-react-internal",
+      "kind": "dependency"
+    },
+    "dep:fbjs-scripts": {
+      "label": "fbjs-scripts",
+      "kind": "dependency"
+    },
+    "dep:flow-bin": {
+      "label": "flow-bin",
+      "kind": "dependency"
+    },
+    "dep:flow-remove-types": {
+      "label": "flow-remove-types",
+      "kind": "dependency"
+    },
+    "dep:flow-typed": {
+      "label": "flow-typed",
+      "kind": "dependency"
+    },
+    "dep:glob-stream": {
+      "label": "glob-stream",
+      "kind": "dependency"
+    },
+    "dep:google-closure-compiler": {
+      "label": "google-closure-compiler",
+      "kind": "dependency"
+    },
+    "dep:gzip-size": {
+      "label": "gzip-size",
+      "kind": "dependency"
+    },
+    "dep:jest-cli": {
+      "label": "jest-cli",
+      "kind": "dependency"
+    },
+    "dep:jest-diff": {
+      "label": "jest-diff",
+      "kind": "dependency"
+    },
+    "dep:jest-silent-reporter": {
+      "label": "jest-silent-reporter",
+      "kind": "dependency"
+    },
+    "dep:jest-snapshot-serializer-raw": {
+      "label": "jest-snapshot-serializer-raw",
+      "kind": "dependency"
+    },
+    "dep:minimatch": {
+      "label": "minimatch",
+      "kind": "dependency"
+    },
+    "dep:minimist": {
+      "label": "minimist",
+      "kind": "dependency"
+    },
+    "dep:mkdirp": {
+      "label": "mkdirp",
+      "kind": "dependency"
+    },
+    "dep:ncp": {
+      "label": "ncp",
+      "kind": "dependency"
+    },
+    "dep:prettier-2": {
+      "label": "prettier-2",
+      "kind": "dependency"
+    },
+    "dep:prettier-plugin-hermes-parser": {
+      "label": "prettier-plugin-hermes-parser",
+      "kind": "dependency"
+    },
+    "dep:prop-types": {
+      "label": "prop-types",
+      "kind": "dependency"
+    },
+    "dep:random-seed": {
+      "label": "random-seed",
+      "kind": "dependency"
+    },
+    "dep:react-lifecycles-compat": {
+      "label": "react-lifecycles-compat",
+      "kind": "dependency"
+    },
+    "dep:rollup": {
+      "label": "rollup",
+      "kind": "dependency"
+    },
+    "dep:rollup-plugin-babel": {
+      "label": "@rollup/plugin-babel",
+      "kind": "dependency"
+    },
+    "dep:rollup-plugin-commonjs": {
+      "label": "@rollup/plugin-commonjs",
+      "kind": "dependency"
+    },
+    "dep:rollup-plugin-dts": {
+      "label": "rollup-plugin-dts",
+      "kind": "dependency"
+    },
+    "dep:rollup-plugin-node-resolve": {
+      "label": "@rollup/plugin-node-resolve",
+      "kind": "dependency"
+    },
+    "dep:rollup-plugin-prettier": {
+      "label": "rollup-plugin-prettier",
+      "kind": "dependency"
+    },
+    "dep:rollup-plugin-replace": {
+      "label": "@rollup/plugin-replace",
+      "kind": "dependency"
+    },
+    "dep:rollup-plugin-strip-banner": {
+      "label": "rollup-plugin-strip-banner",
+      "kind": "dependency"
+    },
+    "dep:rollup-plugin-typescript": {
+      "label": "@rollup/plugin-typescript",
+      "kind": "dependency"
+    },
+    "dep:scheduler": {
+      "label": "scheduler",
+      "kind": "dependency"
+    },
+    "dep:semver": {
+      "label": "semver",
+      "kind": "dependency"
+    },
+    "dep:shelljs": {
+      "label": "shelljs",
+      "kind": "dependency"
+    },
+    "dep:signedsource": {
+      "label": "signedsource",
+      "kind": "dependency"
+    },
+    "dep:targz": {
+      "label": "targz",
+      "kind": "dependency"
+    },
+    "dep:through2": {
+      "label": "through2",
+      "kind": "dependency"
+    },
+    "dep:tmp": {
+      "label": "tmp",
+      "kind": "dependency"
+    },
+    "dep:to-fast-properties": {
+      "label": "to-fast-properties",
+      "kind": "dependency"
+    },
+    "dep:tsup": {
+      "label": "tsup",
+      "kind": "dependency"
+    },
+    "dep:undici": {
+      "label": "undici",
+      "kind": "dependency"
+    },
+    "dep:web-streams-polyfill": {
+      "label": "web-streams-polyfill",
+      "kind": "dependency"
+    },
+    "dep:react-dom": {
+      "label": "react-dom",
+      "kind": "dependency"
+    },
+    "lang:markdown": {
+      "label": "Markdown",
+      "kind": "language"
+    },
+    "dep:babel-types": {
+      "label": "@babel/types",
+      "kind": "dependency"
+    },
+    "dep:types-node": {
+      "label": "@types/node",
+      "kind": "dependency"
+    },
+    "dep:zod": {
+      "label": "zod",
+      "kind": "dependency"
+    },
+    "dep:zod-validation-error": {
+      "label": "zod-validation-error",
+      "kind": "dependency"
+    },
+    "lang:typescript": {
+      "label": "TypeScript",
+      "kind": "language"
+    },
+    "dep:babel-jest": {
+      "label": "babel-jest",
+      "kind": "dependency"
+    },
+    "path:react-dom": {
+      "label": "react-dom"
+    },
+    "dep:testing-library-react": {
+      "label": "@testing-library/react",
+      "kind": "dependency"
+    },
+    "dep:babel-generator": {
+      "label": "@babel/generator",
+      "kind": "dependency"
+    },
+    "dep:invariant": {
+      "label": "invariant",
+      "kind": "dependency"
+    },
+    "dep:types-jest": {
+      "label": "@types/jest",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-fbt": {
+      "label": "babel-plugin-fbt",
+      "kind": "dependency"
+    },
+    "dep:babel-plugin-fbt-runtime": {
+      "label": "babel-plugin-fbt-runtime",
+      "kind": "dependency"
+    },
+    "dep:ts-jest": {
+      "label": "ts-jest",
+      "kind": "dependency"
+    },
+    "dep:ts-node": {
+      "label": "ts-node",
+      "kind": "dependency"
+    },
+    "dep:tsconfig-node18-strictest": {
+      "label": "@tsconfig/node18-strictest",
+      "kind": "dependency"
+    },
+    "dep:types-glob": {
+      "label": "@types/glob",
+      "kind": "dependency"
+    },
+    "path:babel-plugin-react-compiler": {
+      "label": "babel-plugin-react-compiler"
+    },
+    "lang:json": {
+      "label": "JSON",
+      "kind": "language"
+    },
+    "path:crates": {
+      "label": "crates"
+    },
+    "path:react-dom-bindings": {
+      "label": "react-dom-bindings"
+    },
+    "path:react-reconciler": {
+      "label": "react-reconciler"
+    },
+    "lang:rust": {
+      "label": "Rust",
+      "kind": "language"
+    },
+    "path:shared": {
+      "label": "shared"
+    },
+    "path:server": {
+      "label": "server"
+    },
+    "dep:webpack": {
+      "label": "webpack",
+      "kind": "dependency"
+    },
+    "path:react-server": {
+      "label": "react-server"
+    },
+    "dep:indexmap": {
+      "label": "indexmap",
+      "kind": "dependency"
+    },
+    "dep:react-compiler-diagnostics": {
+      "label": "react_compiler_diagnostics",
+      "kind": "dependency"
+    },
+    "dep:rustc-hash": {
+      "label": "rustc-hash",
+      "kind": "dependency"
+    },
+    "dep:babel-eslint": {
+      "label": "babel-eslint",
+      "kind": "dependency"
+    }
+  }
+}
