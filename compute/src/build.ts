@@ -1,4 +1,5 @@
 import { REPOS } from "../../scraper/src/config";
+import { buildCollaborationEdges } from "./edges/build";
 import { ensureActivity } from "./io/activity";
 import { readContributors, writeSkills, writeSubprojects } from "./io/cache";
 import { repoToCacheDir } from "./paths";
@@ -30,11 +31,14 @@ async function computeRepo(repo: string): Promise<void> {
   const skillCount = Object.keys(skillsResult.data.skills).length;
   const contributorSkillCount = Object.keys(skillsResult.byLogin).length;
 
+  log(repo, "Building collaboration edges...");
+  const links = buildCollaborationEdges(activity, contributors);
+
   const elapsed = ((Date.now() - start) / 1000).toFixed(1);
 
   log(
     repo,
-    `Done — ${subprojectCount} subprojects → ${subprojectsPath}, ${skillCount} skills (${contributorSkillCount} contributors) → ${skillsPath} (${elapsed}s)`
+    `Done — ${subprojectCount} subprojects → ${subprojectsPath}, ${skillCount} skills (${contributorSkillCount} contributors) → ${skillsPath}, ${links.length} edges (${elapsed}s)`
   );
 }
 

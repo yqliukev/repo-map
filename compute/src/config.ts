@@ -1,4 +1,13 @@
+export { LAMBDA, REVIEW_WEIGHT } from "../../scraper/src/config";
+
 export const MIN_ACTIVITY = 3;
+
+// ── Collaboration edges (D6) ──────────────────────────────────────────────────
+
+export const CO_PRESENCE_WEIGHT = 0.25;
+export const PATH_OVERLAP_WEIGHT = 0.5;
+export const MIN_EDGE_WEIGHT = 0.05;
+export const MAX_PATH_FANOUT = 40;
 
 export const DEFAULT_ENTER_DIRS = ["src", "lib", "internal"] as const;
 

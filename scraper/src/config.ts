@@ -1,5 +1,5 @@
 export const REPOS = [
-  "facebook/react",
+  "react/react",
   "microsoft/vscode",
   "redis/redis",
   "kubernetes/kubernetes",
@@ -10,6 +10,12 @@ export const WINDOW_MONTHS = 3;
 
 // Minimum combined PR + review actions to be included in the graph
 export const MIN_ACTIVITY = 3;
+
+// Per-day recency decay on collaboration edges (D6)
+export const LAMBDA = 0.005;
+
+// Per-review contribution within shared-PR activity (D6)
+export const REVIEW_WEIGHT = 1.0;
 
 export const KNOWN_BOTS = new Set([
   "dependabot",
