@@ -2,12 +2,20 @@ export { LAMBDA, REVIEW_WEIGHT } from "../../scraper/src/config";
 
 export const MIN_ACTIVITY = 3;
 
+export const COMPUTE_VERSION = 1;
+
 // ── Collaboration edges (D6) ──────────────────────────────────────────────────
 
 export const CO_PRESENCE_WEIGHT = 0.25;
 export const PATH_OVERLAP_WEIGHT = 0.5;
 export const MIN_EDGE_WEIGHT = 0.05;
 export const MAX_PATH_FANOUT = 40;
+
+// ── Project graph ─────────────────────────────────────────────────────────────
+
+export const MIN_PROJECT_EDGE_WEIGHT = 1;
+export const MAX_SUBPROJECT_SKILLS = 15;
+export const MAX_TOP_CONTRIBUTORS = 8;
 
 export const DEFAULT_ENTER_DIRS = ["src", "lib", "internal"] as const;
 

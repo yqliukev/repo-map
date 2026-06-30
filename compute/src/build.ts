@@ -1,8 +1,20 @@
 import { REPOS } from "../../scraper/src/config";
 import { buildCollaborationEdges } from "./edges/build";
+import { buildContributorGraph } from "./graph/build";
 import { ensureActivity } from "./io/activity";
-import { readContributors, writeSkills, writeSubprojects } from "./io/cache";
+import {
+  readCacheMeta,
+  readComputeMeta,
+  readContributors,
+  writeComputeMeta,
+  writeSkills,
+  writeSubprojects,
+} from "./io/cache";
+import { publishGraphs } from "./io/publish";
+import { buildComputeMeta, buildComputeMetaInputs } from "./meta/build";
+import { canSkipCompute } from "./meta/skip";
 import { repoToCacheDir } from "./paths";
+import { buildProjectGraph } from "./project-graph/build";
 import { buildSkills } from "./skills/build";
 import { buildSubprojects } from "./subprojects/build";
 
@@ -16,6 +28,15 @@ async function computeRepo(repo: string): Promise<void> {
 
   log(repo, "Ensuring activity.json...");
   const activity = ensureActivity(cacheDir);
+
+  const cacheMeta = readCacheMeta(cacheDir);
+  const inputs = buildComputeMetaInputs(cacheMeta, activity);
+  const existingMeta = readComputeMeta(cacheDir);
+
+  if (canSkipCompute(existingMeta, inputs, cacheDir, repo)) {
+    log(repo, "Cache and graphs up to date — skipping compute");
+    return;
+  }
 
   log(repo, "Reading contributors...");
   const contributors = readContributors(cacheDir);
@@ -34,12 +55,45 @@ async function computeRepo(repo: string): Promise<void> {
   log(repo, "Building collaboration edges...");
   const links = buildCollaborationEdges(activity, contributors);
 
+  log(repo, "Building contributor graph...");
+  const contributorGraph = buildContributorGraph(
+    repo,
+    activity,
+    contributors,
+    subprojects,
+    skillsResult,
+    links
+  );
+
+  log(repo, "Building project graph...");
+  const projectGraph = buildProjectGraph(repo, subprojects, skillsResult);
+
+  log(repo, "Publishing graphs...");
+  const published = publishGraphs(
+    repo,
+    contributorGraph,
+    projectGraph,
+    skillsResult.data
+  );
+
+  const graphsAt = contributorGraph.generated_at;
+  const computeMeta = buildComputeMeta(
+    inputs,
+    subprojects,
+    skillsResult.data,
+    graphsAt
+  );
+  const computeMetaPath = writeComputeMeta(cacheDir, computeMeta);
+
   const elapsed = ((Date.now() - start) / 1000).toFixed(1);
 
-  log(
-    repo,
-    `Done — ${subprojectCount} subprojects → ${subprojectsPath}, ${skillCount} skills (${contributorSkillCount} contributors) → ${skillsPath}, ${links.length} edges (${elapsed}s)`
-  );
+  log(repo, `Done, Reporting:`);
+  log(repo, `${subprojectCount} subprojects → ${subprojectsPath}`);
+  log(repo, `${skillCount} skills (${contributorSkillCount} contributors) → ${skillsPath}`);
+  log(repo, `${contributorGraph.nodes.length} nodes / ${contributorGraph.links.length} collaboration edges → ${published.graphPath}`);
+  log(repo, `${projectGraph.nodes.length} project nodes / ${projectGraph.links.length} project links → ${published.projectGraphPath}`);
+  log(repo, `compute_meta → ${computeMetaPath}`);
+  log(repo, `(${elapsed}s)`);
 }
 
 async function main() {
